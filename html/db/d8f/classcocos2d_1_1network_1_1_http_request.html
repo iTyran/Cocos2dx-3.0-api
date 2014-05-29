@@ -1,0 +1,1112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: HttpRequest类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d8f/classcocos2d_1_1network_1_1_http_request.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../d9/d3d/classcocos2d_1_1network_1_1_http_request-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">HttpRequest类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>定义了用户必须为 <a class="el" href="../../df/d1b/classcocos2d_1_1network_1_1_http_client.html#a2a727cfb8114be68107baab98c3797d8" title="增加一个get请求到任务队列 ">HttpClient::send(HttpRequest*)</a> 方法打包的对象 请移步 tests/test-cpp/Classes/ExtensionTest/NetworkTest/HttpClientTest.cpp 作为参考  
+ <a href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#details">更多...</a></p>
+
+<p><code>#include &lt;HttpRequest.h&gt;</code></p>
+<div class="dynheader">
+类 HttpRequest 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../db/d8f/classcocos2d_1_1network_1_1_http_request.png" usemap="#HttpRequest_map" alt=""/>
+  <map id="HttpRequest_map" name="HttpRequest_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,78,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d53/classcocos2d_1_1network_1_1_http_request_1_1__prxy.html">_prxy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <br />
+&#160;&#160;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7a7528035a93ee69cedb1dbddb2f0bfcc8">GET</a>, 
+<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7aa02439ec229d8be0e74b0c1602392310">POST</a>, 
+<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7a3e75383a5992a6d15fb81e872e46e256">PUT</a>, 
+<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7a32f68a60cef40faedbc6af20298c1a1e">DELETE</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a1d1cfd8ffb84e947f82999c682b666a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">在setRequestType(param)时使用这个枚举类型作为参数  <a href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">更多...</a><br /></td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a785ca311f7569c57a36d9a10a7c128ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a785ca311f7569c57a36d9a10a7c128ea">HttpRequest</a> ()</td></tr>
+<tr class="memdesc:a785ca311f7569c57a36d9a10a7c128ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数 因为 HttpRequset 对象会被用在UI线程和network线程之间， 为了避免崩溃，在AutoreleasePool中，requestObj-&gt;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a9921f9a74d5e9d14dae703e67cc3c581" title="覆写 autorelease 方法来避免开发者调用它 ">autorelease()</a>是被禁止的 new/retain/release 依然工作，意味着你需要手动释放它。 请移步 HttpRequestTest.cpp 找到用例  <a href="#a785ca311f7569c57a36d9a10a7c128ea">更多...</a><br /></td></tr>
+<tr class="separator:a785ca311f7569c57a36d9a10a7c128ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c1d7ce6f0c14f3173f25326af108fc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a84c1d7ce6f0c14f3173f25326af108fc">~HttpRequest</a> ()</td></tr>
+<tr class="memdesc:a84c1d7ce6f0c14f3173f25326af108fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="#a84c1d7ce6f0c14f3173f25326af108fc">更多...</a><br /></td></tr>
+<tr class="separator:a84c1d7ce6f0c14f3173f25326af108fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9921f9a74d5e9d14dae703e67cc3c581"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a9921f9a74d5e9d14dae703e67cc3c581">autorelease</a> (void)</td></tr>
+<tr class="memdesc:a9921f9a74d5e9d14dae703e67cc3c581"><td class="mdescLeft">&#160;</td><td class="mdescRight">覆写 autorelease 方法来避免开发者调用它  <a href="#a9921f9a74d5e9d14dae703e67cc3c581">更多...</a><br /></td></tr>
+<tr class="separator:a9921f9a74d5e9d14dae703e67cc3c581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36884112901121818d079ae6d752d98a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a36884112901121818d079ae6d752d98a">setRequestType</a> (<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type)</td></tr>
+<tr class="memdesc:a36884112901121818d079ae6d752d98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在发送之前，HttpRequest对象的必填字段 目前支持 kHttpGet &amp; kHttpPost  <a href="#a36884112901121818d079ae6d752d98a">更多...</a><br /></td></tr>
+<tr class="separator:a36884112901121818d079ae6d752d98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2936f481817a5a10d3b5a9822d3f250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#ae2936f481817a5a10d3b5a9822d3f250">getRequestType</a> ()</td></tr>
+<tr class="memdesc:ae2936f481817a5a10d3b5a9822d3f250"><td class="mdescLeft">&#160;</td><td class="mdescRight">取回 kHttpGet/Post/...  <a href="#ae2936f481817a5a10d3b5a9822d3f250">更多...</a><br /></td></tr>
+<tr class="separator:ae2936f481817a5a10d3b5a9822d3f250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab778908496401da0e107c228bae8aa42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#ab778908496401da0e107c228bae8aa42">setUrl</a> (const char *url)</td></tr>
+<tr class="memdesc:ab778908496401da0e107c228bae8aa42"><td class="mdescLeft">&#160;</td><td class="mdescRight">在发送之前，HttpRequest对象的必填字段  <a href="#ab778908496401da0e107c228bae8aa42">更多...</a><br /></td></tr>
+<tr class="separator:ab778908496401da0e107c228bae8aa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9de00b91fe7bdc4a021e4af6029c9aa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#ab9de00b91fe7bdc4a021e4af6029c9aa">getUrl</a> ()</td></tr>
+<tr class="memdesc:ab9de00b91fe7bdc4a021e4af6029c9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">取回设置的url  <a href="#ab9de00b91fe7bdc4a021e4af6029c9aa">更多...</a><br /></td></tr>
+<tr class="separator:ab9de00b91fe7bdc4a021e4af6029c9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711bdaeed5c51700acdb6318e66740cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a711bdaeed5c51700acdb6318e66740cc">setRequestData</a> (const char *buffer, size_t len)</td></tr>
+<tr class="memdesc:a711bdaeed5c51700acdb6318e66740cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">可选字段。你可以在这里设置你的post数据  <a href="#a711bdaeed5c51700acdb6318e66740cc">更多...</a><br /></td></tr>
+<tr class="separator:a711bdaeed5c51700acdb6318e66740cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343ed0a7f74e9fa151fae4f06ad66615"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a343ed0a7f74e9fa151fae4f06ad66615">getRequestData</a> ()</td></tr>
+<tr class="memdesc:a343ed0a7f74e9fa151fae4f06ad66615"><td class="mdescLeft">&#160;</td><td class="mdescRight">取回请求数据的指针  <a href="#a343ed0a7f74e9fa151fae4f06ad66615">更多...</a><br /></td></tr>
+<tr class="separator:a343ed0a7f74e9fa151fae4f06ad66615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e55c009b44f686925c12edfa661b44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#aa8e55c009b44f686925c12edfa661b44">getRequestDataSize</a> ()</td></tr>
+<tr class="memdesc:aa8e55c009b44f686925c12edfa661b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">取回请求数据的大小  <a href="#aa8e55c009b44f686925c12edfa661b44">更多...</a><br /></td></tr>
+<tr class="separator:aa8e55c009b44f686925c12edfa661b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffb780946af4af7849d24d27d12cd0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a3ffb780946af4af7849d24d27d12cd0a">setTag</a> (const char *tag)</td></tr>
+<tr class="memdesc:a3ffb780946af4af7849d24d27d12cd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">可选字段。你可以设置一个string tag来标记你的请求，这个tag能通过HttpResponse-&gt;getHttpRequest-&gt;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#acd0adb590bed94d7f0e542010024369d" title="获取string tag来认出请求。 最佳实践是在你的 MyClass::onMyHttpRequestCompleted(sender, HttpResponse*) callback 中使用 ">getTag()</a>被找到。  <a href="#a3ffb780946af4af7849d24d27d12cd0a">更多...</a><br /></td></tr>
+<tr class="separator:a3ffb780946af4af7849d24d27d12cd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0adb590bed94d7f0e542010024369d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#acd0adb590bed94d7f0e542010024369d">getTag</a> ()</td></tr>
+<tr class="memdesc:acd0adb590bed94d7f0e542010024369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取string tag来认出请求。 最佳实践是在你的 MyClass::onMyHttpRequestCompleted(sender, HttpResponse*) callback 中使用  <a href="#acd0adb590bed94d7f0e542010024369d">更多...</a><br /></td></tr>
+<tr class="separator:acd0adb590bed94d7f0e542010024369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760e981419307dc53ca0c7e885b9123a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a760e981419307dc53ca0c7e885b9123a">setUserData</a> (void *pUserData)</td></tr>
+<tr class="memdesc:a760e981419307dc53ca0c7e885b9123a"><td class="mdescLeft">&#160;</td><td class="mdescRight">可选字段。你可以在每个请求中附上自定义的数据，并在响应回调中获取它。 但是你需要手动 new/delete 数据指针  <a href="#a760e981419307dc53ca0c7e885b9123a">更多...</a><br /></td></tr>
+<tr class="separator:a760e981419307dc53ca0c7e885b9123a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3052e22a83440bcb6a3a90e136113ee7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a3052e22a83440bcb6a3a90e136113ee7">getUserData</a> ()</td></tr>
+<tr class="memdesc:a3052e22a83440bcb6a3a90e136113ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取预先设定好的自定义数据指针。 不要忘了删除它。HttpClient/HttpResponse/HttpRequest 不会对这个指针做任何处理  <a href="#a3052e22a83440bcb6a3a90e136113ee7">更多...</a><br /></td></tr>
+<tr class="separator:a3052e22a83440bcb6a3a90e136113ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd81c82bd8fd8674c7e39708e8bfad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#afcd81c82bd8fd8674c7e39708e8bfad9">setResponseCallback</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *pTarget, <a class="el" href="../../d9/d1f/group__base__nodes.html#ga0747198009c5ba31865d5542091a2d2d">SEL_CallFuncND</a> pSelector)</td></tr>
+<tr class="memdesc:afcd81c82bd8fd8674c7e39708e8bfad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">必填字段。你应该在ack http 请求完成设置回调selector函数(You should set the callback selector function at ack the http request completed)  <a href="#afcd81c82bd8fd8674c7e39708e8bfad9">更多...</a><br /></td></tr>
+<tr class="separator:afcd81c82bd8fd8674c7e39708e8bfad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc61cd875091bdd46bb0a26f1276848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a8cc61cd875091bdd46bb0a26f1276848">setResponseCallback</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *pTarget, <a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#aa72255bd005bf7595566b79906d1d070">SEL_HttpResponse</a> pSelector)</td></tr>
+<tr class="separator:a8cc61cd875091bdd46bb0a26f1276848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988efcd497578c5329b39bd5f7271d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a988efcd497578c5329b39bd5f7271d28">setResponseCallback</a> (const <a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a> &amp;callback)</td></tr>
+<tr class="separator:a988efcd497578c5329b39bd5f7271d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab180a8d72b1db318ec9887022f1ee6ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#ab180a8d72b1db318ec9887022f1ee6ba">getTarget</a> ()</td></tr>
+<tr class="memdesc:ab180a8d72b1db318ec9887022f1ee6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到回调selector函数的目标，主要被HttpClient使用  <a href="#ab180a8d72b1db318ec9887022f1ee6ba">更多...</a><br /></td></tr>
+<tr class="separator:ab180a8d72b1db318ec9887022f1ee6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a351783051ca3cb252094bc588bb17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d53/classcocos2d_1_1network_1_1_http_request_1_1__prxy.html">_prxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a29a351783051ca3cb252094bc588bb17">getSelector</a> ()</td></tr>
+<tr class="memdesc:a29a351783051ca3cb252094bc588bb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到回调selector函数的指针，主要被HttpClient使用  <a href="#a29a351783051ca3cb252094bc588bb17">更多...</a><br /></td></tr>
+<tr class="separator:a29a351783051ca3cb252094bc588bb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51770069dfd07e72e9a84a99567064d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a51770069dfd07e72e9a84a99567064d2">getCallback</a> ()</td></tr>
+<tr class="separator:a51770069dfd07e72e9a84a99567064d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ec70ecc584e2c30acb6ff03ec6102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a507ec70ecc584e2c30acb6ff03ec6102">setHeaders</a> (std::vector&lt; std::string &gt; pHeaders)</td></tr>
+<tr class="memdesc:a507ec70ecc584e2c30acb6ff03ec6102"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置任何自定义头部  <a href="#a507ec70ecc584e2c30acb6ff03ec6102">更多...</a><br /></td></tr>
+<tr class="separator:a507ec70ecc584e2c30acb6ff03ec6102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011222ae4432f3f9db3705db526f56be"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a011222ae4432f3f9db3705db526f56be">getHeaders</a> ()</td></tr>
+<tr class="memdesc:a011222ae4432f3f9db3705db526f56be"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取自定义头部  <a href="#a011222ae4432f3f9db3705db526f56be">更多...</a><br /></td></tr>
+<tr class="separator:a011222ae4432f3f9db3705db526f56be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a856a54ba1792a1a0ae7f153326436756"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a856a54ba1792a1a0ae7f153326436756">_requestType</a></td></tr>
+<tr class="separator:a856a54ba1792a1a0ae7f153326436756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef9a5e13c34c323f8c43f50c6c66229"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#adef9a5e13c34c323f8c43f50c6c66229">_url</a></td></tr>
+<tr class="memdesc:adef9a5e13c34c323f8c43f50c6c66229"><td class="mdescLeft">&#160;</td><td class="mdescRight">kHttpRequestGet, kHttpRequestPost 或者其他枚举类型  <a href="#adef9a5e13c34c323f8c43f50c6c66229">更多...</a><br /></td></tr>
+<tr class="separator:adef9a5e13c34c323f8c43f50c6c66229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fd875038f178021191889ef8cb2d50"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#af1fd875038f178021191889ef8cb2d50">_requestData</a></td></tr>
+<tr class="memdesc:af1fd875038f178021191889ef8cb2d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个请求发送的目标url  <a href="#af1fd875038f178021191889ef8cb2d50">更多...</a><br /></td></tr>
+<tr class="separator:af1fd875038f178021191889ef8cb2d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581226e1857b777252ae21073fd5a933"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a581226e1857b777252ae21073fd5a933">_tag</a></td></tr>
+<tr class="memdesc:a581226e1857b777252ae21073fd5a933"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于POST  <a href="#a581226e1857b777252ae21073fd5a933">更多...</a><br /></td></tr>
+<tr class="separator:a581226e1857b777252ae21073fd5a933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718f5987450245e435f0884405528940"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a718f5987450245e435f0884405528940">_pTarget</a></td></tr>
+<tr class="memdesc:a718f5987450245e435f0884405528940"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户定义的tag，用来在响应回调中识别不同的请求  <a href="#a718f5987450245e435f0884405528940">更多...</a><br /></td></tr>
+<tr class="separator:a718f5987450245e435f0884405528940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96427e318b6524d9b3c42acd87f3793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#aa72255bd005bf7595566b79906d1d070">SEL_HttpResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#ac96427e318b6524d9b3c42acd87f3793">_pSelector</a></td></tr>
+<tr class="memdesc:ac96427e318b6524d9b3c42acd87f3793"><td class="mdescLeft">&#160;</td><td class="mdescRight">pSelector 函数的回调目标  <a href="#ac96427e318b6524d9b3c42acd87f3793">更多...</a><br /></td></tr>
+<tr class="separator:ac96427e318b6524d9b3c42acd87f3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8c6e5f884348840c2f1c817d0d1667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a7f8c6e5f884348840c2f1c817d0d1667">_pCallback</a></td></tr>
+<tr class="memdesc:a7f8c6e5f884348840c2f1c817d0d1667"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数，例如：MyLayer::onHttpResponse(HttpClient *sender, HttpResponse * response)  <a href="#a7f8c6e5f884348840c2f1c817d0d1667">更多...</a><br /></td></tr>
+<tr class="separator:a7f8c6e5f884348840c2f1c817d0d1667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab854782fe794285b80cad8dcf181eaf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#aab854782fe794285b80cad8dcf181eaf">_pUserData</a></td></tr>
+<tr class="memdesc:aab854782fe794285b80cad8dcf181eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 风格的回调  <a href="#aab854782fe794285b80cad8dcf181eaf">更多...</a><br /></td></tr>
+<tr class="separator:aab854782fe794285b80cad8dcf181eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793a541b4d6ed8e8dae5e770bffc4d2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a793a541b4d6ed8e8dae5e770bffc4d2d">_headers</a></td></tr>
+<tr class="memdesc:a793a541b4d6ed8e8dae5e770bffc4d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">你可以在这里添加你的自定义数据  <a href="#a793a541b4d6ed8e8dae5e770bffc4d2d">更多...</a><br /></td></tr>
+<tr class="separator:a793a541b4d6ed8e8dae5e770bffc4d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义了用户必须为 <a class="el" href="../../df/d1b/classcocos2d_1_1network_1_1_http_client.html#a2a727cfb8114be68107baab98c3797d8" title="增加一个get请求到任务队列 ">HttpClient::send(HttpRequest*)</a> 方法打包的对象 请移步 tests/test-cpp/Classes/ExtensionTest/NetworkTest/HttpClientTest.cpp 作为参考 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0.2 </dd></dl>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在setRequestType(param)时使用这个枚举类型作为参数 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7a7528035a93ee69cedb1dbddb2f0bfcc8"></a>GET&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7aa02439ec229d8be0e74b0c1602392310"></a>POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7a3e75383a5992a6d15fb81e872e46e256"></a>PUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7a32f68a60cef40faedbc6af20298c1a1e"></a>DELETE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1d1cfd8ffb84e947f82999c682b666a7a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a785ca311f7569c57a36d9a10a7c128ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html">HttpRequest</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 因为 HttpRequset 对象会被用在UI线程和network线程之间， 为了避免崩溃，在AutoreleasePool中，requestObj-&gt;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a9921f9a74d5e9d14dae703e67cc3c581" title="覆写 autorelease 方法来避免开发者调用它 ">autorelease()</a>是被禁止的 new/retain/release 依然工作，意味着你需要手动释放它。 请移步 HttpRequestTest.cpp 找到用例 </p>
+
+</div>
+</div>
+<a class="anchor" id="a84c1d7ce6f0c14f3173f25326af108fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html">HttpRequest</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9921f9a74d5e9d14dae703e67cc3c581"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* autorelease </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>覆写 autorelease 方法来避免开发者调用它 </p>
+
+</div>
+</div>
+<a class="anchor" id="a51770069dfd07e72e9a84a99567064d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a>&amp; getCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a011222ae4432f3f9db3705db526f56be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; getHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取自定义头部 </p>
+
+</div>
+</div>
+<a class="anchor" id="a343ed0a7f74e9fa151fae4f06ad66615"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* getRequestData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取回请求数据的指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e55c009b44f686925c12edfa661b44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> getRequestDataSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取回请求数据的大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2936f481817a5a10d3b5a9822d3f250"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> getRequestType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取回 kHttpGet/Post/... </p>
+<p>的枚举值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a29a351783051ca3cb252094bc588bb17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d53/classcocos2d_1_1network_1_1_http_request_1_1__prxy.html">_prxy</a> getSelector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>得到回调selector函数的指针，主要被HttpClient使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="acd0adb590bed94d7f0e542010024369d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* getTag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取string tag来认出请求。 最佳实践是在你的 MyClass::onMyHttpRequestCompleted(sender, HttpResponse*) callback 中使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab180a8d72b1db318ec9887022f1ee6ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* getTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>得到回调selector函数的目标，主要被HttpClient使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9de00b91fe7bdc4a021e4af6029c9aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* getUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取回设置的url </p>
+
+</div>
+</div>
+<a class="anchor" id="a3052e22a83440bcb6a3a90e136113ee7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* getUserData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取预先设定好的自定义数据指针。 不要忘了删除它。HttpClient/HttpResponse/HttpRequest 不会对这个指针做任何处理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a507ec70ecc584e2c30acb6ff03ec6102"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setHeaders </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>pHeaders</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置任何自定义头部 </p>
+
+</div>
+</div>
+<a class="anchor" id="a711bdaeed5c51700acdb6318e66740cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRequestData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可选字段。你可以在这里设置你的post数据 </p>
+
+</div>
+</div>
+<a class="anchor" id="a36884112901121818d079ae6d752d98a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRequestType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在发送之前，HttpRequest对象的必填字段 目前支持 kHttpGet &amp; kHttpPost </p>
+
+</div>
+</div>
+<a class="anchor" id="afcd81c82bd8fd8674c7e39708e8bfad9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void setResponseCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>pTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga0747198009c5ba31865d5542091a2d2d">SEL_CallFuncND</a>&#160;</td>
+          <td class="paramname"><em>pSelector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>必填字段。你应该在ack http 请求完成设置回调selector函数(You should set the callback selector function at ack the http request completed) </p>
+
+</div>
+</div>
+<a class="anchor" id="a8cc61cd875091bdd46bb0a26f1276848"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void setResponseCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>pTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#aa72255bd005bf7595566b79906d1d070">SEL_HttpResponse</a>&#160;</td>
+          <td class="paramname"><em>pSelector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a988efcd497578c5329b39bd5f7271d28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setResponseCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ffb780946af4af7849d24d27d12cd0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTag </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可选字段。你可以设置一个string tag来标记你的请求，这个tag能通过HttpResponse-&gt;getHttpRequest-&gt;<a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#acd0adb590bed94d7f0e542010024369d" title="获取string tag来认出请求。 最佳实践是在你的 MyClass::onMyHttpRequestCompleted(sender, HttpResponse*) callback 中使用 ">getTag()</a>被找到。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab778908496401da0e107c228bae8aa42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUrl </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在发送之前，HttpRequest对象的必填字段 </p>
+
+</div>
+</div>
+<a class="anchor" id="a760e981419307dc53ca0c7e885b9123a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUserData </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUserData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>可选字段。你可以在每个请求中附上自定义的数据，并在响应回调中获取它。 但是你需要手动 new/delete 数据指针 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a793a541b4d6ed8e8dae5e770bffc4d2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; _headers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>你可以在这里添加你的自定义数据 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f8c6e5f884348840c2f1c817d0d1667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#ab295422f6ddfcbb3f503804220c4756b">ccHttpRequestCallback</a> _pCallback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>回调函数，例如：MyLayer::onHttpResponse(HttpClient *sender, HttpResponse * response) </p>
+
+</div>
+</div>
+<a class="anchor" id="ac96427e318b6524d9b3c42acd87f3793"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html#aa72255bd005bf7595566b79906d1d070">SEL_HttpResponse</a> _pSelector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pSelector 函数的回调目标 </p>
+
+</div>
+</div>
+<a class="anchor" id="a718f5987450245e435f0884405528940"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* _pTarget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用户定义的tag，用来在响应回调中识别不同的请求 </p>
+
+</div>
+</div>
+<a class="anchor" id="aab854782fe794285b80cad8dcf181eaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* _pUserData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>C++11 风格的回调 </p>
+
+</div>
+</div>
+<a class="anchor" id="af1fd875038f178021191889ef8cb2d50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;char&gt; _requestData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这个请求发送的目标url </p>
+
+</div>
+</div>
+<a class="anchor" id="a856a54ba1792a1a0ae7f153326436756"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> _requestType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a581226e1857b777252ae21073fd5a933"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _tag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于POST </p>
+
+</div>
+</div>
+<a class="anchor" id="adef9a5e13c34c323f8c43f50c6c66229"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _url</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>kHttpRequestGet, kHttpRequestPost 或者其他枚举类型 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/network/<a class="el" href="../../d3/d95/_http_request_8h.html">HttpRequest.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d6/d7c/namespacecocos2d_1_1network.html">network</a></li><li class="navelem"><a class="el" href="../../db/d8f/classcocos2d_1_1network_1_1_http_request.html">HttpRequest</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:55 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

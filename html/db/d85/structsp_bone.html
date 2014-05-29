@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: spBone结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d85/structsp_bone.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="../../de/de1/structsp_bone-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">spBone结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;Bone.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4ff4c899b48939893f098c31d1b87d0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/db2/structsp_bone_data.html">spBoneData</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a4ff4c899b48939893f098c31d1b87d0e">data</a></td></tr>
+<tr class="separator:a4ff4c899b48939893f098c31d1b87d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4868075d1638b6025e7a3c55384397b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d85/structsp_bone.html">spBone</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a4868075d1638b6025e7a3c55384397b3">parent</a></td></tr>
+<tr class="separator:a4868075d1638b6025e7a3c55384397b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0da36b2558901e21e7a30f6c227a45e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></td></tr>
+<tr class="separator:ad0da36b2558901e21e7a30f6c227a45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></td></tr>
+<tr class="separator:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc5a0e5fca1a310e6bfa125bf80042e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rotation</a></td></tr>
+<tr class="separator:a1fc5a0e5fca1a310e6bfa125bf80042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00276b6a2bfac0f77e72563c235c4b6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#ae00276b6a2bfac0f77e72563c235c4b6">scaleX</a></td></tr>
+<tr class="separator:ae00276b6a2bfac0f77e72563c235c4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed1187bc65f528463e5464817b4a870"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a1ed1187bc65f528463e5464817b4a870">scaleY</a></td></tr>
+<tr class="separator:a1ed1187bc65f528463e5464817b4a870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab908a26e7d33ac38e7fbe0a0a19fe39c"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#ab908a26e7d33ac38e7fbe0a0a19fe39c">m00</a></td></tr>
+<tr class="separator:ab908a26e7d33ac38e7fbe0a0a19fe39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fb76ebd9724eeb83afd1870bfbb725"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a86fb76ebd9724eeb83afd1870bfbb725">m01</a></td></tr>
+<tr class="separator:a86fb76ebd9724eeb83afd1870bfbb725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8527758afbcfa5eb23859e1cb24567"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#aca8527758afbcfa5eb23859e1cb24567">worldX</a></td></tr>
+<tr class="separator:aca8527758afbcfa5eb23859e1cb24567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0135e936010d8f8270cbffb79b13cbef"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a0135e936010d8f8270cbffb79b13cbef">m10</a></td></tr>
+<tr class="separator:a0135e936010d8f8270cbffb79b13cbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97bc4c232788c4fe16b51c2584edf5c"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#aa97bc4c232788c4fe16b51c2584edf5c">m11</a></td></tr>
+<tr class="separator:aa97bc4c232788c4fe16b51c2584edf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab409ff05ad910697973e6b4ef951a7"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#adab409ff05ad910697973e6b4ef951a7">worldY</a></td></tr>
+<tr class="separator:adab409ff05ad910697973e6b4ef951a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86da4a1dd0f061e8db24a4c84c03126b"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a86da4a1dd0f061e8db24a4c84c03126b">worldRotation</a></td></tr>
+<tr class="separator:a86da4a1dd0f061e8db24a4c84c03126b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b191b6ad8deb37132a4e4f44ab38e4e"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a7b191b6ad8deb37132a4e4f44ab38e4e">worldScaleX</a></td></tr>
+<tr class="separator:a7b191b6ad8deb37132a4e4f44ab38e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13443d5349514a1b66d059efd592dcea"><td class="memItemLeft" align="right" valign="top">float const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/structsp_bone.html#a13443d5349514a1b66d059efd592dcea">worldScaleY</a></td></tr>
+<tr class="separator:a13443d5349514a1b66d059efd592dcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a4ff4c899b48939893f098c31d1b87d0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/db2/structsp_bone_data.html">spBoneData</a>* const data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab908a26e7d33ac38e7fbe0a0a19fe39c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const m00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86fb76ebd9724eeb83afd1870bfbb725"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const m01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0135e936010d8f8270cbffb79b13cbef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const m10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa97bc4c232788c4fe16b51c2584edf5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const m11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4868075d1638b6025e7a3c55384397b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d85/structsp_bone.html">spBone</a>* const parent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fc5a0e5fca1a310e6bfa125bf80042e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae00276b6a2bfac0f77e72563c235c4b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float scaleX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ed1187bc65f528463e5464817b4a870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float scaleY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86da4a1dd0f061e8db24a4c84c03126b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const worldRotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b191b6ad8deb37132a4e4f44ab38e4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const worldScaleX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13443d5349514a1b66d059efd592dcea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const worldScaleY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca8527758afbcfa5eb23859e1cb24567"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const worldX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adab409ff05ad910697973e6b4ef951a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float const worldY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad0da36b2558901e21e7a30f6c227a45e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4f0d3eebc3c443f9be81bf48561a217"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/spine/<a class="el" href="../../da/da3/_bone_8h.html">Bone.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/d85/structsp_bone.html">spBone</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:43 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: __RGBAProtocol类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="../../dc/d0c/classcocos2d_1_1_____r_g_b_a_protocol-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">__RGBAProtocol类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>RGBA protocol 影响Node的颜色和不透明度  
+ <a href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCProtocols.h&gt;</code></p>
+<div class="dynheader">
+类 __RGBAProtocol 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.png" usemap="#__RGBAProtocol_map" alt=""/>
+  <map id="__RGBAProtocol_map" name="__RGBAProtocol_map">
+<area href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html" title="LayerRGBA 是Layer的一个子类，它通过使用一个单色背景实现了 RGBAProtocol 协议。 它实现了Layer类的所有功..." alt="__LayerRGBA" shape="rect" coords="0,56,107,80"/>
+<area href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html" title="NodeRGBA是节点的子类，实现RGBAProtocol协议。 " alt="__NodeRGBA" shape="rect" coords="117,56,224,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae15e0ac92dfc8b919c1a05b3daaafa36"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#ae15e0ac92dfc8b919c1a05b3daaafa36">~__RGBAProtocol</a> ()</td></tr>
+<tr class="separator:ae15e0ac92dfc8b919c1a05b3daaafa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23e9c3ca0e55c03165329e58e861efe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#ae23e9c3ca0e55c03165329e58e861efe">setColor</a> (const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;color)=0</td></tr>
+<tr class="memdesc:ae23e9c3ca0e55c03165329e58e861efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过R,G,B字节的值来改变颜色  <a href="#ae23e9c3ca0e55c03165329e58e861efe">更多...</a><br /></td></tr>
+<tr class="separator:ae23e9c3ca0e55c03165329e58e861efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2106f6b90ffbb93255b21bb6abd7d8"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a1a2106f6b90ffbb93255b21bb6abd7d8">getColor</a> () const =0</td></tr>
+<tr class="memdesc:a1a2106f6b90ffbb93255b21bb6abd7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前使用的颜色值  <a href="#a1a2106f6b90ffbb93255b21bb6abd7d8">更多...</a><br /></td></tr>
+<tr class="separator:a1a2106f6b90ffbb93255b21bb6abd7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9db4eb4f3289283643830d813f66366"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#ae9db4eb4f3289283643830d813f66366">getDisplayedColor</a> () const =0</td></tr>
+<tr class="memdesc:ae9db4eb4f3289283643830d813f66366"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回显示的颜色值  <a href="#ae9db4eb4f3289283643830d813f66366">更多...</a><br /></td></tr>
+<tr class="separator:ae9db4eb4f3289283643830d813f66366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc2b0c575cdcda121cd6c80a5f04635"><td class="memItemLeft" align="right" valign="top">virtual GLubyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a4dc2b0c575cdcda121cd6c80a5f04635">getDisplayedOpacity</a> () const =0</td></tr>
+<tr class="memdesc:a4dc2b0c575cdcda121cd6c80a5f04635"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前显示的不透明度  <a href="#a4dc2b0c575cdcda121cd6c80a5f04635">更多...</a><br /></td></tr>
+<tr class="separator:a4dc2b0c575cdcda121cd6c80a5f04635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508e223d6c8cfdb704935e3f570e186a"><td class="memItemLeft" align="right" valign="top">virtual GLubyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a508e223d6c8cfdb704935e3f570e186a">getOpacity</a> () const =0</td></tr>
+<tr class="memdesc:a508e223d6c8cfdb704935e3f570e186a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前不透明度  <a href="#a508e223d6c8cfdb704935e3f570e186a">更多...</a><br /></td></tr>
+<tr class="separator:a508e223d6c8cfdb704935e3f570e186a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3a187a085f93c694876d58750dc481"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#aea3a187a085f93c694876d58750dc481">setOpacity</a> (GLubyte opacity)=0</td></tr>
+<tr class="memdesc:aea3a187a085f93c694876d58750dc481"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变不透明度  <a href="#aea3a187a085f93c694876d58750dc481">更多...</a><br /></td></tr>
+<tr class="separator:aea3a187a085f93c694876d58750dc481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36020d0e0d5b28555741ccd405ae5495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a36020d0e0d5b28555741ccd405ae5495">setOpacityModifyRGB</a> (bool value)=0</td></tr>
+<tr class="memdesc:a36020d0e0d5b28555741ccd405ae5495"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变OpacityModifyRGB的属性 如果这个属性为true,那么渲染的颜色将会受到不透明的影响  <a href="#a36020d0e0d5b28555741ccd405ae5495">更多...</a><br /></td></tr>
+<tr class="separator:a36020d0e0d5b28555741ccd405ae5495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d4c72301f1bcb45c2409bc28c3ad5d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a15d4c72301f1bcb45c2409bc28c3ad5d">isOpacityModifyRGB</a> () const =0</td></tr>
+<tr class="memdesc:a15d4c72301f1bcb45c2409bc28c3ad5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回不透明是否应用到颜色上  <a href="#a15d4c72301f1bcb45c2409bc28c3ad5d">更多...</a><br /></td></tr>
+<tr class="separator:a15d4c72301f1bcb45c2409bc28c3ad5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511c164fc0efafa17c95ec72728035f9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a511c164fc0efafa17c95ec72728035f9">isCascadeColorEnabled</a> () const =0</td></tr>
+<tr class="memdesc:a511c164fc0efafa17c95ec72728035f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">颜色是否传播到子节点上  NA  NA  <a href="#a511c164fc0efafa17c95ec72728035f9">更多...</a><br /></td></tr>
+<tr class="separator:a511c164fc0efafa17c95ec72728035f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776931c425db0c376020c505effe0df9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a776931c425db0c376020c505effe0df9">setCascadeColorEnabled</a> (bool cascadeColorEnabled)=0</td></tr>
+<tr class="memdesc:a776931c425db0c376020c505effe0df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a776931c425db0c376020c505effe0df9">更多...</a><br /></td></tr>
+<tr class="separator:a776931c425db0c376020c505effe0df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b01e88503831f9ed15be8008049ad9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#ad8b01e88503831f9ed15be8008049ad9">updateDisplayedColor</a> (const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;color)=0</td></tr>
+<tr class="memdesc:ad8b01e88503831f9ed15be8008049ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新显示颜色的递归方法  NA  NA  <a href="#ad8b01e88503831f9ed15be8008049ad9">更多...</a><br /></td></tr>
+<tr class="separator:ad8b01e88503831f9ed15be8008049ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374387c957819651608d8571d828b3b5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a374387c957819651608d8571d828b3b5">isCascadeOpacityEnabled</a> () const =0</td></tr>
+<tr class="memdesc:a374387c957819651608d8571d828b3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">不透明度是否传递到子节点上  NA  NA  <a href="#a374387c957819651608d8571d828b3b5">更多...</a><br /></td></tr>
+<tr class="separator:a374387c957819651608d8571d828b3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b6ee24a9728a5a3fbe3a170e9521de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#a19b6ee24a9728a5a3fbe3a170e9521de">setCascadeOpacityEnabled</a> (bool cascadeOpacityEnabled)=0</td></tr>
+<tr class="memdesc:a19b6ee24a9728a5a3fbe3a170e9521de"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a19b6ee24a9728a5a3fbe3a170e9521de">更多...</a><br /></td></tr>
+<tr class="separator:a19b6ee24a9728a5a3fbe3a170e9521de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94060795711119f2acaff4ae107119f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html#ac94060795711119f2acaff4ae107119f">updateDisplayedOpacity</a> (GLubyte opacity)=0</td></tr>
+<tr class="memdesc:ac94060795711119f2acaff4ae107119f"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新显示透明度的递归方法  NA  NA  <a href="#ac94060795711119f2acaff4ae107119f">更多...</a><br /></td></tr>
+<tr class="separator:ac94060795711119f2acaff4ae107119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RGBA protocol 影响Node的颜色和不透明度 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae15e0ac92dfc8b919c1a05b3daaafa36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html">__RGBAProtocol</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a1a2106f6b90ffbb93255b21bb6abd7d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a>&amp; getColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前使用的颜色值 </p>
+<dl class="section return"><dt>返回</dt><dd>包括R,G,B的值Color3B对象  NA  NA </dd></dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#aa046e40dd06f5173b13604b782ab0d23">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a5ecc33a9a1c85e415b62453da3d7f48b">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9db4eb4f3289283643830d813f66366"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a>&amp; getDisplayedColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回显示的颜色值 </p>
+<dl class="section return"><dt>返回</dt><dd>包括R,G,B的值Color3B对象  NA  NA </dd></dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#ad8025299c049e99efd26bb924b22d914">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#ad8025299c049e99efd26bb924b22d914">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4dc2b0c575cdcda121cd6c80a5f04635"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual GLubyte getDisplayedOpacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前显示的不透明度 </p>
+<dl class="section return"><dt>返回</dt><dd>精灵的不透明度，从0~255  NA  NA </dd></dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a3c35ae7cda6ec205e288631c461d2420">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a3c35ae7cda6ec205e288631c461d2420">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a508e223d6c8cfdb704935e3f570e186a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual GLubyte getOpacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前不透明度 </p>
+<p>不透明度表示Node是透明还是不透明，0表示完全透明，255表示完全不透明</p>
+<dl class="section return"><dt>返回</dt><dd>精灵的不透明度, 从0到255  NA  NA </dd></dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a47f3e83c0ab4c374b7a573e96368eea7">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a47f3e83c0ab4c374b7a573e96368eea7">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a511c164fc0efafa17c95ec72728035f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isCascadeColorEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>颜色是否传播到子节点上  NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a6666a4bde23ce7be8ce942229e823be0">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a6666a4bde23ce7be8ce942229e823be0">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a374387c957819651608d8571d828b3b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isCascadeOpacityEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>不透明度是否传递到子节点上  NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a49460d93f4456afc5c3483088ae4e8c6">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a49460d93f4456afc5c3483088ae4e8c6">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15d4c72301f1bcb45c2409bc28c3ad5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isOpacityModifyRGB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回不透明是否应用到颜色上 </p>
+<dl class="section return"><dt>返回</dt><dd>不透明度是否应用到颜色上  NA  NA </dd></dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a1a218c437a2b29c7aef17438229c292a">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a1a218c437a2b29c7aef17438229c292a">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a776931c425db0c376020c505effe0df9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setCascadeColorEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cascadeColorEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a5a0d75fc97d68ce6175ea1318a69dc32">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a5a0d75fc97d68ce6175ea1318a69dc32">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19b6ee24a9728a5a3fbe3a170e9521de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setCascadeOpacityEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cascadeOpacityEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#af0ca34905386a241e81c2c0069ce9312">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#af0ca34905386a241e81c2c0069ce9312">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae23e9c3ca0e55c03165329e58e861efe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过R,G,B字节的值来改变颜色 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Example: Color3B(255,100,0) 表示 R=255, G=100, B=0  NA  NA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a1e2b1f65ce19091d733d2d1bc5ae2829">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a1e2b1f65ce19091d733d2d1bc5ae2829">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea3a187a085f93c694876d58750dc481"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setOpacity </td>
+          <td>(</td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>opacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变不透明度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opacity</td><td>从0-255，0表示完全透明，255表示完全不透明  NA  NA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a3742b8b9abc5b23984a668139661bfa7">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a3742b8b9abc5b23984a668139661bfa7">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36020d0e0d5b28555741ccd405ae5495"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setOpacityModifyRGB </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变OpacityModifyRGB的属性 如果这个属性为true,那么渲染的颜色将会受到不透明的影响 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>颜色值是否受到不透明度影响  NA  NA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#aab6e9252643d01ba74732873bb6516cc">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#aab6e9252643d01ba74732873bb6516cc">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8b01e88503831f9ed15be8008049ad9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void updateDisplayedColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新显示颜色的递归方法  NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a3844ace4427e964146d9577a8e18bbd7">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a3844ace4427e964146d9577a8e18bbd7">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac94060795711119f2acaff4ae107119f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void updateDisplayedOpacity </td>
+          <td>(</td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>opacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新显示透明度的递归方法  NA  NA </p>
+
+<p>在 <a class="el" href="../../d8/d04/classcocos2d_1_1_____node_r_g_b_a.html#a651ac639781807d12fb2666ee527c9c1">__NodeRGBA</a> , 以及 <a class="el" href="../../d7/d63/classcocos2d_1_1_____layer_r_g_b_a.html#a651ac639781807d12fb2666ee527c9c1">__LayerRGBA</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../d8/d76/_c_c_protocols_8h.html">CCProtocols.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../de/d1f/classcocos2d_1_1_____r_g_b_a_protocol.html">__RGBAProtocol</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:43 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

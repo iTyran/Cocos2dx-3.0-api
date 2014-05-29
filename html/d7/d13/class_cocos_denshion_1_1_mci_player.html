@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: MciPlayer类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/d13/class_cocos_denshion_1_1_mci_player.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="../../d2/d86/class_cocos_denshion_1_1_mci_player-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">MciPlayer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;MciPlayer.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a97c0bb0f12c6639bec40488dc4126cd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a97c0bb0f12c6639bec40488dc4126cd0">MciPlayer</a> ()</td></tr>
+<tr class="separator:a97c0bb0f12c6639bec40488dc4126cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2844063f15f5cea76ee95c925a92025"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#ad2844063f15f5cea76ee95c925a92025">~MciPlayer</a> ()</td></tr>
+<tr class="separator:ad2844063f15f5cea76ee95c925a92025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7a3199c392465d0767c6506c1af5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a7f7a3199c392465d0767c6506c1af5b4">Close</a> ()</td></tr>
+<tr class="separator:a7f7a3199c392465d0767c6506c1af5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38648fd22a5072d5610e921370d68526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a38648fd22a5072d5610e921370d68526">Open</a> (const char *pFileName, UINT uId)</td></tr>
+<tr class="memdesc:a38648fd22a5072d5610e921370d68526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound file.  <a href="#a38648fd22a5072d5610e921370d68526">更多...</a><br /></td></tr>
+<tr class="separator:a38648fd22a5072d5610e921370d68526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0235a3b4fa0ed1893ceda4a1de80730e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a0235a3b4fa0ed1893ceda4a1de80730e">Play</a> (UINT uTimes=1)</td></tr>
+<tr class="separator:a0235a3b4fa0ed1893ceda4a1de80730e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70babc5227ddd16ca31dccc6cec0bb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a70babc5227ddd16ca31dccc6cec0bb22">Pause</a> ()</td></tr>
+<tr class="memdesc:a70babc5227ddd16ca31dccc6cec0bb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause play.  <a href="#a70babc5227ddd16ca31dccc6cec0bb22">更多...</a><br /></td></tr>
+<tr class="separator:a70babc5227ddd16ca31dccc6cec0bb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af8fb637c7ae9d71a23bf3ac80d3c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a8af8fb637c7ae9d71a23bf3ac80d3c86">Resume</a> ()</td></tr>
+<tr class="memdesc:a8af8fb637c7ae9d71a23bf3ac80d3c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume play.  <a href="#a8af8fb637c7ae9d71a23bf3ac80d3c86">更多...</a><br /></td></tr>
+<tr class="separator:a8af8fb637c7ae9d71a23bf3ac80d3c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a237457e57625296e6b24feb19c60a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a17a237457e57625296e6b24feb19c60a">Stop</a> ()</td></tr>
+<tr class="memdesc:a17a237457e57625296e6b24feb19c60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop play.  <a href="#a17a237457e57625296e6b24feb19c60a">更多...</a><br /></td></tr>
+<tr class="separator:a17a237457e57625296e6b24feb19c60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335bf3cb31a54b9c5383de9579f70398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a335bf3cb31a54b9c5383de9579f70398">Rewind</a> ()</td></tr>
+<tr class="memdesc:a335bf3cb31a54b9c5383de9579f70398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replay.  <a href="#a335bf3cb31a54b9c5383de9579f70398">更多...</a><br /></td></tr>
+<tr class="separator:a335bf3cb31a54b9c5383de9579f70398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755f326e8b06e5f2807d64baf8bf582c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#a755f326e8b06e5f2807d64baf8bf582c">IsPlaying</a> ()</td></tr>
+<tr class="memdesc:a755f326e8b06e5f2807d64baf8bf582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Playing.  <a href="#a755f326e8b06e5f2807d64baf8bf582c">更多...</a><br /></td></tr>
+<tr class="separator:a755f326e8b06e5f2807d64baf8bf582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea400944b557cf8fa2dcc806ee84b830"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#aea400944b557cf8fa2dcc806ee84b830">GetSoundID</a> ()</td></tr>
+<tr class="memdesc:aea400944b557cf8fa2dcc806ee84b830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get playing sound's ID.  <a href="#aea400944b557cf8fa2dcc806ee84b830">更多...</a><br /></td></tr>
+<tr class="separator:aea400944b557cf8fa2dcc806ee84b830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:acd5ae78ef73e6d887568707be8994e3b"><td class="memItemLeft" align="right" valign="top">LRESULT WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html#acd5ae78ef73e6d887568707be8994e3b">_SoundPlayProc</a> (HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)</td></tr>
+<tr class="separator:acd5ae78ef73e6d887568707be8994e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a97c0bb0f12c6639bec40488dc4126cd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html">MciPlayer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2844063f15f5cea76ee95c925a92025"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html">MciPlayer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a7f7a3199c392465d0767c6506c1af5b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea400944b557cf8fa2dcc806ee84b830"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT GetSoundID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get playing sound's ID. </p>
+<dl class="section return"><dt>返回</dt><dd>Sound's ID </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a755f326e8b06e5f2807d64baf8bf582c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is Playing. </p>
+
+</div>
+</div>
+<a class="anchor" id="a38648fd22a5072d5610e921370d68526"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Open </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>uId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play sound file. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFileName</td><td>Sound's file name,include the file path. </td></tr>
+    <tr><td class="paramname">nTimes</td><td>Play mode��default value is 1,paly once </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a70babc5227ddd16ca31dccc6cec0bb22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pause </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pause play. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0235a3b4fa0ed1893ceda4a1de80730e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Play </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>uTimes</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8af8fb637c7ae9d71a23bf3ac80d3c86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resume play. </p>
+
+</div>
+</div>
+<a class="anchor" id="a335bf3cb31a54b9c5383de9579f70398"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rewind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replay. </p>
+
+</div>
+</div>
+<a class="anchor" id="a17a237457e57625296e6b24feb19c60a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop play. </p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="acd5ae78ef73e6d887568707be8994e3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LRESULT WINAPI _SoundPlayProc </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>Msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>wParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/audio/win32/<a class="el" href="../../de/d96/_mci_player_8h.html">MciPlayer.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/d39/namespace_cocos_denshion.html">CocosDenshion</a></li><li class="navelem"><a class="el" href="../../d7/d13/class_cocos_denshion_1_1_mci_player.html">MciPlayer</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:58 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

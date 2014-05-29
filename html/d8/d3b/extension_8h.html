@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/spine/extension.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d8/d3b/extension_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">extension.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d9/d28/_skeleton_8h.html">spine/Skeleton.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d7/dc3/_region_attachment_8h.html">spine/RegionAttachment.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d7/d77/_bounding_box_attachment_8h.html">spine/BoundingBoxAttachment.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d8b/_animation_8h.html">spine/Animation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d6/df8/_atlas_8h.html">spine/Atlas.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d03/_attachment_loader_8h.html">spine/AttachmentLoader.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6506383bd1af5b4d3b0b40b501ce2d05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a6506383bd1af5b4d3b0b40b501ce2d05">MALLOC</a>(TYPE, COUNT)&#160;&#160;&#160;((TYPE*)<a class="el" href="../../d8/d3b/extension_8h.html#adbec30361daab0782f63bd92faf94e26">_malloc</a>(sizeof(TYPE) * COUNT))</td></tr>
+<tr class="separator:a6506383bd1af5b4d3b0b40b501ce2d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d4c07746210bc49a9786e7fdfd8e58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#aa7d4c07746210bc49a9786e7fdfd8e58">CALLOC</a>(TYPE, COUNT)&#160;&#160;&#160;((TYPE*)<a class="el" href="../../d8/d3b/extension_8h.html#aa37753d514a15b21623228914f76cdcf">_calloc</a>(COUNT, sizeof(TYPE)))</td></tr>
+<tr class="separator:aa7d4c07746210bc49a9786e7fdfd8e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58876ab69ee866b86efbfdb138ab88b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a58876ab69ee866b86efbfdb138ab88b8">NEW</a>(TYPE)&#160;&#160;&#160;<a class="el" href="../../d8/d3b/extension_8h.html#aa7d4c07746210bc49a9786e7fdfd8e58">CALLOC</a>(TYPE,1)</td></tr>
+<tr class="separator:a58876ab69ee866b86efbfdb138ab88b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc0e82ec0ffd824e4a2685fcd3af74e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a9bc0e82ec0ffd824e4a2685fcd3af74e">SUPER</a>(VALUE)&#160;&#160;&#160;(&amp;VALUE-&gt;super)</td></tr>
+<tr class="separator:a9bc0e82ec0ffd824e4a2685fcd3af74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c7da39c7b6ec45255cd63ba764512b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#ab1c7da39c7b6ec45255cd63ba764512b">SUPER_CAST</a>(TYPE, VALUE)&#160;&#160;&#160;((TYPE*)VALUE)</td></tr>
+<tr class="separator:ab1c7da39c7b6ec45255cd63ba764512b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f28486ca5449ccd158d2c474010701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#ac7f28486ca5449ccd158d2c474010701">SUB_CAST</a>(TYPE, VALUE)&#160;&#160;&#160;((TYPE*)VALUE)</td></tr>
+<tr class="separator:ac7f28486ca5449ccd158d2c474010701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc924ecd60eab34faa976f8b3f2dcd38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#adc924ecd60eab34faa976f8b3f2dcd38">CONST_CAST</a>(TYPE, VALUE)&#160;&#160;&#160;(*(TYPE*)&amp;VALUE)</td></tr>
+<tr class="separator:adc924ecd60eab34faa976f8b3f2dcd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08d384a3e5ca3fba9fa8313927a9695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#aa08d384a3e5ca3fba9fa8313927a9695">VTABLE</a>(TYPE, VALUE)&#160;&#160;&#160;((_##TYPE##Vtable*)((TYPE*)VALUE)-&gt;vtable)</td></tr>
+<tr class="separator:aa08d384a3e5ca3fba9fa8313927a9695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed696030ead24f1796f5a460eeb2a041"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#aed696030ead24f1796f5a460eeb2a041">FREE</a>(VALUE)&#160;&#160;&#160;<a class="el" href="../../d8/d3b/extension_8h.html#adc4441b8876f28b3809cf9dfbb464ff2">_free</a>((void*)VALUE)</td></tr>
+<tr class="separator:aed696030ead24f1796f5a460eeb2a041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4591f8b01670372f7330b6040977126d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a4591f8b01670372f7330b6040977126d">MALLOC_STR</a>(TO, FROM)&#160;&#160;&#160;strcpy(<a class="el" href="../../d8/d3b/extension_8h.html#adc924ecd60eab34faa976f8b3f2dcd38">CONST_CAST</a>(char*, TO) = (char*)malloc(strlen(FROM) + 1), FROM)</td></tr>
+<tr class="separator:a4591f8b01670372f7330b6040977126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4304c58107e5cff4e1b5aaf9df0ab9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#aa4304c58107e5cff4e1b5aaf9df0ab9e">FMOD</a>(A, B)&#160;&#160;&#160;(float)fmod(A, B)</td></tr>
+<tr class="separator:aa4304c58107e5cff4e1b5aaf9df0ab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a882f7ba59c4072e639618ad1a96a5176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a882f7ba59c4072e639618ad1a96a5176">_spAtlasPage_createTexture</a> (<a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *self, const char *path)</td></tr>
+<tr class="separator:a882f7ba59c4072e639618ad1a96a5176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999feb6bd42115269eca73041faf0973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a999feb6bd42115269eca73041faf0973">_spAtlasPage_disposeTexture</a> (<a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *self)</td></tr>
+<tr class="separator:a999feb6bd42115269eca73041faf0973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30083f855f5a6368e17b08643fc64018"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a30083f855f5a6368e17b08643fc64018">_spUtil_readFile</a> (const char *path, int *length)</td></tr>
+<tr class="separator:a30083f855f5a6368e17b08643fc64018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbec30361daab0782f63bd92faf94e26"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#adbec30361daab0782f63bd92faf94e26">_malloc</a> (size_t size)</td></tr>
+<tr class="separator:adbec30361daab0782f63bd92faf94e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37753d514a15b21623228914f76cdcf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#aa37753d514a15b21623228914f76cdcf">_calloc</a> (size_t num, size_t size)</td></tr>
+<tr class="separator:aa37753d514a15b21623228914f76cdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4441b8876f28b3809cf9dfbb464ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#adc4441b8876f28b3809cf9dfbb464ff2">_free</a> (void *ptr)</td></tr>
+<tr class="separator:adc4441b8876f28b3809cf9dfbb464ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298bb5d327cf1f155fd67af0a639d314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a298bb5d327cf1f155fd67af0a639d314">_setMalloc</a> (void *(*<a class="el" href="../../d8/d3b/extension_8h.html#adbec30361daab0782f63bd92faf94e26">_malloc</a>)(size_t size))</td></tr>
+<tr class="separator:a298bb5d327cf1f155fd67af0a639d314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006e137d5b3c0eaaeecfc6a8ce61d3aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a006e137d5b3c0eaaeecfc6a8ce61d3aa">_setFree</a> (void(*<a class="el" href="../../d8/d3b/extension_8h.html#adc4441b8876f28b3809cf9dfbb464ff2">_free</a>)(void *ptr))</td></tr>
+<tr class="separator:a006e137d5b3c0eaaeecfc6a8ce61d3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8342591cd07252e2acd67b072b1ffbb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#af8342591cd07252e2acd67b072b1ffbb">_readFile</a> (const char *path, int *length)</td></tr>
+<tr class="separator:af8342591cd07252e2acd67b072b1ffbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633be2877957d89f6d07e31692401fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a633be2877957d89f6d07e31692401fee">_spAttachmentLoader_init</a> (<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self, void(*dispose)(<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self), <a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *(*newAttachment)(<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self, <a class="el" href="../../d3/d16/structsp_skin.html">spSkin</a> *skin, <a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a> type, const char *name))</td></tr>
+<tr class="separator:a633be2877957d89f6d07e31692401fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d2ad39e6e873c06e321228d0eb00b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#ab7d2ad39e6e873c06e321228d0eb00b2">_spAttachmentLoader_deinit</a> (<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self)</td></tr>
+<tr class="separator:ab7d2ad39e6e873c06e321228d0eb00b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76072645a62f1f01ef37e37df950beb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a76072645a62f1f01ef37e37df950beb0">_spAttachmentLoader_setError</a> (<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self, const char *error1, const char *error2)</td></tr>
+<tr class="separator:a76072645a62f1f01ef37e37df950beb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4662f9f59885ba336ec3eeaeb956f291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a4662f9f59885ba336ec3eeaeb956f291">_spAttachmentLoader_setUnknownTypeError</a> (<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self, <a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a> type)</td></tr>
+<tr class="separator:a4662f9f59885ba336ec3eeaeb956f291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58a70994ad3b2587d42678db1261c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#af58a70994ad3b2587d42678db1261c58">_spAttachment_init</a> (<a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *self, const char *name, <a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a> type, void(*dispose)(<a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *self))</td></tr>
+<tr class="separator:af58a70994ad3b2587d42678db1261c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbac986c283fdf9d5dca624ddc68b3e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#abbac986c283fdf9d5dca624ddc68b3e7">_spAttachment_deinit</a> (<a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *self)</td></tr>
+<tr class="separator:abbac986c283fdf9d5dca624ddc68b3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023585a99f80f4a0853350c079648aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a023585a99f80f4a0853350c079648aa9">_spTimeline_init</a> (<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, <a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a> type, void(*dispose)(<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self), void(*apply)(const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **firedEvents, int *eventCount, float alpha))</td></tr>
+<tr class="separator:a023585a99f80f4a0853350c079648aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f881c75cfc063ec75b5b867485a2d5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a0f881c75cfc063ec75b5b867485a2d5d">_spTimeline_deinit</a> (<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self)</td></tr>
+<tr class="separator:a0f881c75cfc063ec75b5b867485a2d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659361e6960ec9a51545a64e6ca4a6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a659361e6960ec9a51545a64e6ca4a6fb">_spCurveTimeline_init</a> (<a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self, <a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a> type, int frameCount, void(*dispose)(<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self), void(*apply)(const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **firedEvents, int *eventCount, float alpha))</td></tr>
+<tr class="separator:a659361e6960ec9a51545a64e6ca4a6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a528e6740aa217598c9ed992429a4d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/extension_8h.html#a2a528e6740aa217598c9ed992429a4d9">_spCurveTimeline_deinit</a> (<a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self)</td></tr>
+<tr class="separator:a2a528e6740aa217598c9ed992429a4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aa7d4c07746210bc49a9786e7fdfd8e58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALLOC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">COUNT&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((TYPE*)<a class="el" href="../../d8/d3b/extension_8h.html#aa37753d514a15b21623228914f76cdcf">_calloc</a>(COUNT, sizeof(TYPE)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc924ecd60eab34faa976f8b3f2dcd38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONST_CAST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(*(TYPE*)&amp;VALUE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4304c58107e5cff4e1b5aaf9df0ab9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMOD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">B&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(float)fmod(A, B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed696030ead24f1796f5a460eeb2a041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FREE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d8/d3b/extension_8h.html#adc4441b8876f28b3809cf9dfbb464ff2">_free</a>((void*)VALUE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6506383bd1af5b4d3b0b40b501ce2d05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MALLOC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">COUNT&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((TYPE*)<a class="el" href="../../d8/d3b/extension_8h.html#adbec30361daab0782f63bd92faf94e26">_malloc</a>(sizeof(TYPE) * COUNT))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4591f8b01670372f7330b6040977126d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MALLOC_STR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TO, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FROM&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;strcpy(<a class="el" href="../../d8/d3b/extension_8h.html#adc924ecd60eab34faa976f8b3f2dcd38">CONST_CAST</a>(char*, TO) = (char*)malloc(strlen(FROM) + 1), FROM)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58876ab69ee866b86efbfdb138ab88b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d8/d3b/extension_8h.html#aa7d4c07746210bc49a9786e7fdfd8e58">CALLOC</a>(TYPE,1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7f28486ca5449ccd158d2c474010701"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_CAST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((TYPE*)VALUE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9bc0e82ec0ffd824e4a2685fcd3af74e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUPER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;VALUE-&gt;super)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1c7da39c7b6ec45255cd63ba764512b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUPER_CAST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((TYPE*)VALUE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa08d384a3e5ca3fba9fa8313927a9695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VTABLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((_##TYPE##Vtable*)((TYPE*)VALUE)-&gt;vtable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="aa37753d514a15b21623228914f76cdcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* _calloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc4441b8876f28b3809cf9dfbb464ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbec30361daab0782f63bd92faf94e26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* _malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8342591cd07252e2acd67b072b1ffbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* _readFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a006e137d5b3c0eaaeecfc6a8ce61d3aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _setFree </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *ptr)&#160;</td>
+          <td class="paramname"><em>_free</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a298bb5d327cf1f155fd67af0a639d314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _setMalloc </td>
+          <td>(</td>
+          <td class="paramtype">void *(*)(size_t size)&#160;</td>
+          <td class="paramname"><em>_malloc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a882f7ba59c4072e639618ad1a96a5176"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAtlasPage_createTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a999feb6bd42115269eca73041faf0973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAtlasPage_disposeTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbac986c283fdf9d5dca624ddc68b3e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachment_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af58a70994ad3b2587d42678db1261c58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachment_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *self)&#160;</td>
+          <td class="paramname"><em>dispose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7d2ad39e6e873c06e321228d0eb00b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachmentLoader_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a633be2877957d89f6d07e31692401fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachmentLoader_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self)&#160;</td>
+          <td class="paramname"><em>dispose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d67/structsp_attachment.html">spAttachment</a> *(*)(<a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *self, <a class="el" href="../../d3/d16/structsp_skin.html">spSkin</a> *skin, <a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a> type, const char *name)&#160;</td>
+          <td class="paramname"><em>newAttachment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76072645a62f1f01ef37e37df950beb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachmentLoader_setError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>error1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>error2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4662f9f59885ba336ec3eeaeb956f291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spAttachmentLoader_setUnknownTypeError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d55/structsp_attachment_loader.html">spAttachmentLoader</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d1b/_attachment_8h.html#a0110c675cecda9c399d5ec1bbe888240">spAttachmentType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a528e6740aa217598c9ed992429a4d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spCurveTimeline_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a659361e6960ec9a51545a64e6ca4a6fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spCurveTimeline_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self)&#160;</td>
+          <td class="paramname"><em>dispose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **firedEvents, int *eventCount, float alpha)&#160;</td>
+          <td class="paramname"><em>apply</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f881c75cfc063ec75b5b867485a2d5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spTimeline_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a023585a99f80f4a0853350c079648aa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _spTimeline_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self)&#160;</td>
+          <td class="paramname"><em>dispose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **firedEvents, int *eventCount, float alpha)&#160;</td>
+          <td class="paramname"><em>apply</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30083f855f5a6368e17b08643fc64018"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* _spUtil_readFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_fd4f0d2e565942d0b258d739eb9baf6f.html">editor-support</a></li><li class="navelem"><a class="el" href="../../dir_a2c234a85ab6bcec71aa847aef5dfa52.html">spine</a></li><li class="navelem"><a class="el" href="../../d8/d3b/extension_8h.html">extension.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

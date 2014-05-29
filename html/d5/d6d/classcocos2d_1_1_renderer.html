@@ -1,0 +1,1109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Renderer类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/d6d/classcocos2d_1_1_renderer.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../d8/d34/classcocos2d_1_1_renderer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Renderer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCRenderer.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a94e2ce8e86114e35c8b87db89ae4fadd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a94e2ce8e86114e35c8b87db89ae4fadd">Renderer</a> ()</td></tr>
+<tr class="separator:a94e2ce8e86114e35c8b87db89ae4fadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa18f5f1998b410a88017638a164cd89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#afa18f5f1998b410a88017638a164cd89">~Renderer</a> ()</td></tr>
+<tr class="separator:afa18f5f1998b410a88017638a164cd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af423ba567b18f4c4bb54634636a669ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#af423ba567b18f4c4bb54634636a669ec">initGLView</a> ()</td></tr>
+<tr class="separator:af423ba567b18f4c4bb54634636a669ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48390a81929250b90a3b9dea5cdfc4e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a48390a81929250b90a3b9dea5cdfc4e8">addCommand</a> (<a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html">RenderCommand</a> *command)</td></tr>
+<tr class="memdesc:a48390a81929250b90a3b9dea5cdfc4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入一条 <code>RenderComamnd</code>命令到渲染器(renderer)  <a href="#a48390a81929250b90a3b9dea5cdfc4e8">更多...</a><br /></td></tr>
+<tr class="separator:a48390a81929250b90a3b9dea5cdfc4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5ba1aa7776a6656d19a0502aea0201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a5d5ba1aa7776a6656d19a0502aea0201">addCommand</a> (<a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html">RenderCommand</a> *command, int renderQueue)</td></tr>
+<tr class="memdesc:a5d5ba1aa7776a6656d19a0502aea0201"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入一条渲染指令<code>RenderComamnd</code>到渲染器(renderer),并指定特定的渲染顺序ID  <a href="#a5d5ba1aa7776a6656d19a0502aea0201">更多...</a><br /></td></tr>
+<tr class="separator:a5d5ba1aa7776a6656d19a0502aea0201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4471dd58b2301ec582f6e63d74b2b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#aee4471dd58b2301ec582f6e63d74b2b0">pushGroup</a> (int renderQueueID)</td></tr>
+<tr class="memdesc:aee4471dd58b2301ec582f6e63d74b2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">压入一组到渲染队列  <a href="#aee4471dd58b2301ec582f6e63d74b2b0">更多...</a><br /></td></tr>
+<tr class="separator:aee4471dd58b2301ec582f6e63d74b2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755ae87da61a275e87a4cd4ada894e49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a755ae87da61a275e87a4cd4ada894e49">popGroup</a> ()</td></tr>
+<tr class="memdesc:a755ae87da61a275e87a4cd4ada894e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">从渲染队列中弹出一组  <a href="#a755ae87da61a275e87a4cd4ada894e49">更多...</a><br /></td></tr>
+<tr class="separator:a755ae87da61a275e87a4cd4ada894e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cef1df2fb10b71bd9737f7460084bbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a6cef1df2fb10b71bd9737f7460084bbe">createRenderQueue</a> ()</td></tr>
+<tr class="memdesc:a6cef1df2fb10b71bd9737f7460084bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一组渲染队列并返回Id  <a href="#a6cef1df2fb10b71bd9737f7460084bbe">更多...</a><br /></td></tr>
+<tr class="separator:a6cef1df2fb10b71bd9737f7460084bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">render</a> ()</td></tr>
+<tr class="memdesc:a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染所有加入到GLView中的<code><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html" title="RenderCommand体系的基类. ">RenderCommand</a></code>队列对象  <a href="#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">更多...</a><br /></td></tr>
+<tr class="separator:a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbe646c052baf99f04a367ef6031d74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a2bbe646c052baf99f04a367ef6031d74">clean</a> ()</td></tr>
+<tr class="memdesc:a2bbe646c052baf99f04a367ef6031d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除队列中的渲染指令(<code><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html" title="RenderCommand体系的基类. ">RenderCommand</a></code>)  <a href="#a2bbe646c052baf99f04a367ef6031d74">更多...</a><br /></td></tr>
+<tr class="separator:a2bbe646c052baf99f04a367ef6031d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b46ac7eab47c0cf5eece7fd24dc602e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a6b46ac7eab47c0cf5eece7fd24dc602e">getDrawnBatches</a> () const </td></tr>
+<tr class="separator:a6b46ac7eab47c0cf5eece7fd24dc602e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb0b20ac81a980824979da98a36a24a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a1cb0b20ac81a980824979da98a36a24a">addDrawnBatches</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> number)</td></tr>
+<tr class="separator:a1cb0b20ac81a980824979da98a36a24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cec8e4a3012738fbb250f8a2177321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a17cec8e4a3012738fbb250f8a2177321">getDrawnVertices</a> () const </td></tr>
+<tr class="separator:a17cec8e4a3012738fbb250f8a2177321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af229edd2b7903e458a69fe819731d18e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#af229edd2b7903e458a69fe819731d18e">addDrawnVertices</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> number)</td></tr>
+<tr class="separator:af229edd2b7903e458a69fe819731d18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9dd5933c87c57088c00cd6ce20cbb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/def/classcocos2d_1_1_group_command_manager.html">GroupCommandManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ae9dd5933c87c57088c00cd6ce20cbb9e">getGroupCommandManager</a> () const </td></tr>
+<tr class="separator:ae9dd5933c87c57088c00cd6ce20cbb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288df269c61d1177d6a13546a1d4a45c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a288df269c61d1177d6a13546a1d4a45c">checkVisibility</a> (const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;transform, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;size)</td></tr>
+<tr class="memdesc:a288df269c61d1177d6a13546a1d4a45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回矩形区域是否可见  <a href="#a288df269c61d1177d6a13546a1d4a45c">更多...</a><br /></td></tr>
+<tr class="separator:a288df269c61d1177d6a13546a1d4a45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ac0c75d1cbeb08fcb06f38d2325af17d4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac0c75d1cbeb08fcb06f38d2325af17d4">VBO_SIZE</a> = 65536 / 6</td></tr>
+<tr class="separator:ac0c75d1cbeb08fcb06f38d2325af17d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ffcf510b701d2cea7fb5cbdec74753"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a87ffcf510b701d2cea7fb5cbdec74753">BATCH_QUADCOMMAND_RESEVER_SIZE</a> = 64</td></tr>
+<tr class="separator:a87ffcf510b701d2cea7fb5cbdec74753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a47ba4455166311ccb102e2f8fef17cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a47ba4455166311ccb102e2f8fef17cee">setupIndices</a> ()</td></tr>
+<tr class="separator:a47ba4455166311ccb102e2f8fef17cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a853319b2b6ae31a0b410845497c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac6a853319b2b6ae31a0b410845497c70">setupBuffer</a> ()</td></tr>
+<tr class="separator:ac6a853319b2b6ae31a0b410845497c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16637b490cd7dd87eba4736a0d503d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a16637b490cd7dd87eba4736a0d503d8e">setupVBOAndVAO</a> ()</td></tr>
+<tr class="separator:a16637b490cd7dd87eba4736a0d503d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53c8ccc487ecb8e9a4d53e003e92b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ad53c8ccc487ecb8e9a4d53e003e92b71">setupVBO</a> ()</td></tr>
+<tr class="separator:ad53c8ccc487ecb8e9a4d53e003e92b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4b1320cb57921e90cac14c9a68ebf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#adb4b1320cb57921e90cac14c9a68ebf4">mapBuffers</a> ()</td></tr>
+<tr class="separator:adb4b1320cb57921e90cac14c9a68ebf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94847e7f485d0f3149481676bd715da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a94847e7f485d0f3149481676bd715da5">drawBatchedQuads</a> ()</td></tr>
+<tr class="separator:a94847e7f485d0f3149481676bd715da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac116554b543b7c4228c018a85882f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#adac116554b543b7c4228c018a85882f5">flush</a> ()</td></tr>
+<tr class="separator:adac116554b543b7c4228c018a85882f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a23e2930deb43fe37e1cefa64a12f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a3a23e2930deb43fe37e1cefa64a12f0c">visitRenderQueue</a> (const <a class="el" href="../../da/d76/classcocos2d_1_1_render_queue.html">RenderQueue</a> &amp;queue)</td></tr>
+<tr class="separator:a3a23e2930deb43fe37e1cefa64a12f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb97a2e29491d7ac82ee15384871a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#addb97a2e29491d7ac82ee15384871a0d">convertToWorldCoordinates</a> (<a class="el" href="../../de/d36/structcocos2d_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a> *quads, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> quantity, const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;modelView)</td></tr>
+<tr class="separator:addb97a2e29491d7ac82ee15384871a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a27e0085a6cd2ebadc2617d4a7547eaac"><td class="memItemLeft" align="right" valign="top">std::stack&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a27e0085a6cd2ebadc2617d4a7547eaac">_commandGroupStack</a></td></tr>
+<tr class="separator:a27e0085a6cd2ebadc2617d4a7547eaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a98c3878b48b32b36d43a0c01bf542"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../da/d76/classcocos2d_1_1_render_queue.html">RenderQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a36a98c3878b48b32b36d43a0c01bf542">_renderGroups</a></td></tr>
+<tr class="separator:a36a98c3878b48b32b36d43a0c01bf542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1cb1be4589be75acb39a2509609ce14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#aa1cb1be4589be75acb39a2509609ce14">_lastMaterialID</a></td></tr>
+<tr class="separator:aa1cb1be4589be75acb39a2509609ce14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62b6e3c2bf4657b76df8aed3fcdd73d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../de/d49/classcocos2d_1_1_quad_command.html">QuadCommand</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ab62b6e3c2bf4657b76df8aed3fcdd73d">_batchedQuadCommands</a></td></tr>
+<tr class="separator:ab62b6e3c2bf4657b76df8aed3fcdd73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8f1e84fee94f678096bbd940293551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d36/structcocos2d_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#abd8f1e84fee94f678096bbd940293551">_quads</a> [<a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac0c75d1cbeb08fcb06f38d2325af17d4">VBO_SIZE</a>]</td></tr>
+<tr class="separator:abd8f1e84fee94f678096bbd940293551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5502b0cc6dfb5e627db577d760da3e"><td class="memItemLeft" align="right" valign="top">GLushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a9c5502b0cc6dfb5e627db577d760da3e">_indices</a> [6 *<a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac0c75d1cbeb08fcb06f38d2325af17d4">VBO_SIZE</a>]</td></tr>
+<tr class="separator:a9c5502b0cc6dfb5e627db577d760da3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02aeefefcb2e0ab06a2ec479bf404160"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a02aeefefcb2e0ab06a2ec479bf404160">_quadVAO</a></td></tr>
+<tr class="separator:a02aeefefcb2e0ab06a2ec479bf404160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e181f4e0ae7d0d6f77ec0d2b591634"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a84e181f4e0ae7d0d6f77ec0d2b591634">_buffersVBO</a> [2]</td></tr>
+<tr class="separator:a84e181f4e0ae7d0d6f77ec0d2b591634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1da615a79368bd08e48700d3d5cb3a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#af1da615a79368bd08e48700d3d5cb3a0">_numQuads</a></td></tr>
+<tr class="separator:af1da615a79368bd08e48700d3d5cb3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834a9239bb5c4b961809ee652d26bccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a834a9239bb5c4b961809ee652d26bccb">_glViewAssigned</a></td></tr>
+<tr class="separator:a834a9239bb5c4b961809ee652d26bccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d777371d970afac4784a9f3f5b6456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac2d777371d970afac4784a9f3f5b6456">_drawnBatches</a></td></tr>
+<tr class="separator:ac2d777371d970afac4784a9f3f5b6456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0affb6cfa140aeafe0b4e9b27748dfc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#a0affb6cfa140aeafe0b4e9b27748dfc8">_drawnVertices</a></td></tr>
+<tr class="separator:a0affb6cfa140aeafe0b4e9b27748dfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03a0a975fab081ac2f015d49e723ab8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ab03a0a975fab081ac2f015d49e723ab8">_isRendering</a></td></tr>
+<tr class="separator:ab03a0a975fab081ac2f015d49e723ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72123a43fde44ad6524888e2f90be54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/def/classcocos2d_1_1_group_command_manager.html">GroupCommandManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ad72123a43fde44ad6524888e2f90be54">_groupCommandManager</a></td></tr>
+<tr class="separator:ad72123a43fde44ad6524888e2f90be54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a94e2ce8e86114e35c8b87db89ae4fadd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa18f5f1998b410a88017638a164cd89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a48390a81929250b90a3b9dea5cdfc4e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html">RenderCommand</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入一条 <code>RenderComamnd</code>命令到渲染器(renderer) </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d5ba1aa7776a6656d19a0502aea0201"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html">RenderCommand</a> *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>renderQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入一条渲染指令<code>RenderComamnd</code>到渲染器(renderer),并指定特定的渲染顺序ID </p>
+
+</div>
+</div>
+<a class="anchor" id="a1cb0b20ac81a980824979da98a36a24a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addDrawnBatches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af229edd2b7903e458a69fe819731d18e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addDrawnVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a288df269c61d1177d6a13546a1d4a45c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkVisibility </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回矩形区域是否可见 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bbe646c052baf99f04a367ef6031d74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清除队列中的渲染指令(<code><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html" title="RenderCommand体系的基类. ">RenderCommand</a></code>) </p>
+
+</div>
+</div>
+<a class="anchor" id="addb97a2e29491d7ac82ee15384871a0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void convertToWorldCoordinates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d36/structcocos2d_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a> *&#160;</td>
+          <td class="paramname"><em>quads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>quantity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>modelView</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cef1df2fb10b71bd9737f7460084bbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int createRenderQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一组渲染队列并返回Id </p>
+
+</div>
+</div>
+<a class="anchor" id="a94847e7f485d0f3149481676bd715da5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawBatchedQuads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adac116554b543b7c4228c018a85882f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flush </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b46ac7eab47c0cf5eece7fd24dc602e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> getDrawnBatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17cec8e4a3012738fbb250f8a2177321"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> getDrawnVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9dd5933c87c57088c00cd6ce20cbb9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/def/classcocos2d_1_1_group_command_manager.html">GroupCommandManager</a>* getGroupCommandManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af423ba567b18f4c4bb54634636a669ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initGLView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb4b1320cb57921e90cac14c9a68ebf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mapBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a755ae87da61a275e87a4cd4ada894e49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void popGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从渲染队列中弹出一组 </p>
+
+</div>
+</div>
+<a class="anchor" id="aee4471dd58b2301ec582f6e63d74b2b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pushGroup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>renderQueueID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>压入一组到渲染队列 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d9edd8b0a8d0d2f737eb5ee0b0a5040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染所有加入到GLView中的<code><a class="el" href="../../d6/d9a/classcocos2d_1_1_render_command.html" title="RenderCommand体系的基类. ">RenderCommand</a></code>队列对象 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a853319b2b6ae31a0b410845497c70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setupBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47ba4455166311ccb102e2f8fef17cee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setupIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad53c8ccc487ecb8e9a4d53e003e92b71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setupVBO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16637b490cd7dd87eba4736a0d503d8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setupVBOAndVAO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a23e2930deb43fe37e1cefa64a12f0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void visitRenderQueue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d76/classcocos2d_1_1_render_queue.html">RenderQueue</a> &amp;&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab62b6e3c2bf4657b76df8aed3fcdd73d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../de/d49/classcocos2d_1_1_quad_command.html">QuadCommand</a>*&gt; _batchedQuadCommands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84e181f4e0ae7d0d6f77ec0d2b591634"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint _buffersVBO[2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27e0085a6cd2ebadc2617d4a7547eaac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt;int&gt; _commandGroupStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2d777371d970afac4784a9f3f5b6456"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> _drawnBatches</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0affb6cfa140aeafe0b4e9b27748dfc8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> _drawnVertices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a834a9239bb5c4b961809ee652d26bccb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _glViewAssigned</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad72123a43fde44ad6524888e2f90be54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/def/classcocos2d_1_1_group_command_manager.html">GroupCommandManager</a>* _groupCommandManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c5502b0cc6dfb5e627db577d760da3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLushort _indices[6 *<a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac0c75d1cbeb08fcb06f38d2325af17d4">VBO_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab03a0a975fab081ac2f015d49e723ab8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _isRendering</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1cb1be4589be75acb39a2509609ce14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> _lastMaterialID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1da615a79368bd08e48700d3d5cb3a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _numQuads</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abd8f1e84fee94f678096bbd940293551"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d36/structcocos2d_1_1_v3_f___c4_b___t2_f___quad.html">V3F_C4B_T2F_Quad</a> _quads[<a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html#ac0c75d1cbeb08fcb06f38d2325af17d4">VBO_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02aeefefcb2e0ab06a2ec479bf404160"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint _quadVAO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36a98c3878b48b32b36d43a0c01bf542"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../da/d76/classcocos2d_1_1_render_queue.html">RenderQueue</a>&gt; _renderGroups</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87ffcf510b701d2cea7fb5cbdec74753"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int BATCH_QUADCOMMAND_RESEVER_SIZE = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0c75d1cbeb08fcb06f38d2325af17d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int VBO_SIZE = 65536 / 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/renderer/<a class="el" href="../../da/d4a/_c_c_renderer_8h.html">CCRenderer.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:49 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

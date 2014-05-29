@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: UserDefault类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d94/classcocos2d_1_1_user_default.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="../../d7/de9/classcocos2d_1_1_user_default-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">UserDefault类 参考<div class="ingroups"><a class="el" href="../../d5/dda/group__data__storage.html">Data Storage</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>UserDefault是个微型数据库，你可以将基础数据类型存储在里面或从里面读取出来.  
+ <a href="../../db/d94/classcocos2d_1_1_user_default.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCUserDefault.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5010af3462e68dde84fc6a8f5519f070"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a5010af3462e68dde84fc6a8f5519f070">getBoolForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:a5010af3462e68dde84fc6a8f5519f070"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取bool值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为false  NA  <a href="#a5010af3462e68dde84fc6a8f5519f070">更多...</a><br /></td></tr>
+<tr class="separator:a5010af3462e68dde84fc6a8f5519f070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f765d951ed70f6269615989f48121d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#ac8f765d951ed70f6269615989f48121d">getBoolForKey</a> (const char *pKey, bool defaultValue)</td></tr>
+<tr class="memdesc:ac8f765d951ed70f6269615989f48121d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#ac8f765d951ed70f6269615989f48121d">更多...</a><br /></td></tr>
+<tr class="separator:ac8f765d951ed70f6269615989f48121d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75eabb096eec34a8f7a59e1ffac9653"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#ad75eabb096eec34a8f7a59e1ffac9653">getIntegerForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:ad75eabb096eec34a8f7a59e1ffac9653"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取integer值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0  NA  <a href="#ad75eabb096eec34a8f7a59e1ffac9653">更多...</a><br /></td></tr>
+<tr class="separator:ad75eabb096eec34a8f7a59e1ffac9653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54be4c2d7485507580c257b7de70b24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#aa54be4c2d7485507580c257b7de70b24">getIntegerForKey</a> (const char *pKey, int defaultValue)</td></tr>
+<tr class="memdesc:aa54be4c2d7485507580c257b7de70b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#aa54be4c2d7485507580c257b7de70b24">更多...</a><br /></td></tr>
+<tr class="separator:aa54be4c2d7485507580c257b7de70b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08451549c84c267d5ce7f39c34208fb8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a08451549c84c267d5ce7f39c34208fb8">getFloatForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:a08451549c84c267d5ce7f39c34208fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取float值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0.0f.  <a href="#a08451549c84c267d5ce7f39c34208fb8">更多...</a><br /></td></tr>
+<tr class="separator:a08451549c84c267d5ce7f39c34208fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955a6850d845f705381893ca01f8db64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a955a6850d845f705381893ca01f8db64">getFloatForKey</a> (const char *pKey, float defaultValue)</td></tr>
+<tr class="memdesc:a955a6850d845f705381893ca01f8db64"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a955a6850d845f705381893ca01f8db64">更多...</a><br /></td></tr>
+<tr class="separator:a955a6850d845f705381893ca01f8db64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ceae75c4ddfcb58b17c1a04695161c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#af9ceae75c4ddfcb58b17c1a04695161c">getDoubleForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:af9ceae75c4ddfcb58b17c1a04695161c"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取double值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0.0.  <a href="#af9ceae75c4ddfcb58b17c1a04695161c">更多...</a><br /></td></tr>
+<tr class="separator:af9ceae75c4ddfcb58b17c1a04695161c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b97a23194b8a38bdc28257bc13dcbd5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a1b97a23194b8a38bdc28257bc13dcbd5">getDoubleForKey</a> (const char *pKey, double defaultValue)</td></tr>
+<tr class="memdesc:a1b97a23194b8a38bdc28257bc13dcbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a1b97a23194b8a38bdc28257bc13dcbd5">更多...</a><br /></td></tr>
+<tr class="separator:a1b97a23194b8a38bdc28257bc13dcbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d35ac5d8335c8db57d3b628aa85126"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a19d35ac5d8335c8db57d3b628aa85126">getStringForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:a19d35ac5d8335c8db57d3b628aa85126"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取string值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为"".  <a href="#a19d35ac5d8335c8db57d3b628aa85126">更多...</a><br /></td></tr>
+<tr class="separator:a19d35ac5d8335c8db57d3b628aa85126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7ec25c0e35aecc2f5cd50c30095fb7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a5f7ec25c0e35aecc2f5cd50c30095fb7">getStringForKey</a> (const char *pKey, const std::string &amp;defaultValue)</td></tr>
+<tr class="memdesc:a5f7ec25c0e35aecc2f5cd50c30095fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a5f7ec25c0e35aecc2f5cd50c30095fb7">更多...</a><br /></td></tr>
+<tr class="separator:a5f7ec25c0e35aecc2f5cd50c30095fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4333223ed60ef973da4992429fc89f57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a4333223ed60ef973da4992429fc89f57">getDataForKey</a> (const char *pKey)</td></tr>
+<tr class="memdesc:a4333223ed60ef973da4992429fc89f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取基于key的二进制数据(binary data),如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为null.  <a href="#a4333223ed60ef973da4992429fc89f57">更多...</a><br /></td></tr>
+<tr class="separator:a4333223ed60ef973da4992429fc89f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a1ad0fe8937b726d44254c02da28e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a67a1ad0fe8937b726d44254c02da28e0">getDataForKey</a> (const char *pKey, const <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> &amp;defaultValue)</td></tr>
+<tr class="memdesc:a67a1ad0fe8937b726d44254c02da28e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a67a1ad0fe8937b726d44254c02da28e0">更多...</a><br /></td></tr>
+<tr class="separator:a67a1ad0fe8937b726d44254c02da28e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb144d40eee260a4d79a875b9038ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a6fb144d40eee260a4d79a875b9038ec2">setBoolForKey</a> (const char *pKey, bool value)</td></tr>
+<tr class="memdesc:a6fb144d40eee260a4d79a875b9038ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储bool值  NA  <a href="#a6fb144d40eee260a4d79a875b9038ec2">更多...</a><br /></td></tr>
+<tr class="separator:a6fb144d40eee260a4d79a875b9038ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae601d789a1c748729cc76f8098ca8111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#ae601d789a1c748729cc76f8098ca8111">setIntegerForKey</a> (const char *pKey, int value)</td></tr>
+<tr class="memdesc:ae601d789a1c748729cc76f8098ca8111"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储integer值  NA  <a href="#ae601d789a1c748729cc76f8098ca8111">更多...</a><br /></td></tr>
+<tr class="separator:ae601d789a1c748729cc76f8098ca8111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fdb0319c441deeb7254a1224ee94c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a1fdb0319c441deeb7254a1224ee94c50">setFloatForKey</a> (const char *pKey, float value)</td></tr>
+<tr class="memdesc:a1fdb0319c441deeb7254a1224ee94c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储float值  NA  <a href="#a1fdb0319c441deeb7254a1224ee94c50">更多...</a><br /></td></tr>
+<tr class="separator:a1fdb0319c441deeb7254a1224ee94c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669c4e98888a1dfdcc2aac074cf695da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a669c4e98888a1dfdcc2aac074cf695da">setDoubleForKey</a> (const char *pKey, double value)</td></tr>
+<tr class="memdesc:a669c4e98888a1dfdcc2aac074cf695da"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储double值  NA  <a href="#a669c4e98888a1dfdcc2aac074cf695da">更多...</a><br /></td></tr>
+<tr class="separator:a669c4e98888a1dfdcc2aac074cf695da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08e89f6d24af79a6df089cc875270b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#ab08e89f6d24af79a6df089cc875270b1">setStringForKey</a> (const char *pKey, const std::string &amp;value)</td></tr>
+<tr class="memdesc:ab08e89f6d24af79a6df089cc875270b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储string值  NA  <a href="#ab08e89f6d24af79a6df089cc875270b1">更多...</a><br /></td></tr>
+<tr class="separator:ab08e89f6d24af79a6df089cc875270b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcac700fd96d748488e9e35f26bed90c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#adcac700fd96d748488e9e35f26bed90c">setDataForKey</a> (const char *pKey, const <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> &amp;value)</td></tr>
+<tr class="memdesc:adcac700fd96d748488e9e35f26bed90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储二进制数据(binary data)  NA  NA  <a href="#adcac700fd96d748488e9e35f26bed90c">更多...</a><br /></td></tr>
+<tr class="separator:adcac700fd96d748488e9e35f26bed90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac116554b543b7c4228c018a85882f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#adac116554b543b7c4228c018a85882f5">flush</a> ()</td></tr>
+<tr class="memdesc:adac116554b543b7c4228c018a85882f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将内容保存到xml文件  NA  <a href="#adac116554b543b7c4228c018a85882f5">更多...</a><br /></td></tr>
+<tr class="separator:adac116554b543b7c4228c018a85882f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a3b012ed6d6f5419bcbe1a31af39b4d05"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html">UserDefault</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a3b012ed6d6f5419bcbe1a31af39b4d05">getInstance</a> ()</td></tr>
+<tr class="memdesc:a3b012ed6d6f5419bcbe1a31af39b4d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回singleton  NA  NA  <a href="#a3b012ed6d6f5419bcbe1a31af39b4d05">更多...</a><br /></td></tr>
+<tr class="separator:a3b012ed6d6f5419bcbe1a31af39b4d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05351a268226fab089bd81f68d9b4904"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a05351a268226fab089bd81f68d9b4904">destroyInstance</a> ()</td></tr>
+<tr class="memdesc:a05351a268226fab089bd81f68d9b4904"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a05351a268226fab089bd81f68d9b4904">更多...</a><br /></td></tr>
+<tr class="separator:a05351a268226fab089bd81f68d9b4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c23d75ace55301a9f4a3bc9eb8d05c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html">UserDefault</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a20c23d75ace55301a9f4a3bc9eb8d05c">sharedUserDefault</a> ()</td></tr>
+<tr class="separator:a20c23d75ace55301a9f4a3bc9eb8d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8447f202b4b011e24f09d3805b2aa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a6e8447f202b4b011e24f09d3805b2aa0">purgeSharedUserDefault</a> ()</td></tr>
+<tr class="memdesc:a6e8447f202b4b011e24f09d3805b2aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a6e8447f202b4b011e24f09d3805b2aa0">更多...</a><br /></td></tr>
+<tr class="separator:a6e8447f202b4b011e24f09d3805b2aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3487d8871a4c84d4835f2d7f4ef31097"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#a3487d8871a4c84d4835f2d7f4ef31097">getXMLFilePath</a> ()</td></tr>
+<tr class="memdesc:a3487d8871a4c84d4835f2d7f4ef31097"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a3487d8871a4c84d4835f2d7f4ef31097">更多...</a><br /></td></tr>
+<tr class="separator:a3487d8871a4c84d4835f2d7f4ef31097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11ba15de3458c8c7683c16c279fce16"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html#ae11ba15de3458c8c7683c16c279fce16">isXMLFileExist</a> ()</td></tr>
+<tr class="memdesc:ae11ba15de3458c8c7683c16c279fce16"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#ae11ba15de3458c8c7683c16c279fce16">更多...</a><br /></td></tr>
+<tr class="separator:ae11ba15de3458c8c7683c16c279fce16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>UserDefault是个微型数据库，你可以将基础数据类型存储在里面或从里面读取出来. </p>
+<p>例如:setBoolForKey("played", true)是将一个bool值存储进去, 其key是"played",因此你可以通过getBoolForKey("played")从数据库中读取该bool值</p>
+<p>其支持的基础数据类型如下: bool, int, float, double, string </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a05351a268226fab089bd81f68d9b4904"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void destroyInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adac116554b543b7c4228c018a85882f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flush </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将内容保存到xml文件  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a5010af3462e68dde84fc6a8f5519f070"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getBoolForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取bool值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为false  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8f765d951ed70f6269615989f48121d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getBoolForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a4333223ed60ef973da4992429fc89f57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> getDataForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取基于key的二进制数据(binary data),如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为null. </p>
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a67a1ad0fe8937b726d44254c02da28e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> getDataForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="af9ceae75c4ddfcb58b17c1a04695161c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getDoubleForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取double值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0.0. </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b97a23194b8a38bdc28257bc13dcbd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getDoubleForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a08451549c84c267d5ce7f39c34208fb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getFloatForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取float值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0.0f. </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a955a6850d845f705381893ca01f8db64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getFloatForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b012ed6d6f5419bcbe1a31af39b4d05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html">UserDefault</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回singleton  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ad75eabb096eec34a8f7a59e1ffac9653"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getIntegerForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取integer值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为0  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aa54be4c2d7485507580c257b7de70b24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getIntegerForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a19d35ac5d8335c8db57d3b628aa85126"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getStringForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取string值,如果这个key不存在，将返回默认值 你可以设置默认值，或不设置则为"". </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f7ec25c0e35aecc2f5cd50c30095fb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getStringForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a3487d8871a4c84d4835f2d7f4ef31097"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::string&amp; getXMLFilePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae11ba15de3458c8c7683c16c279fce16"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isXMLFileExist </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e8447f202b4b011e24f09d3805b2aa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void purgeSharedUserDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fb144d40eee260a4d79a875b9038ec2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBoolForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储bool值  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adcac700fd96d748488e9e35f26bed90c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDataForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储二进制数据(binary data)  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a669c4e98888a1dfdcc2aac074cf695da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDoubleForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储double值  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fdb0319c441deeb7254a1224ee94c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFloatForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储float值  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae601d789a1c748729cc76f8098ca8111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setIntegerForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储integer值  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ab08e89f6d24af79a6df089cc875270b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setStringForKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储string值  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a20c23d75ace55301a9f4a3bc9eb8d05c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html">UserDefault</a>* sharedUserDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000042">弃用:</a></b></dt><dd>. 使用getInstace()代替  NA  NA </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../d9/d1a/_c_c_user_default_8h.html">CCUserDefault.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../db/d94/classcocos2d_1_1_user_default.html">UserDefault</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:53 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

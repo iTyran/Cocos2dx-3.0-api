@@ -1,0 +1,1013 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: SimpleAudioEngine类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="../../d5/d67/class_cocos_denshion_1_1_simple_audio_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">SimpleAudioEngine类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供播放音效和背景音乐的一系列接口  
+ <a href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#details">更多...</a></p>
+
+<p><code>#include &lt;SimpleAudioEngine.h&gt;</code></p>
+<div class="dynheader">
+类 SimpleAudioEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.png" usemap="#SimpleAudioEngine_map" alt=""/>
+  <map id="SimpleAudioEngine_map" name="SimpleAudioEngine_map">
+<area href="../../d3/d57/class_cocos_denshion_1_1android_1_1_android_java_engine.html" alt="AndroidJavaEngine" shape="rect" coords="0,56,124,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae964680b4bce8cb8f4eda5396b7c14c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#ae964680b4bce8cb8f4eda5396b7c14c1">preloadBackgroundMusic</a> (const char *pszFilePath)</td></tr>
+<tr class="memdesc:ae964680b4bce8cb8f4eda5396b7c14c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">预加载背景音乐  <a href="#ae964680b4bce8cb8f4eda5396b7c14c1">更多...</a><br /></td></tr>
+<tr class="separator:ae964680b4bce8cb8f4eda5396b7c14c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a5bcb358832af1714c664a604cea42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a21a5bcb358832af1714c664a604cea42">playBackgroundMusic</a> (const char *pszFilePath, bool bLoop=false)</td></tr>
+<tr class="memdesc:a21a5bcb358832af1714c664a604cea42"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放背景音乐  <a href="#a21a5bcb358832af1714c664a604cea42">更多...</a><br /></td></tr>
+<tr class="separator:a21a5bcb358832af1714c664a604cea42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1b9b232a2a26cafd18b3bc0ebefdc2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a1b1b9b232a2a26cafd18b3bc0ebefdc2">stopBackgroundMusic</a> (bool bReleaseData=false)</td></tr>
+<tr class="memdesc:a1b1b9b232a2a26cafd18b3bc0ebefdc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放背景音乐  <a href="#a1b1b9b232a2a26cafd18b3bc0ebefdc2">更多...</a><br /></td></tr>
+<tr class="separator:a1b1b9b232a2a26cafd18b3bc0ebefdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c937206ba7087d97b0c56e85e1fac3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a25c937206ba7087d97b0c56e85e1fac3">pauseBackgroundMusic</a> ()</td></tr>
+<tr class="memdesc:a25c937206ba7087d97b0c56e85e1fac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停播放背景音乐  pauseMusic  pauseMusic  <a href="#a25c937206ba7087d97b0c56e85e1fac3">更多...</a><br /></td></tr>
+<tr class="separator:a25c937206ba7087d97b0c56e85e1fac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fe04e8ef27b7f3977d373dc0248da8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#af0fe04e8ef27b7f3977d373dc0248da8">resumeBackgroundMusic</a> ()</td></tr>
+<tr class="memdesc:af0fe04e8ef27b7f3977d373dc0248da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复播放背景音乐  resumeMusic  resumeMusic  <a href="#af0fe04e8ef27b7f3977d373dc0248da8">更多...</a><br /></td></tr>
+<tr class="separator:af0fe04e8ef27b7f3977d373dc0248da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae058007c3be6a8c3a2b43493214f2c02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#ae058007c3be6a8c3a2b43493214f2c02">rewindBackgroundMusic</a> ()</td></tr>
+<tr class="memdesc:ae058007c3be6a8c3a2b43493214f2c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">把背景音乐倒过来放  rewindMusic  rewindMusic  <a href="#ae058007c3be6a8c3a2b43493214f2c02">更多...</a><br /></td></tr>
+<tr class="separator:ae058007c3be6a8c3a2b43493214f2c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b9a2297c174f5dd1fd9075612efec0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a44b9a2297c174f5dd1fd9075612efec0">willPlayBackgroundMusic</a> ()</td></tr>
+<tr class="memdesc:a44b9a2297c174f5dd1fd9075612efec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否会播放背景音乐  <a href="#a44b9a2297c174f5dd1fd9075612efec0">更多...</a><br /></td></tr>
+<tr class="separator:a44b9a2297c174f5dd1fd9075612efec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660ad99f2e885453e38452cf10140da3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a660ad99f2e885453e38452cf10140da3">isBackgroundMusicPlaying</a> ()</td></tr>
+<tr class="memdesc:a660ad99f2e885453e38452cf10140da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音乐是否在播放  <a href="#a660ad99f2e885453e38452cf10140da3">更多...</a><br /></td></tr>
+<tr class="separator:a660ad99f2e885453e38452cf10140da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd4397a744f30fcc4eb47c51cd6e884"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a1bd4397a744f30fcc4eb47c51cd6e884">getBackgroundMusicVolume</a> ()</td></tr>
+<tr class="memdesc:a1bd4397a744f30fcc4eb47c51cd6e884"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取背景音乐的音量，音量的值的范围为0.0到1.0  getMusicVolume  getMusicVolume  <a href="#a1bd4397a744f30fcc4eb47c51cd6e884">更多...</a><br /></td></tr>
+<tr class="separator:a1bd4397a744f30fcc4eb47c51cd6e884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da08df4c6e0532bd164454a30e42a5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a2da08df4c6e0532bd164454a30e42a5b">setBackgroundMusicVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a2da08df4c6e0532bd164454a30e42a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置背景音乐音量  <a href="#a2da08df4c6e0532bd164454a30e42a5b">更多...</a><br /></td></tr>
+<tr class="separator:a2da08df4c6e0532bd164454a30e42a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add27ad4ce5b9ad888f0cff599cb77263"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#add27ad4ce5b9ad888f0cff599cb77263">getEffectsVolume</a> ()</td></tr>
+<tr class="memdesc:add27ad4ce5b9ad888f0cff599cb77263"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音效的音量大小,音量大小范围为0.0到1.0  <a href="#add27ad4ce5b9ad888f0cff599cb77263">更多...</a><br /></td></tr>
+<tr class="separator:add27ad4ce5b9ad888f0cff599cb77263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42663c3a84dcba5d19e02d53042c8da7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a42663c3a84dcba5d19e02d53042c8da7">setEffectsVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a42663c3a84dcba5d19e02d53042c8da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音效的音量大小  <a href="#a42663c3a84dcba5d19e02d53042c8da7">更多...</a><br /></td></tr>
+<tr class="separator:a42663c3a84dcba5d19e02d53042c8da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64f7ddd5867de66641dd97361f22c6f"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#ae64f7ddd5867de66641dd97361f22c6f">playEffect</a> (const char *pszFilePath, bool bLoop=false, float pitch=1.0f, float pan=0.0f, float gain=1.0f)</td></tr>
+<tr class="memdesc:ae64f7ddd5867de66641dd97361f22c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放音效  <a href="#ae64f7ddd5867de66641dd97361f22c6f">更多...</a><br /></td></tr>
+<tr class="separator:ae64f7ddd5867de66641dd97361f22c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3829969ffa81bf166c6c6701bcc9903"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#ad3829969ffa81bf166c6c6701bcc9903">pauseEffect</a> (unsigned int nSoundId)</td></tr>
+<tr class="memdesc:ad3829969ffa81bf166c6c6701bcc9903"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停播放音效  <a href="#ad3829969ffa81bf166c6c6701bcc9903">更多...</a><br /></td></tr>
+<tr class="separator:ad3829969ffa81bf166c6c6701bcc9903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86837d9364b4227552e51bc1a677d713"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a86837d9364b4227552e51bc1a677d713">pauseAllEffects</a> ()</td></tr>
+<tr class="memdesc:a86837d9364b4227552e51bc1a677d713"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停所有播放的音效  <a href="#a86837d9364b4227552e51bc1a677d713">更多...</a><br /></td></tr>
+<tr class="separator:a86837d9364b4227552e51bc1a677d713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace37a5720abf2771368447b59b7dee43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#ace37a5720abf2771368447b59b7dee43">resumeEffect</a> (unsigned int nSoundId)</td></tr>
+<tr class="memdesc:ace37a5720abf2771368447b59b7dee43"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复暂停播放的音效  <a href="#ace37a5720abf2771368447b59b7dee43">更多...</a><br /></td></tr>
+<tr class="separator:ace37a5720abf2771368447b59b7dee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326529ac1f25e60a84b414b318edaedf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a326529ac1f25e60a84b414b318edaedf">resumeAllEffects</a> ()</td></tr>
+<tr class="memdesc:a326529ac1f25e60a84b414b318edaedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复所有暂停的音效  <a href="#a326529ac1f25e60a84b414b318edaedf">更多...</a><br /></td></tr>
+<tr class="separator:a326529ac1f25e60a84b414b318edaedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa398b63a04ee12caf3d13ae059ec28ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#aa398b63a04ee12caf3d13ae059ec28ff">stopEffect</a> (unsigned int nSoundId)</td></tr>
+<tr class="memdesc:aa398b63a04ee12caf3d13ae059ec28ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放音效  <a href="#aa398b63a04ee12caf3d13ae059ec28ff">更多...</a><br /></td></tr>
+<tr class="separator:aa398b63a04ee12caf3d13ae059ec28ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c8e6c6fc6baa94b32dd05f9dab22cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a54c8e6c6fc6baa94b32dd05f9dab22cb">stopAllEffects</a> ()</td></tr>
+<tr class="memdesc:a54c8e6c6fc6baa94b32dd05f9dab22cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止所有播放的音效  <a href="#a54c8e6c6fc6baa94b32dd05f9dab22cb">更多...</a><br /></td></tr>
+<tr class="separator:a54c8e6c6fc6baa94b32dd05f9dab22cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d2b7bacd9076eb766d9fed4459841f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#af9d2b7bacd9076eb766d9fed4459841f">preloadEffect</a> (const char *pszFilePath)</td></tr>
+<tr class="memdesc:af9d2b7bacd9076eb766d9fed4459841f"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载压缩过的音效文件  <a href="#af9d2b7bacd9076eb766d9fed4459841f">更多...</a><br /></td></tr>
+<tr class="separator:af9d2b7bacd9076eb766d9fed4459841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0901cca81b938254efb1b3063b8b65"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a8f0901cca81b938254efb1b3063b8b65">unloadEffect</a> (const char *pszFilePath)</td></tr>
+<tr class="memdesc:a8f0901cca81b938254efb1b3063b8b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载预加载到内存中的音效文件  <a href="#a8f0901cca81b938254efb1b3063b8b65">更多...</a><br /></td></tr>
+<tr class="separator:a8f0901cca81b938254efb1b3063b8b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a37d8876d037c4292f25bb715cb5e7a01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a37d8876d037c4292f25bb715cb5e7a01">getInstance</a> ()</td></tr>
+<tr class="memdesc:a37d8876d037c4292f25bb715cb5e7a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取共享的实例，如果是第一次调用，会自动创建一个实例  <a href="#a37d8876d037c4292f25bb715cb5e7a01">更多...</a><br /></td></tr>
+<tr class="separator:a37d8876d037c4292f25bb715cb5e7a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6910c1419db32599666e9b616c32a9a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a6910c1419db32599666e9b616c32a9a1">sharedEngine</a> ()</td></tr>
+<tr class="memdesc:a6910c1419db32599666e9b616c32a9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a6910c1419db32599666e9b616c32a9a1">更多...</a><br /></td></tr>
+<tr class="separator:a6910c1419db32599666e9b616c32a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f5b0b22e759383dce4a78ddd05a3d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a37f5b0b22e759383dce4a78ddd05a3d4">end</a> ()</td></tr>
+<tr class="memdesc:a37f5b0b22e759383dce4a78ddd05a3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放音效引擎实例  <a href="#a37f5b0b22e759383dce4a78ddd05a3d4">更多...</a><br /></td></tr>
+<tr class="separator:a37f5b0b22e759383dce4a78ddd05a3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a91013ef8ca9544db243e255161e15c1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a91013ef8ca9544db243e255161e15c1c">SimpleAudioEngine</a> ()</td></tr>
+<tr class="separator:a91013ef8ca9544db243e255161e15c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6388b9a2017ea379c7d9012d6733dc8c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html#a6388b9a2017ea379c7d9012d6733dc8c">~SimpleAudioEngine</a> ()</td></tr>
+<tr class="separator:a6388b9a2017ea379c7d9012d6733dc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供播放音效和背景音乐的一系列接口 </p>
+<dl class="section note"><dt>注解</dt><dd>当不再使用音效系统时，确保调用了SimpleAudioEngine::end()来释放所有分配出来的资源 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a91013ef8ca9544db243e255161e15c1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6388b9a2017ea379c7d9012d6733dc8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a37f5b0b22e759383dce4a78ddd05a3d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>释放音效引擎实例 </p>
+<dl class="section warning"><dt>警告</dt><dd>在游戏退出时需要调用这个方法，不然的话会导致内存泄漏 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1bd4397a744f30fcc4eb47c51cd6e884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float getBackgroundMusicVolume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取背景音乐的音量，音量的值的范围为0.0到1.0  getMusicVolume  getMusicVolume </p>
+
+</div>
+</div>
+<a class="anchor" id="add27ad4ce5b9ad888f0cff599cb77263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float getEffectsVolume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取音效的音量大小,音量大小范围为0.0到1.0 </p>
+
+</div>
+</div>
+<a class="anchor" id="a37d8876d037c4292f25bb715cb5e7a01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取共享的实例，如果是第一次调用，会自动创建一个实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="a660ad99f2e885453e38452cf10140da3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isBackgroundMusicPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音乐是否在播放 </p>
+<dl class="section return"><dt>返回</dt><dd>正在播放返回<em>true</em>,否则返回<em>false</em>  isMusicPlaying  isMusicPlaying </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86837d9364b4227552e51bc1a677d713"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pauseAllEffects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>暂停所有播放的音效 </p>
+
+</div>
+</div>
+<a class="anchor" id="a25c937206ba7087d97b0c56e85e1fac3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pauseBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>暂停播放背景音乐  pauseMusic  pauseMusic </p>
+
+</div>
+</div>
+<a class="anchor" id="ad3829969ffa81bf166c6c6701bcc9903"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pauseEffect </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nSoundId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>暂停播放音效 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nSoundId</td><td>playEffect返回的资源id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a21a5bcb358832af1714c664a604cea42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void playBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bLoop</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>播放背景音乐 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFilePath</td><td>背景音乐的文件路径活T_SoundResInfo中的FileName字段 </td></tr>
+    <tr><td class="paramname">bLoop</td><td>背景音乐是否循环播放  playMusic  playMusic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae64f7ddd5867de66641dd97361f22c6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int playEffect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bLoop</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em> = <code>1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pan</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gain</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>播放音效 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFilePath</td><td>音效文件的路径 </td></tr>
+    <tr><td class="paramname">bLoop</td><td>是否循环播放,默认为false,不循环 </td></tr>
+    <tr><td class="paramname">pitch</td><td>频率，正常情况下为1.0,在播放时也可以改变该值 </td></tr>
+    <tr><td class="paramname">pan</td><td>声道，范围为-1到1，为-1时表示只有左声道，为1时表示只有右声道 </td></tr>
+    <tr><td class="paramname">gain</td><td>音量增益, 范围为0到1，默认值为1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OpenAL的资源id</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>现在还不能完全支持所有参数，限制的功能如下：<ul>
+<li>在Samsung Galaxy S2上如果启用了OpenSL那么pitch参数无效；</li>
+<li>在emscrippten, win32, marmalade上pitch/pan/gain参数无效 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae964680b4bce8cb8f4eda5396b7c14c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void preloadBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预加载背景音乐 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFilePath</td><td>背景音乐的文件路径  preloadMusic  preloadMusic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af9d2b7bacd9076eb766d9fed4459841f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void preloadEffect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载压缩过的音效文件 </p>
+<p>压缩过的音频文件会解码成wave文件，并且写入SimpleAudioEngine的内存中 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFilePath</td><td>音效文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a326529ac1f25e60a84b414b318edaedf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void resumeAllEffects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>恢复所有暂停的音效 </p>
+
+</div>
+</div>
+<a class="anchor" id="af0fe04e8ef27b7f3977d373dc0248da8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void resumeBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>恢复播放背景音乐  resumeMusic  resumeMusic </p>
+
+</div>
+</div>
+<a class="anchor" id="ace37a5720abf2771368447b59b7dee43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void resumeEffect </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nSoundId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>恢复暂停播放的音效 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nSoundId</td><td>playEffect返回的资源id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae058007c3be6a8c3a2b43493214f2c02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rewindBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>把背景音乐倒过来放  rewindMusic  rewindMusic </p>
+
+</div>
+</div>
+<a class="anchor" id="a2da08df4c6e0532bd164454a30e42a5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setBackgroundMusicVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置背景音乐音量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>背景音乐音量大小，范围必须为0.0到1.0之间  setMusicVolume  setMusicVolume </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a42663c3a84dcba5d19e02d53042c8da7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setEffectsVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置音效的音量大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音效的音量大小，范围为0.0到1.0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6910c1419db32599666e9b616c32a9a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a>* sharedEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a54c8e6c6fc6baa94b32dd05f9dab22cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void stopAllEffects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止所有播放的音效 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b1b9b232a2a26cafd18b3bc0ebefdc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void stopBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReleaseData</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止播放背景音乐 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bReleaseData</td><td>是否释放背景音乐的数据，默认值为false  stopMusic  stopMusic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa398b63a04ee12caf3d13ae059ec28ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void stopEffect </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nSoundId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止播放音效 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nSoundId</td><td>playEffect返回的资源id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f0901cca81b938254efb1b3063b8b65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void unloadEffect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>卸载预加载到内存中的音效文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFilePath</td><td>音效文件的路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a44b9a2297c174f5dd1fd9075612efec0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool willPlayBackgroundMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否会播放背景音乐 </p>
+<dl class="section return"><dt>返回</dt><dd>如果背景音乐会被播放返回<em>true</em>,否则返回<em>false</em>.  willPlayMusic  willPlayMusic </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/audio/include/<a class="el" href="../../d8/dc9/_simple_audio_engine_8h.html">SimpleAudioEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/d39/namespace_cocos_denshion.html">CocosDenshion</a></li><li class="navelem"><a class="el" href="../../de/d8f/class_cocos_denshion_1_1_simple_audio_engine.html">SimpleAudioEngine</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:58 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

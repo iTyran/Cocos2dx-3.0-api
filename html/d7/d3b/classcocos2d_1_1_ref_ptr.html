@@ -1,0 +1,1238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: RefPtr&lt; T &gt; 模板类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/d3b/classcocos2d_1_1_ref_ptr.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="../../df/d5a/classcocos2d_1_1_ref_ptr-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">RefPtr&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>它保持着强劲的引用cocos2dx的cocos2d::Ref*类型的对象包装类。 类似的概念来提高智能指针。  
+ <a href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCRefPtr.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae74bc87b8dd09d4e4041df0a5f861f2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae74bc87b8dd09d4e4041df0a5f861f2e">RefPtr</a> ()</td></tr>
+<tr class="separator:ae74bc87b8dd09d4e4041df0a5f861f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb76739cb39feed6ec2b54308cbc307"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a7bb76739cb39feed6ec2b54308cbc307">RefPtr</a> (<a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&amp;other)</td></tr>
+<tr class="separator:a7bb76739cb39feed6ec2b54308cbc307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e40c3d1858c3e21f7ac309d28b24fe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a4e40c3d1858c3e21f7ac309d28b24fe9">RefPtr</a> (T *ptr)</td></tr>
+<tr class="separator:a4e40c3d1858c3e21f7ac309d28b24fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde5103fc78449b3b1c915943dd2b88e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#abde5103fc78449b3b1c915943dd2b88e">RefPtr</a> (std::nullptr_t ptr)</td></tr>
+<tr class="separator:abde5103fc78449b3b1c915943dd2b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d3af83b3cb025d58fb8638b6cb47e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae1d3af83b3cb025d58fb8638b6cb47e0">RefPtr</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="separator:ae1d3af83b3cb025d58fb8638b6cb47e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5474999d6e9a5ee46ecb7ea28a5d19a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ad5474999d6e9a5ee46ecb7ea28a5d19a">~RefPtr</a> ()</td></tr>
+<tr class="separator:ad5474999d6e9a5ee46ecb7ea28a5d19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b04a2b62adfc95a201ed21b1fcdf5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae2b04a2b62adfc95a201ed21b1fcdf5c">operator=</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="separator:ae2b04a2b62adfc95a201ed21b1fcdf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c76619854cf17d8e91185d553d10fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a1c76619854cf17d8e91185d553d10fde">operator=</a> (<a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&amp;other)</td></tr>
+<tr class="separator:a1c76619854cf17d8e91185d553d10fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e35fd551c2702d39238ecbd70169f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a52e35fd551c2702d39238ecbd70169f1">operator=</a> (T *other)</td></tr>
+<tr class="separator:a52e35fd551c2702d39238ecbd70169f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf7d53ff4ec4af7549da49c7a95f808"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#abaf7d53ff4ec4af7549da49c7a95f808">operator=</a> (std::nullptr_t other)</td></tr>
+<tr class="separator:abaf7d53ff4ec4af7549da49c7a95f808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826c82b72ca2d624342ce5c06405af8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a826c82b72ca2d624342ce5c06405af8d">operator T *</a> () const </td></tr>
+<tr class="separator:a826c82b72ca2d624342ce5c06405af8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc36ef133f26e7e3145b785df23eb18"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#abcc36ef133f26e7e3145b785df23eb18">operator*</a> () const </td></tr>
+<tr class="separator:abcc36ef133f26e7e3145b785df23eb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ddd007dfcfef3121f74d0665dfd0cd"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ac0ddd007dfcfef3121f74d0665dfd0cd">operator-&gt;</a> () const </td></tr>
+<tr class="separator:ac0ddd007dfcfef3121f74d0665dfd0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f851191ad3a7c5c1598ef14f710f96"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a07f851191ad3a7c5c1598ef14f710f96">get</a> () const </td></tr>
+<tr class="separator:a07f851191ad3a7c5c1598ef14f710f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef1a1459d9589f067167abeab9c20ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a0ef1a1459d9589f067167abeab9c20ff">operator==</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:a0ef1a1459d9589f067167abeab9c20ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0f9c52403b06653c45a026d8ba504c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#aac0f9c52403b06653c45a026d8ba504c">operator==</a> (const T *other) const </td></tr>
+<tr class="separator:aac0f9c52403b06653c45a026d8ba504c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a37e9ef60328edf804afbcd55b75bf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a2a37e9ef60328edf804afbcd55b75bf8">operator==</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:a2a37e9ef60328edf804afbcd55b75bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5266e4f35b192098993459e30c0bcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a3d5266e4f35b192098993459e30c0bcd">operator==</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a3d5266e4f35b192098993459e30c0bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde0776b07e16353163e16429e48e561"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#afde0776b07e16353163e16429e48e561">operator!=</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:afde0776b07e16353163e16429e48e561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995e39753b2acf9f478d78e7cd35ae5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a995e39753b2acf9f478d78e7cd35ae5a">operator!=</a> (const T *other) const </td></tr>
+<tr class="separator:a995e39753b2acf9f478d78e7cd35ae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb99efe7a2af43a2b873af19252def3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#aeb99efe7a2af43a2b873af19252def3a">operator!=</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:aeb99efe7a2af43a2b873af19252def3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2674b14465b33f5013be0849ebfce1c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a2674b14465b33f5013be0849ebfce1c1">operator!=</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a2674b14465b33f5013be0849ebfce1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc938ac22ce120b1b942f2734c929ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a6bc938ac22ce120b1b942f2734c929ae">operator&gt;</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:a6bc938ac22ce120b1b942f2734c929ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5727f77ca3918a462ada2dc19b9084"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a0e5727f77ca3918a462ada2dc19b9084">operator&gt;</a> (const T *other) const </td></tr>
+<tr class="separator:a0e5727f77ca3918a462ada2dc19b9084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080796e1057758414401e0d32344eacb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a080796e1057758414401e0d32344eacb">operator&gt;</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:a080796e1057758414401e0d32344eacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff298f11085d1e6ae531146e0d04c17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a8ff298f11085d1e6ae531146e0d04c17">operator&gt;</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a8ff298f11085d1e6ae531146e0d04c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae360161b553f89119f7a51b8887b69bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae360161b553f89119f7a51b8887b69bb">operator&lt;</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:ae360161b553f89119f7a51b8887b69bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae606d0b86b93e5a190a2a3410def217e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae606d0b86b93e5a190a2a3410def217e">operator&lt;</a> (const T *other) const </td></tr>
+<tr class="separator:ae606d0b86b93e5a190a2a3410def217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ea90602c5b5058d62996b58580303d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a69ea90602c5b5058d62996b58580303d">operator&lt;</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:a69ea90602c5b5058d62996b58580303d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae03733becc237b91a56d891059eb43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a4ae03733becc237b91a56d891059eb43">operator&lt;</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a4ae03733becc237b91a56d891059eb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d01b04a5e39f9451558fce56b8c1ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#af4d01b04a5e39f9451558fce56b8c1ba">operator&gt;=</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:af4d01b04a5e39f9451558fce56b8c1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d97c3811f3613dd24345b3f13ffc58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a24d97c3811f3613dd24345b3f13ffc58">operator&gt;=</a> (const T *other) const </td></tr>
+<tr class="separator:a24d97c3811f3613dd24345b3f13ffc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b561599244a1b1937cfb6603f919853"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a3b561599244a1b1937cfb6603f919853">operator&gt;=</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:a3b561599244a1b1937cfb6603f919853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269e711b4c9493bca25edae310ce001e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a269e711b4c9493bca25edae310ce001e">operator&gt;=</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a269e711b4c9493bca25edae310ce001e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72106e8e7c98a3613855ac1596ffdc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ab72106e8e7c98a3613855ac1596ffdc9">operator&lt;=</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other) const </td></tr>
+<tr class="separator:ab72106e8e7c98a3613855ac1596ffdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3805815051c7c226c1466be96990fd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#af3805815051c7c226c1466be96990fd2">operator&lt;=</a> (const T *other) const </td></tr>
+<tr class="separator:af3805815051c7c226c1466be96990fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f26d7e8c9d1aa113def5c5b02d3edd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ab2f26d7e8c9d1aa113def5c5b02d3edd">operator&lt;=</a> (typename std::remove_const&lt; T &gt;::type *other) const </td></tr>
+<tr class="separator:ab2f26d7e8c9d1aa113def5c5b02d3edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f3fb4a4c431da2678de2cc9b0d8e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a92f3fb4a4c431da2678de2cc9b0d8e0d">operator&lt;=</a> (const std::nullptr_t other) const </td></tr>
+<tr class="separator:a92f3fb4a4c431da2678de2cc9b0d8e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa385aa18f5e42db5a415c25a90f4193d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#aa385aa18f5e42db5a415c25a90f4193d">operator bool</a> () const </td></tr>
+<tr class="separator:aa385aa18f5e42db5a415c25a90f4193d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24b5032784edab21a830e744436ca95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ac24b5032784edab21a830e744436ca95">swap</a> (<a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="separator:ac24b5032784edab21a830e744436ca95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f8eb7b7fae19b5423d9d62ce40a331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#a54f8eb7b7fae19b5423d9d62ce40a331">weakAssign</a> (const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a54f8eb7b7fae19b5423d9d62ce40a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数分配给这个RefPtr&lt;T&gt;但不增加指向对象的引用计数。 有用的分配通过new操作符的RefPtr&lt;T&gt;创建的对象。基本上是在场景用来 其中RefPtr&lt;T&gt;有对象的初始所有权。  <a href="#a54f8eb7b7fae19b5423d9d62ce40a331">更多...</a><br /></td></tr>
+<tr class="separator:a54f8eb7b7fae19b5423d9d62ce40a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class cocos2d::RefPtr&lt; T &gt;</h3>
+
+<p>它保持着强劲的引用cocos2dx的cocos2d::Ref*类型的对象包装类。 类似的概念来提高智能指针。 </p>
+<p>允许使用的RAII成语与Cocos2dx对象，并有助于自动一些比较 平凡的指针初始化和清理的任务。</p>
+<p>类本身是仿照C++11的std::shared_ptr的，并改掉保留一些方法 和功能与std::shared_ptr的一致。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae74bc87b8dd09d4e4041df0a5f861f2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7bb76739cb39feed6ec2b54308cbc307"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e40c3d1858c3e21f7ac309d28b24fe9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abde5103fc78449b3b1c915943dd2b88e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1d3af83b3cb025d58fb8638b6cb47e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5474999d6e9a5ee46ecb7ea28a5d19a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a07f851191ad3a7c5c1598ef14f710f96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa385aa18f5e42db5a415c25a90f4193d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a826c82b72ca2d624342ce5c06405af8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">operator T * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afde0776b07e16353163e16429e48e561"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a995e39753b2acf9f478d78e7cd35ae5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb99efe7a2af43a2b873af19252def3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2674b14465b33f5013be0849ebfce1c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abcc36ef133f26e7e3145b785df23eb18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T&amp; operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0ddd007dfcfef3121f74d0665dfd0cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae360161b553f89119f7a51b8887b69bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae606d0b86b93e5a190a2a3410def217e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69ea90602c5b5058d62996b58580303d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ae03733becc237b91a56d891059eb43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab72106e8e7c98a3613855ac1596ffdc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3805815051c7c226c1466be96990fd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2f26d7e8c9d1aa113def5c5b02d3edd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92f3fb4a4c431da2678de2cc9b0d8e0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2b04a2b62adfc95a201ed21b1fcdf5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt;T&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c76619854cf17d8e91185d553d10fde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt;T&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52e35fd551c2702d39238ecbd70169f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt;T&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abaf7d53ff4ec4af7549da49c7a95f808"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt;T&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ef1a1459d9589f067167abeab9c20ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac0f9c52403b06653c45a026d8ba504c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a37e9ef60328edf804afbcd55b75bf8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d5266e4f35b192098993459e30c0bcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bc938ac22ce120b1b942f2734c929ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e5727f77ca3918a462ada2dc19b9084"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a080796e1057758414401e0d32344eacb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ff298f11085d1e6ae531146e0d04c17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4d01b04a5e39f9451558fce56b8c1ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24d97c3811f3613dd24345b3f13ffc58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b561599244a1b1937cfb6603f919853"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_const&lt; T &gt;::type *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a269e711b4c9493bca25edae310ce001e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const std::nullptr_t&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac24b5032784edab21a830e744436ca95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54f8eb7b7fae19b5423d9d62ce40a331"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void weakAssign </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>此函数分配给这个RefPtr&lt;T&gt;但不增加指向对象的引用计数。 有用的分配通过new操作符的RefPtr&lt;T&gt;创建的对象。基本上是在场景用来 其中RefPtr&lt;T&gt;有对象的初始所有权。 </p>
+<p>例如： <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae74bc87b8dd09d4e4041df0a5f861f2e">RefPtr&lt;cocos2d::Image&gt;</a>image; image.weakAssign（new <a class="el" href="../../de/d97/classcocos2d_1_1_image.html">cocos2d::Image()</a>);</p>
+<p>代替： <a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html#ae74bc87b8dd09d4e4041df0a5f861f2e">RefPtr&lt;cocos2d::Image&gt;</a> image; image = new <a class="el" href="../../de/d97/classcocos2d_1_1_image.html">cocos2d::Image()</a>; image-&gt;release(); //必需的，因为new创建的对象已经具有'1引用计数“。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/base/<a class="el" href="../../d1/d03/_c_c_ref_ptr_8h.html">CCRefPtr.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d7/d3b/classcocos2d_1_1_ref_ptr.html">RefPtr</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:49 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

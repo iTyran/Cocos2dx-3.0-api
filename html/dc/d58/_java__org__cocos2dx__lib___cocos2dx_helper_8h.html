@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Java_org_cocos2dx_lib_Cocos2dxHelper.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a485dd59979b32417abc23c6fcc898101"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a485dd59979b32417abc23c6fcc898101">EditTextCallback</a> )(const char *pText, void *ctx)</td></tr>
+<tr class="separator:a485dd59979b32417abc23c6fcc898101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae37de04163da7d1e5f2f4ee7add20067"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#ae37de04163da7d1e5f2f4ee7add20067">getApkPath</a> ()</td></tr>
+<tr class="separator:ae37de04163da7d1e5f2f4ee7add20067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae258b25cfc82425a0518f4fb48bb8ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#ae258b25cfc82425a0518f4fb48bb8ee5">showDialogJNI</a> (const char *pszMsg, const char *pszTitle)</td></tr>
+<tr class="separator:ae258b25cfc82425a0518f4fb48bb8ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a266ff2e11c59cec483111333b5c916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a6a266ff2e11c59cec483111333b5c916">showEditTextDialogJNI</a> (const char *pszTitle, const char *pszContent, int nInputMode, int nInputFlag, int nReturnType, int nMaxLength, <a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a485dd59979b32417abc23c6fcc898101">EditTextCallback</a> pfEditTextCallback, void *ctx)</td></tr>
+<tr class="separator:a6a266ff2e11c59cec483111333b5c916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966abdb0afd8151023ea23aa6ef4edae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a966abdb0afd8151023ea23aa6ef4edae">terminateProcessJNI</a> ()</td></tr>
+<tr class="separator:a966abdb0afd8151023ea23aa6ef4edae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc878ace8d0f9fb3021eaf9a9967ede1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#acc878ace8d0f9fb3021eaf9a9967ede1">getCurrentLanguageJNI</a> ()</td></tr>
+<tr class="separator:acc878ace8d0f9fb3021eaf9a9967ede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f792c27137e9a34695720907ff9c1e7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a7f792c27137e9a34695720907ff9c1e7">getPackageNameJNI</a> ()</td></tr>
+<tr class="separator:a7f792c27137e9a34695720907ff9c1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fbd43d9403d9d0af4a48d6a67a753c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#ab3fbd43d9403d9d0af4a48d6a67a753c">getFileDirectoryJNI</a> ()</td></tr>
+<tr class="separator:ab3fbd43d9403d9d0af4a48d6a67a753c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09bbd679bacda6d997898ccf80fe1da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#ad09bbd679bacda6d997898ccf80fe1da">enableAccelerometerJni</a> ()</td></tr>
+<tr class="separator:ad09bbd679bacda6d997898ccf80fe1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7cb83f9eeea9cd78dddbdab32c6e61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a8c7cb83f9eeea9cd78dddbdab32c6e61">disableAccelerometerJni</a> ()</td></tr>
+<tr class="separator:a8c7cb83f9eeea9cd78dddbdab32c6e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6324f42b96caae88c12db84002fc871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#ab6324f42b96caae88c12db84002fc871">setAccelerometerIntervalJni</a> (float interval)</td></tr>
+<tr class="separator:ab6324f42b96caae88c12db84002fc871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3cd6cecc941825035913e5e1bb9dff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#aae3cd6cecc941825035913e5e1bb9dff">getBoolForKeyJNI</a> (const char *pKey, bool defaultValue)</td></tr>
+<tr class="separator:aae3cd6cecc941825035913e5e1bb9dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c500151417b1e780695dc2fd326baa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a1c500151417b1e780695dc2fd326baa7">getIntegerForKeyJNI</a> (const char *pKey, int defaultValue)</td></tr>
+<tr class="separator:a1c500151417b1e780695dc2fd326baa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b47aa01b4af89f0672d00bdba8fc8b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a20b47aa01b4af89f0672d00bdba8fc8b">getFloatForKeyJNI</a> (const char *pKey, float defaultValue)</td></tr>
+<tr class="separator:a20b47aa01b4af89f0672d00bdba8fc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0e1a9eeda02eeaf9777e761d5f33ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a7a0e1a9eeda02eeaf9777e761d5f33ae">getDoubleForKeyJNI</a> (const char *pKey, double defaultValue)</td></tr>
+<tr class="separator:a7a0e1a9eeda02eeaf9777e761d5f33ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abead9aafec6015143775215aac87ae17"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#abead9aafec6015143775215aac87ae17">getStringForKeyJNI</a> (const char *pKey, const char *defaultValue)</td></tr>
+<tr class="separator:abead9aafec6015143775215aac87ae17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea89d8cd77aa206ab9761f37b55b441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a5ea89d8cd77aa206ab9761f37b55b441">setBoolForKeyJNI</a> (const char *pKey, bool value)</td></tr>
+<tr class="separator:a5ea89d8cd77aa206ab9761f37b55b441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbfc9015bb440723e7514ed405b2295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#aebbfc9015bb440723e7514ed405b2295">setIntegerForKeyJNI</a> (const char *pKey, int value)</td></tr>
+<tr class="separator:aebbfc9015bb440723e7514ed405b2295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e5fd38262867842d9d9aa1eff1c443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a62e5fd38262867842d9d9aa1eff1c443">setFloatForKeyJNI</a> (const char *pKey, float value)</td></tr>
+<tr class="separator:a62e5fd38262867842d9d9aa1eff1c443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539482e757795817282072a947a26cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a539482e757795817282072a947a26cdc">setDoubleForKeyJNI</a> (const char *pKey, double value)</td></tr>
+<tr class="separator:a539482e757795817282072a947a26cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217fea9857eadf3a9a9b258df5f3ff04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a217fea9857eadf3a9a9b258df5f3ff04">setStringForKeyJNI</a> (const char *pKey, const char *value)</td></tr>
+<tr class="separator:a217fea9857eadf3a9a9b258df5f3ff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a485dd59979b32417abc23c6fcc898101"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* EditTextCallback)(const char *pText, void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a8c7cb83f9eeea9cd78dddbdab32c6e61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disableAccelerometerJni </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad09bbd679bacda6d997898ccf80fe1da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enableAccelerometerJni </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae37de04163da7d1e5f2f4ee7add20067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* getApkPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae3cd6cecc941825035913e5e1bb9dff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getBoolForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc878ace8d0f9fb3021eaf9a9967ede1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getCurrentLanguageJNI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a0e1a9eeda02eeaf9777e761d5f33ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getDoubleForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3fbd43d9403d9d0af4a48d6a67a753c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getFileDirectoryJNI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20b47aa01b4af89f0672d00bdba8fc8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getFloatForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c500151417b1e780695dc2fd326baa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getIntegerForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f792c27137e9a34695720907ff9c1e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getPackageNameJNI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abead9aafec6015143775215aac87ae17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getStringForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6324f42b96caae88c12db84002fc871"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAccelerometerIntervalJni </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ea89d8cd77aa206ab9761f37b55b441"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBoolForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a539482e757795817282072a947a26cdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDoubleForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62e5fd38262867842d9d9aa1eff1c443"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFloatForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aebbfc9015bb440723e7514ed405b2295"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setIntegerForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a217fea9857eadf3a9a9b258df5f3ff04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setStringForKeyJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae258b25cfc82425a0518f4fb48bb8ee5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showDialogJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTitle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a266ff2e11c59cec483111333b5c916"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showEditTextDialogJNI </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszContent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nInputMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nInputFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nReturnType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nMaxLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html#a485dd59979b32417abc23c6fcc898101">EditTextCallback</a>&#160;</td>
+          <td class="paramname"><em>pfEditTextCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a966abdb0afd8151023ea23aa6ef4edae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void terminateProcessJNI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_1e982c3755f4172b2756317f526913d2.html">2d</a></li><li class="navelem"><a class="el" href="../../dir_8671f1eb3e75d72cf468c03a7d602122.html">platform</a></li><li class="navelem"><a class="el" href="../../dir_f2c4ecb4796b73047b65206a4a14f952.html">android</a></li><li class="navelem"><a class="el" href="../../dir_5e6b8c3306c22aa6a741f9330b17e741.html">jni</a></li><li class="navelem"><a class="el" href="../../dc/d58/_java__org__cocos2dx__lib___cocos2dx_helper_8h.html">Java_org_cocos2dx_lib_Cocos2dxHelper.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:41 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

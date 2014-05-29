@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: ZipUtils类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/d64/classcocos2d_1_1_zip_utils.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="../../dc/dae/classcocos2d_1_1_zip_utils-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ZipUtils类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;ZipUtils.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ad0fb9e9ea2c30ed32c09a9cb80d2ce52"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#ad0fb9e9ea2c30ed32c09a9cb80d2ce52">ccInflateMemory</a> (unsigned char *in, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inLength, unsigned char **out)</td></tr>
+<tr class="memdesc:ad0fb9e9ea2c30ed32c09a9cb80d2ce52"><td class="mdescLeft">&#160;</td><td class="mdescRight">无论是膨胀的zlib或gzip的瘪内存。膨胀的内存 由调用者释放。  <a href="#ad0fb9e9ea2c30ed32c09a9cb80d2ce52">更多...</a><br /></td></tr>
+<tr class="separator:ad0fb9e9ea2c30ed32c09a9cb80d2ce52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62219f54ffdfa5abd736337ab33905c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a62219f54ffdfa5abd736337ab33905c0">inflateMemory</a> (unsigned char *in, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inLength, unsigned char **out)</td></tr>
+<tr class="separator:a62219f54ffdfa5abd736337ab33905c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8636eabb9f0d168250e4c1f1c739d1b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a8636eabb9f0d168250e4c1f1c739d1b3">ccInflateMemoryWithHint</a> (unsigned char *in, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inLength, unsigned char **out, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> outLengthHint)</td></tr>
+<tr class="memdesc:a8636eabb9f0d168250e4c1f1c739d1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">无论是膨胀的zlib或gzip的瘪内存。膨胀的内存 由调用者释放。  <a href="#a8636eabb9f0d168250e4c1f1c739d1b3">更多...</a><br /></td></tr>
+<tr class="separator:a8636eabb9f0d168250e4c1f1c739d1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad65c7b6050b4c76125a22235bd1a82"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a4ad65c7b6050b4c76125a22235bd1a82">inflateMemoryWithHint</a> (unsigned char *in, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inLength, unsigned char **out, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> outLengthHint)</td></tr>
+<tr class="separator:a4ad65c7b6050b4c76125a22235bd1a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be38efdff213b0693c7f64ecee70804"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a2be38efdff213b0693c7f64ecee70804">ccInflateGZipFile</a> (const char *filename, unsigned char **out)</td></tr>
+<tr class="memdesc:a2be38efdff213b0693c7f64ecee70804"><td class="mdescLeft">&#160;</td><td class="mdescRight">膨胀一个gzip文件到内存  <a href="#a2be38efdff213b0693c7f64ecee70804">更多...</a><br /></td></tr>
+<tr class="separator:a2be38efdff213b0693c7f64ecee70804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde733860e7ad4a536028ef62ac1f686"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#abde733860e7ad4a536028ef62ac1f686">inflateGZipFile</a> (const char *filename, unsigned char **out)</td></tr>
+<tr class="separator:abde733860e7ad4a536028ef62ac1f686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f36e1d9114ce06e998f3de1a07af7c1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a3f36e1d9114ce06e998f3de1a07af7c1">ccIsGZipFile</a> (const char *filename)</td></tr>
+<tr class="memdesc:a3f36e1d9114ce06e998f3de1a07af7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试的文件是否是一个gzip格式的文件  <a href="#a3f36e1d9114ce06e998f3de1a07af7c1">更多...</a><br /></td></tr>
+<tr class="separator:a3f36e1d9114ce06e998f3de1a07af7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e119546fc4c4120508485676800a74"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#af0e119546fc4c4120508485676800a74">isGZipFile</a> (const char *filename)</td></tr>
+<tr class="separator:af0e119546fc4c4120508485676800a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae176bb2e1451c321f129800e5d12b7a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#ae176bb2e1451c321f129800e5d12b7a4">ccIsGZipBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len)</td></tr>
+<tr class="memdesc:ae176bb2e1451c321f129800e5d12b7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试缓冲区是否是gzip格式  <a href="#ae176bb2e1451c321f129800e5d12b7a4">更多...</a><br /></td></tr>
+<tr class="separator:ae176bb2e1451c321f129800e5d12b7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c53998e2b3b8ba581d9bc219022b0a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a06c53998e2b3b8ba581d9bc219022b0a">isGZipBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len)</td></tr>
+<tr class="separator:a06c53998e2b3b8ba581d9bc219022b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e9554ddda5cd914e13a3a801cf23d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a15e9554ddda5cd914e13a3a801cf23d6">ccInflateCCZFile</a> (const char *filename, unsigned char **out)</td></tr>
+<tr class="memdesc:a15e9554ddda5cd914e13a3a801cf23d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">膨胀一个CCZ文件到内存  <a href="#a15e9554ddda5cd914e13a3a801cf23d6">更多...</a><br /></td></tr>
+<tr class="separator:a15e9554ddda5cd914e13a3a801cf23d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fc603d0a592723054dd68614bd4479"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a64fc603d0a592723054dd68614bd4479">inflateCCZFile</a> (const char *filename, unsigned char **out)</td></tr>
+<tr class="separator:a64fc603d0a592723054dd68614bd4479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efc8c0c767af74378acb96dd5bb2201"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a2efc8c0c767af74378acb96dd5bb2201">ccInflateCCZBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len, unsigned char **out)</td></tr>
+<tr class="memdesc:a2efc8c0c767af74378acb96dd5bb2201"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个膨胀的缓冲区CCZ格式转换到内存  <a href="#a2efc8c0c767af74378acb96dd5bb2201">更多...</a><br /></td></tr>
+<tr class="separator:a2efc8c0c767af74378acb96dd5bb2201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502023795449264a8a63ff8fdc98c042"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a502023795449264a8a63ff8fdc98c042">inflateCCZBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len, unsigned char **out)</td></tr>
+<tr class="separator:a502023795449264a8a63ff8fdc98c042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b69ddc8ea1d5a3116bb65d6b41e4a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a35b69ddc8ea1d5a3116bb65d6b41e4a9">ccIsCCZFile</a> (const char *filename)</td></tr>
+<tr class="memdesc:a35b69ddc8ea1d5a3116bb65d6b41e4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试一个文件是否是一个CCZ格式的文件  <a href="#a35b69ddc8ea1d5a3116bb65d6b41e4a9">更多...</a><br /></td></tr>
+<tr class="separator:a35b69ddc8ea1d5a3116bb65d6b41e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b617d2f7ee0af6ce582f8cca946584"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a84b617d2f7ee0af6ce582f8cca946584">isCCZFile</a> (const char *filename)</td></tr>
+<tr class="separator:a84b617d2f7ee0af6ce582f8cca946584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648b57bba93880495beb8b06258e3896"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a648b57bba93880495beb8b06258e3896">ccIsCCZBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len)</td></tr>
+<tr class="memdesc:a648b57bba93880495beb8b06258e3896"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试缓冲区是否是CCZ格式  <a href="#a648b57bba93880495beb8b06258e3896">更多...</a><br /></td></tr>
+<tr class="separator:a648b57bba93880495beb8b06258e3896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36788eda82ee1f5606d9544291364ff0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a36788eda82ee1f5606d9544291364ff0">isCCZBuffer</a> (const unsigned char *buffer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> len)</td></tr>
+<tr class="separator:a36788eda82ee1f5606d9544291364ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace72b230ff0f423a22710ac1c7ad8ceb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#ace72b230ff0f423a22710ac1c7ad8ceb">ccSetPvrEncryptionKeyPart</a> (int index, unsigned int value)</td></tr>
+<tr class="memdesc:ace72b230ff0f423a22710ac1c7ad8ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">分别设置pvr.ccz加密关键部件增加 安全性。  <a href="#ace72b230ff0f423a22710ac1c7ad8ceb">更多...</a><br /></td></tr>
+<tr class="separator:ace72b230ff0f423a22710ac1c7ad8ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144c1c5cf025f289679a88fd803ba1e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a144c1c5cf025f289679a88fd803ba1e5">setPvrEncryptionKeyPart</a> (int index, unsigned int value)</td></tr>
+<tr class="separator:a144c1c5cf025f289679a88fd803ba1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc1e5daf93e955825dd2d0515d6ba78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#a2bc1e5daf93e955825dd2d0515d6ba78">ccSetPvrEncryptionKey</a> (unsigned int keyPart1, unsigned int keyPart2, unsigned int keyPart3, unsigned int keyPart4)</td></tr>
+<tr class="memdesc:a2bc1e5daf93e955825dd2d0515d6ba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置pvr.ccz加密密钥。  <a href="#a2bc1e5daf93e955825dd2d0515d6ba78">更多...</a><br /></td></tr>
+<tr class="separator:a2bc1e5daf93e955825dd2d0515d6ba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19544d07da604d688fbab7ca45cf7bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html#ab19544d07da604d688fbab7ca45cf7bd">setPvrEncryptionKey</a> (unsigned int keyPart1, unsigned int keyPart2, unsigned int keyPart3, unsigned int keyPart4)</td></tr>
+<tr class="separator:ab19544d07da604d688fbab7ca45cf7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a2efc8c0c767af74378acb96dd5bb2201"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int ccInflateCCZBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一个膨胀的缓冲区CCZ格式转换到内存 </p>
+<dl class="section return"><dt>返回</dt><dd>瘪缓冲区的长度</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15e9554ddda5cd914e13a3a801cf23d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int ccInflateCCZFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>膨胀一个CCZ文件到内存 </p>
+<dl class="section return"><dt>返回</dt><dd>瘪缓冲区的长度</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2be38efdff213b0693c7f64ecee70804"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> int ccInflateGZipFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>膨胀一个gzip文件到内存 </p>
+<dl class="section return"><dt>返回</dt><dd>瘪缓冲区的长度</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad0fb9e9ea2c30ed32c09a9cb80d2ce52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> ccInflateMemory </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>inLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>无论是膨胀的zlib或gzip的瘪内存。膨胀的内存 由调用者释放。 </p>
+<p>它会分配256K的目标缓冲区。如果这还不够，将乘2前面的缓冲区大小，直到有足够的存储器。 </p><dl class="section return"><dt>返回</dt><dd>返回瘪缓冲区的长度</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.8.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8636eabb9f0d168250e4c1f1c739d1b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> ccInflateMemoryWithHint </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>inLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>outLengthHint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>无论是膨胀的zlib或gzip的瘪内存。膨胀的内存 由调用者释放。 </p>
+<p>outLenghtHint被假定为所需要的空间分配膨胀的缓冲区。</p>
+<dl class="section return"><dt>返回</dt><dd>瘪缓冲区的长度</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V1.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a648b57bba93880495beb8b06258e3896"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool ccIsCCZBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>测试缓冲区是否是CCZ格式 </p>
+<dl class="section return"><dt>返回</dt><dd>true是CCZ格式。false则不是</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35b69ddc8ea1d5a3116bb65d6b41e4a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool ccIsCCZFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>测试一个文件是否是一个CCZ格式的文件 </p>
+<dl class="section return"><dt>返回</dt><dd>true是CCZ格式的文件。false则不是</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae176bb2e1451c321f129800e5d12b7a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool ccIsGZipBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>测试缓冲区是否是gzip格式 </p>
+<dl class="section return"><dt>返回</dt><dd>true是gzip格式。false 则不是</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f36e1d9114ce06e998f3de1a07af7c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool ccIsGZipFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>测试的文件是否是一个gzip格式的文件 </p>
+<dl class="section return"><dt>返回</dt><dd>true是gzip格式的文件. false则不是</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bc1e5daf93e955825dd2d0515d6ba78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void ccSetPvrEncryptionKey </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置pvr.ccz加密密钥。 </p>
+<p>例如：如果用来加密pvr.ccz文件是密钥是 0xaaaaaaaabbbbbbbbccccccccdddddddd你会调用这个函数， 密钥拆分成4个部分.如下</p>
+<p><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a>:: setPvrEncryptionKey（0xaaaaaaaa，0xbbbbbbbb，0xcccccccc，0xdddddddd）;</p>
+<p>请注意，使用此功能可以更容易地进行逆向工程和 发现完整的密钥，因为在关键部位都存在一次 函数调用。</p>
+<p>重要提示：请务必调用setPvrEncryptionKey或 setPvrEncryptionKeyPart与所有的密钥部位,在此之前加载 在spritesheet或解密将失败，spritesheet 将无法加载。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyPart1</td><td>密钥部分1。 </td></tr>
+    <tr><td class="paramname">keyPart2</td><td>密钥部分2。 </td></tr>
+    <tr><td class="paramname">keyPart3</td><td>密钥部分3。 </td></tr>
+    <tr><td class="paramname">keyPart4</td><td>密钥部分4。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace72b230ff0f423a22710ac1c7ad8ceb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void ccSetPvrEncryptionKeyPart </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分别设置pvr.ccz加密关键部件增加 安全性。 </p>
+<p>举例：如果该键用来pvr.ccz加密文件是 0xaaaaaaaabbbbbbbbccccccccdddddddd，你会4次不同的调用这个函数 最好是从4个不同的源文件，如下</p>
+<p><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a> :: setPvrEncryptionKeyPart （0， 0xaaaaaaaa ） ; <a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a> :: setPvrEncryptionKeyPart （1， 0xbbbbbbbb ） ; <a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a> :: setPvrEncryptionKeyPart （2， 0xcccccccc ） ; <a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a> :: setPvrEncryptionKeyPart （3 ， 0xdddddddd ） ;</p>
+<p>拆分键分为4部分，并 从4个不同的源文件调用函数增加了难度 逆向工程的加密密钥。请注意， 加密 不是"永远"100安全的，关键代码可以被有知识的人破解</p>
+<p>重要提示：请务必调用setPvrEncryptionKey或 setPvrEncryptionKeyPart与所有的关键部位,在此之前 加载spritesheet或解密将失败， spritesheet 将无法加载。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>部分key[ 0 .. 3] </td></tr>
+    <tr><td class="paramname">value</td><td>关键部分的参数value值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a502023795449264a8a63ff8fdc98c042"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int inflateCCZBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64fc603d0a592723054dd68614bd4479"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int inflateCCZFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abde733860e7ad4a536028ef62ac1f686"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int inflateGZipFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62219f54ffdfa5abd736337ab33905c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inflateMemory </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>inLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ad65c7b6050b4c76125a22235bd1a82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> inflateMemoryWithHint </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>inLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>outLengthHint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36788eda82ee1f5606d9544291364ff0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isCCZBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84b617d2f7ee0af6ce582f8cca946584"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isCCZFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06c53998e2b3b8ba581d9bc219022b0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isGZipBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0e119546fc4c4120508485676800a74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isGZipFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab19544d07da604d688fbab7ca45cf7bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setPvrEncryptionKey </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keyPart4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a144c1c5cf025f289679a88fd803ba1e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setPvrEncryptionKeyPart </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/base/<a class="el" href="../../d8/d3c/_zip_utils_8h.html">ZipUtils.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d3/d64/classcocos2d_1_1_zip_utils.html">ZipUtils</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:53 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

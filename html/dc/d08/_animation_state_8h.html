@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/spine/AnimationState.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dc/d08/_animation_state_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">AnimationState.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="../../dc/d8b/_animation_8h.html">spine/Animation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/d1d/_animation_state_data_8h.html">spine/AnimationStateData.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/d6d/_event_8h.html">spine/Event.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae22a59c32722ecf0c336c6c0db2bc9cc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#ae22a59c32722ecf0c336c6c0db2bc9cc">spAnimationStateListener</a> )(<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *state, int trackIndex, <a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8">spEventType</a> type, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> *event, int loopCount)</td></tr>
+<tr class="separator:ae22a59c32722ecf0c336c6c0db2bc9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:af477ae8fac9110c539327195c0a97cb8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8">spEventType</a> { <a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8aff4ba41e52a32866fc9bee45d12a6793">ANIMATION_START</a>, 
+<a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8a1b71ec862986962405b7f107c0b6d65a">ANIMATION_END</a>, 
+<a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8aa9c8e575270cb9a8d60a330a6b10f819">ANIMATION_COMPLETE</a>, 
+<a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8ab85e4b3e28dd2c99442df006e8f62368">ANIMATION_EVENT</a>
+ }</td></tr>
+<tr class="separator:af477ae8fac9110c539327195c0a97cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9aef50c05c8f0dad0dc5b5196d221e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a9aef50c05c8f0dad0dc5b5196d221e29">spAnimationState_create</a> (<a class="el" href="../../d1/d2d/structsp_animation_state_data.html">spAnimationStateData</a> *data)</td></tr>
+<tr class="separator:a9aef50c05c8f0dad0dc5b5196d221e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb36f95af04a3ec35d13f6c435aeb4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a6bb36f95af04a3ec35d13f6c435aeb4a">spAnimationState_dispose</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self)</td></tr>
+<tr class="separator:a6bb36f95af04a3ec35d13f6c435aeb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0eaef7d5f047204c709cee9f51ef08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a6e0eaef7d5f047204c709cee9f51ef08">spAnimationState_update</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, float delta)</td></tr>
+<tr class="separator:a6e0eaef7d5f047204c709cee9f51ef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad262fd1d4baef334b406f2419c46901f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#ad262fd1d4baef334b406f2419c46901f">spAnimationState_apply</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton)</td></tr>
+<tr class="separator:ad262fd1d4baef334b406f2419c46901f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e02acb42b99b6ea3ff767ec4aea7a13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a5e02acb42b99b6ea3ff767ec4aea7a13">spAnimationState_clearTracks</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self)</td></tr>
+<tr class="separator:a5e02acb42b99b6ea3ff767ec4aea7a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1987a7660e107a9a8fc6c05012738764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a1987a7660e107a9a8fc6c05012738764">spAnimationState_clearTrack</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex)</td></tr>
+<tr class="separator:a1987a7660e107a9a8fc6c05012738764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a81b8de90addacd7dcab778f6058284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a2a81b8de90addacd7dcab778f6058284">spAnimationState_setAnimationByName</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex, const char *animationName, intloop)</td></tr>
+<tr class="memdesc:a2a81b8de90addacd7dcab778f6058284"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前动画.  <a href="#a2a81b8de90addacd7dcab778f6058284">更多...</a><br /></td></tr>
+<tr class="separator:a2a81b8de90addacd7dcab778f6058284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c4984555fd21b666684822028b5a9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#ac2c4984555fd21b666684822028b5a9d">spAnimationState_setAnimation</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex, <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *animation, intloop)</td></tr>
+<tr class="separator:ac2c4984555fd21b666684822028b5a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e19dc25a3c2747faeed82fc49c0d106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a8e19dc25a3c2747faeed82fc49c0d106">spAnimationState_addAnimationByName</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex, const char *animationName, intloop, float delay)</td></tr>
+<tr class="memdesc:a8e19dc25a3c2747faeed82fc49c0d106"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加动画，动画会在当前的动画或动画队列中最后的动画结束delay时间后进行播放， delay为混合效果的时间按 Adds an animation to be played delay seconds after the current or last queued animation, taking into account any mix duration.  <a href="#a8e19dc25a3c2747faeed82fc49c0d106">更多...</a><br /></td></tr>
+<tr class="separator:a8e19dc25a3c2747faeed82fc49c0d106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc8251c875f96da7fa8d5115006ae7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#adfc8251c875f96da7fa8d5115006ae7f">spAnimationState_addAnimation</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex, <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *animation, intloop, float delay)</td></tr>
+<tr class="separator:adfc8251c875f96da7fa8d5115006ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2f405641185bc82fe9d91f2426f852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d08/_animation_state_8h.html#a2f2f405641185bc82fe9d91f2426f852">spAnimationState_getCurrent</a> (<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *self, int trackIndex)</td></tr>
+<tr class="separator:a2f2f405641185bc82fe9d91f2426f852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ae22a59c32722ecf0c336c6c0db2bc9cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spAnimationStateListener)(<a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *state, int trackIndex, <a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8">spEventType</a> type, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> *event, int loopCount)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="af477ae8fac9110c539327195c0a97cb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d08/_animation_state_8h.html#af477ae8fac9110c539327195c0a97cb8">spEventType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="af477ae8fac9110c539327195c0a97cb8aff4ba41e52a32866fc9bee45d12a6793"></a>ANIMATION_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af477ae8fac9110c539327195c0a97cb8a1b71ec862986962405b7f107c0b6d65a"></a>ANIMATION_END&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af477ae8fac9110c539327195c0a97cb8aa9c8e575270cb9a8d60a330a6b10f819"></a>ANIMATION_COMPLETE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af477ae8fac9110c539327195c0a97cb8ab85e4b3e28dd2c99442df006e8f62368"></a>ANIMATION_EVENT&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="adfc8251c875f96da7fa8d5115006ae7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a>* spAnimationState_addAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td>
+          <td class="paramname"><em>animation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intloop&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e19dc25a3c2747faeed82fc49c0d106"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a>* spAnimationState_addAnimationByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>animationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intloop&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加动画，动画会在当前的动画或动画队列中最后的动画结束delay时间后进行播放， delay为混合效果的时间按 Adds an animation to be played delay seconds after the current or last queued animation, taking into account any mix duration. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad262fd1d4baef334b406f2419c46901f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimationState_apply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *&#160;</td>
+          <td class="paramname"><em>skeleton</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1987a7660e107a9a8fc6c05012738764"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimationState_clearTrack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e02acb42b99b6ea3ff767ec4aea7a13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimationState_clearTracks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9aef50c05c8f0dad0dc5b5196d221e29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a>* spAnimationState_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d2d/structsp_animation_state_data.html">spAnimationStateData</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bb36f95af04a3ec35d13f6c435aeb4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimationState_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f2f405641185bc82fe9d91f2426f852"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a>* spAnimationState_getCurrent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2c4984555fd21b666684822028b5a9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a>* spAnimationState_setAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td>
+          <td class="paramname"><em>animation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intloop&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a81b8de90addacd7dcab778f6058284"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/structsp_track_entry.html">spTrackEntry</a>* spAnimationState_setAnimationByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trackIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>animationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intloop&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前动画. </p>
+<p>队列中的动画会被清除. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e0eaef7d5f047204c709cee9f51ef08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimationState_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/structsp_animation_state.html">spAnimationState</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_fd4f0d2e565942d0b258d739eb9baf6f.html">editor-support</a></li><li class="navelem"><a class="el" href="../../dir_a2c234a85ab6bcec71aa847aef5dfa52.html">spine</a></li><li class="navelem"><a class="el" href="../../dc/d08/_animation_state_8h.html">AnimationState.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

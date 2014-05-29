@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Rect类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d4/d8a/classcocos2d_1_1_rect.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="../../da/dfa/classcocos2d_1_1_rect-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Rect类 参考<div class="ingroups"><a class="el" href="../../df/db3/group__data__structures.html">Data Structures</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCGeometry.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae436fd0322c99157c5443a3385961e22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ae436fd0322c99157c5443a3385961e22">Rect</a> ()</td></tr>
+<tr class="memdesc:ae436fd0322c99157c5443a3385961e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#ae436fd0322c99157c5443a3385961e22">更多...</a><br /></td></tr>
+<tr class="separator:ae436fd0322c99157c5443a3385961e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55b563676fff94d1e9733e6e850139d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ab55b563676fff94d1e9733e6e850139d">Rect</a> (float x, float y, float width, float height)</td></tr>
+<tr class="memdesc:ab55b563676fff94d1e9733e6e850139d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#ab55b563676fff94d1e9733e6e850139d">更多...</a><br /></td></tr>
+<tr class="separator:ab55b563676fff94d1e9733e6e850139d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdea0b9ff343e9e98f26fe045af275c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#acbdea0b9ff343e9e98f26fe045af275c">Rect</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;other)</td></tr>
+<tr class="memdesc:acbdea0b9ff343e9e98f26fe045af275c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#acbdea0b9ff343e9e98f26fe045af275c">更多...</a><br /></td></tr>
+<tr class="separator:acbdea0b9ff343e9e98f26fe045af275c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbdbd985cc3bc484838f313b31b6db9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a5cbdbd985cc3bc484838f313b31b6db9">operator=</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;other)</td></tr>
+<tr class="memdesc:a5cbdbd985cc3bc484838f313b31b6db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a5cbdbd985cc3bc484838f313b31b6db9">更多...</a><br /></td></tr>
+<tr class="separator:a5cbdbd985cc3bc484838f313b31b6db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8ea0045de695cbb7510b57c2b64464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#adf8ea0045de695cbb7510b57c2b64464">setRect</a> (float x, float y, float width, float height)</td></tr>
+<tr class="memdesc:adf8ea0045de695cbb7510b57c2b64464"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#adf8ea0045de695cbb7510b57c2b64464">更多...</a><br /></td></tr>
+<tr class="separator:adf8ea0045de695cbb7510b57c2b64464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f73f8e9df3d9b41d984a7974e515466"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a1f73f8e9df3d9b41d984a7974e515466">getMinX</a> () const </td></tr>
+<tr class="memdesc:a1f73f8e9df3d9b41d984a7974e515466"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a1f73f8e9df3d9b41d984a7974e515466">更多...</a><br /></td></tr>
+<tr class="separator:a1f73f8e9df3d9b41d984a7974e515466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a02ac8e6ba2def6c16cc0d4c9087824"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a6a02ac8e6ba2def6c16cc0d4c9087824">getMidX</a> () const </td></tr>
+<tr class="memdesc:a6a02ac8e6ba2def6c16cc0d4c9087824"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的最左的x值  <a href="#a6a02ac8e6ba2def6c16cc0d4c9087824">更多...</a><br /></td></tr>
+<tr class="separator:a6a02ac8e6ba2def6c16cc0d4c9087824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9042e69ab0c753f1d273e893503ac6c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#aa9042e69ab0c753f1d273e893503ac6c">getMaxX</a> () const </td></tr>
+<tr class="memdesc:aa9042e69ab0c753f1d273e893503ac6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的中点的x值  <a href="#aa9042e69ab0c753f1d273e893503ac6c">更多...</a><br /></td></tr>
+<tr class="separator:aa9042e69ab0c753f1d273e893503ac6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab479c3bd3c243cd9e55c685e25a08865"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ab479c3bd3c243cd9e55c685e25a08865">getMinY</a> () const </td></tr>
+<tr class="memdesc:ab479c3bd3c243cd9e55c685e25a08865"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的最右的x值  <a href="#ab479c3bd3c243cd9e55c685e25a08865">更多...</a><br /></td></tr>
+<tr class="separator:ab479c3bd3c243cd9e55c685e25a08865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62e4dcd77ff00b80c9833e952d14287"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ad62e4dcd77ff00b80c9833e952d14287">getMidY</a> () const </td></tr>
+<tr class="memdesc:ad62e4dcd77ff00b80c9833e952d14287"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的底部的y值  <a href="#ad62e4dcd77ff00b80c9833e952d14287">更多...</a><br /></td></tr>
+<tr class="separator:ad62e4dcd77ff00b80c9833e952d14287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa878167e28af52c50c52491063f7bf09"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#aa878167e28af52c50c52491063f7bf09">getMaxY</a> () const </td></tr>
+<tr class="memdesc:aa878167e28af52c50c52491063f7bf09"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的中部的y值  <a href="#aa878167e28af52c50c52491063f7bf09">更多...</a><br /></td></tr>
+<tr class="separator:aa878167e28af52c50c52491063f7bf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f2fd3c266b6347a1c4fb5466dec972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ac3f2fd3c266b6347a1c4fb5466dec972">equals</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect) const </td></tr>
+<tr class="memdesc:ac3f2fd3c266b6347a1c4fb5466dec972"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回rect的顶部的y值  <a href="#ac3f2fd3c266b6347a1c4fb5466dec972">更多...</a><br /></td></tr>
+<tr class="separator:ac3f2fd3c266b6347a1c4fb5466dec972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011e04551ca371f8a99d2a3f47cd499e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a011e04551ca371f8a99d2a3f47cd499e">containsPoint</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;point) const </td></tr>
+<tr class="memdesc:a011e04551ca371f8a99d2a3f47cd499e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a011e04551ca371f8a99d2a3f47cd499e">更多...</a><br /></td></tr>
+<tr class="separator:a011e04551ca371f8a99d2a3f47cd499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7579247391a0cf6ffe630b0ec0501937"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a7579247391a0cf6ffe630b0ec0501937">intersectsRect</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect) const </td></tr>
+<tr class="memdesc:a7579247391a0cf6ffe630b0ec0501937"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a7579247391a0cf6ffe630b0ec0501937">更多...</a><br /></td></tr>
+<tr class="separator:a7579247391a0cf6ffe630b0ec0501937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ed0983b5f0907483e876d4e0b51169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#ae4ed0983b5f0907483e876d4e0b51169">unionWithRect</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect) const </td></tr>
+<tr class="memdesc:ae4ed0983b5f0907483e876d4e0b51169"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ae4ed0983b5f0907483e876d4e0b51169">更多...</a><br /></td></tr>
+<tr class="separator:ae4ed0983b5f0907483e876d4e0b51169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abcee6757938973b7cb8dbaecfaf30b76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#abcee6757938973b7cb8dbaecfaf30b76">origin</a></td></tr>
+<tr class="separator:abcee6757938973b7cb8dbaecfaf30b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693887ab47dee6ab960fb1ef887c56cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a693887ab47dee6ab960fb1ef887c56cf">size</a></td></tr>
+<tr class="separator:a693887ab47dee6ab960fb1ef887c56cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a8a100dcd44e8f0285b0cd59d4297baa1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html#a8a100dcd44e8f0285b0cd59d4297baa1">ZERO</a></td></tr>
+<tr class="separator:a8a100dcd44e8f0285b0cd59d4297baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae436fd0322c99157c5443a3385961e22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ab55b563676fff94d1e9733e6e850139d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="acbdea0b9ff343e9e98f26fe045af275c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a011e04551ca371f8a99d2a3f47cd499e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool containsPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3f2fd3c266b6347a1c4fb5466dec972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的顶部的y值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aa9042e69ab0c753f1d273e893503ac6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMaxX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的中点的x值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aa878167e28af52c50c52491063f7bf09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMaxY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的中部的y值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a02ac8e6ba2def6c16cc0d4c9087824"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMidX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的最左的x值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ad62e4dcd77ff00b80c9833e952d14287"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMidY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的底部的y值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f73f8e9df3d9b41d984a7974e515466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMinX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ab479c3bd3c243cd9e55c685e25a08865"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMinY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回rect的最右的x值 </p>
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a7579247391a0cf6ffe630b0ec0501937"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool intersectsRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a5cbdbd985cc3bc484838f313b31b6db9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adf8ea0045de695cbb7510b57c2b64464"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRect </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae4ed0983b5f0907483e876d4e0b51169"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> unionWithRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="abcee6757938973b7cb8dbaecfaf30b76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a693887ab47dee6ab960fb1ef887c56cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a100dcd44e8f0285b0cd59d4297baa1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> ZERO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/math/<a class="el" href="../../d6/d09/_c_c_geometry_8h.html">CCGeometry.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:49 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

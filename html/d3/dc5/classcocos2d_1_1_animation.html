@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Animation类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/dc5/classcocos2d_1_1_animation.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../dc/df8/classcocos2d_1_1_animation-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Animation类 参考<div class="ingroups"><a class="el" href="../../d8/de9/group__sprite__nodes.html">Sprite Nodes</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>一个用来在精灵对象上表现动画的动画对象.  
+ <a href="../../d3/dc5/classcocos2d_1_1_animation.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCAnimation.h&gt;</code></p>
+<div class="dynheader">
+类 Animation 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d3/dc5/classcocos2d_1_1_animation.png" usemap="#Animation_map" alt=""/>
+  <map id="Animation_map" name="Animation_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,67,24"/>
+<area href="../../db/d5f/classcocos2d_1_1_clonable.html" title="如何克隆一个Ref对象的接口定义 " alt="Clonable" shape="rect" coords="77,0,144,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae4ea388b484d5ace15ba83f43d24904a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ae4ea388b484d5ace15ba83f43d24904a">addSpriteFrame</a> (<a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *frame)</td></tr>
+<tr class="memdesc:ae4ea388b484d5ace15ba83f43d24904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个精灵帧到动画中.  <a href="#ae4ea388b484d5ace15ba83f43d24904a">更多...</a><br /></td></tr>
+<tr class="separator:ae4ea388b484d5ace15ba83f43d24904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6667179c86390ff2f408a526bda3777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ac6667179c86390ff2f408a526bda3777">addSpriteFrameWithFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ac6667179c86390ff2f408a526bda3777"><td class="mdescLeft">&#160;</td><td class="mdescRight">用图片名称加一个精灵帧到动画中.  <a href="#ac6667179c86390ff2f408a526bda3777">更多...</a><br /></td></tr>
+<tr class="separator:ac6667179c86390ff2f408a526bda3777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ad2bf0f642f06f8567d5482fc29bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ad6ad2bf0f642f06f8567d5482fc29bdb">addSpriteFrameWithFileName</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:ad6ad2bf0f642f06f8567d5482fc29bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1f056a18c4bcc8e23c84eabf21b55e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a9c1f056a18c4bcc8e23c84eabf21b55e">addSpriteFrameWithTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a9c1f056a18c4bcc8e23c84eabf21b55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">用一个2D纹理(Texture2D)和矩形添加一个帧.  <a href="#a9c1f056a18c4bcc8e23c84eabf21b55e">更多...</a><br /></td></tr>
+<tr class="separator:a9c1f056a18c4bcc8e23c84eabf21b55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516af2c8494a17dbba1863c5130da7b1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a516af2c8494a17dbba1863c5130da7b1">getTotalDelayUnits</a> () const </td></tr>
+<tr class="memdesc:a516af2c8494a17dbba1863c5130da7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取动画的延迟单位时间总数目.  <a href="#a516af2c8494a17dbba1863c5130da7b1">更多...</a><br /></td></tr>
+<tr class="separator:a516af2c8494a17dbba1863c5130da7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec90e838c7a4a08cec45f8388d85c09d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#aec90e838c7a4a08cec45f8388d85c09d">setDelayPerUnit</a> (float delayPerUnit)</td></tr>
+<tr class="memdesc:aec90e838c7a4a08cec45f8388d85c09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置每单位时间延迟(delay unit).  <a href="#aec90e838c7a4a08cec45f8388d85c09d">更多...</a><br /></td></tr>
+<tr class="separator:aec90e838c7a4a08cec45f8388d85c09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0f12e7ba5d194022160b7cb62b948d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a8a0f12e7ba5d194022160b7cb62b948d">getDelayPerUnit</a> () const </td></tr>
+<tr class="memdesc:a8a0f12e7ba5d194022160b7cb62b948d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取每单位时间延迟(delay unit).  <a href="#a8a0f12e7ba5d194022160b7cb62b948d">更多...</a><br /></td></tr>
+<tr class="separator:a8a0f12e7ba5d194022160b7cb62b948d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137f89ce7c16849a8e94ab656e67f406"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a137f89ce7c16849a8e94ab656e67f406">getDuration</a> () const </td></tr>
+<tr class="memdesc:a137f89ce7c16849a8e94ab656e67f406"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取整个动画的持续时间, 单位: 秒.  <a href="#a137f89ce7c16849a8e94ab656e67f406">更多...</a><br /></td></tr>
+<tr class="separator:a137f89ce7c16849a8e94ab656e67f406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab506b5d13a31a3f14c220b56d36fc3d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ab506b5d13a31a3f14c220b56d36fc3d2">getFrames</a> () const </td></tr>
+<tr class="memdesc:ab506b5d13a31a3f14c220b56d36fc3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取一组(vector)动画帧(AnimationFrame)  <a href="#ab506b5d13a31a3f14c220b56d36fc3d2">更多...</a><br /></td></tr>
+<tr class="separator:ab506b5d13a31a3f14c220b56d36fc3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5b9d8889afe18168674eb77ad6f885"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#abb5b9d8889afe18168674eb77ad6f885">setFrames</a> (const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;frames)</td></tr>
+<tr class="memdesc:abb5b9d8889afe18168674eb77ad6f885"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一组(vector)动画帧(AnimationFrame)  <a href="#abb5b9d8889afe18168674eb77ad6f885">更多...</a><br /></td></tr>
+<tr class="separator:abb5b9d8889afe18168674eb77ad6f885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5895d4d3cbfb9d1290d969373b665f0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a5895d4d3cbfb9d1290d969373b665f0a">getRestoreOriginalFrame</a> () const </td></tr>
+<tr class="memdesc:a5895d4d3cbfb9d1290d969373b665f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查当动画结束时,是否要存储这些原始帧.  <a href="#a5895d4d3cbfb9d1290d969373b665f0a">更多...</a><br /></td></tr>
+<tr class="separator:a5895d4d3cbfb9d1290d969373b665f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d88104c3cb0e3047802780ed779f752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a9d88104c3cb0e3047802780ed779f752">setRestoreOriginalFrame</a> (bool restoreOriginalFrame)</td></tr>
+<tr class="memdesc:a9d88104c3cb0e3047802780ed779f752"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置"当动画结束时,是否要存储这些原始帧".  <a href="#a9d88104c3cb0e3047802780ed779f752">更多...</a><br /></td></tr>
+<tr class="separator:a9d88104c3cb0e3047802780ed779f752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045fd8edb336c832e2ba6651436e191a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a045fd8edb336c832e2ba6651436e191a">getLoops</a> () const </td></tr>
+<tr class="memdesc:a045fd8edb336c832e2ba6651436e191a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取动画将要循环执行的次数.  <a href="#a045fd8edb336c832e2ba6651436e191a">更多...</a><br /></td></tr>
+<tr class="separator:a045fd8edb336c832e2ba6651436e191a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d39129f5b5a48287d0e7219fbffa801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a2d39129f5b5a48287d0e7219fbffa801">setLoops</a> (unsigned int loops)</td></tr>
+<tr class="memdesc:a2d39129f5b5a48287d0e7219fbffa801"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置动画将要循环执行的次数.  <a href="#a2d39129f5b5a48287d0e7219fbffa801">更多...</a><br /></td></tr>
+<tr class="separator:a2d39129f5b5a48287d0e7219fbffa801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73a492e37441a5b6e24c8ac412f9980"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ad73a492e37441a5b6e24c8ac412f9980">clone</a> () const override</td></tr>
+<tr class="memdesc:ad73a492e37441a5b6e24c8ac412f9980"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象的一份拷贝  <a href="#ad73a492e37441a5b6e24c8ac412f9980">更多...</a><br /></td></tr>
+<tr class="separator:ad73a492e37441a5b6e24c8ac412f9980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19121fc15fe0430e6516cf04f0cf43fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a19121fc15fe0430e6516cf04f0cf43fd">~Animation</a> (void)</td></tr>
+<tr class="separator:a19121fc15fe0430e6516cf04f0cf43fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#aee8048628ff2b5c026c9e15acdcaacb8">init</a> ()</td></tr>
+<tr class="memdesc:aee8048628ff2b5c026c9e15acdcaacb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化一个动画  <a href="#aee8048628ff2b5c026c9e15acdcaacb8">更多...</a><br /></td></tr>
+<tr class="separator:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cf019894045bfbaa3ae04c58ab3736"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#af8cf019894045bfbaa3ae04c58ab3736">initWithSpriteFrames</a> (const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> * &gt; &amp;arrayOfSpriteFrameNames, float delay=0.0f, unsigned int loops=1)</td></tr>
+<tr class="memdesc:af8cf019894045bfbaa3ae04c58ab3736"><td class="mdescLeft">&#160;</td><td class="mdescRight">用一组(vector)精灵帧(SpriteFrame), 这组精灵帧之间延迟的时间初始化一个动画对象(Animation).  <a href="#af8cf019894045bfbaa3ae04c58ab3736">更多...</a><br /></td></tr>
+<tr class="separator:af8cf019894045bfbaa3ae04c58ab3736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e32f79fe519db97f13169b089e8aed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a88e32f79fe519db97f13169b089e8aed">initWithAnimationFrames</a> (const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;arrayOfAnimationFrameNames, float delayPerUnit, unsigned int loops)</td></tr>
+<tr class="memdesc:a88e32f79fe519db97f13169b089e8aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">用一组(vector)动画帧(AnimationFrame)初始化动画帧.  <a href="#a88e32f79fe519db97f13169b089e8aed">更多...</a><br /></td></tr>
+<tr class="separator:a88e32f79fe519db97f13169b089e8aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_clonable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_clonable')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html">Clonable</a></td></tr>
+<tr class="memitem:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a76f2cea395fcb3087c75c52eff668c1e">~Clonable</a> ()</td></tr>
+<tr class="memdesc:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a76f2cea395fcb3087c75c52eff668c1e">更多...</a><br /></td></tr>
+<tr class="separator:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a4fb86ee00f7fece8747e2438f112b449">copy</a> () const </td></tr>
+<tr class="memdesc:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象的一份拷贝.  <a href="#a4fb86ee00f7fece8747e2438f112b449">更多...</a><br /></td></tr>
+<tr class="separator:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aa191eee465448f78d234591408500262"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#aa191eee465448f78d234591408500262">create</a> (void)</td></tr>
+<tr class="memdesc:aa191eee465448f78d234591408500262"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建并初始化一个动画  <a href="#aa191eee465448f78d234591408500262">更多...</a><br /></td></tr>
+<tr class="separator:aa191eee465448f78d234591408500262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24726b199938f4bc36db5c7e996b28ff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a24726b199938f4bc36db5c7e996b28ff">createWithSpriteFrames</a> (const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> * &gt; &amp;arrayOfSpriteFrameNames, float delay=0.0f, unsigned int loops=1)</td></tr>
+<tr class="separator:a24726b199938f4bc36db5c7e996b28ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4eb2bd559d10ed0293c2f2e4b20f4ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ae4eb2bd559d10ed0293c2f2e4b20f4ce">create</a> (const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;arrayOfAnimationFrameNames, float delayPerUnit, unsigned int loops=1)</td></tr>
+<tr class="separator:ae4eb2bd559d10ed0293c2f2e4b20f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a111fce2fb3d1886083559f4b9ecba3b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d9f/cc_config_8h.html#a25ef1314f97c35a2ed3d029b0ead6da0">CC_CONSTRUCTOR_ACCESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a111fce2fb3d1886083559f4b9ecba3b3">__pad0__</a>: <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a>()</td></tr>
+<tr class="separator:a111fce2fb3d1886083559f4b9ecba3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a718a686a5251775dd5c7fe52cf4fb0f4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a718a686a5251775dd5c7fe52cf4fb0f4">_totalDelayUnits</a></td></tr>
+<tr class="memdesc:a718a686a5251775dd5c7fe52cf4fb0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画延迟时间单位的总数.  <a href="#a718a686a5251775dd5c7fe52cf4fb0f4">更多...</a><br /></td></tr>
+<tr class="separator:a718a686a5251775dd5c7fe52cf4fb0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab142ff0a3ab461eb40e162153e3fa764"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ab142ff0a3ab461eb40e162153e3fa764">_delayPerUnit</a></td></tr>
+<tr class="memdesc:ab142ff0a3ab461eb40e162153e3fa764"><td class="mdescLeft">&#160;</td><td class="mdescRight">单位延迟(delay unit)的延迟时间, 单位: 秒.  <a href="#ab142ff0a3ab461eb40e162153e3fa764">更多...</a><br /></td></tr>
+<tr class="separator:ab142ff0a3ab461eb40e162153e3fa764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d348226adcd02f61d87e05a489464a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a52d348226adcd02f61d87e05a489464a">_duration</a></td></tr>
+<tr class="memdesc:a52d348226adcd02f61d87e05a489464a"><td class="mdescLeft">&#160;</td><td class="mdescRight">整个动画的持续时间, 单位: 秒.  <a href="#a52d348226adcd02f61d87e05a489464a">更多...</a><br /></td></tr>
+<tr class="separator:a52d348226adcd02f61d87e05a489464a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdc0be158df7e09d04644be353db056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#a0fdc0be158df7e09d04644be353db056">_frames</a></td></tr>
+<tr class="memdesc:a0fdc0be158df7e09d04644be353db056"><td class="mdescLeft">&#160;</td><td class="mdescRight">一组(vector)动画帧(AnimationFrame)  <a href="#a0fdc0be158df7e09d04644be353db056">更多...</a><br /></td></tr>
+<tr class="separator:a0fdc0be158df7e09d04644be353db056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabdaacb2c71c62e738cd56d2a503717"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#afabdaacb2c71c62e738cd56d2a503717">_restoreOriginalFrame</a></td></tr>
+<tr class="memdesc:afabdaacb2c71c62e738cd56d2a503717"><td class="mdescLeft">&#160;</td><td class="mdescRight">当动画结束时,是否要存储这些原始帧  <a href="#afabdaacb2c71c62e738cd56d2a503717">更多...</a><br /></td></tr>
+<tr class="separator:afabdaacb2c71c62e738cd56d2a503717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90525bb582880f5fc85a07fd05ec99d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ae90525bb582880f5fc85a07fd05ec99d">_loops</a></td></tr>
+<tr class="memdesc:ae90525bb582880f5fc85a07fd05ec99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画将要循环执行的次数.  <a href="#ae90525bb582880f5fc85a07fd05ec99d">更多...</a><br /></td></tr>
+<tr class="separator:ae90525bb582880f5fc85a07fd05ec99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>一个用来在精灵对象上表现动画的动画对象. </p>
+<p>动画对象包含动画帧对象, 还可能有一个设定这些帧之间延迟的参数. 你可以用动画动作(Animate action)来创建一个动画对象(Animation object):</p>
+<div class="fragment"><div class="line">sprite-&gt;runAction(<a class="code" href="../../d9/db4/classcocos2d_1_1_animate.html#a0a905e2a881e03bd246cf2127bae5538">Animate::create</a>(animation));</div>
+</div><!-- fragment --> </div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a19121fc15fe0430e6516cf04f0cf43fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ae4ea388b484d5ace15ba83f43d24904a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个精灵帧到动画中. </p>
+<p>这个帧会以一个单位时间延迟(delay unit)添加. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6667179c86390ff2f408a526bda3777"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSpriteFrameWithFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用图片名称加一个精灵帧到动画中. </p>
+<p>此方法内部会创建一个精灵帧然后添加它. 这个帧会以一个单位时间延迟(delay unit)添加. 添加这个方法使移植更容易了. from v0.8 to v0.9. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6ad2bf0f642f06f8567d5482fc29bdb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void addSpriteFrameWithFileName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000012">弃用:</a></b></dt><dd>. 使用 <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html#ac6667179c86390ff2f408a526bda3777" title="用图片名称加一个精灵帧到动画中. ">addSpriteFrameWithFile()</a> 替代此方法. CC_DEPRECATED_ATTRIBUTE 标记此方法不建议使用. 在将来的cocos2d-x中,此方法很有可能会被抛弃,现在保留这个方法只为了向下兼容. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c1f056a18c4bcc8e23c84eabf21b55e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSpriteFrameWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用一个2D纹理(Texture2D)和矩形添加一个帧. </p>
+<p>此方法内部会创建一个精灵帧然后添加它. 这个帧会以一个单位时间延迟(delay unit)添加. 添加这个方法使移植更容易了. from v0.8 to v0.9. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad73a492e37441a5b6e24c8ac412f9980"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a>* clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Ref对象的一份拷贝 </p>
+
+<p>实现了 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a01ecf272fe5ca557cec86bb1a1ba068f">Clonable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa191eee465448f78d234591408500262"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a>* create </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建并初始化一个动画 </p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae4eb2bd559d10ed0293c2f2e4b20f4ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a>* create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arrayOfAnimationFrameNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delayPerUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>loops</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24726b199938f4bc36db5c7e996b28ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a>* createWithSpriteFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arrayOfSpriteFrameNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>loops</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a0f12e7ba5d194022160b7cb62b948d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getDelayPerUnit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取每单位时间延迟(delay unit). </p>
+<p>单位: 秒 </p>
+
+</div>
+</div>
+<a class="anchor" id="a137f89ce7c16849a8e94ab656e67f406"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getDuration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取整个动画的持续时间, 单位: 秒. </p>
+<p>它是总延迟时间单位(totalDelayUnits)的结果. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab506b5d13a31a3f14c220b56d36fc3d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a>*&gt;&amp; getFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取一组(vector)动画帧(AnimationFrame) </p>
+
+</div>
+</div>
+<a class="anchor" id="a045fd8edb336c832e2ba6651436e191a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int getLoops </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取动画将要循环执行的次数. </p>
+<p>0 表示动画不执行. 1 表示动画执行一次, ... </p>
+
+</div>
+</div>
+<a class="anchor" id="a5895d4d3cbfb9d1290d969373b665f0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getRestoreOriginalFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查当动画结束时,是否要存储这些原始帧. </p>
+
+</div>
+</div>
+<a class="anchor" id="a516af2c8494a17dbba1863c5130da7b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getTotalDelayUnits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取动画的延迟单位时间总数目. </p>
+
+</div>
+</div>
+<a class="anchor" id="aee8048628ff2b5c026c9e15acdcaacb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化一个动画 </p>
+
+</div>
+</div>
+<a class="anchor" id="a88e32f79fe519db97f13169b089e8aed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithAnimationFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arrayOfAnimationFrameNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delayPerUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>loops</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用一组(vector)动画帧(AnimationFrame)初始化动画帧. </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af8cf019894045bfbaa3ae04c58ab3736"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithSpriteFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arrayOfSpriteFrameNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>loops</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用一组(vector)精灵帧(SpriteFrame), 这组精灵帧之间延迟的时间初始化一个动画对象(Animation). </p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec90e838c7a4a08cec45f8388d85c09d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDelayPerUnit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delayPerUnit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置每单位时间延迟(delay unit). </p>
+<p>单位: 秒 </p>
+
+</div>
+</div>
+<a class="anchor" id="abb5b9d8889afe18168674eb77ad6f885"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>frames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置一组(vector)动画帧(AnimationFrame) </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d39129f5b5a48287d0e7219fbffa801"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLoops </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>loops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置动画将要循环执行的次数. </p>
+<p>0 表示动画不执行. 1 表示动画执行一次, ... </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d88104c3cb0e3047802780ed779f752"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRestoreOriginalFrame </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>restoreOriginalFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置"当动画结束时,是否要存储这些原始帧". </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a111fce2fb3d1886083559f4b9ecba3b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d9f/cc_config_8h.html#a25ef1314f97c35a2ed3d029b0ead6da0">CC_CONSTRUCTOR_ACCESS</a> __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab142ff0a3ab461eb40e162153e3fa764"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _delayPerUnit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单位延迟(delay unit)的延迟时间, 单位: 秒. </p>
+
+</div>
+</div>
+<a class="anchor" id="a52d348226adcd02f61d87e05a489464a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _duration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>整个动画的持续时间, 单位: 秒. </p>
+<p>它是总延迟时间单位(totalDelayUnits)的结果. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fdc0be158df7e09d04644be353db056"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a>*&gt; _frames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一组(vector)动画帧(AnimationFrame) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae90525bb582880f5fc85a07fd05ec99d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _loops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画将要循环执行的次数. </p>
+<p>0 表示动画不执行. 1 表示动画执行一次, ... </p>
+
+</div>
+</div>
+<a class="anchor" id="afabdaacb2c71c62e738cd56d2a503717"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _restoreOriginalFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当动画结束时,是否要存储这些原始帧 </p>
+
+</div>
+</div>
+<a class="anchor" id="a718a686a5251775dd5c7fe52cf4fb0f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _totalDelayUnits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画延迟时间单位的总数. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../d2/dd6/_c_c_animation_8h.html">CCAnimation.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:44 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

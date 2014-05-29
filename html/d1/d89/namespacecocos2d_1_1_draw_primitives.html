@@ -1,0 +1,877 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: cocos2d::DrawPrimitives 命名空间参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../namespaces.html"><span>命名空间列表</span></a></li>
+      <li><a href="../../namespacemembers.html"><span>命名空间成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d1/d89/namespacecocos2d_1_1_draw_primitives.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">cocos2d::DrawPrimitives 命名空间参考<div class="ingroups"><a class="el" href="../../d6/da4/group__global.html">Global</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a384a51fa921f1ce5fb982179e3b58169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a384a51fa921f1ce5fb982179e3b58169">init</a> ()</td></tr>
+<tr class="memdesc:a384a51fa921f1ce5fb982179e3b58169"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化绘图原语  <a href="#a384a51fa921f1ce5fb982179e3b58169">更多...</a><br /></td></tr>
+<tr class="separator:a384a51fa921f1ce5fb982179e3b58169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f09dd89e8d5f46e5aa90d39abb913ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a5f09dd89e8d5f46e5aa90d39abb913ac">free</a> ()</td></tr>
+<tr class="memdesc:a5f09dd89e8d5f46e5aa90d39abb913ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放绘制原语时所分配的资源  <a href="#a5f09dd89e8d5f46e5aa90d39abb913ac">更多...</a><br /></td></tr>
+<tr class="separator:a5f09dd89e8d5f46e5aa90d39abb913ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d9d5dab94976fd9d7d788d2e1a3fff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a44d9d5dab94976fd9d7d788d2e1a3fff">drawPoint</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;point)</td></tr>
+<tr class="memdesc:a44d9d5dab94976fd9d7d788d2e1a3fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定x、y值绘制一个点。其中x、y使用像素来度量  <a href="#a44d9d5dab94976fd9d7d788d2e1a3fff">更多...</a><br /></td></tr>
+<tr class="separator:a44d9d5dab94976fd9d7d788d2e1a3fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e04c401646947dcdabcdf08f436d708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a7e04c401646947dcdabcdf08f436d708">drawPoints</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *points, unsigned int numberOfPoints)</td></tr>
+<tr class="memdesc:a7e04c401646947dcdabcdf08f436d708"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制一组点s.  <a href="#a7e04c401646947dcdabcdf08f436d708">更多...</a><br /></td></tr>
+<tr class="separator:a7e04c401646947dcdabcdf08f436d708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a237566e204766a9bdacf8daae5e012e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a237566e204766a9bdacf8daae5e012e3">drawLine</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;origin, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;destination)</td></tr>
+<tr class="memdesc:a237566e204766a9bdacf8daae5e012e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定起始点与终止点绘制一条线，其中起始点与终止点坐标使用像素来度量  <a href="#a237566e204766a9bdacf8daae5e012e3">更多...</a><br /></td></tr>
+<tr class="separator:a237566e204766a9bdacf8daae5e012e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e303e778f5f55d606b40ebd7721b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a03e303e778f5f55d606b40ebd7721b72">drawRect</a> (<a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> origin, <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> destination)</td></tr>
+<tr class="memdesc:a03e303e778f5f55d606b40ebd7721b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定起始点与终止点绘制一个矩形，其中起始点与终止点坐标使用像素来度量  <a href="#a03e303e778f5f55d606b40ebd7721b72">更多...</a><br /></td></tr>
+<tr class="separator:a03e303e778f5f55d606b40ebd7721b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69d38eceac0d987c190b8df7dc88968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#aa69d38eceac0d987c190b8df7dc88968">drawSolidRect</a> (<a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> origin, <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> destination, <a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> color)</td></tr>
+<tr class="memdesc:aa69d38eceac0d987c190b8df7dc88968"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定起始点与终止点绘制一个实体矩形，其中起始点与终止点坐标使用像素来度量。  <a href="#aa69d38eceac0d987c190b8df7dc88968">更多...</a><br /></td></tr>
+<tr class="separator:aa69d38eceac0d987c190b8df7dc88968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e9fe93acbf6cd795c0e43533fd7ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a07e9fe93acbf6cd795c0e43533fd7ffc">drawPoly</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *vertices, unsigned int numOfVertices, bool closePolygon)</td></tr>
+<tr class="memdesc:a07e9fe93acbf6cd795c0e43533fd7ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定一个指向点坐标的指针以及顶点数目绘制一个多边形。其中每个点的坐标使用像素来度量。 这个多边形可以是封闭的也可以是打开的。  <a href="#a07e9fe93acbf6cd795c0e43533fd7ffc">更多...</a><br /></td></tr>
+<tr class="separator:a07e9fe93acbf6cd795c0e43533fd7ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788a89f01bc94531ac5ca13f0a32adb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a788a89f01bc94531ac5ca13f0a32adb9">drawSolidPoly</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *poli, unsigned int numberOfPoints, <a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> color)</td></tr>
+<tr class="memdesc:a788a89f01bc94531ac5ca13f0a32adb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定一个指向点坐标的指针以及顶点数目以及颜色绘制一个实体多边形。其中每个点的坐标使用像素来度量。  <a href="#a788a89f01bc94531ac5ca13f0a32adb9">更多...</a><br /></td></tr>
+<tr class="separator:a788a89f01bc94531ac5ca13f0a32adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82eaf1fc0130de4070401a28244afbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#ab82eaf1fc0130de4070401a28244afbd">drawCircle</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;center, float radius, float angle, unsigned int segments, bool drawLineToCenter, float scaleX, float scaleY)</td></tr>
+<tr class="memdesc:ab82eaf1fc0130de4070401a28244afbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定中心点、半径、分段数来绘制一个圆。  <a href="#ab82eaf1fc0130de4070401a28244afbd">更多...</a><br /></td></tr>
+<tr class="separator:ab82eaf1fc0130de4070401a28244afbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f227f57e4cf30fe45d8c7b26c7c8cd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a0f227f57e4cf30fe45d8c7b26c7c8cd0">drawCircle</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;center, float radius, float angle, unsigned int segments, bool drawLineToCenter)</td></tr>
+<tr class="separator:a0f227f57e4cf30fe45d8c7b26c7c8cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c75f4e89ebce551df1e4570cc13f215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a4c75f4e89ebce551df1e4570cc13f215">drawSolidCircle</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;center, float radius, float angle, unsigned int segments, float scaleX, float scaleY)</td></tr>
+<tr class="memdesc:a4c75f4e89ebce551df1e4570cc13f215"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定中心点、半径、分段数来绘制一个实体圆。  <a href="#a4c75f4e89ebce551df1e4570cc13f215">更多...</a><br /></td></tr>
+<tr class="separator:a4c75f4e89ebce551df1e4570cc13f215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5680e3b5c60d273b19eb3e05e4201761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a5680e3b5c60d273b19eb3e05e4201761">drawSolidCircle</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;center, float radius, float angle, unsigned int segments)</td></tr>
+<tr class="separator:a5680e3b5c60d273b19eb3e05e4201761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061f351e7b23931b1861e8a558da0587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a061f351e7b23931b1861e8a558da0587">drawQuadBezier</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;origin, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;control, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;destination, unsigned int segments)</td></tr>
+<tr class="memdesc:a061f351e7b23931b1861e8a558da0587"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制一个quad贝塞尔曲线  <a href="#a061f351e7b23931b1861e8a558da0587">更多...</a><br /></td></tr>
+<tr class="separator:a061f351e7b23931b1861e8a558da0587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f720da6bc06e7fa1d6b7c35693ae5c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a4f720da6bc06e7fa1d6b7c35693ae5c7">drawCubicBezier</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;origin, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;control1, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;control2, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;destination, unsigned int segments)</td></tr>
+<tr class="memdesc:a4f720da6bc06e7fa1d6b7c35693ae5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制一个cubic贝塞尔曲线  <a href="#a4f720da6bc06e7fa1d6b7c35693ae5c7">更多...</a><br /></td></tr>
+<tr class="separator:a4f720da6bc06e7fa1d6b7c35693ae5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bcc2b783c4d0a1bc5ba86b67d412aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a63bcc2b783c4d0a1bc5ba86b67d412aa">drawCatmullRom</a> (<a class="el" href="../../d6/d4d/classcocos2d_1_1_point_array.html">PointArray</a> *arrayOfControlPoints, unsigned int segments)</td></tr>
+<tr class="memdesc:a63bcc2b783c4d0a1bc5ba86b67d412aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制一个Catmull-Rom样条曲线.  <a href="#a63bcc2b783c4d0a1bc5ba86b67d412aa">更多...</a><br /></td></tr>
+<tr class="separator:a63bcc2b783c4d0a1bc5ba86b67d412aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c98def18b881fe6de8302a44c268da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#ad3c98def18b881fe6de8302a44c268da">drawCardinalSpline</a> (<a class="el" href="../../d6/d4d/classcocos2d_1_1_point_array.html">PointArray</a> *config, float tension, unsigned int segments)</td></tr>
+<tr class="memdesc:ad3c98def18b881fe6de8302a44c268da"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制一个Cardinal样条曲线.  <a href="#ad3c98def18b881fe6de8302a44c268da">更多...</a><br /></td></tr>
+<tr class="separator:ad3c98def18b881fe6de8302a44c268da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd66874cacc7521ecf02e185e565e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a16bd66874cacc7521ecf02e185e565e9">setDrawColor4B</a> (GLubyte r, GLubyte g, GLubyte b, GLubyte a)</td></tr>
+<tr class="memdesc:a16bd66874cacc7521ecf02e185e565e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">用4个无符号比特值来设置绘图颜色  <a href="#a16bd66874cacc7521ecf02e185e565e9">更多...</a><br /></td></tr>
+<tr class="separator:a16bd66874cacc7521ecf02e185e565e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83faf106f05967618703f953f2402f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#a83faf106f05967618703f953f2402f11">setDrawColor4F</a> (GLfloat r, GLfloat g, GLfloat b, GLfloat a)</td></tr>
+<tr class="memdesc:a83faf106f05967618703f953f2402f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">用4个浮点值来设置绘图颜色  <a href="#a83faf106f05967618703f953f2402f11">更多...</a><br /></td></tr>
+<tr class="separator:a83faf106f05967618703f953f2402f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3455476525182ca055888feff54ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html#ade3455476525182ca055888feff54ffc">setPointSize</a> (GLfloat pointSize)</td></tr>
+<tr class="memdesc:ade3455476525182ca055888feff54ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置点的像素大小。默认为 1。  <a href="#ade3455476525182ca055888feff54ffc">更多...</a><br /></td></tr>
+<tr class="separator:ade3455476525182ca055888feff54ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ad3c98def18b881fe6de8302a44c268da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawCardinalSpline </td>
+          <td>(</td>
+          <td class="paramtype">PointArray *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制一个Cardinal样条曲线. </p>
+<dl class="section warning"><dt>警告</dt><dd>这个函数使用起来可能非常慢。一般只用来做调试使用. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a63bcc2b783c4d0a1bc5ba86b67d412aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawCatmullRom </td>
+          <td>(</td>
+          <td class="paramtype">PointArray *&#160;</td>
+          <td class="paramname"><em>arrayOfControlPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制一个Catmull-Rom样条曲线. </p>
+<dl class="section warning"><dt>警告</dt><dd>This function could be pretty slow. Use it only for debugging purposes. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab82eaf1fc0130de4070401a28244afbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>drawLineToCenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定中心点、半径、分段数来绘制一个圆。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f227f57e4cf30fe45d8c7b26c7c8cd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>drawLineToCenter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f720da6bc06e7fa1d6b7c35693ae5c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawCubicBezier </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>control1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>control2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制一个cubic贝塞尔曲线 </p>
+<dl class="section warning"><dt>警告</dt><dd>这个函数使用起来可能非常慢。一般只用来做调试使用. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a237566e204766a9bdacf8daae5e012e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定起始点与终止点绘制一条线，其中起始点与终止点坐标使用像素来度量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a44d9d5dab94976fd9d7d788d2e1a3fff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定x、y值绘制一个点。其中x、y使用像素来度量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e04c401646947dcdabcdf08f436d708"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制一组点s. </p>
+<dl class="section since"><dt>自从</dt><dd>v0.7.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a07e9fe93acbf6cd795c0e43533fd7ffc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawPoly </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numOfVertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closePolygon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定一个指向点坐标的指针以及顶点数目绘制一个多边形。其中每个点的坐标使用像素来度量。 这个多边形可以是封闭的也可以是打开的。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a061f351e7b23931b1861e8a558da0587"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawQuadBezier </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制一个quad贝塞尔曲线 </p>
+<dl class="section warning"><dt>警告</dt><dd>这个函数使用起来可能非常慢。一般只用来做调试使用. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03e303e778f5f55d606b40ebd7721b72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定起始点与终止点绘制一个矩形，其中起始点与终止点坐标使用像素来度量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4c75f4e89ebce551df1e4570cc13f215"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawSolidCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定中心点、半径、分段数来绘制一个实体圆。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5680e3b5c60d273b19eb3e05e4201761"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawSolidCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a788a89f01bc94531ac5ca13f0a32adb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawSolidPoly </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> *&#160;</td>
+          <td class="paramname"><em>poli</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color4F&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定一个指向点坐标的指针以及顶点数目以及颜色绘制一个实体多边形。其中每个点的坐标使用像素来度量。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa69d38eceac0d987c190b8df7dc88968"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::drawSolidRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color4F&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定起始点与终止点绘制一个实体矩形，其中起始点与终止点坐标使用像素来度量。 </p>
+<dl class="section since"><dt>自从</dt><dd>1.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f09dd89e8d5f46e5aa90d39abb913ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放绘制原语时所分配的资源 </p>
+
+</div>
+</div>
+<a class="anchor" id="a384a51fa921f1ce5fb982179e3b58169"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化绘图原语 </p>
+
+</div>
+</div>
+<a class="anchor" id="a16bd66874cacc7521ecf02e185e565e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::setDrawColor4B </td>
+          <td>(</td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用4个无符号比特值来设置绘图颜色 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a83faf106f05967618703f953f2402f11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::setDrawColor4F </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用4个浮点值来设置绘图颜色 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade3455476525182ca055888feff54ffc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cocos2d::DrawPrimitives::setPointSize </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>pointSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置点的像素大小。默认为 1。 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d1/d89/namespacecocos2d_1_1_draw_primitives.html">DrawPrimitives</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:53 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

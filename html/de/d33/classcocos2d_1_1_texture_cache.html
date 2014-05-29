@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: TextureCache类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d33/classcocos2d_1_1_texture_cache.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../df/d4f/classcocos2d_1_1_texture_cache-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TextureCache类 参考<div class="ingroups"><a class="el" href="../../d7/db5/group__textures.html">Textures</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>用来处理纹理贴图（texture）的加载的独立的类 一旦纹理贴图（texture）被加载，它会在下一次返回 一个用来节省GPU和CPU内存的，指向之前被加载的纹理贴图（texture）的引用（reference）  
+ <a href="../../de/d33/classcocos2d_1_1_texture_cache.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCTextureCache.h&gt;</code></p>
+<div class="dynheader">
+类 TextureCache 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../de/d33/classcocos2d_1_1_texture_cache.png" usemap="#TextureCache_map" alt=""/>
+  <map id="TextureCache_map" name="TextureCache_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,91,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/de7/structcocos2d_1_1_texture_cache_1_1_async_struct.html">AsyncStruct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aae55c718a6a45f3bdd84b6fc29957e87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#aae55c718a6a45f3bdd84b6fc29957e87">TextureCache</a> ()</td></tr>
+<tr class="memdesc:aae55c718a6a45f3bdd84b6fc29957e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#aae55c718a6a45f3bdd84b6fc29957e87">更多...</a><br /></td></tr>
+<tr class="separator:aae55c718a6a45f3bdd84b6fc29957e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e299a98960180e46c964b0783b6d98f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a0e299a98960180e46c964b0783b6d98f">~TextureCache</a> ()</td></tr>
+<tr class="memdesc:a0e299a98960180e46c964b0783b6d98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a0e299a98960180e46c964b0783b6d98f">更多...</a><br /></td></tr>
+<tr class="separator:a0e299a98960180e46c964b0783b6d98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed943b6ae07b0f0a64b5acb31afa153"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a7ed943b6ae07b0f0a64b5acb31afa153">getDescription</a> () const </td></tr>
+<tr class="memdesc:a7ed943b6ae07b0f0a64b5acb31afa153"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a7ed943b6ae07b0f0a64b5acb31afa153">更多...</a><br /></td></tr>
+<tr class="separator:a7ed943b6ae07b0f0a64b5acb31afa153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f22b929ea3ed81c76db75fd82ec3c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a7f22b929ea3ed81c76db75fd82ec3c1c">addImage</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:a7f22b929ea3ed81c76db75fd82ec3c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回与给定文件名相对应的Texture2D对象 如果该文件名没有被预加载，这个方法会创建一个新的Texture2D对象，并返回该Texture2D对象 文件名会被用作key 否则会返回一个指向预加载图像的引用（reference） 支持的图像文件的类型有: .png, .bmp, .tiff, .jpeg, .pvr  <a href="#a7f22b929ea3ed81c76db75fd82ec3c1c">更多...</a><br /></td></tr>
+<tr class="separator:a7f22b929ea3ed81c76db75fd82ec3c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a87c57186c91bf5acc93e0575eaaac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a24a87c57186c91bf5acc93e0575eaaac">addImageAsync</a> (const std::string &amp;filepath, const std::function&lt; void(<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *)&gt; &amp;callback)</td></tr>
+<tr class="separator:a24a87c57186c91bf5acc93e0575eaaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39b3bc1b2d377ee242e3a88c40469ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#ac39b3bc1b2d377ee242e3a88c40469ff">addImage</a> (<a class="el" href="../../de/d97/classcocos2d_1_1_image.html">Image</a> *image, const std::string &amp;key)</td></tr>
+<tr class="memdesc:ac39b3bc1b2d377ee242e3a88c40469ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回与给定图像相对应的Texture2D对象 如果该图像没有被预加载，这个方法会创建一个新的Texture2D对象，并返回该Texture2D对象 否则会返回一个指向预加载图像的引用（reference） 参数“key”会被用作缓存中的储存关键字 如果“key”为空值，每次都会创建一个新的纹理贴图（texture）  <a href="#ac39b3bc1b2d377ee242e3a88c40469ff">更多...</a><br /></td></tr>
+<tr class="separator:ac39b3bc1b2d377ee242e3a88c40469ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3613ec666a8bcf6f0e6f4a9ed9a4031a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a3613ec666a8bcf6f0e6f4a9ed9a4031a">addUIImage</a> (<a class="el" href="../../de/d97/classcocos2d_1_1_image.html">Image</a> *image, const std::string &amp;key)</td></tr>
+<tr class="separator:a3613ec666a8bcf6f0e6f4a9ed9a4031a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7b6d18bec7de42018c57e3f7b56339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a5f7b6d18bec7de42018c57e3f7b56339">getTextureForKey</a> (const std::string &amp;key) const </td></tr>
+<tr class="memdesc:a5f7b6d18bec7de42018c57e3f7b56339"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个已经被创建的纹理贴图（texture）。如果该纹理贴图不存在则返回nil  <a href="#a5f7b6d18bec7de42018c57e3f7b56339">更多...</a><br /></td></tr>
+<tr class="separator:a5f7b6d18bec7de42018c57e3f7b56339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd2e5359804351baf31cf7fd8a1fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a55cd2e5359804351baf31cf7fd8a1fc5">textureForKey</a> (const std::string &amp;key) const </td></tr>
+<tr class="separator:a55cd2e5359804351baf31cf7fd8a1fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a582ab1a05fbcd0426b60e639aa118c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a4a582ab1a05fbcd0426b60e639aa118c">reloadTexture</a> (const std::string &amp;fileName)</td></tr>
+<tr class="memdesc:a4a582ab1a05fbcd0426b60e639aa118c"><td class="mdescLeft">&#160;</td><td class="mdescRight">从图像文件重新加载纹理贴图（texture） 如果这个图像文件没有被加载过，就加载该图像文件。 否则会从文件映像（file image）中重新加载该纹理贴图（texture） 参数“filenName”是文件映像（file image）的相对或绝对路径 如果重新加载成功就返回true，否则返回false  <a href="#a4a582ab1a05fbcd0426b60e639aa118c">更多...</a><br /></td></tr>
+<tr class="separator:a4a582ab1a05fbcd0426b60e639aa118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4397d1be3c0043536fdd32f55a54f747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a4397d1be3c0043536fdd32f55a54f747">removeAllTextures</a> ()</td></tr>
+<tr class="memdesc:a4397d1be3c0043536fdd32f55a54f747"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除加载纹理贴图的记录 如果你收到“内存警告”请调用该方法 在短期内: 会释放一些资源文件来防止你的app出现闪退现象 在中期: 会分配更多资源 从长远来看: 没有区别  <a href="#a4397d1be3c0043536fdd32f55a54f747">更多...</a><br /></td></tr>
+<tr class="separator:a4397d1be3c0043536fdd32f55a54f747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b188759f8c1c0aea8fec2d007613fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a4b188759f8c1c0aea8fec2d007613fe0">removeUnusedTextures</a> ()</td></tr>
+<tr class="memdesc:a4b188759f8c1c0aea8fec2d007613fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除所有没有在使用中的纹理贴图（texture） 保留计数（retain count）为1的纹理贴图（texture）会被删除 在进入一个新场景后，调用本方法会带来不少方便  <a href="#a4b188759f8c1c0aea8fec2d007613fe0">更多...</a><br /></td></tr>
+<tr class="separator:a4b188759f8c1c0aea8fec2d007613fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca32c8e5411b940106781d00e277e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#aeca32c8e5411b940106781d00e277e70">removeTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *texture)</td></tr>
+<tr class="memdesc:aeca32c8e5411b940106781d00e277e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过给定的纹理贴图（texture）从缓存中删除该纹理贴图  <a href="#aeca32c8e5411b940106781d00e277e70">更多...</a><br /></td></tr>
+<tr class="separator:aeca32c8e5411b940106781d00e277e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec5d00c5d619533d0e6ec23d036b310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a5ec5d00c5d619533d0e6ec23d036b310">removeTextureForKey</a> (const std::string &amp;key)</td></tr>
+<tr class="memdesc:a5ec5d00c5d619533d0e6ec23d036b310"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过给定的纹理贴图（texture）的关键名（key name）从缓存中删除该纹理贴图  <a href="#a5ec5d00c5d619533d0e6ec23d036b310">更多...</a><br /></td></tr>
+<tr class="separator:a5ec5d00c5d619533d0e6ec23d036b310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77284fcfdb684d0f5fb648f4ae52495e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a77284fcfdb684d0f5fb648f4ae52495e">getCachedTextureInfo</a> () const </td></tr>
+<tr class="memdesc:a77284fcfdb684d0f5fb648f4ae52495e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将该TextureCache目前的内容输出到CCLog 这个方法会尝试去计算每一个纹理贴图（texture）的size和当前使用中的所有纹理贴图（texture）所占用内存的总和  <a href="#a77284fcfdb684d0f5fb648f4ae52495e">更多...</a><br /></td></tr>
+<tr class="separator:a77284fcfdb684d0f5fb648f4ae52495e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8a593d8b30d92d11b3099b6153a6d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a4b8a593d8b30d92d11b3099b6153a6d3">waitForQuit</a> ()</td></tr>
+<tr class="separator:a4b8a593d8b30d92d11b3099b6153a6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a669ba87d7912b38dfeb03edbe2f73dde"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a669ba87d7912b38dfeb03edbe2f73dde">getInstance</a> ()</td></tr>
+<tr class="memdesc:a669ba87d7912b38dfeb03edbe2f73dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回缓存的共享的实例  <a href="#a669ba87d7912b38dfeb03edbe2f73dde">更多...</a><br /></td></tr>
+<tr class="separator:a669ba87d7912b38dfeb03edbe2f73dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e797fee90c6c3a5b7911d7d08862018"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a1e797fee90c6c3a5b7911d7d08862018">sharedTextureCache</a> ()</td></tr>
+<tr class="separator:a1e797fee90c6c3a5b7911d7d08862018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520363de81adbbed96a0b1c67b0729da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a520363de81adbbed96a0b1c67b0729da">destroyInstance</a> ()</td></tr>
+<tr class="memdesc:a520363de81adbbed96a0b1c67b0729da"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除缓存。释放保留的实例  <a href="#a520363de81adbbed96a0b1c67b0729da">更多...</a><br /></td></tr>
+<tr class="separator:a520363de81adbbed96a0b1c67b0729da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f4f35ede8ee6565ae5d67c460cf3eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a66f4f35ede8ee6565ae5d67c460cf3eb">purgeSharedTextureCache</a> ()</td></tr>
+<tr class="separator:a66f4f35ede8ee6565ae5d67c460cf3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a306792fb61e1b44f14a71b26b5085"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a42a306792fb61e1b44f14a71b26b5085">reloadAllTextures</a> ()</td></tr>
+<tr class="memdesc:a42a306792fb61e1b44f14a71b26b5085"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新加载所有纹理贴图（texture） 避免调用该函数，应在框架工作时由框架调用 目前这个函数不会做任何事，请使用VolatileTextureMgr::reloadAllTextures  <a href="#a42a306792fb61e1b44f14a71b26b5085">更多...</a><br /></td></tr>
+<tr class="separator:a42a306792fb61e1b44f14a71b26b5085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a94cda793310cedb72cbf71e91adaf134"><td class="memItemLeft" align="right" valign="top">std::thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a94cda793310cedb72cbf71e91adaf134">_loadingThread</a></td></tr>
+<tr class="separator:a94cda793310cedb72cbf71e91adaf134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1105b88fe664da5e6b149d27294c9a"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="../../df/de7/structcocos2d_1_1_texture_cache_1_1_async_struct.html">AsyncStruct</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#aab1105b88fe664da5e6b149d27294c9a">_asyncStructQueue</a></td></tr>
+<tr class="separator:aab1105b88fe664da5e6b149d27294c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86ef5231d79df682e1af7ab5b5b9e81"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="../../d0/d5c/struct_image_info.html">ImageInfo</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#af86ef5231d79df682e1af7ab5b5b9e81">_imageInfoQueue</a></td></tr>
+<tr class="separator:af86ef5231d79df682e1af7ab5b5b9e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89efdf5e3113a23e3000265a9a2f58fc"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a89efdf5e3113a23e3000265a9a2f58fc">_asyncStructQueueMutex</a></td></tr>
+<tr class="separator:a89efdf5e3113a23e3000265a9a2f58fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e5cf0bfea4178e2179f00acfd6c78d"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#af8e5cf0bfea4178e2179f00acfd6c78d">_imageInfoMutex</a></td></tr>
+<tr class="separator:af8e5cf0bfea4178e2179f00acfd6c78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab669974842e4bf81735cc8a7e141f9a0"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#ab669974842e4bf81735cc8a7e141f9a0">_sleepMutex</a></td></tr>
+<tr class="separator:ab669974842e4bf81735cc8a7e141f9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703eafb858bb7eae20b9de465d5a407c"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a703eafb858bb7eae20b9de465d5a407c">_sleepCondition</a></td></tr>
+<tr class="separator:a703eafb858bb7eae20b9de465d5a407c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39507d3b4c265cf58208caf28082508e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a39507d3b4c265cf58208caf28082508e">_needQuit</a></td></tr>
+<tr class="separator:a39507d3b4c265cf58208caf28082508e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794612a4cf756b2b96c0dcb70c787bea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#a794612a4cf756b2b96c0dcb70c787bea">_asyncRefCount</a></td></tr>
+<tr class="separator:a794612a4cf756b2b96c0dcb70c787bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae11932202f314e2eac27793c7432233"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html#aae11932202f314e2eac27793c7432233">_textures</a></td></tr>
+<tr class="separator:aae11932202f314e2eac27793c7432233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用来处理纹理贴图（texture）的加载的独立的类 一旦纹理贴图（texture）被加载，它会在下一次返回 一个用来节省GPU和CPU内存的，指向之前被加载的纹理贴图（texture）的引用（reference） </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aae55c718a6a45f3bdd84b6fc29957e87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ctor </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e299a98960180e46c964b0783b6d98f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a7f22b929ea3ed81c76db75fd82ec3c1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* addImage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回与给定文件名相对应的Texture2D对象 如果该文件名没有被预加载，这个方法会创建一个新的Texture2D对象，并返回该Texture2D对象 文件名会被用作key 否则会返回一个指向预加载图像的引用（reference） 支持的图像文件的类型有: .png, .bmp, .tiff, .jpeg, .pvr </p>
+
+</div>
+</div>
+<a class="anchor" id="ac39b3bc1b2d377ee242e3a88c40469ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* addImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d97/classcocos2d_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回与给定图像相对应的Texture2D对象 如果该图像没有被预加载，这个方法会创建一个新的Texture2D对象，并返回该Texture2D对象 否则会返回一个指向预加载图像的引用（reference） 参数“key”会被用作缓存中的储存关键字 如果“key”为空值，每次都会创建一个新的纹理贴图（texture） </p>
+
+</div>
+</div>
+<a class="anchor" id="a24a87c57186c91bf5acc93e0575eaaac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void addImageAsync </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3613ec666a8bcf6f0e6f4a9ed9a4031a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* addUIImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d97/classcocos2d_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a520363de81adbbed96a0b1c67b0729da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void destroyInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清除缓存。释放保留的实例 </p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a77284fcfdb684d0f5fb648f4ae52495e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getCachedTextureInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将该TextureCache目前的内容输出到CCLog 这个方法会尝试去计算每一个纹理贴图（texture）的size和当前使用中的所有纹理贴图（texture）所占用内存的总和 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ed943b6ae07b0f0a64b5acb31afa153"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a669ba87d7912b38dfeb03edbe2f73dde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回缓存的共享的实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f7b6d18bec7de42018c57e3f7b56339"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* getTextureForKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回一个已经被创建的纹理贴图（texture）。如果该纹理贴图不存在则返回nil </p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66f4f35ede8ee6565ae5d67c460cf3eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void purgeSharedTextureCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000041">弃用:</a></b></dt><dd>使用destroyInstance()作为替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42a306792fb61e1b44f14a71b26b5085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void reloadAllTextures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重新加载所有纹理贴图（texture） 避免调用该函数，应在框架工作时由框架调用 目前这个函数不会做任何事，请使用VolatileTextureMgr::reloadAllTextures </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a582ab1a05fbcd0426b60e639aa118c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reloadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从图像文件重新加载纹理贴图（texture） 如果这个图像文件没有被加载过，就加载该图像文件。 否则会从文件映像（file image）中重新加载该纹理贴图（texture） 参数“filenName”是文件映像（file image）的相对或绝对路径 如果重新加载成功就返回true，否则返回false </p>
+
+</div>
+</div>
+<a class="anchor" id="a4397d1be3c0043536fdd32f55a54f747"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeAllTextures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清除加载纹理贴图的记录 如果你收到“内存警告”请调用该方法 在短期内: 会释放一些资源文件来防止你的app出现闪退现象 在中期: 会分配更多资源 从长远来看: 没有区别 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeca32c8e5411b940106781d00e277e70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过给定的纹理贴图（texture）从缓存中删除该纹理贴图 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ec5d00c5d619533d0e6ec23d036b310"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeTextureForKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过给定的纹理贴图（texture）的关键名（key name）从缓存中删除该纹理贴图 </p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.4 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b188759f8c1c0aea8fec2d007613fe0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeUnusedTextures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清除所有没有在使用中的纹理贴图（texture） 保留计数（retain count）为1的纹理贴图（texture）会被删除 在进入一个新场景后，调用本方法会带来不少方便 </p>
+<dl class="section since"><dt>自从</dt><dd>v0.8 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e797fee90c6c3a5b7911d7d08862018"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a>* sharedTextureCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000040">弃用:</a></b></dt><dd>使用getInstance()作为替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a55cd2e5359804351baf31cf7fd8a1fc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* textureForKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b8a593d8b30d92d11b3099b6153a6d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void waitForQuit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a794612a4cf756b2b96c0dcb70c787bea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _asyncRefCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab1105b88fe664da5e6b149d27294c9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;<a class="el" href="../../df/de7/structcocos2d_1_1_texture_cache_1_1_async_struct.html">AsyncStruct</a>*&gt;* _asyncStructQueue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89efdf5e3113a23e3000265a9a2f58fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex _asyncStructQueueMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8e5cf0bfea4178e2179f00acfd6c78d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex _imageInfoMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af86ef5231d79df682e1af7ab5b5b9e81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::deque&lt;<a class="el" href="../../d0/d5c/struct_image_info.html">ImageInfo</a>*&gt;* _imageInfoQueue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94cda793310cedb72cbf71e91adaf134"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread* _loadingThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39507d3b4c265cf58208caf28082508e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _needQuit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a703eafb858bb7eae20b9de465d5a407c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable _sleepCondition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab669974842e4bf81735cc8a7e141f9a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex _sleepMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae11932202f314e2eac27793c7432233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>*&gt; _textures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../df/d93/_c_c_texture_cache_8h.html">CCTextureCache.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:50 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

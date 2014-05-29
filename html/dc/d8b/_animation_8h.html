@@ -1,0 +1,1082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/spine/Animation.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dc/d8b/_animation_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Animation.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="../../de/d6d/_event_8h.html">spine/Event.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d74/structsp_rotate_timeline.html">spRotateTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/structsp_color_timeline.html">spColorTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dda/structsp_attachment_timeline.html">spAttachmentTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da9/structsp_event_timeline.html">spEventTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd1/structsp_draw_order_timeline.html">spDrawOrderTimeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a21d45233b1a790fc659a7cd01df48d9c"><td class="memItemLeft" align="right" valign="top">typedef struct spBaseTimeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a></td></tr>
+<tr class="separator:a21d45233b1a790fc659a7cd01df48d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147beaa3ddea95848cc4469ad3ca23c0"><td class="memItemLeft" align="right" valign="top">typedef struct spBaseTimeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a></td></tr>
+<tr class="separator:a147beaa3ddea95848cc4469ad3ca23c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a7688dc9874bf85d116641b5c61c197ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aea64a497d450465a4243559bc95450eace">TIMELINE_SCALE</a>, 
+<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aea106a0f6275c00f19fbe78d9dbd76bf6a">TIMELINE_ROTATE</a>, 
+<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aeacc1243666096e82e16a1a4f731ee6fa3">TIMELINE_TRANLATE</a>, 
+<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aeaee85c1a85fb81af6a3f2f60c6c796141">TIMELINE_COLOR</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aea8c295bd47a417eccef5b608396c5c5b7">TIMELINE_ATTACHMENT</a>, 
+<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aeac8eeb08190d99450a7da575680cce923">TIMELINE_EVENT</a>, 
+<a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197aea2efeb6bccb3a12cc2cfa0e3c65881827">TIMELINE_DRAWORDER</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7688dc9874bf85d116641b5c61c197ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9d334dc88255562caae73d9996e60fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a9d334dc88255562caae73d9996e60fcc">spAnimation_create</a> (const char *name, int timelineCount)</td></tr>
+<tr class="separator:a9d334dc88255562caae73d9996e60fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cfa83dac9cdceab6aebc48e2779932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#af2cfa83dac9cdceab6aebc48e2779932">spAnimation_dispose</a> (<a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *self)</td></tr>
+<tr class="separator:af2cfa83dac9cdceab6aebc48e2779932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad115d265945aa9f31bb1c20e8da46d74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#ad115d265945aa9f31bb1c20e8da46d74">spAnimation_apply</a> (const <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *self, struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, int loop, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **events, int *eventCount)</td></tr>
+<tr class="memdesc:ad115d265945aa9f31bb1c20e8da46d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定动画的时间摆放骨骼位置（姿势）  <a href="#ad115d265945aa9f31bb1c20e8da46d74">更多...</a><br /></td></tr>
+<tr class="separator:ad115d265945aa9f31bb1c20e8da46d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4a41b737f8ccb30ab8400df06ec69c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#afd4a41b737f8ccb30ab8400df06ec69c">spAnimation_mix</a> (const <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *self, struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, int loop, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **events, int *eventCount, float alpha)</td></tr>
+<tr class="memdesc:afd4a41b737f8ccb30ab8400df06ec69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定动画的时间摆放骨骼位置（姿势）和当前的姿势有混合效果  <a href="#afd4a41b737f8ccb30ab8400df06ec69c">更多...</a><br /></td></tr>
+<tr class="separator:afd4a41b737f8ccb30ab8400df06ec69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea21367cebf5dea8222db8467aef2fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aea21367cebf5dea8222db8467aef2fae">spTimeline_dispose</a> (<a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self)</td></tr>
+<tr class="separator:aea21367cebf5dea8222db8467aef2fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fcdeb4bb972aa81d7e13467ce16c10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a26fcdeb4bb972aa81d7e13467ce16c10">spTimeline_apply</a> (const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *self, struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *skeleton, float lastTime, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **firedEvents, int *eventCount, float alpha)</td></tr>
+<tr class="separator:a26fcdeb4bb972aa81d7e13467ce16c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0b008eb5d3d28ee061ddaca90c1c06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aef0b008eb5d3d28ee061ddaca90c1c06">spCurveTimeline_setLinear</a> (<a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self, int frameIndex)</td></tr>
+<tr class="separator:aef0b008eb5d3d28ee061ddaca90c1c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb352b3a4947f7d95190abaf76cddf27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#afb352b3a4947f7d95190abaf76cddf27">spCurveTimeline_setStepped</a> (<a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self, int frameIndex)</td></tr>
+<tr class="separator:afb352b3a4947f7d95190abaf76cddf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bbb88cb53d7280f543b243ab93ac08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a86bbb88cb53d7280f543b243ab93ac08">spCurveTimeline_setCurve</a> (<a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self, int frameIndex, float cx1, float cy1, float cx2, float cy2)</td></tr>
+<tr class="separator:a86bbb88cb53d7280f543b243ab93ac08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88b69ebf4a451187f9dafecc3d7ca88"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aa88b69ebf4a451187f9dafecc3d7ca88">spCurveTimeline_getCurvePercent</a> (const <a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *self, int frameIndex, float percent)</td></tr>
+<tr class="separator:aa88b69ebf4a451187f9dafecc3d7ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939ea3d00b6350946c05efe79eddac9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d74/structsp_rotate_timeline.html">spRotateTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a939ea3d00b6350946c05efe79eddac9d">spRotateTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:a939ea3d00b6350946c05efe79eddac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c2ab120cda86059f932069e946a8c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a31c2ab120cda86059f932069e946a8c8">spRotateTimeline_setFrame</a> (<a class="el" href="../../d8/d74/structsp_rotate_timeline.html">spRotateTimeline</a> *self, int frameIndex, float time, float angle)</td></tr>
+<tr class="separator:a31c2ab120cda86059f932069e946a8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c3cf82e6ae5dc3b0b9f34e21c60803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#ad1c3cf82e6ae5dc3b0b9f34e21c60803">spTranslateTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:ad1c3cf82e6ae5dc3b0b9f34e21c60803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad053c8bdc117ec26aef8310724b0cb0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#ad053c8bdc117ec26aef8310724b0cb0b">spTranslateTimeline_setFrame</a> (<a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a> *self, int frameIndex, float time, float x, float y)</td></tr>
+<tr class="separator:ad053c8bdc117ec26aef8310724b0cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaba5d29d39cb6677fe97cea39503312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aaaba5d29d39cb6677fe97cea39503312">spScaleTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:aaaba5d29d39cb6677fe97cea39503312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6ec22d94d70671d7e8bde537f53460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a5f6ec22d94d70671d7e8bde537f53460">spScaleTimeline_setFrame</a> (<a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a> *self, int frameIndex, float time, float x, float y)</td></tr>
+<tr class="separator:a5f6ec22d94d70671d7e8bde537f53460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bf0673c7baa65376e029a7b21b0e45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc7/structsp_color_timeline.html">spColorTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aa4bf0673c7baa65376e029a7b21b0e45">spColorTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:aa4bf0673c7baa65376e029a7b21b0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d772d7f9f3800ab3960373058515f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a2d772d7f9f3800ab3960373058515f69">spColorTimeline_setFrame</a> (<a class="el" href="../../d2/dc7/structsp_color_timeline.html">spColorTimeline</a> *self, int frameIndex, float time, float r, float g, float b, float a)</td></tr>
+<tr class="separator:a2d772d7f9f3800ab3960373058515f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a0ab53d1eb57c43e49c71108a8050f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dda/structsp_attachment_timeline.html">spAttachmentTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a53a0ab53d1eb57c43e49c71108a8050f">spAttachmentTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:a53a0ab53d1eb57c43e49c71108a8050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec4f92e4ecc47cbf5bc80b0f34196de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a8ec4f92e4ecc47cbf5bc80b0f34196de">spAttachmentTimeline_setFrame</a> (<a class="el" href="../../df/dda/structsp_attachment_timeline.html">spAttachmentTimeline</a> *self, int frameIndex, float time, const char *attachmentName)</td></tr>
+<tr class="separator:a8ec4f92e4ecc47cbf5bc80b0f34196de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2ffe25b08e47da2fd6d81d4082d404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da9/structsp_event_timeline.html">spEventTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a7f2ffe25b08e47da2fd6d81d4082d404">spEventTimeline_create</a> (int frameCount)</td></tr>
+<tr class="separator:a7f2ffe25b08e47da2fd6d81d4082d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f66e4e9d5e48d2705c7b441c3f715e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#aa2f66e4e9d5e48d2705c7b441c3f715e">spEventTimeline_setFrame</a> (<a class="el" href="../../de/da9/structsp_event_timeline.html">spEventTimeline</a> *self, int frameIndex, float time, <a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> *event)</td></tr>
+<tr class="separator:aa2f66e4e9d5e48d2705c7b441c3f715e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0429f64fe3b8057d6db43ef2180d195f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd1/structsp_draw_order_timeline.html">spDrawOrderTimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a0429f64fe3b8057d6db43ef2180d195f">spDrawOrderTimeline_create</a> (int frameCount, int slotCount)</td></tr>
+<tr class="separator:a0429f64fe3b8057d6db43ef2180d195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4182334c909c8a8b544f570e5e38d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8b/_animation_8h.html#a2a4182334c909c8a8b544f570e5e38d4">spDrawOrderTimeline_setFrame</a> (<a class="el" href="../../d6/dd1/structsp_draw_order_timeline.html">spDrawOrderTimeline</a> *self, int frameIndex, float time, const int *drawOrder)</td></tr>
+<tr class="separator:a2a4182334c909c8a8b544f570e5e38d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a147beaa3ddea95848cc4469ad3ca23c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct spBaseTimeline <a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21d45233b1a790fc659a7cd01df48d9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct spBaseTimeline <a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a7688dc9874bf85d116641b5c61c197ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d8b/_animation_8h.html#a7688dc9874bf85d116641b5c61c197ae">spTimelineType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aea64a497d450465a4243559bc95450eace"></a>TIMELINE_SCALE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aea106a0f6275c00f19fbe78d9dbd76bf6a"></a>TIMELINE_ROTATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aeacc1243666096e82e16a1a4f731ee6fa3"></a>TIMELINE_TRANLATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aeaee85c1a85fb81af6a3f2f60c6c796141"></a>TIMELINE_COLOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aea8c295bd47a417eccef5b608396c5c5b7"></a>TIMELINE_ATTACHMENT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aeac8eeb08190d99450a7da575680cce923"></a>TIMELINE_EVENT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7688dc9874bf85d116641b5c61c197aea2efeb6bccb3a12cc2cfa0e3c65881827"></a>TIMELINE_DRAWORDER&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ad115d265945aa9f31bb1c20e8da46d74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimation_apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *&#160;</td>
+          <td class="paramname"><em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lastTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>eventCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定动画的时间摆放骨骼位置（姿势） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lastTime</td><td>动画持续的时间. </td></tr>
+    <tr><td class="paramname">events</td><td>动画更新过程中触发的时间会添加到events数组里. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d334dc88255562caae73d9996e60fcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a>* spAnimation_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timelineCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2cfa83dac9cdceab6aebc48e2779932"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimation_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd4a41b737f8ccb30ab8400df06ec69c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAnimation_mix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d93/structsp_animation.html">spAnimation</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *&#160;</td>
+          <td class="paramname"><em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lastTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>eventCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定动画的时间摆放骨骼位置（姿势）和当前的姿势有混合效果 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lastTime</td><td>动画持续的时间. </td></tr>
+    <tr><td class="paramname">events</td><td>动画更新过程中触发的时间会添加到events数组里. </td></tr>
+    <tr><td class="paramname">alpha</td><td>动画对当前骨骼姿势的影响量alpha. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53a0ab53d1eb57c43e49c71108a8050f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dda/structsp_attachment_timeline.html">spAttachmentTimeline</a>* spAttachmentTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ec4f92e4ecc47cbf5bc80b0f34196de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAttachmentTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dda/structsp_attachment_timeline.html">spAttachmentTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>attachmentName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4bf0673c7baa65376e029a7b21b0e45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc7/structsp_color_timeline.html">spColorTimeline</a>* spColorTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d772d7f9f3800ab3960373058515f69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spColorTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dc7/structsp_color_timeline.html">spColorTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa88b69ebf4a451187f9dafecc3d7ca88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float spCurveTimeline_getCurvePercent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86bbb88cb53d7280f543b243ab93ac08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spCurveTimeline_setCurve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cx1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cy1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cx2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cy2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef0b008eb5d3d28ee061ddaca90c1c06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spCurveTimeline_setLinear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb352b3a4947f7d95190abaf76cddf27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spCurveTimeline_setStepped </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d5f/structsp_curve_timeline.html">spCurveTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0429f64fe3b8057d6db43ef2180d195f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd1/structsp_draw_order_timeline.html">spDrawOrderTimeline</a>* spDrawOrderTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>slotCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a4182334c909c8a8b544f570e5e38d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spDrawOrderTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/dd1/structsp_draw_order_timeline.html">spDrawOrderTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>drawOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f2ffe25b08e47da2fd6d81d4082d404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da9/structsp_event_timeline.html">spEventTimeline</a>* spEventTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2f66e4e9d5e48d2705c7b441c3f715e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spEventTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/da9/structsp_event_timeline.html">spEventTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a939ea3d00b6350946c05efe79eddac9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d74/structsp_rotate_timeline.html">spRotateTimeline</a>* spRotateTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31c2ab120cda86059f932069e946a8c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spRotateTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d74/structsp_rotate_timeline.html">spRotateTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaaba5d29d39cb6677fe97cea39503312"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a>* spScaleTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f6ec22d94d70671d7e8bde537f53460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spScaleTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d8b/_animation_8h.html#a147beaa3ddea95848cc4469ad3ca23c0">spScaleTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26fcdeb4bb972aa81d7e13467ce16c10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spTimeline_apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../df/d58/structsp_skeleton.html">spSkeleton</a> *&#160;</td>
+          <td class="paramname"><em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lastTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d0b/structsp_event.html">spEvent</a> **&#160;</td>
+          <td class="paramname"><em>firedEvents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>eventCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea21367cebf5dea8222db8467aef2fae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spTimeline_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d84/structsp_timeline.html">spTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1c3cf82e6ae5dc3b0b9f34e21c60803"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a>* spTranslateTimeline_create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad053c8bdc117ec26aef8310724b0cb0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spTranslateTimeline_setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d8b/_animation_8h.html#a21d45233b1a790fc659a7cd01df48d9c">spTranslateTimeline</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_fd4f0d2e565942d0b258d739eb9baf6f.html">editor-support</a></li><li class="navelem"><a class="el" href="../../dir_a2c234a85ab6bcec71aa847aef5dfa52.html">spine</a></li><li class="navelem"><a class="el" href="../../dc/d8b/_animation_8h.html">Animation.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

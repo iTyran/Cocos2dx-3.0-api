@@ -1,0 +1,2976 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Director类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/df3/classcocos2d_1_1_director.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="../../df/d3b/classcocos2d_1_1_director-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Director类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../d9/d1f/group__base__nodes.html">Base Nodes</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCDirector.h&gt;</code></p>
+<div class="dynheader">
+类 Director 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d7/df3/classcocos2d_1_1_director.png" usemap="#Director_map" alt=""/>
+  <map id="Director_map" name="Director_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,123,24"/>
+<area href="../../db/dcb/classcocos2d_1_1_display_link_director.html" title="DisplayLinkDirector是一个Director的子类, 表示屏幕刷新速率的同步定时器 " alt="DisplayLinkDirector" shape="rect" coords="0,112,123,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a9f7870d8d60a515bd641dadf4629029a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a> { <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029aa8cf93a3cf4b8ee9a975671c37039d549">_2D</a>, 
+<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029aa38e0791348f0496a0cbf3c07b64afed1">_3D</a>, 
+<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029aa72baef04098f035e8a320b03ad197818">CUSTOM</a>, 
+<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029aa5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a> = _3D
+ }</td></tr>
+<tr class="separator:a9f7870d8d60a515bd641dadf4629029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8e986c6dccbe9c1b93a04bfa01e329b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a8e986c6dccbe9c1b93a04bfa01e329b8">pushMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type)</td></tr>
+<tr class="separator:a8e986c6dccbe9c1b93a04bfa01e329b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574836e2dbe204ea7308c26b593770d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a574836e2dbe204ea7308c26b593770d2">popMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type)</td></tr>
+<tr class="separator:a574836e2dbe204ea7308c26b593770d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c941be16a7d6d6177713c6923fabb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a21c941be16a7d6d6177713c6923fabb4">loadIdentityMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type)</td></tr>
+<tr class="separator:a21c941be16a7d6d6177713c6923fabb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b52b8e4e07c533b436c9c5a0b9091d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a59b52b8e4e07c533b436c9c5a0b9091d">loadMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type, const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;mat)</td></tr>
+<tr class="separator:a59b52b8e4e07c533b436c9c5a0b9091d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc665cc4e9dcf9f1b9dc277385b126c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a2bc665cc4e9dcf9f1b9dc277385b126c">multiplyMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type, const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;mat)</td></tr>
+<tr class="separator:a2bc665cc4e9dcf9f1b9dc277385b126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ca65c270bd767f871dd4be27b12d11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dce/class_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a28ca65c270bd767f871dd4be27b12d11">getMatrix</a> (<a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a> type)</td></tr>
+<tr class="separator:a28ca65c270bd767f871dd4be27b12d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf9849b3c1514293d9a473537bf0f5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a7cf9849b3c1514293d9a473537bf0f5a">resetMatrixStack</a> ()</td></tr>
+<tr class="separator:a7cf9849b3c1514293d9a473537bf0f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ead0e8b25e458d878aaffd2fa670cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a95ead0e8b25e458d878aaffd2fa670cb">Director</a> (void)</td></tr>
+<tr class="memdesc:a95ead0e8b25e458d878aaffd2fa670cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a95ead0e8b25e458d878aaffd2fa670cb">更多...</a><br /></td></tr>
+<tr class="separator:a95ead0e8b25e458d878aaffd2fa670cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35693d1003c3c4082fc8be6520e16547"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a35693d1003c3c4082fc8be6520e16547">~Director</a> ()</td></tr>
+<tr class="memdesc:a35693d1003c3c4082fc8be6520e16547"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a35693d1003c3c4082fc8be6520e16547">更多...</a><br /></td></tr>
+<tr class="separator:a35693d1003c3c4082fc8be6520e16547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ae554e242cee73c504038d88855eba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac4ae554e242cee73c504038d88855eba">init</a> ()</td></tr>
+<tr class="separator:ac4ae554e242cee73c504038d88855eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1867d379ef9ea9a658e5f09385373484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1867d379ef9ea9a658e5f09385373484">getRunningScene</a> ()</td></tr>
+<tr class="memdesc:a1867d379ef9ea9a658e5f09385373484"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前运行的场景(Scene).  <a href="#a1867d379ef9ea9a658e5f09385373484">更多...</a><br /></td></tr>
+<tr class="separator:a1867d379ef9ea9a658e5f09385373484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460fd482b56b166544acdeb145258db7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a460fd482b56b166544acdeb145258db7">getAnimationInterval</a> ()</td></tr>
+<tr class="memdesc:a460fd482b56b166544acdeb145258db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get FPS 值  <a href="#a460fd482b56b166544acdeb145258db7">更多...</a><br /></td></tr>
+<tr class="separator:a460fd482b56b166544acdeb145258db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7a1ae0c0c03d5231c0072cbd2d613f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#abd7a1ae0c0c03d5231c0072cbd2d613f">setAnimationInterval</a> (double interval)=0</td></tr>
+<tr class="memdesc:abd7a1ae0c0c03d5231c0072cbd2d613f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set FPS 值.  <a href="#abd7a1ae0c0c03d5231c0072cbd2d613f">更多...</a><br /></td></tr>
+<tr class="separator:abd7a1ae0c0c03d5231c0072cbd2d613f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8bcf297b461ec2062434fa718f82ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a2a8bcf297b461ec2062434fa718f82ad">isDisplayStats</a> ()</td></tr>
+<tr class="memdesc:a2a8bcf297b461ec2062434fa718f82ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在左下角显示 FPS  <a href="#a2a8bcf297b461ec2062434fa718f82ad">更多...</a><br /></td></tr>
+<tr class="separator:a2a8bcf297b461ec2062434fa718f82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f29164dfc55e482353c9bf7646699b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a99f29164dfc55e482353c9bf7646699b">setDisplayStats</a> (bool displayStats)</td></tr>
+<tr class="memdesc:a99f29164dfc55e482353c9bf7646699b"><td class="mdescLeft">&#160;</td><td class="mdescRight">在左下角显示 FPS  <a href="#a99f29164dfc55e482353c9bf7646699b">更多...</a><br /></td></tr>
+<tr class="separator:a99f29164dfc55e482353c9bf7646699b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0e3af1c620ed00cb14a9c7ba721157"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aef0e3af1c620ed00cb14a9c7ba721157">getSecondsPerFrame</a> ()</td></tr>
+<tr class="memdesc:aef0e3af1c620ed00cb14a9c7ba721157"><td class="mdescLeft">&#160;</td><td class="mdescRight">每帧秒  <a href="#aef0e3af1c620ed00cb14a9c7ba721157">更多...</a><br /></td></tr>
+<tr class="separator:aef0e3af1c620ed00cb14a9c7ba721157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30d3730a5e88f185a8d443c4e41fdf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af30d3730a5e88f185a8d443c4e41fdf1">getOpenGLView</a> ()</td></tr>
+<tr class="memdesc:af30d3730a5e88f185a8d443c4e41fdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取渲染所有东西的 EGLView  NA  NA  <a href="#af30d3730a5e88f185a8d443c4e41fdf1">更多...</a><br /></td></tr>
+<tr class="separator:af30d3730a5e88f185a8d443c4e41fdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234ffac0f1d1a61f3f41e1310182797c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a234ffac0f1d1a61f3f41e1310182797c">setOpenGLView</a> (<a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a> *openGLView)</td></tr>
+<tr class="separator:a234ffac0f1d1a61f3f41e1310182797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea826857786dee1954c1b875c24bacf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aea826857786dee1954c1b875c24bacf0">getTextureCache</a> () const </td></tr>
+<tr class="separator:aea826857786dee1954c1b875c24bacf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd28dc5ee02a0ac48784dad00cd1f54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a6fd28dc5ee02a0ac48784dad00cd1f54">isNextDeltaTimeZero</a> ()</td></tr>
+<tr class="separator:a6fd28dc5ee02a0ac48784dad00cd1f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd753a2bd3273e21d97167764fb680d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a7cd753a2bd3273e21d97167764fb680d">setNextDeltaTimeZero</a> (bool nextDeltaTimeZero)</td></tr>
+<tr class="separator:a7cd753a2bd3273e21d97167764fb680d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bdf3189188cc6307ef0954cd4193a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ae0bdf3189188cc6307ef0954cd4193a3">isPaused</a> ()</td></tr>
+<tr class="memdesc:ae0bdf3189188cc6307ef0954cd4193a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> 是否被暂停  <a href="#ae0bdf3189188cc6307ef0954cd4193a3">更多...</a><br /></td></tr>
+<tr class="separator:ae0bdf3189188cc6307ef0954cd4193a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec90752cddfb02c2cf73040f5c2ac369"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aec90752cddfb02c2cf73040f5c2ac369">getTotalFrames</a> ()</td></tr>
+<tr class="memdesc:aec90752cddfb02c2cf73040f5c2ac369"><td class="mdescLeft">&#160;</td><td class="mdescRight">director 开始到现在持续了多少帧  <a href="#aec90752cddfb02c2cf73040f5c2ac369">更多...</a><br /></td></tr>
+<tr class="separator:aec90752cddfb02c2cf73040f5c2ac369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd4a860828e753cf284d701aa4ca90b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#adfd4a860828e753cf284d701aa4ca90b">getProjection</a> ()</td></tr>
+<tr class="memdesc:adfd4a860828e753cf284d701aa4ca90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一个 OpenGL 投影  <a href="#adfd4a860828e753cf284d701aa4ca90b">更多...</a><br /></td></tr>
+<tr class="separator:adfd4a860828e753cf284d701aa4ca90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e1d810880ec5418583ada4dc9b7944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a63e1d810880ec5418583ada4dc9b7944">setProjection</a> (<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a> projection)</td></tr>
+<tr class="separator:a63e1d810880ec5418583ada4dc9b7944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc80d8e8a400e916d09a898d7a31ac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#afcc80d8e8a400e916d09a898d7a31ac6">setViewport</a> ()</td></tr>
+<tr class="memdesc:afcc80d8e8a400e916d09a898d7a31ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 glViewport  <a href="#afcc80d8e8a400e916d09a898d7a31ac6">更多...</a><br /></td></tr>
+<tr class="separator:afcc80d8e8a400e916d09a898d7a31ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4452cd55e038c6152bfc0388e6bc8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9b4452cd55e038c6152bfc0388e6bc8f">isSendCleanupToScene</a> ()</td></tr>
+<tr class="memdesc:a9b4452cd55e038c6152bfc0388e6bc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">director 开始到现在持续了多少帧  <a href="#a9b4452cd55e038c6152bfc0388e6bc8f">更多...</a><br /></td></tr>
+<tr class="separator:a9b4452cd55e038c6152bfc0388e6bc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401f4d12d4f2531c5f9741085f4d6ec0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a401f4d12d4f2531c5f9741085f4d6ec0">getNotificationNode</a> () const </td></tr>
+<tr class="memdesc:a401f4d12d4f2531c5f9741085f4d6ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">主场景访问后这个对象将被访问 这个对象必须实现"访问"("visit") 选择器.  <a href="#a401f4d12d4f2531c5f9741085f4d6ec0">更多...</a><br /></td></tr>
+<tr class="separator:a401f4d12d4f2531c5f9741085f4d6ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af099c180af336c9e067d63cc1668ba6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af099c180af336c9e067d63cc1668ba6f">setNotificationNode</a> (<a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="separator:af099c180af336c9e067d63cc1668ba6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa841a76e9016679ff92bc053e1a41718"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aa841a76e9016679ff92bc053e1a41718">getWinSize</a> () const </td></tr>
+<tr class="memdesc:aa841a76e9016679ff92bc053e1a41718"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回以点为单位的 OpenGL 视图的大小.  <a href="#aa841a76e9016679ff92bc053e1a41718">更多...</a><br /></td></tr>
+<tr class="separator:aa841a76e9016679ff92bc053e1a41718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea7cf787b392ed73dcc66d31d1837db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a4ea7cf787b392ed73dcc66d31d1837db">getWinSizeInPixels</a> () const </td></tr>
+<tr class="memdesc:a4ea7cf787b392ed73dcc66d31d1837db"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回以像素为单位的 OpenGL 视图的大小.  <a href="#a4ea7cf787b392ed73dcc66d31d1837db">更多...</a><br /></td></tr>
+<tr class="separator:a4ea7cf787b392ed73dcc66d31d1837db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fc115f18feedb1219daba91d7cda8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a67fc115f18feedb1219daba91d7cda8b">getVisibleSize</a> () const </td></tr>
+<tr class="memdesc:a67fc115f18feedb1219daba91d7cda8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns 以点为单位的 OpenGL 视图的可见大小.  <a href="#a67fc115f18feedb1219daba91d7cda8b">更多...</a><br /></td></tr>
+<tr class="separator:a67fc115f18feedb1219daba91d7cda8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915356595d01ab488838ec449cd74421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a915356595d01ab488838ec449cd74421">getVisibleOrigin</a> () const </td></tr>
+<tr class="memdesc:a915356595d01ab488838ec449cd74421"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns 以点为单位的 OpenGL 视图的初始化时的可见大小  <a href="#a915356595d01ab488838ec449cd74421">更多...</a><br /></td></tr>
+<tr class="separator:a915356595d01ab488838ec449cd74421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56b0376386c20f0ea104c1ca4b27ac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac56b0376386c20f0ea104c1ca4b27ac6">convertToGL</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;point)</td></tr>
+<tr class="memdesc:ac56b0376386c20f0ea104c1ca4b27ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">UIKit的坐标转换到一个OpenGL坐标 使用当前布局（横向或纵向）有效的（多）触摸坐标  <a href="#ac56b0376386c20f0ea104c1ca4b27ac6">更多...</a><br /></td></tr>
+<tr class="separator:ac56b0376386c20f0ea104c1ca4b27ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fa98974a3064bc5777616d03304c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a92fa98974a3064bc5777616d03304c91">convertToUI</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;point)</td></tr>
+<tr class="memdesc:a92fa98974a3064bc5777616d03304c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个OpenGL坐标转换到UIKit的坐标 点组成的窗口调用有效的节点上面的点，例如 glScissor  <a href="#a92fa98974a3064bc5777616d03304c91">更多...</a><br /></td></tr>
+<tr class="separator:a92fa98974a3064bc5777616d03304c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc5ec0fb79edd4ec2fedcf220ff7f39"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a2bc5ec0fb79edd4ec2fedcf220ff7f39">getZEye</a> () const </td></tr>
+<tr class="memdesc:a2bc5ec0fb79edd4ec2fedcf220ff7f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">XXX: 缺少描述  <a href="#a2bc5ec0fb79edd4ec2fedcf220ff7f39">更多...</a><br /></td></tr>
+<tr class="separator:a2bc5ec0fb79edd4ec2fedcf220ff7f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f5dd07ab4e96e7769975d2582f37e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a35f5dd07ab4e96e7769975d2582f37e9">runWithScene</a> (<a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a35f5dd07ab4e96e7769975d2582f37e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据给定的场景进入 Director的主循环 只能调用他运行你的第一个场景.  <a href="#a35f5dd07ab4e96e7769975d2582f37e9">更多...</a><br /></td></tr>
+<tr class="separator:a35f5dd07ab4e96e7769975d2582f37e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee05edca6334bc473a1ba1319152e39d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aee05edca6334bc473a1ba1319152e39d">pushScene</a> (<a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:aee05edca6334bc473a1ba1319152e39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停执行正在运行的场景中，pushing一个在堆栈上推暂停的场景。 新的场景将被执行.  <a href="#aee05edca6334bc473a1ba1319152e39d">更多...</a><br /></td></tr>
+<tr class="separator:aee05edca6334bc473a1ba1319152e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986825afe276e17d22b817f535a80423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a986825afe276e17d22b817f535a80423">popScene</a> ()</td></tr>
+<tr class="memdesc:a986825afe276e17d22b817f535a80423"><td class="mdescLeft">&#160;</td><td class="mdescRight">从队列中弹出一个场景。 这个场景将替换正在运行的场景.  <a href="#a986825afe276e17d22b817f535a80423">更多...</a><br /></td></tr>
+<tr class="separator:a986825afe276e17d22b817f535a80423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a0f42f06e54dead858f27983941b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a11a0f42f06e54dead858f27983941b24">popToRootScene</a> ()</td></tr>
+<tr class="memdesc:a11a0f42f06e54dead858f27983941b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">从队列中弹出所有的场景，直到只有根场景在队列中 这个场景将替换正在运行的场景.  <a href="#a11a0f42f06e54dead858f27983941b24">更多...</a><br /></td></tr>
+<tr class="separator:a11a0f42f06e54dead858f27983941b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783843614b40de364a613d0d2addbe12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a783843614b40de364a613d0d2addbe12">popToSceneStackLevel</a> (int level)</td></tr>
+<tr class="memdesc:a783843614b40de364a613d0d2addbe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出从队列中的所有场景，直到它到达 <code>level</code>.  <a href="#a783843614b40de364a613d0d2addbe12">更多...</a><br /></td></tr>
+<tr class="separator:a783843614b40de364a613d0d2addbe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae693d54396ac5f630814cf1f961de830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ae693d54396ac5f630814cf1f961de830">replaceScene</a> (<a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:ae693d54396ac5f630814cf1f961de830"><td class="mdescLeft">&#160;</td><td class="mdescRight">用一个新的替换正在运行的场景。终止正在运行的场景。 仅在有一个正在运行的场景的时候调用他.  <a href="#ae693d54396ac5f630814cf1f961de830">更多...</a><br /></td></tr>
+<tr class="separator:ae693d54396ac5f630814cf1f961de830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf81d3fdaf258088d7692fa70cece087"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aaf81d3fdaf258088d7692fa70cece087">end</a> ()</td></tr>
+<tr class="memdesc:aaf81d3fdaf258088d7692fa70cece087"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束执行，释放正在运行的场景。 它不会从其父视图中删除的OpenGL视图。你有做手工。  endToLua  <a href="#aaf81d3fdaf258088d7692fa70cece087">更多...</a><br /></td></tr>
+<tr class="separator:aaf81d3fdaf258088d7692fa70cece087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7167f5c196fc5e167bfabde1a730e81d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a7167f5c196fc5e167bfabde1a730e81d">pause</a> ()</td></tr>
+<tr class="memdesc:a7167f5c196fc5e167bfabde1a730e81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停正在运行的场景。.  <a href="#a7167f5c196fc5e167bfabde1a730e81d">更多...</a><br /></td></tr>
+<tr class="separator:a7167f5c196fc5e167bfabde1a730e81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41de8150eff044a237990c271d57ea27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a41de8150eff044a237990c271d57ea27">resume</a> ()</td></tr>
+<tr class="memdesc:a41de8150eff044a237990c271d57ea27"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复暂停的场景 预定的定时器将被再次激活。 “推迟执行”的时间将是0（如果游戏没有暂停）  <a href="#a41de8150eff044a237990c271d57ea27">更多...</a><br /></td></tr>
+<tr class="separator:a41de8150eff044a237990c271d57ea27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2b55425073ba4341f184bc995ae76c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#afd2b55425073ba4341f184bc995ae76c">stopAnimation</a> ()=0</td></tr>
+<tr class="memdesc:afd2b55425073ba4341f184bc995ae76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止动画，什么也不画.  <a href="#afd2b55425073ba4341f184bc995ae76c">更多...</a><br /></td></tr>
+<tr class="separator:afd2b55425073ba4341f184bc995ae76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4470fd9d5bc325975738b4f97e508e91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a4470fd9d5bc325975738b4f97e508e91">startAnimation</a> ()=0</td></tr>
+<tr class="memdesc:a4470fd9d5bc325975738b4f97e508e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">主循环线程重新被触发发.  <a href="#a4470fd9d5bc325975738b4f97e508e91">更多...</a><br /></td></tr>
+<tr class="separator:a4470fd9d5bc325975738b4f97e508e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dad859c998887477cd90323a027b8c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1dad859c998887477cd90323a027b8c6">drawScene</a> ()</td></tr>
+<tr class="memdesc:a1dad859c998887477cd90323a027b8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制场景.  <a href="#a1dad859c998887477cd90323a027b8c6">更多...</a><br /></td></tr>
+<tr class="separator:a1dad859c998887477cd90323a027b8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9edbb5c26d471e8ebc56855fe567268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af9edbb5c26d471e8ebc56855fe567268">purgeCachedData</a> ()</td></tr>
+<tr class="memdesc:af9edbb5c26d471e8ebc56855fe567268"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除所有 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 缓存数据.  <a href="#af9edbb5c26d471e8ebc56855fe567268">更多...</a><br /></td></tr>
+<tr class="separator:af9edbb5c26d471e8ebc56855fe567268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dc0c9e21a120afafd6c2cd9de88aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a54dc0c9e21a120afafd6c2cd9de88aab">setDefaultValues</a> ()</td></tr>
+<tr class="memdesc:a54dc0c9e21a120afafd6c2cd9de88aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置配置信息的默认值  <a href="#a54dc0c9e21a120afafd6c2cd9de88aab">更多...</a><br /></td></tr>
+<tr class="separator:a54dc0c9e21a120afafd6c2cd9de88aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb093a9b66f62a9a93278351f24f06e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aaeb093a9b66f62a9a93278351f24f06e">setGLDefaultValues</a> ()</td></tr>
+<tr class="memdesc:aaeb093a9b66f62a9a93278351f24f06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 OpenGL 默认值  <a href="#aaeb093a9b66f62a9a93278351f24f06e">更多...</a><br /></td></tr>
+<tr class="separator:aaeb093a9b66f62a9a93278351f24f06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b56282ef94b557fd28a361510d97aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ab6b56282ef94b557fd28a361510d97aa">setAlphaBlending</a> (bool on)</td></tr>
+<tr class="memdesc:ab6b56282ef94b557fd28a361510d97aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用/禁用 OpenGL alpha 混合  <a href="#ab6b56282ef94b557fd28a361510d97aa">更多...</a><br /></td></tr>
+<tr class="separator:ab6b56282ef94b557fd28a361510d97aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1618bf78a8b41a777b411d02f29e9d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1618bf78a8b41a777b411d02f29e9d30">setDepthTest</a> (bool on)</td></tr>
+<tr class="memdesc:a1618bf78a8b41a777b411d02f29e9d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用/禁用 OpenGL 深度测试  <a href="#a1618bf78a8b41a777b411d02f29e9d30">更多...</a><br /></td></tr>
+<tr class="separator:a1618bf78a8b41a777b411d02f29e9d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db3289e88cafc00c67a78b0967eedbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a7db3289e88cafc00c67a78b0967eedbc">mainLoop</a> ()=0</td></tr>
+<tr class="separator:a7db3289e88cafc00c67a78b0967eedbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ca886e8604ac478f5849cdb0643c61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a34ca886e8604ac478f5849cdb0643c61">setContentScaleFactor</a> (float scaleFactor)</td></tr>
+<tr class="memdesc:a34ca886e8604ac478f5849cdb0643c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于像素的 surface 尺寸.  <a href="#a34ca886e8604ac478f5849cdb0643c61">更多...</a><br /></td></tr>
+<tr class="separator:a34ca886e8604ac478f5849cdb0643c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed699101bf4d1ddc481d3fa49e61e7e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aed699101bf4d1ddc481d3fa49e61e7e9">getContentScaleFactor</a> () const </td></tr>
+<tr class="separator:aed699101bf4d1ddc481d3fa49e61e7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198d81df2495f19c5e62832d2844469c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a198d81df2495f19c5e62832d2844469c">getScheduler</a> () const </td></tr>
+<tr class="memdesc:a198d81df2495f19c5e62832d2844469c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取和这个 director 关联的调度器  <a href="#a198d81df2495f19c5e62832d2844469c">更多...</a><br /></td></tr>
+<tr class="separator:a198d81df2495f19c5e62832d2844469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a632cb02f3d860a6174bcc73d748ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1a632cb02f3d860a6174bcc73d748ebd">setScheduler</a> (<a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a> *scheduler)</td></tr>
+<tr class="memdesc:a1a632cb02f3d860a6174bcc73d748ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置和这个 director 关联的调度器  <a href="#a1a632cb02f3d860a6174bcc73d748ebd">更多...</a><br /></td></tr>
+<tr class="separator:a1a632cb02f3d860a6174bcc73d748ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707be24ca9e7c531552eb7fcd8a8ef89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a707be24ca9e7c531552eb7fcd8a8ef89">getActionManager</a> () const </td></tr>
+<tr class="memdesc:a707be24ca9e7c531552eb7fcd8a8ef89"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取和这个 director 关联的 <a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html" title="ActionManager是一个管理动作的单例类。 ">ActionManager</a>  <a href="#a707be24ca9e7c531552eb7fcd8a8ef89">更多...</a><br /></td></tr>
+<tr class="separator:a707be24ca9e7c531552eb7fcd8a8ef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580ba3d103a4a38232ec9e634d527e66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a580ba3d103a4a38232ec9e634d527e66">setActionManager</a> (<a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a> *actionManager)</td></tr>
+<tr class="memdesc:a580ba3d103a4a38232ec9e634d527e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置和这个 director 关联的 <a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html" title="ActionManager是一个管理动作的单例类。 ">ActionManager</a>  <a href="#a580ba3d103a4a38232ec9e634d527e66">更多...</a><br /></td></tr>
+<tr class="separator:a580ba3d103a4a38232ec9e634d527e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613d3909505462ebeb7b49c7d9757e4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a613d3909505462ebeb7b49c7d9757e4d">getEventDispatcher</a> () const </td></tr>
+<tr class="memdesc:a613d3909505462ebeb7b49c7d9757e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取和这个director 关联的EventDispatcher  <a href="#a613d3909505462ebeb7b49c7d9757e4d">更多...</a><br /></td></tr>
+<tr class="separator:a613d3909505462ebeb7b49c7d9757e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6890d22e32897bf1eabad7699e5594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9a6890d22e32897bf1eabad7699e5594">setEventDispatcher</a> (<a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a> *dispatcher)</td></tr>
+<tr class="memdesc:a9a6890d22e32897bf1eabad7699e5594"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置和这个director 关联的EventDispatcher  <a href="#a9a6890d22e32897bf1eabad7699e5594">更多...</a><br /></td></tr>
+<tr class="separator:a9a6890d22e32897bf1eabad7699e5594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bcd4a0117278dc95ac9919f2e6482c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a14bcd4a0117278dc95ac9919f2e6482c">getRenderer</a> () const </td></tr>
+<tr class="memdesc:a14bcd4a0117278dc95ac9919f2e6482c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回渲染器(Renderer)  <a href="#a14bcd4a0117278dc95ac9919f2e6482c">更多...</a><br /></td></tr>
+<tr class="separator:a14bcd4a0117278dc95ac9919f2e6482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc572bdc6cf98e09d2a9f36a7f896ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a8bc572bdc6cf98e09d2a9f36a7f896ec">getDeltaTime</a> () const </td></tr>
+<tr class="memdesc:a8bc572bdc6cf98e09d2a9f36a7f896ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回控制台(Console)  <a href="#a8bc572bdc6cf98e09d2a9f36a7f896ec">更多...</a><br /></td></tr>
+<tr class="separator:a8bc572bdc6cf98e09d2a9f36a7f896ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81df41eb24eb34cc231c751e07bebe50"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a81df41eb24eb34cc231c751e07bebe50">getFrameRate</a> () const </td></tr>
+<tr class="memdesc:a81df41eb24eb34cc231c751e07bebe50"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取帧频率(Frame Rate)  <a href="#a81df41eb24eb34cc231c751e07bebe50">更多...</a><br /></td></tr>
+<tr class="separator:a81df41eb24eb34cc231c751e07bebe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1206505c31a677f4d523a527fcba0c49"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1206505c31a677f4d523a527fcba0c49">getInstance</a> ()</td></tr>
+<tr class="memdesc:a1206505c31a677f4d523a527fcba0c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回导演(Director)的共享实例  <a href="#a1206505c31a677f4d523a527fcba0c49">更多...</a><br /></td></tr>
+<tr class="separator:a1206505c31a677f4d523a527fcba0c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12932b80668f616b7e6a6bf6a60625b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a12932b80668f616b7e6a6bf6a60625b3">sharedDirector</a> ()</td></tr>
+<tr class="separator:a12932b80668f616b7e6a6bf6a60625b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aa1aac97b2d18ad30ac95d4a9667d9bf5"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aa1aac97b2d18ad30ac95d4a9667d9bf5">EVENT_PROJECTION_CHANGED</a></td></tr>
+<tr class="separator:aa1aac97b2d18ad30ac95d4a9667d9bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5112b424300a7921a878ee36da116cd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af5112b424300a7921a878ee36da116cd">EVENT_AFTER_UPDATE</a></td></tr>
+<tr class="separator:af5112b424300a7921a878ee36da116cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f0c46983b3fcae5a1eb1c215e3817d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a83f0c46983b3fcae5a1eb1c215e3817d">EVENT_AFTER_VISIT</a></td></tr>
+<tr class="separator:a83f0c46983b3fcae5a1eb1c215e3817d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2160ce0985241ecb9f294f9d34ee62"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a7b2160ce0985241ecb9f294f9d34ee62">EVENT_AFTER_DRAW</a></td></tr>
+<tr class="separator:a7b2160ce0985241ecb9f294f9d34ee62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a316dbe9b5bbebdd608f35dd3a481d417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a316dbe9b5bbebdd608f35dd3a481d417">initMatrixStack</a> ()</td></tr>
+<tr class="separator:a316dbe9b5bbebdd608f35dd3a481d417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2db6b589540e2efdb947db3db2536da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ad2db6b589540e2efdb947db3db2536da">purgeDirector</a> ()</td></tr>
+<tr class="separator:ad2db6b589540e2efdb947db3db2536da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c470a8f896b244075ef79e58b8b0f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a11c470a8f896b244075ef79e58b8b0f6">setNextScene</a> ()</td></tr>
+<tr class="separator:a11c470a8f896b244075ef79e58b8b0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5560aaeb795d3dba38fdf6feee38b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac5560aaeb795d3dba38fdf6feee38b89">showStats</a> ()</td></tr>
+<tr class="separator:ac5560aaeb795d3dba38fdf6feee38b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679cf11f0818313d2e351eb6dff4186a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a679cf11f0818313d2e351eb6dff4186a">createStatsLabel</a> ()</td></tr>
+<tr class="separator:a679cf11f0818313d2e351eb6dff4186a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654d8260464b239524415dd802fbabec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a654d8260464b239524415dd802fbabec">calculateMPF</a> ()</td></tr>
+<tr class="separator:a654d8260464b239524415dd802fbabec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48be9104e49d67e8b67472d722bb3fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a48be9104e49d67e8b67472d722bb3fc7">getFPSImageData</a> (unsigned char **datapointer, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *length)</td></tr>
+<tr class="separator:a48be9104e49d67e8b67472d722bb3fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5a4a0f30f7e182962baa92377454c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1a5a4a0f30f7e182962baa92377454c6">calculateDeltaTime</a> ()</td></tr>
+<tr class="memdesc:a1a5a4a0f30f7e182962baa92377454c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算上次和这次主循环线程之间的延迟时间  <a href="#a1a5a4a0f30f7e182962baa92377454c6">更多...</a><br /></td></tr>
+<tr class="separator:a1a5a4a0f30f7e182962baa92377454c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f833cba00d0978ab468e2ca9b56e914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a8f833cba00d0978ab468e2ca9b56e914">initTextureCache</a> ()</td></tr>
+<tr class="separator:a8f833cba00d0978ab468e2ca9b56e914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3128fb3efc4b384fb41a881419b496d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a3128fb3efc4b384fb41a881419b496d2">destroyTextureCache</a> ()</td></tr>
+<tr class="separator:a3128fb3efc4b384fb41a881419b496d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aa4f5b78dc5bc006b61c569522e857dd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aa4f5b78dc5bc006b61c569522e857dd0">_purgeDirectorInNextLoop</a></td></tr>
+<tr class="separator:aa4f5b78dc5bc006b61c569522e857dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e526818b8a9cde42d5becb94076b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af9e526818b8a9cde42d5becb94076b4a">_scheduler</a></td></tr>
+<tr class="memdesc:af9e526818b8a9cde42d5becb94076b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">和 director 关联的调度器(Scheduler)  <a href="#af9e526818b8a9cde42d5becb94076b4a">更多...</a><br /></td></tr>
+<tr class="separator:af9e526818b8a9cde42d5becb94076b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac472c804dffdd8c83b211f6e768485fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac472c804dffdd8c83b211f6e768485fb">_actionManager</a></td></tr>
+<tr class="memdesc:ac472c804dffdd8c83b211f6e768485fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">和 director 关联的ActionManager  <a href="#ac472c804dffdd8c83b211f6e768485fb">更多...</a><br /></td></tr>
+<tr class="separator:ac472c804dffdd8c83b211f6e768485fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a8ad5f80c3406023353d26f9ff901f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a74a8ad5f80c3406023353d26f9ff901f">_eventDispatcher</a></td></tr>
+<tr class="memdesc:a74a8ad5f80c3406023353d26f9ff901f"><td class="mdescLeft">&#160;</td><td class="mdescRight">和 director 关联的事件派发器(EventDispatcher)  <a href="#a74a8ad5f80c3406023353d26f9ff901f">更多...</a><br /></td></tr>
+<tr class="separator:a74a8ad5f80c3406023353d26f9ff901f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3692b606bc07b383974f653c71ff99f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a3692b606bc07b383974f653c71ff99f3">_eventProjectionChanged</a></td></tr>
+<tr class="separator:a3692b606bc07b383974f653c71ff99f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff9ba335d251136fa980c660f6feca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9ff9ba335d251136fa980c660f6feca7">_eventAfterDraw</a></td></tr>
+<tr class="separator:a9ff9ba335d251136fa980c660f6feca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbf0e73ec1bbd7dbb9dbe71b179d73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a4bbf0e73ec1bbd7dbb9dbe71b179d73f">_eventAfterVisit</a></td></tr>
+<tr class="separator:a4bbf0e73ec1bbd7dbb9dbe71b179d73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bffe5a6bf9f294ecdb0c56e745d5b15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a0bffe5a6bf9f294ecdb0c56e745d5b15">_eventAfterUpdate</a></td></tr>
+<tr class="separator:a0bffe5a6bf9f294ecdb0c56e745d5b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28baf8f78e2467357564d06463908c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#af28baf8f78e2467357564d06463908c0">_deltaTime</a></td></tr>
+<tr class="separator:af28baf8f78e2467357564d06463908c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037274f8f0bba24407260e55e060cdfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a037274f8f0bba24407260e55e060cdfe">_openGLView</a></td></tr>
+<tr class="separator:a037274f8f0bba24407260e55e060cdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41afa8cf342f3c9fe0420efd1172f47b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a41afa8cf342f3c9fe0420efd1172f47b">_textureCache</a></td></tr>
+<tr class="separator:a41afa8cf342f3c9fe0420efd1172f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5838c3acac9f523beb3600ade0fd5434"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a5838c3acac9f523beb3600ade0fd5434">_animationInterval</a></td></tr>
+<tr class="separator:a5838c3acac9f523beb3600ade0fd5434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91964626aec3d603c51462d4a5e14f7f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a91964626aec3d603c51462d4a5e14f7f">_oldAnimationInterval</a></td></tr>
+<tr class="separator:a91964626aec3d603c51462d4a5e14f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5701fa7796bf5ba3f717b4fcf5abf14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aa5701fa7796bf5ba3f717b4fcf5abf14">_landscape</a></td></tr>
+<tr class="separator:aa5701fa7796bf5ba3f717b4fcf5abf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e0c5e8f18db1f3509484c1ca2a99a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ad2e0c5e8f18db1f3509484c1ca2a99a6">_displayStats</a></td></tr>
+<tr class="separator:ad2e0c5e8f18db1f3509484c1ca2a99a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a261bf53eb839c74ec61f3db1a807b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a87a261bf53eb839c74ec61f3db1a807b">_accumDt</a></td></tr>
+<tr class="separator:a87a261bf53eb839c74ec61f3db1a807b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7731f344436b0c51f7a831f1fc96a90"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac7731f344436b0c51f7a831f1fc96a90">_frameRate</a></td></tr>
+<tr class="separator:ac7731f344436b0c51f7a831f1fc96a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841e1a33a987bb2d8522d26b9364a71b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a841e1a33a987bb2d8522d26b9364a71b">_FPSLabel</a></td></tr>
+<tr class="separator:a841e1a33a987bb2d8522d26b9364a71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e52d54bcaba1bff249e94ac2a0d38aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a2e52d54bcaba1bff249e94ac2a0d38aa">_drawnBatchesLabel</a></td></tr>
+<tr class="separator:a2e52d54bcaba1bff249e94ac2a0d38aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4318e09fcbf3251bbf44cc47949f06c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a4318e09fcbf3251bbf44cc47949f06c8">_drawnVerticesLabel</a></td></tr>
+<tr class="separator:a4318e09fcbf3251bbf44cc47949f06c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b15c586c0fe526b6271921298dc87e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a4b15c586c0fe526b6271921298dc87e8">_paused</a></td></tr>
+<tr class="memdesc:a4b15c586c0fe526b6271921298dc87e8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> 是否暂停了  <a href="#a4b15c586c0fe526b6271921298dc87e8">更多...</a><br /></td></tr>
+<tr class="separator:a4b15c586c0fe526b6271921298dc87e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada76ffd4952e2795fc75b015850098a8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ada76ffd4952e2795fc75b015850098a8">_totalFrames</a></td></tr>
+<tr class="separator:ada76ffd4952e2795fc75b015850098a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14897ad9575d3a8f856a6df9e128786"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac14897ad9575d3a8f856a6df9e128786">_frames</a></td></tr>
+<tr class="separator:ac14897ad9575d3a8f856a6df9e128786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5380d924be7db1c3daf98e865155b8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9c5380d924be7db1c3daf98e865155b8">_secondsPerFrame</a></td></tr>
+<tr class="separator:a9c5380d924be7db1c3daf98e865155b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6967c25776898098ad6895dd85bb3467"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a6967c25776898098ad6895dd85bb3467">_runningScene</a></td></tr>
+<tr class="separator:a6967c25776898098ad6895dd85bb3467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb3a20880f9adc7b28c4f4c5ae6b7a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a0eb3a20880f9adc7b28c4f4c5ae6b7a3">_nextScene</a></td></tr>
+<tr class="separator:a0eb3a20880f9adc7b28c4f4c5ae6b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf1293d60253a5b4370f40277329ef3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#acaf1293d60253a5b4370f40277329ef3">_sendCleanupToScene</a></td></tr>
+<tr class="separator:acaf1293d60253a5b4370f40277329ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cd3f0b6337f2401ad7d8d189c26fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt; <a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a66cd3f0b6337f2401ad7d8d189c26fea">_scenesStack</a></td></tr>
+<tr class="separator:a66cd3f0b6337f2401ad7d8d189c26fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06710f5df32a02bc43f0e0ca9b9d94a5"><td class="memItemLeft" align="right" valign="top">struct timeval *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a06710f5df32a02bc43f0e0ca9b9d94a5">_lastUpdate</a></td></tr>
+<tr class="separator:a06710f5df32a02bc43f0e0ca9b9d94a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa918eefd2dfb7418a857537a42fd970e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aa918eefd2dfb7418a857537a42fd970e">_nextDeltaTimeZero</a></td></tr>
+<tr class="separator:aa918eefd2dfb7418a857537a42fd970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee52c2019805d8fb8d0e49b8cde4a94d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#aee52c2019805d8fb8d0e49b8cde4a94d">_projection</a></td></tr>
+<tr class="separator:aee52c2019805d8fb8d0e49b8cde4a94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80408f19b2122c1c0f2299ceed2eaa30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a80408f19b2122c1c0f2299ceed2eaa30">_winSizeInPoints</a></td></tr>
+<tr class="separator:a80408f19b2122c1c0f2299ceed2eaa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49da4c8763672d5c534280405b24af02"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a49da4c8763672d5c534280405b24af02">_contentScaleFactor</a></td></tr>
+<tr class="separator:a49da4c8763672d5c534280405b24af02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98b7210dbb879bd7adbe5acc4081f48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#ac98b7210dbb879bd7adbe5acc4081f48">_notificationNode</a></td></tr>
+<tr class="separator:ac98b7210dbb879bd7adbe5acc4081f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c4cbaa1ff48027442ced551893ffcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a64c4cbaa1ff48027442ced551893ffcb">_renderer</a></td></tr>
+<tr class="separator:a64c4cbaa1ff48027442ced551893ffcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a81a42551bb77ae9f487d744cdebc612f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a81a42551bb77ae9f487d744cdebc612f">GLViewProtocol</a></td></tr>
+<tr class="separator:a81a42551bb77ae9f487d744cdebc612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a class="anchor" id="a9f7870d8d60a515bd641dadf4629029a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a9f7870d8d60a515bd641dadf4629029aa8cf93a3cf4b8ee9a975671c37039d549"></a>_2D&#160;</td><td class="fielddoc">
+<p>设定的二维投影（正投影orthogonal projection) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9f7870d8d60a515bd641dadf4629029aa38e0791348f0496a0cbf3c07b64afed1"></a>_3D&#160;</td><td class="fielddoc">
+<p>使用 fovy=60, znear=0.5f and zfar=1500 设置一个3D投影.sets a 3D projection with a fovy=60, znear=0.5f and zfar=1500. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9f7870d8d60a515bd641dadf4629029aa72baef04098f035e8a320b03ad197818"></a>CUSTOM&#160;</td><td class="fielddoc">
+<p>投影委托里面它调用 "updateProjection". </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9f7870d8d60a515bd641dadf4629029aa5b39c8b553c821e7cddc6da64b5bd2ee"></a>DEFAULT&#160;</td><td class="fielddoc">
+<p>默认投影是 3D 投影 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a95ead0e8b25e458d878aaffd2fa670cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ctor </p>
+
+</div>
+</div>
+<a class="anchor" id="a35693d1003c3c4082fc8be6520e16547"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a1a5a4a0f30f7e182962baa92377454c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculateDeltaTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算上次和这次主循环线程之间的延迟时间 </p>
+
+</div>
+</div>
+<a class="anchor" id="a654d8260464b239524415dd802fbabec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculateMPF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac56b0376386c20f0ea104c1ca4b27ac6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> convertToGL </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UIKit的坐标转换到一个OpenGL坐标 使用当前布局（横向或纵向）有效的（多）触摸坐标 </p>
+
+</div>
+</div>
+<a class="anchor" id="a92fa98974a3064bc5777616d03304c91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> convertToUI </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一个OpenGL坐标转换到UIKit的坐标 点组成的窗口调用有效的节点上面的点，例如 glScissor </p>
+
+</div>
+</div>
+<a class="anchor" id="a679cf11f0818313d2e351eb6dff4186a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createStatsLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3128fb3efc4b384fb41a881419b496d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroyTextureCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dad859c998887477cd90323a027b8c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制场景. </p>
+<p>这个方法每一帧都会调用，不要手动调用这个方法. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf81d3fdaf258088d7692fa70cece087"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束执行，释放正在运行的场景。 它不会从其父视图中删除的OpenGL视图。你有做手工。  endToLua </p>
+
+</div>
+</div>
+<a class="anchor" id="a707be24ca9e7c531552eb7fcd8a8ef89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a>* getActionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取和这个 director 关联的 <a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html" title="ActionManager是一个管理动作的单例类。 ">ActionManager</a> </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a460fd482b56b166544acdeb145258db7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getAnimationInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get FPS 值 </p>
+
+</div>
+</div>
+<a class="anchor" id="aed699101bf4d1ddc481d3fa49e61e7e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getContentScaleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bc572bdc6cf98e09d2a9f36a7f896ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getDeltaTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回控制台(Console) </p>
+<dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a613d3909505462ebeb7b49c7d9757e4d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a>* getEventDispatcher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取和这个director 关联的EventDispatcher </p>
+<dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48be9104e49d67e8b67472d722bb3fc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getFPSImageData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>datapointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81df41eb24eb34cc231c751e07bebe50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取帧频率(Frame Rate) </p>
+
+</div>
+</div>
+<a class="anchor" id="a1206505c31a677f4d523a527fcba0c49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回导演(Director)的共享实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="a28ca65c270bd767f871dd4be27b12d11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> getMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a401f4d12d4f2531c5f9741085f4d6ec0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a>* getNotificationNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主场景访问后这个对象将被访问 这个对象必须实现"访问"("visit") 选择器. </p>
+<p>和通知对象挂钩, 像这个 Notifications (<a href="http://github.com/manucorporat/CCNotifications">http://github.com/manucorporat/CCNotifications</a>) </p><dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af30d3730a5e88f185a8d443c4e41fdf1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a>* getOpenGLView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取渲染所有东西的 EGLView  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adfd4a860828e753cf284d701aa4ca90b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a> getProjection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置一个 OpenGL 投影 </p>
+<dl class="section since"><dt>自从</dt><dd>v0.8.2  NA  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14bcd4a0117278dc95ac9919f2e6482c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a>* getRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回渲染器(Renderer) </p>
+<dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1867d379ef9ea9a658e5f09385373484"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a>* getRunningScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前运行的场景(Scene). </p>
+<p><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> 在这个时候只能运行一个场景. </p>
+
+</div>
+</div>
+<a class="anchor" id="a198d81df2495f19c5e62832d2844469c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a>* getScheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取和这个 director 关联的调度器 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef0e3af1c620ed00cb14a9c7ba721157"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getSecondsPerFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每帧秒 </p>
+
+</div>
+</div>
+<a class="anchor" id="aea826857786dee1954c1b875c24bacf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a>* getTextureCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec90752cddfb02c2cf73040f5c2ac369"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int getTotalFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>director 开始到现在持续了多少帧 </p>
+
+</div>
+</div>
+<a class="anchor" id="a915356595d01ab488838ec449cd74421"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> getVisibleOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns 以点为单位的 OpenGL 视图的初始化时的可见大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="a67fc115f18feedb1219daba91d7cda8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> getVisibleSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns 以点为单位的 OpenGL 视图的可见大小. </p>
+<p>如果不调用 EGLView::setDesignResolutionSize() 值等于 getWinSize </p>
+
+</div>
+</div>
+<a class="anchor" id="aa841a76e9016679ff92bc053e1a41718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&amp; getWinSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回以点为单位的 OpenGL 视图的大小. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ea7cf787b392ed73dcc66d31d1837db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> getWinSizeInPixels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回以像素为单位的 OpenGL 视图的大小. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bc5ec0fb79edd4ec2fedcf220ff7f39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getZEye </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XXX: 缺少描述 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4ae554e242cee73c504038d88855eba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a316dbe9b5bbebdd608f35dd3a481d417"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initMatrixStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f833cba00d0978ab468e2ca9b56e914"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initTextureCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a8bcf297b461ec2062434fa718f82ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isDisplayStats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否在左下角显示 FPS </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fd28dc5ee02a0ac48784dad00cd1f54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isNextDeltaTimeZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0bdf3189188cc6307ef0954cd4193a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isPaused </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> 是否被暂停 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b4452cd55e038c6152bfc0388e6bc8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isSendCleanupToScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>director 开始到现在持续了多少帧 </p>
+<p>场景是否收到替换清楚的消息 如果新的场景已经被 pushed （推出），那么旧的场景将不会收到“执行清理”("cleanup")的消息。 如果新的场景替换了旧的，它会收到“执行清理”("cleanup")消息。 </p><dl class="section since"><dt>自从</dt><dd>v0.99.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a21c941be16a7d6d6177713c6923fabb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadIdentityMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59b52b8e4e07c533b436c9c5a0b9091d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7db3289e88cafc00c67a78b0967eedbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="../../db/dcb/classcocos2d_1_1_display_link_director.html#adc132a8b46fc14cdc295c3067af8357a">DisplayLinkDirector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bc665cc4e9dcf9f1b9dc277385b126c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void multiplyMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7167f5c196fc5e167bfabde1a730e81d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pause </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>暂停正在运行的场景。. </p>
+<p>正在运行的场景将被绘制，的所有预定的定时器将被暂停 暂停时，绘制周期将只有4个FPS，以降低CPU消耗 </p>
+
+</div>
+</div>
+<a class="anchor" id="a574836e2dbe204ea7308c26b593770d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void popMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a986825afe276e17d22b817f535a80423"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void popScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从队列中弹出一个场景。 这个场景将替换正在运行的场景. </p>
+<p>正在运行的场景将被删除。如果有堆栈中没有其它的场景那么 popScene 的执行会被终止。 仅在有一个正在运行的场景的时候调用他. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11a0f42f06e54dead858f27983941b24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void popToRootScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从队列中弹出所有的场景，直到只有根场景在队列中 这个场景将替换正在运行的场景. </p>
+<p>在内部塌毁调用 <code>popToSceneStackLevel(1)</code> </p>
+
+</div>
+</div>
+<a class="anchor" id="a783843614b40de364a613d0d2addbe12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void popToSceneStackLevel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>弹出从队列中的所有场景，直到它到达 <code>level</code>. </p>
+<p>如果 level 是 0,它将结束 director. 如果 level 是 1, 从队列中弹出所有的场景，直到只有根场景在队列中 如果 level &lt;= 当前的堆栈水平，它不会做任何事情。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af9edbb5c26d471e8ebc56855fe567268"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void purgeCachedData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除所有 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 缓存数据. </p>
+<p>他将清楚 <a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html" title="用来处理纹理贴图（texture）的加载的独立的类 一旦纹理贴图（texture）被加载，它会在下一次返回 一个用来�...">TextureCache</a>, <a class="el" href="../../d7/d76/classcocos2d_1_1_sprite_frame_cache.html" title="Singleton that handles the loading of the sprite frames. ">SpriteFrameCache</a>, <a class="el" href="../../db/d28/classcocos2d_1_1_label_b_m_font.html" title="LabelBMFont 是 SpriteBatchNode的子类. ">LabelBMFont</a> 缓存 </p><dl class="section since"><dt>自从</dt><dd>v0.99.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2db6b589540e2efdb947db3db2536da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void purgeDirector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e986c6dccbe9c1b93a04bfa01e329b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pushMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d1f/group__base__nodes.html#ga4d146cef7130a8f3a953d46964ea3905">MATRIX_STACK_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee05edca6334bc473a1ba1319152e39d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pushScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>暂停执行正在运行的场景中，pushing一个在堆栈上推暂停的场景。 新的场景将被执行. </p>
+<p>尽量避免在堆栈上存放一个很大的场景以减少内存非陪， 仅在有一个正在运行的场景的时候调用他. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae693d54396ac5f630814cf1f961de830"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void replaceScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用一个新的替换正在运行的场景。终止正在运行的场景。 仅在有一个正在运行的场景的时候调用他. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cf9849b3c1514293d9a473537bf0f5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetMatrixStack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41de8150eff044a237990c271d57ea27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>恢复暂停的场景 预定的定时器将被再次激活。 “推迟执行”的时间将是0（如果游戏没有暂停） </p>
+
+</div>
+</div>
+<a class="anchor" id="a35f5dd07ab4e96e7769975d2582f37e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runWithScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据给定的场景进入 Director的主循环 只能调用他运行你的第一个场景. </p>
+<p>如果已经有一个场景在运行了就不要在调用他来</p>
+<p>它将调用pushScene：然后它会调用startAnimation </p>
+
+</div>
+</div>
+<a class="anchor" id="a580ba3d103a4a38232ec9e634d527e66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setActionManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a> *&#160;</td>
+          <td class="paramname"><em>actionManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置和这个 director 关联的 <a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html" title="ActionManager是一个管理动作的单例类。 ">ActionManager</a> </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6b56282ef94b557fd28a361510d97aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAlphaBlending </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用/禁用 OpenGL alpha 混合 </p>
+
+</div>
+</div>
+<a class="anchor" id="abd7a1ae0c0c03d5231c0072cbd2d613f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setAnimationInterval </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set FPS 值. </p>
+
+<p>在 <a class="el" href="../../db/dcb/classcocos2d_1_1_display_link_director.html#a56b2646544090eaad6e218b3f5f6c80a">DisplayLinkDirector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34ca886e8604ac478f5849cdb0643c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setContentScaleFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleFactor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>基于像素的 surface 尺寸. </p>
+<p>它可以和屏幕尺寸不同 //表面 High-res 设备或许有一个高于屏幕尺寸的 surface 尺寸 只在编译 SDK &gt;= 4.0 时有效. </p><dl class="section since"><dt>自从</dt><dd>v0.99.4 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54dc0c9e21a120afafd6c2cd9de88aab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDefaultValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置配置信息的默认值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1618bf78a8b41a777b411d02f29e9d30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDepthTest </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用/禁用 OpenGL 深度测试 </p>
+
+</div>
+</div>
+<a class="anchor" id="a99f29164dfc55e482353c9bf7646699b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDisplayStats </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>displayStats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在左下角显示 FPS </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a6890d22e32897bf1eabad7699e5594"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setEventDispatcher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a> *&#160;</td>
+          <td class="paramname"><em>dispatcher</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置和这个director 关联的EventDispatcher </p>
+<dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaeb093a9b66f62a9a93278351f24f06e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGLDefaultValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 OpenGL 默认值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cd753a2bd3273e21d97167764fb680d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNextDeltaTimeZero </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>nextDeltaTimeZero</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11c470a8f896b244075ef79e58b8b0f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNextScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af099c180af336c9e067d63cc1668ba6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNotificationNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a234ffac0f1d1a61f3f41e1310182797c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOpenGLView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a> *&#160;</td>
+          <td class="paramname"><em>openGLView</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63e1d810880ec5418583ada4dc9b7944"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setProjection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a>&#160;</td>
+          <td class="paramname"><em>projection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a632cb02f3d860a6174bcc73d748ebd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setScheduler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a> *&#160;</td>
+          <td class="paramname"><em>scheduler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置和这个 director 关联的调度器 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcc80d8e8a400e916d09a898d7a31ac6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setViewport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 glViewport </p>
+
+</div>
+</div>
+<a class="anchor" id="a12932b80668f616b7e6a6bf6a60625b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a>* sharedDirector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000070">弃用:</a></b></dt><dd>使用 <a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a1206505c31a677f4d523a527fcba0c49" title="返回导演(Director)的共享实例 ">getInstance()</a> 替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5560aaeb795d3dba38fdf6feee38b89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showStats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4470fd9d5bc325975738b4f97e508e91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void startAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主循环线程重新被触发发. </p>
+<p>这个函数只在你已经调用 [stopAnimation] 函数的时候调用 </p><dl class="section warning"><dt>警告</dt><dd>不要使用这个函数启动主线程循环. 请使用 主线程调用 runWithScene </dd></dl>
+
+<p>在 <a class="el" href="../../db/dcb/classcocos2d_1_1_display_link_director.html#acec85e7aeeaa683b5e12c4207ca54773">DisplayLinkDirector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd2b55425073ba4341f184bc995ae76c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void stopAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止动画，什么也不画. </p>
+<p>主循环线程再也不会被触发. 如果你不希望那样，那么就用暂停你的游戏代替 </p>
+
+<p>在 <a class="el" href="../../db/dcb/classcocos2d_1_1_display_link_director.html#a8cb15846d08099c25d07126b6c06cadf">DisplayLinkDirector</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="a81a42551bb77ae9f487d744cdebc612f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html">GLViewProtocol</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a87a261bf53eb839c74ec61f3db1a807b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _accumDt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac472c804dffdd8c83b211f6e768485fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d88/classcocos2d_1_1_action_manager.html">ActionManager</a>* _actionManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>和 director 关联的ActionManager </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5838c3acac9f523beb3600ade0fd5434"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double _animationInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49da4c8763672d5c534280405b24af02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _contentScaleFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af28baf8f78e2467357564d06463908c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _deltaTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2e0c5e8f18db1f3509484c1ca2a99a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _displayStats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e52d54bcaba1bff249e94ac2a0d38aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a>* _drawnBatchesLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4318e09fcbf3251bbf44cc47949f06c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a>* _drawnVerticesLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ff9ba335d251136fa980c660f6feca7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> * _eventAfterDraw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0bffe5a6bf9f294ecdb0c56e745d5b15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> * _eventAfterUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bbf0e73ec1bbd7dbb9dbe71b179d73f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a> * _eventAfterVisit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74a8ad5f80c3406023353d26f9ff901f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a>* _eventDispatcher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>和 director 关联的事件派发器(EventDispatcher) </p>
+<dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3692b606bc07b383974f653c71ff99f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/df4/classcocos2d_1_1_event_custom.html">EventCustom</a>* _eventProjectionChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a841e1a33a987bb2d8522d26b9364a71b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d45/classcocos2d_1_1_label_atlas.html">LabelAtlas</a>* _FPSLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7731f344436b0c51f7a831f1fc96a90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _frameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac14897ad9575d3a8f856a6df9e128786"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _frames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5701fa7796bf5ba3f717b4fcf5abf14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _landscape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06710f5df32a02bc43f0e0ca9b9d94a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct timeval* _lastUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa918eefd2dfb7418a857537a42fd970e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _nextDeltaTimeZero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0eb3a20880f9adc7b28c4f4c5ae6b7a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a>* _nextScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac98b7210dbb879bd7adbe5acc4081f48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a>* _notificationNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91964626aec3d603c51462d4a5e14f7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double _oldAnimationInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a037274f8f0bba24407260e55e060cdfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html">GLView</a>* _openGLView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b15c586c0fe526b6271921298dc87e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _paused</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a> 是否暂停了 </p>
+
+</div>
+</div>
+<a class="anchor" id="aee52c2019805d8fb8d0e49b8cde4a94d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html#a9f7870d8d60a515bd641dadf4629029a">Projection</a> _projection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4f5b78dc5bc006b61c569522e857dd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _purgeDirectorInNextLoop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64c4cbaa1ff48027442ced551893ffcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a>* _renderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6967c25776898098ad6895dd85bb3467"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a>* _runningScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66cd3f0b6337f2401ad7d8d189c26fea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../d4/d5f/classcocos2d_1_1_scene.html">Scene</a>*&gt; _scenesStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9e526818b8a9cde42d5becb94076b4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d82/classcocos2d_1_1_scheduler.html">Scheduler</a>* _scheduler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>和 director 关联的调度器(Scheduler) </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c5380d924be7db1c3daf98e865155b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _secondsPerFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaf1293d60253a5b4370f40277329ef3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _sendCleanupToScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41afa8cf342f3c9fe0420efd1172f47b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d33/classcocos2d_1_1_texture_cache.html">TextureCache</a>* _textureCache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada76ffd4952e2795fc75b015850098a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _totalFrames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80408f19b2122c1c0f2299ceed2eaa30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> _winSizeInPoints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b2160ce0985241ecb9f294f9d34ee62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EVENT_AFTER_DRAW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5112b424300a7921a878ee36da116cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EVENT_AFTER_UPDATE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83f0c46983b3fcae5a1eb1c215e3817d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EVENT_AFTER_VISIT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1aac97b2d18ad30ac95d4a9667d9bf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EVENT_PROJECTION_CHANGED</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/base/<a class="el" href="../../da/d05/_c_c_director_8h.html">CCDirector.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d7/df3/classcocos2d_1_1_director.html">Director</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:44 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

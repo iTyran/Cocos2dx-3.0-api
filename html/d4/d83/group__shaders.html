@@ -1,0 +1,3666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Shaders</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d4/d83/group__shaders.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#files">文件</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#enumval-members">枚举值</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a> &#124;
+<a href="#friend-members">友元</a>  </div>
+  <div class="headertitle">
+<div class="title">Shaders</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
+文件</h2></td></tr>
+<tr class="memitem:da/d2f/cc_g_l_state_cache_8h"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/cc_g_l_state_cache_8h.html">ccGLStateCache.h</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:dc/dde/namespacecocos2d_1_1_g_l"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/namespacecocos2d_1_1_g_l.html">cocos2d::GL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d35/structcocos2d_1_1_vertex_attrib.html">VertexAttrib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GLProgram类 实现一个glProgram.  <a href="../../dd/d35/classcocos2d_1_1_g_l_program.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc1/structcocos2d_1_1_g_l_program_1_1flag__struct.html">GLProgram::flag_struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df4/classcocos2d_1_1_g_l_program_cache.html">GLProgramCache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/df4/classcocos2d_1_1_g_l_program_cache.html" title="GLProgramCache 单例的用于存储管理GL编程对象(shaders着色器) ">GLProgramCache</a> 单例的用于存储管理GL编程对象(shaders着色器)  <a href="../../df/df4/classcocos2d_1_1_g_l_program_cache.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:gaede84391e087b15090c6398cf4e0bb3f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaede84391e087b15090c6398cf4e0bb3f">GLInfoFunction</a> )(GLuint program, GLenum pname, GLint *params)</td></tr>
+<tr class="separator:gaede84391e087b15090c6398cf4e0bb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e43a53773756cf2431c3fa723569013"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2e43a53773756cf2431c3fa723569013">GLLogFunction</a> )(GLuint program, GLsizei bufsize, GLsizei *length, <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *infolog)</td></tr>
+<tr class="separator:ga2e43a53773756cf2431c3fa723569013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:gaaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcea39dbc29be22217455126a2152096c598">VERTEX_ATTRIB_POSITION</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcead1c059ac1d655ca6b4bf84a6b7c506e9">VERTEX_ATTRIB_COLOR</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcea9c9f523d4c519b48977e3961ba236f43">VERTEX_ATTRIB_TEX_COORD</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcea459c40664feb36369e8211eac6726b80">VERTEX_ATTRIB_NORMAL</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcea5640e9918605e950b30a98d704896b48">VERTEX_ATTRIB_MAX</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggaaf105ae5beaca1dee30ae54530691fcea2915d013dabe3bd3349e55543bcae604">VERTEX_ATTRIB_TEX_COORDS</a> = VERTEX_ATTRIB_TEX_COORD
+<br />
+ }</td></tr>
+<tr class="separator:gaaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaae954ee545ffecb09b9970aec0b610960">UNIFORM_P_MATRIX</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaae269eca0e1ead70e92847c90c78e8503">UNIFORM_MV_MATRIX</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa4afd7017f13581f5b2646b7da21adc6b">UNIFORM_MVP_MATRIX</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa3c1325517e1cdd4ed89b33cf423673cd">UNIFORM_TIME</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa5280da4eb53a87db26d2ad2747508057">UNIFORM_SIN_TIME</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa6057bcf38c79071883c50e499a0375d3">UNIFORM_COS_TIME</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa83e8c6d8975c1519c9bbcea4987885cf">UNIFORM_RANDOM01</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaad97324620ab775965033695748ba0984">UNIFORM_SAMPLER0</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaac05f6c468ee91c4a44958cc97cfffbe8">UNIFORM_SAMPLER1</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa5fe84a409ccd7de58c16a374d84870e3">UNIFORM_SAMPLER2</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaaf9d78afc446849f1a827c66255b8bd58">UNIFORM_SAMPLER3</a>, 
+<a class="el" href="../../d4/d83/group__shaders.html#gga80155586fa275b28773c9b203f52cabaa4b3129bd8cd6356bfb8c7686e0d4a114">UNIFORM_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#ggadb49720dc49f7d4e4cf9adbf2948e409a749e312a528389cd3a2ac03827b6876d">VERTEX_ATTRIB_FLAG_NONE</a> = 0, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggadb49720dc49f7d4e4cf9adbf2948e409a0e85ebc87c150c2ea89403224b36840d">VERTEX_ATTRIB_FLAG_POSITION</a> = 1 &lt;&lt; 0, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggadb49720dc49f7d4e4cf9adbf2948e409a74f86c70a1e4d2a0aa06a7cb11c2f7f7">VERTEX_ATTRIB_FLAG_COLOR</a> = 1 &lt;&lt; 1, 
+<a class="el" href="../../d4/d83/group__shaders.html#ggadb49720dc49f7d4e4cf9adbf2948e409a0ce3c5b3d1108c4658fc12c95e1a5a81">VERTEX_ATTRIB_FLAG_TEX_COORD</a> = 1 &lt;&lt; 2, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d83/group__shaders.html#ggadb49720dc49f7d4e4cf9adbf2948e409a2631a4a2c18ecb27194fca3ce5caaf20">VERTEX_ATTRIB_FLAG_POS_COLOR_TEX</a> = (VERTEX_ATTRIB_FLAG_POSITION | VERTEX_ATTRIB_FLAG_COLOR | VERTEX_ATTRIB_FLAG_TEX_COORD)
+<br />
+ }</td></tr>
+<tr class="memdesc:gadb49720dc49f7d4e4cf9adbf2948e409"><td class="mdescLeft">&#160;</td><td class="mdescRight">顶点(vertex)的属性标志  <a href="../../d4/d83/group__shaders.html#gadb49720dc49f7d4e4cf9adbf2948e409">更多...</a><br /></td></tr>
+<tr class="separator:gadb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gadfdc475f7b8d87632ced304b6c336273"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gadfdc475f7b8d87632ced304b6c336273">GLProgram</a> ()</td></tr>
+<tr class="separator:gadfdc475f7b8d87632ced304b6c336273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9d98106bdb44967f8dc6b1a43bca02a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gae9d98106bdb44967f8dc6b1a43bca02a">~GLProgram</a> ()</td></tr>
+<tr class="separator:gae9d98106bdb44967f8dc6b1a43bca02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01152e741e964b0bedbf2c08239379ef"><td class="memItemLeft" align="right" valign="top">static GLProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga01152e741e964b0bedbf2c08239379ef">createWithPrecompiledProgramByteArray</a> (const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *vShaderByteArray, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *fShaderByteArray)</td></tr>
+<tr class="memdesc:ga01152e741e964b0bedbf2c08239379ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用顶点(vertex)和片段字节数组初始化GLProgram  initWithString  initWithString  <a href="#ga01152e741e964b0bedbf2c08239379ef">更多...</a><br /></td></tr>
+<tr class="separator:ga01152e741e964b0bedbf2c08239379ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf909f7a6cf31647066ae95bcfb4ae02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf909f7a6cf31647066ae95bcfb4ae02c">initWithPrecompiledProgramByteArray</a> (const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *vShaderByteArray, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *fShaderByteArray)</td></tr>
+<tr class="separator:gaf909f7a6cf31647066ae95bcfb4ae02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa247169afde320fde0826fdd457c9797"><td class="memItemLeft" align="right" valign="top">static GLProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaa247169afde320fde0826fdd457c9797">createWithByteArrays</a> (const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *vShaderByteArray, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *fShaderByteArray)</td></tr>
+<tr class="memdesc:gaa247169afde320fde0826fdd457c9797"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用顶点(vertex)和字节数组片段初始化GLProgram  initWithString  initWithString  <a href="#gaa247169afde320fde0826fdd457c9797">更多...</a><br /></td></tr>
+<tr class="separator:gaa247169afde320fde0826fdd457c9797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4467ec4f97a12d82bf1aa1c2ab300ebf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga4467ec4f97a12d82bf1aa1c2ab300ebf">initWithByteArrays</a> (const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *vShaderByteArray, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *fShaderByteArray)</td></tr>
+<tr class="separator:ga4467ec4f97a12d82bf1aa1c2ab300ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f6f488a1aab80b05c82c3aa82ddacb5"><td class="memItemLeft" align="right" valign="top">static GLProgram *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2f6f488a1aab80b05c82c3aa82ddacb5">createWithFilenames</a> (const std::string &amp;vShaderFilename, const std::string &amp;fShaderFilename)</td></tr>
+<tr class="memdesc:ga2f6f488a1aab80b05c82c3aa82ddacb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用顶点(vertex)和文件名的内容片段初始化GLProgram  init  init  <a href="#ga2f6f488a1aab80b05c82c3aa82ddacb5">更多...</a><br /></td></tr>
+<tr class="separator:ga2f6f488a1aab80b05c82c3aa82ddacb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a3750c57823dad947cf4112f5b882b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga16a3750c57823dad947cf4112f5b882b">initWithFilenames</a> (const std::string &amp;vShaderFilename, const std::string &amp;fShaderFilename)</td></tr>
+<tr class="separator:ga16a3750c57823dad947cf4112f5b882b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0aa425490990f8e78b9480f219311589"><td class="memItemLeft" align="right" valign="top">Uniform *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0aa425490990f8e78b9480f219311589">getUniform</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:ga0aa425490990f8e78b9480f219311589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac628e0aa94f842200a6f845263068d51"><td class="memItemLeft" align="right" valign="top">VertexAttrib *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gac628e0aa94f842200a6f845263068d51">getVertexAttrib</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:gac628e0aa94f842200a6f845263068d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29aa5636642f5db77f50e007df74c23c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga29aa5636642f5db77f50e007df74c23c">bindAttribLocation</a> (const std::string &amp;attributeName, GLuint index) const </td></tr>
+<tr class="memdesc:ga29aa5636642f5db77f50e007df74c23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过调用glBindAttribLocation方法添加新的属性到着色器(shader)  <a href="#ga29aa5636642f5db77f50e007df74c23c">更多...</a><br /></td></tr>
+<tr class="separator:ga29aa5636642f5db77f50e007df74c23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbc71fc9fc6f872f4cbab81d88187706"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafbc71fc9fc6f872f4cbab81d88187706">getAttribLocation</a> (const std::string &amp;attributeName) const </td></tr>
+<tr class="memdesc:gafbc71fc9fc6f872f4cbab81d88187706"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 glGetAttribLocation方法  <a href="#gafbc71fc9fc6f872f4cbab81d88187706">更多...</a><br /></td></tr>
+<tr class="separator:gafbc71fc9fc6f872f4cbab81d88187706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3970ef8cd3da1fd84fc16f291e391eb"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gab3970ef8cd3da1fd84fc16f291e391eb">getUniformLocation</a> (const std::string &amp;attributeName) const </td></tr>
+<tr class="memdesc:gab3970ef8cd3da1fd84fc16f291e391eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 glGetUniformLocation()方法  <a href="#gab3970ef8cd3da1fd84fc16f291e391eb">更多...</a><br /></td></tr>
+<tr class="separator:gab3970ef8cd3da1fd84fc16f291e391eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga389ae784c7f2bbfc0deb3bb2db922fdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga389ae784c7f2bbfc0deb3bb2db922fdf">link</a> ()</td></tr>
+<tr class="memdesc:ga389ae784c7f2bbfc0deb3bb2db922fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">链接 glProgram  <a href="#ga389ae784c7f2bbfc0deb3bb2db922fdf">更多...</a><br /></td></tr>
+<tr class="separator:ga389ae784c7f2bbfc0deb3bb2db922fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a05de24712939691a7cf8934d9e5c5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga8a05de24712939691a7cf8934d9e5c5f">use</a> ()</td></tr>
+<tr class="memdesc:ga8a05de24712939691a7cf8934d9e5c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">它将调用glUseProgram()方法  <a href="#ga8a05de24712939691a7cf8934d9e5c5f">更多...</a><br /></td></tr>
+<tr class="separator:ga8a05de24712939691a7cf8934d9e5c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf284a5a0cee062ea99f6678f363fc06f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf284a5a0cee062ea99f6678f363fc06f">updateUniforms</a> ()</td></tr>
+<tr class="memdesc:gaf284a5a0cee062ea99f6678f363fc06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">它将创建4种制式(uniforms):  <a href="#gaf284a5a0cee062ea99f6678f363fc06f">更多...</a><br /></td></tr>
+<tr class="separator:gaf284a5a0cee062ea99f6678f363fc06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac136ac2589073d3c60a29cb9d59ec6a"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaac136ac2589073d3c60a29cb9d59ec6a">getUniformLocationForName</a> (const char *name) const </td></tr>
+<tr class="memdesc:gaac136ac2589073d3c60a29cb9d59ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用(retrieves)检索此着色器编程的指定名字制式的位置.  <a href="#gaac136ac2589073d3c60a29cb9d59ec6a">更多...</a><br /></td></tr>
+<tr class="separator:gaac136ac2589073d3c60a29cb9d59ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga558294c40f53dba05f03118e0d7d22c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga558294c40f53dba05f03118e0d7d22c9">setUniformLocationWith1i</a> (GLint location, GLint i1)</td></tr>
+<tr class="memdesc:ga558294c40f53dba05f03118e0d7d22c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform1i.  <a href="#ga558294c40f53dba05f03118e0d7d22c9">更多...</a><br /></td></tr>
+<tr class="separator:ga558294c40f53dba05f03118e0d7d22c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4768d4136fa4848eab763fdd43e6db78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga4768d4136fa4848eab763fdd43e6db78">setUniformLocationWith2i</a> (GLint location, GLint i1, GLint i2)</td></tr>
+<tr class="memdesc:ga4768d4136fa4848eab763fdd43e6db78"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2i.  <a href="#ga4768d4136fa4848eab763fdd43e6db78">更多...</a><br /></td></tr>
+<tr class="separator:ga4768d4136fa4848eab763fdd43e6db78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacaa08e6cad8d4bc1c0e483ae323a932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaacaa08e6cad8d4bc1c0e483ae323a932">setUniformLocationWith3i</a> (GLint location, GLint i1, GLint i2, GLint i3)</td></tr>
+<tr class="memdesc:gaacaa08e6cad8d4bc1c0e483ae323a932"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3i.  <a href="#gaacaa08e6cad8d4bc1c0e483ae323a932">更多...</a><br /></td></tr>
+<tr class="separator:gaacaa08e6cad8d4bc1c0e483ae323a932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga796668357b2777537a1d97c31fa9fb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga796668357b2777537a1d97c31fa9fb08">setUniformLocationWith4i</a> (GLint location, GLint i1, GLint i2, GLint i3, GLint i4)</td></tr>
+<tr class="memdesc:ga796668357b2777537a1d97c31fa9fb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4i,仅仅当该值不同于前一个,相同的着色器(shader)编程才调.  <a href="#ga796668357b2777537a1d97c31fa9fb08">更多...</a><br /></td></tr>
+<tr class="separator:ga796668357b2777537a1d97c31fa9fb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd22d5dc0e59243a5fb0723126f4257e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafd22d5dc0e59243a5fb0723126f4257e">setUniformLocationWith2iv</a> (GLint location, GLint *ints, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:gafd22d5dc0e59243a5fb0723126f4257e"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2iv.  <a href="#gafd22d5dc0e59243a5fb0723126f4257e">更多...</a><br /></td></tr>
+<tr class="separator:gafd22d5dc0e59243a5fb0723126f4257e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9434f7167306a389ca682bd5ee713598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9434f7167306a389ca682bd5ee713598">setUniformLocationWith3iv</a> (GLint location, GLint *ints, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:ga9434f7167306a389ca682bd5ee713598"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3iv.  <a href="#ga9434f7167306a389ca682bd5ee713598">更多...</a><br /></td></tr>
+<tr class="separator:ga9434f7167306a389ca682bd5ee713598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16d3f876363f7416617bedccb3458281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga16d3f876363f7416617bedccb3458281">setUniformLocationWith4iv</a> (GLint location, GLint *ints, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:ga16d3f876363f7416617bedccb3458281"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4iv.  <a href="#ga16d3f876363f7416617bedccb3458281">更多...</a><br /></td></tr>
+<tr class="separator:ga16d3f876363f7416617bedccb3458281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfef5826d70e32e0700f068fe2a03f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gadfef5826d70e32e0700f068fe2a03f2b">setUniformLocationWith1f</a> (GLint location, GLfloat f1)</td></tr>
+<tr class="memdesc:gadfef5826d70e32e0700f068fe2a03f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform1f .  <a href="#gadfef5826d70e32e0700f068fe2a03f2b">更多...</a><br /></td></tr>
+<tr class="separator:gadfef5826d70e32e0700f068fe2a03f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98f92d20009faf3d3f1c308dd4542931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga98f92d20009faf3d3f1c308dd4542931">setUniformLocationWith2f</a> (GLint location, GLfloat f1, GLfloat f2)</td></tr>
+<tr class="memdesc:ga98f92d20009faf3d3f1c308dd4542931"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2f .  <a href="#ga98f92d20009faf3d3f1c308dd4542931">更多...</a><br /></td></tr>
+<tr class="separator:ga98f92d20009faf3d3f1c308dd4542931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa025048f5e080f77fb678c0d4c3551a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaa025048f5e080f77fb678c0d4c3551a4">setUniformLocationWith3f</a> (GLint location, GLfloat f1, GLfloat f2, GLfloat f3)</td></tr>
+<tr class="memdesc:gaa025048f5e080f77fb678c0d4c3551a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3f.  <a href="#gaa025048f5e080f77fb678c0d4c3551a4">更多...</a><br /></td></tr>
+<tr class="separator:gaa025048f5e080f77fb678c0d4c3551a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga019178fca8b51d4b91f0f06554716e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga019178fca8b51d4b91f0f06554716e42">setUniformLocationWith4f</a> (GLint location, GLfloat f1, GLfloat f2, GLfloat f3, GLfloat f4)</td></tr>
+<tr class="memdesc:ga019178fca8b51d4b91f0f06554716e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4f.  <a href="#ga019178fca8b51d4b91f0f06554716e42">更多...</a><br /></td></tr>
+<tr class="separator:ga019178fca8b51d4b91f0f06554716e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc152f52deb1d2abdb276641b82342de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gadc152f52deb1d2abdb276641b82342de">setUniformLocationWith2fv</a> (GLint location, const GLfloat *floats, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:gadc152f52deb1d2abdb276641b82342de"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2fv.  <a href="#gadc152f52deb1d2abdb276641b82342de">更多...</a><br /></td></tr>
+<tr class="separator:gadc152f52deb1d2abdb276641b82342de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f94404b20e2804fb0f31e3c2d6abc68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga4f94404b20e2804fb0f31e3c2d6abc68">setUniformLocationWith3fv</a> (GLint location, const GLfloat *floats, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:ga4f94404b20e2804fb0f31e3c2d6abc68"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3fv.  <a href="#ga4f94404b20e2804fb0f31e3c2d6abc68">更多...</a><br /></td></tr>
+<tr class="separator:ga4f94404b20e2804fb0f31e3c2d6abc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74d9432567ddcee0e0960b4443631094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga74d9432567ddcee0e0960b4443631094">setUniformLocationWith4fv</a> (GLint location, const GLfloat *floats, unsigned int numberOfArrays)</td></tr>
+<tr class="memdesc:ga74d9432567ddcee0e0960b4443631094"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4fv.  <a href="#ga74d9432567ddcee0e0960b4443631094">更多...</a><br /></td></tr>
+<tr class="separator:ga74d9432567ddcee0e0960b4443631094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f8edbe4b94b90c0a622c8fea7ac84a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9f8edbe4b94b90c0a622c8fea7ac84a5">setUniformLocationWithMatrix2fv</a> (GLint location, const GLfloat *matrixArray, unsigned int numberOfMatrices)</td></tr>
+<tr class="memdesc:ga9f8edbe4b94b90c0a622c8fea7ac84a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix2fv.  <a href="#ga9f8edbe4b94b90c0a622c8fea7ac84a5">更多...</a><br /></td></tr>
+<tr class="separator:ga9f8edbe4b94b90c0a622c8fea7ac84a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4020c6ac5f63713f19b787ae0741486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gad4020c6ac5f63713f19b787ae0741486">setUniformLocationWithMatrix3fv</a> (GLint location, const GLfloat *matrixArray, unsigned int numberOfMatrices)</td></tr>
+<tr class="memdesc:gad4020c6ac5f63713f19b787ae0741486"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix3fv.  <a href="#gad4020c6ac5f63713f19b787ae0741486">更多...</a><br /></td></tr>
+<tr class="separator:gad4020c6ac5f63713f19b787ae0741486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d654bc1b28ba1a5ac49cc929b805043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga1d654bc1b28ba1a5ac49cc929b805043">setUniformLocationWithMatrix4fv</a> (GLint location, const GLfloat *matrixArray, unsigned int numberOfMatrices)</td></tr>
+<tr class="memdesc:ga1d654bc1b28ba1a5ac49cc929b805043"><td class="mdescLeft">&#160;</td><td class="mdescRight">仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix4fv.  <a href="#ga1d654bc1b28ba1a5ac49cc929b805043">更多...</a><br /></td></tr>
+<tr class="separator:ga1d654bc1b28ba1a5ac49cc929b805043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga702aefca412588037aec668535f8ded7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga702aefca412588037aec668535f8ded7">setUniformsForBuiltins</a> ()</td></tr>
+<tr class="memdesc:ga702aefca412588037aec668535f8ded7"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果他们不同于前一个调用相同的着色器(shader),将会更新内键的制式.  <a href="#ga702aefca412588037aec668535f8ded7">更多...</a><br /></td></tr>
+<tr class="separator:ga702aefca412588037aec668535f8ded7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69f75feac3c98363c12a84b9a697c1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga69f75feac3c98363c12a84b9a697c1ad">setUniformsForBuiltins</a> (const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;modelView)</td></tr>
+<tr class="separator:ga69f75feac3c98363c12a84b9a697c1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f6588bfb92d0c36926775cd512c0422"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9f6588bfb92d0c36926775cd512c0422">getVertexShaderLog</a> () const </td></tr>
+<tr class="memdesc:ga9f6588bfb92d0c36926775cd512c0422"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回vertexShader错误记录  <a href="#ga9f6588bfb92d0c36926775cd512c0422">更多...</a><br /></td></tr>
+<tr class="separator:ga9f6588bfb92d0c36926775cd512c0422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9895240a65ec31d5bec99330a4c99b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaeb9895240a65ec31d5bec99330a4c99b">getFragmentShaderLog</a> () const </td></tr>
+<tr class="memdesc:gaeb9895240a65ec31d5bec99330a4c99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回fragmentShader错误记录  <a href="#gaeb9895240a65ec31d5bec99330a4c99b">更多...</a><br /></td></tr>
+<tr class="separator:gaeb9895240a65ec31d5bec99330a4c99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a8fa757fc1dfeecbc51a5bd7bf35ef0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga7a8fa757fc1dfeecbc51a5bd7bf35ef0">getProgramLog</a> () const </td></tr>
+<tr class="memdesc:ga7a8fa757fc1dfeecbc51a5bd7bf35ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回编程错误记录  <a href="#ga7a8fa757fc1dfeecbc51a5bd7bf35ef0">更多...</a><br /></td></tr>
+<tr class="separator:ga7a8fa757fc1dfeecbc51a5bd7bf35ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="separator:gad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga774a37d8d7bf4d3166745546a8dcaed5"><td class="memItemLeft" align="right" valign="top">const GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga774a37d8d7bf4d3166745546a8dcaed5">getProgram</a> () const </td></tr>
+<tr class="separator:ga774a37d8d7bf4d3166745546a8dcaed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee72339b5fc7e2c0ad2282af47271862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaee72339b5fc7e2c0ad2282af47271862">initWithVertexShaderByteArray</a> (const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *vertexByteArray, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *fragByteArray)</td></tr>
+<tr class="separator:gaee72339b5fc7e2c0ad2282af47271862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90202275d9e13feb56bbd11a1aa79b72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga90202275d9e13feb56bbd11a1aa79b72">initWithVertexShaderFilename</a> (const std::string &amp;vertexFilename, const std::string &amp;fragFilename)</td></tr>
+<tr class="separator:ga90202275d9e13feb56bbd11a1aa79b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdc58b89aed0ec2643a533339c338912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafdc58b89aed0ec2643a533339c338912">addAttribute</a> (const std::string &amp;attributeName, GLuint index) const </td></tr>
+<tr class="separator:gafdc58b89aed0ec2643a533339c338912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14f3867d42223cfdfa176db4867b390a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga14f3867d42223cfdfa176db4867b390a">updateUniformLocation</a> (GLint location, const GLvoid *data, unsigned int bytes)</td></tr>
+<tr class="separator:ga14f3867d42223cfdfa176db4867b390a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ed943b6ae07b0f0a64b5acb31afa153"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga7ed943b6ae07b0f0a64b5acb31afa153">getDescription</a> () const </td></tr>
+<tr class="separator:ga7ed943b6ae07b0f0a64b5acb31afa153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga096931771f6b5c4f7d7df285b7c1c7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga096931771f6b5c4f7d7df285b7c1c7a6">bindPredefinedVertexAttribs</a> ()</td></tr>
+<tr class="separator:ga096931771f6b5c4f7d7df285b7c1c7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6891112e8a181ef543cdec76110f62ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga6891112e8a181ef543cdec76110f62ca">parseVertexAttribs</a> ()</td></tr>
+<tr class="separator:ga6891112e8a181ef543cdec76110f62ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98b36c83821e41d44f58c82ba55b785f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga98b36c83821e41d44f58c82ba55b785f">parseUniforms</a> ()</td></tr>
+<tr class="separator:ga98b36c83821e41d44f58c82ba55b785f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04bc7f91b28d0823cd62865d599e619c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga04bc7f91b28d0823cd62865d599e619c">compileShader</a> (GLuint *shader, GLenum type, const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *source)</td></tr>
+<tr class="separator:ga04bc7f91b28d0823cd62865d599e619c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga869b952f0b14e29b769028f94add7f26"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga869b952f0b14e29b769028f94add7f26">logForOpenGLObject</a> (GLuint object, GLInfoFunction infoFunc, GLLogFunction logFunc) const </td></tr>
+<tr class="separator:ga869b952f0b14e29b769028f94add7f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca37f179fdfa2ee12982e1bf226edf2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaca37f179fdfa2ee12982e1bf226edf2c">flag_struct</a> ()</td></tr>
+<tr class="separator:gaca37f179fdfa2ee12982e1bf226edf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b7ea7faf5db5abc5a532244166c85b6"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga1b7ea7faf5db5abc5a532244166c85b6">invalidateStateCache</a> (void)</td></tr>
+<tr class="memdesc:ga1b7ea7faf5db5abc5a532244166c85b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">使GL 的状态缓存作废.  <a href="#ga1b7ea7faf5db5abc5a532244166c85b6">更多...</a><br /></td></tr>
+<tr class="separator:ga1b7ea7faf5db5abc5a532244166c85b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc4f42697bbdf374ebdb8227b759fa4b"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafc4f42697bbdf374ebdb8227b759fa4b">useProgram</a> (GLuint program)</td></tr>
+<tr class="memdesc:gafc4f42697bbdf374ebdb8227b759fa4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用GL编程传人参数(in case)program不同于当前.  <a href="#gafc4f42697bbdf374ebdb8227b759fa4b">更多...</a><br /></td></tr>
+<tr class="separator:gafc4f42697bbdf374ebdb8227b759fa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b63ef22d3e062e0a3cc6c43d84eb11a"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga3b63ef22d3e062e0a3cc6c43d84eb11a">deleteProgram</a> (GLuint program)</td></tr>
+<tr class="memdesc:ga3b63ef22d3e062e0a3cc6c43d84eb11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 GL编程.  <a href="#ga3b63ef22d3e062e0a3cc6c43d84eb11a">更多...</a><br /></td></tr>
+<tr class="separator:ga3b63ef22d3e062e0a3cc6c43d84eb11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c4be207908fc61a11588546283887f8"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0c4be207908fc61a11588546283887f8">blendFunc</a> (GLenum sfactor, GLenum dfactor)</td></tr>
+<tr class="memdesc:ga0c4be207908fc61a11588546283887f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用混合方法，传人参数(in case)是没有被使用的.  <a href="#ga0c4be207908fc61a11588546283887f8">更多...</a><br /></td></tr>
+<tr class="separator:ga0c4be207908fc61a11588546283887f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ce6d0f2b1f01612ec0527ea65a8462"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga61ce6d0f2b1f01612ec0527ea65a8462">blendResetToCache</a> (void)</td></tr>
+<tr class="memdesc:ga61ce6d0f2b1f01612ec0527ea65a8462"><td class="mdescLeft">&#160;</td><td class="mdescRight">重设混合模式恢复缓存状态，假使你使用glBlendFuncSeparate() 或者 glBlendEquation()方法.  <a href="#ga61ce6d0f2b1f01612ec0527ea65a8462">更多...</a><br /></td></tr>
+<tr class="separator:ga61ce6d0f2b1f01612ec0527ea65a8462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad953de205b910a063cf3abfb78dd565"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaad953de205b910a063cf3abfb78dd565">setProjectionMatrixDirty</a> (void)</td></tr>
+<tr class="memdesc:gaad953de205b910a063cf3abfb78dd565"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置投影矩阵暗淡(dirty)  <a href="#gaad953de205b910a063cf3abfb78dd565">更多...</a><br /></td></tr>
+<tr class="separator:gaad953de205b910a063cf3abfb78dd565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01cbafb599cb1a9fc1ec076a9ad94d9a"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga01cbafb599cb1a9fc1ec076a9ad94d9a">enableVertexAttribs</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> flags)</td></tr>
+<tr class="memdesc:ga01cbafb599cb1a9fc1ec076a9ad94d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将会使顶点属性像标记一样传递.  <a href="#ga01cbafb599cb1a9fc1ec076a9ad94d9a">更多...</a><br /></td></tr>
+<tr class="separator:ga01cbafb599cb1a9fc1ec076a9ad94d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf985cbb7182c916a174e1b9d62137476"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf985cbb7182c916a174e1b9d62137476">bindTexture2D</a> (GLuint textureId)</td></tr>
+<tr class="memdesc:gaf985cbb7182c916a174e1b9d62137476"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果纹理(texture)没有绑定到纹理单位0,绑定它.  <a href="#gaf985cbb7182c916a174e1b9d62137476">更多...</a><br /></td></tr>
+<tr class="separator:gaf985cbb7182c916a174e1b9d62137476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6ad8a7a93571a962a05287999a5a9df"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gad6ad8a7a93571a962a05287999a5a9df">bindTexture2DN</a> (GLuint textureUnit, GLuint textureId)</td></tr>
+<tr class="memdesc:gad6ad8a7a93571a962a05287999a5a9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果纹理(texture)没有被绑定到指定的单位，绑定它.  <a href="#gad6ad8a7a93571a962a05287999a5a9df">更多...</a><br /></td></tr>
+<tr class="separator:gad6ad8a7a93571a962a05287999a5a9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cdc90723378d120e7d349ddc799b0c6"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga8cdc90723378d120e7d349ddc799b0c6">deleteTexture</a> (GLuint textureId)</td></tr>
+<tr class="memdesc:ga8cdc90723378d120e7d349ddc799b0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">它将删除指定的textureId的纹理.  <a href="#ga8cdc90723378d120e7d349ddc799b0c6">更多...</a><br /></td></tr>
+<tr class="separator:ga8cdc90723378d120e7d349ddc799b0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37cc4ce25c80c5934507045767942648"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga37cc4ce25c80c5934507045767942648">deleteTextureN</a> (GLuint textureUnit, GLuint textureId)</td></tr>
+<tr class="memdesc:ga37cc4ce25c80c5934507045767942648"><td class="mdescLeft">&#160;</td><td class="mdescRight">它将删除指定的textureId的纹理.  <a href="#ga37cc4ce25c80c5934507045767942648">更多...</a><br /></td></tr>
+<tr class="separator:ga37cc4ce25c80c5934507045767942648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4d7a2e2e9a29586650cf432d63fb684"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gab4d7a2e2e9a29586650cf432d63fb684">activeTexture</a> (GLenum texture)</td></tr>
+<tr class="memdesc:gab4d7a2e2e9a29586650cf432d63fb684"><td class="mdescLeft">&#160;</td><td class="mdescRight">选取活动的纹理单元(texture unit).  <a href="#gab4d7a2e2e9a29586650cf432d63fb684">更多...</a><br /></td></tr>
+<tr class="separator:gab4d7a2e2e9a29586650cf432d63fb684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5be4103d4ccd45a296b75cef9eafeb6"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf5be4103d4ccd45a296b75cef9eafeb6">bindVAO</a> (GLuint vaoId)</td></tr>
+<tr class="memdesc:gaf5be4103d4ccd45a296b75cef9eafeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果顶点(vertex)数组没有绑定, 绑定它.  <a href="#gaf5be4103d4ccd45a296b75cef9eafeb6">更多...</a><br /></td></tr>
+<tr class="separator:gaf5be4103d4ccd45a296b75cef9eafeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:gaf7ca775b6d9354291c4d7d01b8b2a8bc"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf7ca775b6d9354291c4d7d01b8b2a8bc">index</a></td></tr>
+<tr class="separator:gaf7ca775b6d9354291c4d7d01b8b2a8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0208b298f4c65e680a58434efb699fe8"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0208b298f4c65e680a58434efb699fe8">size</a></td></tr>
+<tr class="separator:ga0208b298f4c65e680a58434efb699fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579922e668b544baacb0839db8d6ae37"><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga579922e668b544baacb0839db8d6ae37">type</a></td></tr>
+<tr class="separator:ga579922e668b544baacb0839db8d6ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b45b3e13bd9167aab02e17e08916231"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9b45b3e13bd9167aab02e17e08916231">name</a></td></tr>
+<tr class="separator:ga9b45b3e13bd9167aab02e17e08916231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcb0cc6b682b2ea7b5b8632dd2c84e3b"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gadcb0cc6b682b2ea7b5b8632dd2c84e3b">location</a></td></tr>
+<tr class="separator:gadcb0cc6b682b2ea7b5b8632dd2c84e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0208b298f4c65e680a58434efb699fe8"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0208b298f4c65e680a58434efb699fe8">size</a></td></tr>
+<tr class="separator:ga0208b298f4c65e680a58434efb699fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579922e668b544baacb0839db8d6ae37"><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga579922e668b544baacb0839db8d6ae37">type</a></td></tr>
+<tr class="separator:ga579922e668b544baacb0839db8d6ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b45b3e13bd9167aab02e17e08916231"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9b45b3e13bd9167aab02e17e08916231">name</a></td></tr>
+<tr class="separator:ga9b45b3e13bd9167aab02e17e08916231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f37eb410c9cd5881c8aec5166999edd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2f37eb410c9cd5881c8aec5166999edd">SHADER_NAME_POSITION_TEXTURE_COLOR</a></td></tr>
+<tr class="separator:ga2f37eb410c9cd5881c8aec5166999edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7182d053548fbe5eca4aa41b181ac681"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga7182d053548fbe5eca4aa41b181ac681">SHADER_NAME_POSITION_TEXTURE_COLOR_NO_MVP</a></td></tr>
+<tr class="separator:ga7182d053548fbe5eca4aa41b181ac681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7cbe4521182a9dafb2f036e49c3929d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gae7cbe4521182a9dafb2f036e49c3929d">SHADER_NAME_POSITION_TEXTURE_ALPHA_TEST</a></td></tr>
+<tr class="separator:gae7cbe4521182a9dafb2f036e49c3929d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d231398100efdadb38ca97a86e1a13d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga7d231398100efdadb38ca97a86e1a13d">SHADER_NAME_POSITION_TEXTURE_ALPHA_TEST_NO_MV</a></td></tr>
+<tr class="separator:ga7d231398100efdadb38ca97a86e1a13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a2d24c68518811a289e3091bbb05a11"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2a2d24c68518811a289e3091bbb05a11">SHADER_NAME_POSITION_COLOR</a></td></tr>
+<tr class="separator:ga2a2d24c68518811a289e3091bbb05a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23f1b86b9e53e21c03cb4076321b88ba"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga23f1b86b9e53e21c03cb4076321b88ba">SHADER_NAME_POSITION_COLOR_NO_MVP</a></td></tr>
+<tr class="separator:ga23f1b86b9e53e21c03cb4076321b88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28dcdb8c9373d6503e2715a308f39199"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga28dcdb8c9373d6503e2715a308f39199">SHADER_NAME_POSITION_TEXTURE</a></td></tr>
+<tr class="separator:ga28dcdb8c9373d6503e2715a308f39199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67bcf2c9447f34b846d84b6273c4d104"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga67bcf2c9447f34b846d84b6273c4d104">SHADER_NAME_POSITION_TEXTURE_U_COLOR</a></td></tr>
+<tr class="separator:ga67bcf2c9447f34b846d84b6273c4d104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac92f021c88278c35811041ac3296bfdb"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gac92f021c88278c35811041ac3296bfdb">SHADER_NAME_POSITION_TEXTURE_A8_COLOR</a></td></tr>
+<tr class="separator:gac92f021c88278c35811041ac3296bfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9933a0514aa43696591609493ff0539d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9933a0514aa43696591609493ff0539d">SHADER_NAME_POSITION_U_COLOR</a></td></tr>
+<tr class="separator:ga9933a0514aa43696591609493ff0539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc10154e47359a444b5f3320ff4038c7"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafc10154e47359a444b5f3320ff4038c7">SHADER_NAME_POSITION_LENGTH_TEXTURE_COLOR</a></td></tr>
+<tr class="separator:gafc10154e47359a444b5f3320ff4038c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecc6e7cecb0e99d6b6de7bee1cdd0230"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaecc6e7cecb0e99d6b6de7bee1cdd0230">SHADER_NAME_LABEL_NORMAL</a></td></tr>
+<tr class="separator:gaecc6e7cecb0e99d6b6de7bee1cdd0230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60faedbaeb81d9e2f0c7b48cd9b6aa57"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga60faedbaeb81d9e2f0c7b48cd9b6aa57">SHADER_NAME_LABEL_OUTLINE</a></td></tr>
+<tr class="separator:ga60faedbaeb81d9e2f0c7b48cd9b6aa57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09eb38ced3bed0a6593183bb80a09a30"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga09eb38ced3bed0a6593183bb80a09a30">SHADER_NAME_LABEL_DISTANCEFIELD_NORMAL</a></td></tr>
+<tr class="separator:ga09eb38ced3bed0a6593183bb80a09a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafddd899fc3d56ecdf5277baa0133b641"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafddd899fc3d56ecdf5277baa0133b641">SHADER_NAME_LABEL_DISTANCEFIELD_GLOW</a></td></tr>
+<tr class="separator:gafddd899fc3d56ecdf5277baa0133b641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab923ae6d268887d812e3680845866857"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gab923ae6d268887d812e3680845866857">UNIFORM_NAME_P_MATRIX</a></td></tr>
+<tr class="separator:gab923ae6d268887d812e3680845866857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga374728bded2c73b6df42a957d3a669fd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga374728bded2c73b6df42a957d3a669fd">UNIFORM_NAME_MV_MATRIX</a></td></tr>
+<tr class="separator:ga374728bded2c73b6df42a957d3a669fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ad68232c030c26a88c1d2234a227f0e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga7ad68232c030c26a88c1d2234a227f0e">UNIFORM_NAME_MVP_MATRIX</a></td></tr>
+<tr class="separator:ga7ad68232c030c26a88c1d2234a227f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga020c51c886db8bd0d044fe737471d6b2"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga020c51c886db8bd0d044fe737471d6b2">UNIFORM_NAME_TIME</a></td></tr>
+<tr class="separator:ga020c51c886db8bd0d044fe737471d6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72bde0119d87e4e67c66eee483517914"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga72bde0119d87e4e67c66eee483517914">UNIFORM_NAME_SIN_TIME</a></td></tr>
+<tr class="separator:ga72bde0119d87e4e67c66eee483517914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf25b928c74f5461c2c8bfb9c0f586d42"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf25b928c74f5461c2c8bfb9c0f586d42">UNIFORM_NAME_COS_TIME</a></td></tr>
+<tr class="separator:gaf25b928c74f5461c2c8bfb9c0f586d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0accd7eed52b7345b8c5cc68a714c90"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gae0accd7eed52b7345b8c5cc68a714c90">UNIFORM_NAME_RANDOM01</a></td></tr>
+<tr class="separator:gae0accd7eed52b7345b8c5cc68a714c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf1a3387ffcf9fb2a0837269cdf90ca4"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gabf1a3387ffcf9fb2a0837269cdf90ca4">UNIFORM_NAME_SAMPLER0</a></td></tr>
+<tr class="separator:gabf1a3387ffcf9fb2a0837269cdf90ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd1b33d22b25e6c17eb1d05e2684a058"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gacd1b33d22b25e6c17eb1d05e2684a058">UNIFORM_NAME_SAMPLER1</a></td></tr>
+<tr class="separator:gacd1b33d22b25e6c17eb1d05e2684a058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33fc5d18158bdc5b5d21a5a177c68661"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga33fc5d18158bdc5b5d21a5a177c68661">UNIFORM_NAME_SAMPLER2</a></td></tr>
+<tr class="separator:ga33fc5d18158bdc5b5d21a5a177c68661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga439da8fe29d196060ef6463fe523a58a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga439da8fe29d196060ef6463fe523a58a">UNIFORM_NAME_SAMPLER3</a></td></tr>
+<tr class="separator:ga439da8fe29d196060ef6463fe523a58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60759d187f8cf737302d58d7fe699a91"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga60759d187f8cf737302d58d7fe699a91">UNIFORM_NAME_ALPHA_TEST_VALUE</a></td></tr>
+<tr class="separator:ga60759d187f8cf737302d58d7fe699a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga871baa7d45ee87060d80ae39dcca44fa"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga871baa7d45ee87060d80ae39dcca44fa">ATTRIBUTE_NAME_COLOR</a></td></tr>
+<tr class="separator:ga871baa7d45ee87060d80ae39dcca44fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84458f24e8e44fc26358babbfb914680"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga84458f24e8e44fc26358babbfb914680">ATTRIBUTE_NAME_POSITION</a></td></tr>
+<tr class="separator:ga84458f24e8e44fc26358babbfb914680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8023282e1f41245e6ad50587540f9cdf"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga8023282e1f41245e6ad50587540f9cdf">ATTRIBUTE_NAME_TEX_COORD</a></td></tr>
+<tr class="separator:ga8023282e1f41245e6ad50587540f9cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8cc9052744ba346700fc3884d1805a7"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf8cc9052744ba346700fc3884d1805a7">ATTRIBUTE_NAME_NORMAL</a></td></tr>
+<tr class="separator:gaf8cc9052744ba346700fc3884d1805a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25fec1c93a555aa88e664a28975d34d4"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga25fec1c93a555aa88e664a28975d34d4">_program</a></td></tr>
+<tr class="separator:ga25fec1c93a555aa88e664a28975d34d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd038a0fc4cf7e32397bf7cff9a9ed8a"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafd038a0fc4cf7e32397bf7cff9a9ed8a">_vertShader</a></td></tr>
+<tr class="separator:gafd038a0fc4cf7e32397bf7cff9a9ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a9bb181d4f1572719feae90fc7335c3"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9a9bb181d4f1572719feae90fc7335c3">_fragShader</a></td></tr>
+<tr class="separator:ga9a9bb181d4f1572719feae90fc7335c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e29137c2dd41f98b5ad42980cb35916"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0e29137c2dd41f98b5ad42980cb35916">_builtInUniforms</a> [UNIFORM_MAX]</td></tr>
+<tr class="separator:ga0e29137c2dd41f98b5ad42980cb35916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b1eb6d5725d9c025c23b8bd013a0cd0"><td class="memItemLeft" align="right" valign="top">struct _hashUniformEntry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0b1eb6d5725d9c025c23b8bd013a0cd0">_hashForUniforms</a></td></tr>
+<tr class="separator:ga0b1eb6d5725d9c025c23b8bd013a0cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c7f2e155c99e173a80ca7707e44c845"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga8c7f2e155c99e173a80ca7707e44c845">_hasShaderCompiler</a></td></tr>
+<tr class="separator:ga8c7f2e155c99e173a80ca7707e44c845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07ea0dfc95d88e3a56291aa4d889ddc1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga07ea0dfc95d88e3a56291aa4d889ddc1">_shaderId</a></td></tr>
+<tr class="separator:ga07ea0dfc95d88e3a56291aa4d889ddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d3827835f3f2426e3ccd4eecbe0e1cf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9d3827835f3f2426e3ccd4eecbe0e1cf">usesTime</a>:1</td></tr>
+<tr class="separator:ga9d3827835f3f2426e3ccd4eecbe0e1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6b442a80f205f6655c12774f3345e30"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaa6b442a80f205f6655c12774f3345e30">usesMVP</a>:1</td></tr>
+<tr class="separator:gaa6b442a80f205f6655c12774f3345e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07d6db5e5c5f2304eda8f4d364573ee7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga07d6db5e5c5f2304eda8f4d364573ee7">usesMV</a>:1</td></tr>
+<tr class="separator:ga07d6db5e5c5f2304eda8f4d364573ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5979af592f21ffd46f4557d96549da8a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga5979af592f21ffd46f4557d96549da8a">usesP</a>:1</td></tr>
+<tr class="separator:ga5979af592f21ffd46f4557d96549da8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97dd57704ce5eee49cfe4fff17c1d205"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga97dd57704ce5eee49cfe4fff17c1d205">usesRandom</a>:1</td></tr>
+<tr class="separator:ga97dd57704ce5eee49cfe4fff17c1d205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20eb7b33a467095901f508f92ccd638d"><td class="memItemLeft" align="right" valign="top">struct <br class="typebreak" />
+<a class="el" href="../../de/dc1/structcocos2d_1_1_g_l_program_1_1flag__struct.html">cocos2d::GLProgram::flag_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga20eb7b33a467095901f508f92ccd638d">_flags</a></td></tr>
+<tr class="separator:ga20eb7b33a467095901f508f92ccd638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fb7aeed3faa2f5cdf2964706080ffb5"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, Uniform &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2fb7aeed3faa2f5cdf2964706080ffb5">_userUniforms</a></td></tr>
+<tr class="separator:ga2fb7aeed3faa2f5cdf2964706080ffb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bc300ffa09e91f7ea095effa6d3cfab"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, VertexAttrib &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga1bc300ffa09e91f7ea095effa6d3cfab">_vertexAttribs</a></td></tr>
+<tr class="separator:ga1bc300ffa09e91f7ea095effa6d3cfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga006c5d3ff976f600e243143edfe1af4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga006c5d3ff976f600e243143edfe1af4d">ccPosition_uColor_frag</a></td></tr>
+<tr class="separator:ga006c5d3ff976f600e243143edfe1af4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb598d879f3fb20cb331a023bd60abc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaeb598d879f3fb20cb331a023bd60abc5">ccPosition_uColor_vert</a></td></tr>
+<tr class="separator:gaeb598d879f3fb20cb331a023bd60abc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a894ed3c19f7f3e7bdd2e68906a9920"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga6a894ed3c19f7f3e7bdd2e68906a9920">ccPositionColor_frag</a></td></tr>
+<tr class="separator:ga6a894ed3c19f7f3e7bdd2e68906a9920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac40c66ef7531b0f46b39cf57946cda37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gac40c66ef7531b0f46b39cf57946cda37">ccPositionColor_vert</a></td></tr>
+<tr class="separator:gac40c66ef7531b0f46b39cf57946cda37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cc574b27a0def71c5b5c8d2c1bd6236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2cc574b27a0def71c5b5c8d2c1bd6236">ccPositionTexture_frag</a></td></tr>
+<tr class="separator:ga2cc574b27a0def71c5b5c8d2c1bd6236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3aec72114a5851fd82db484c89bd9ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga3aec72114a5851fd82db484c89bd9ff7">ccPositionTexture_vert</a></td></tr>
+<tr class="separator:ga3aec72114a5851fd82db484c89bd9ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf74d6f13e65e3acc96c0e8bfb9c2ae41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf74d6f13e65e3acc96c0e8bfb9c2ae41">ccPositionTextureA8Color_frag</a></td></tr>
+<tr class="separator:gaf74d6f13e65e3acc96c0e8bfb9c2ae41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec93a26806e49049fd463c2bdd81eb3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaec93a26806e49049fd463c2bdd81eb3d">ccPositionTextureA8Color_vert</a></td></tr>
+<tr class="separator:gaec93a26806e49049fd463c2bdd81eb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga815d58ef69ff7c2483cb9a6a0c0ca4db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga815d58ef69ff7c2483cb9a6a0c0ca4db">ccPositionTextureColor_frag</a></td></tr>
+<tr class="separator:ga815d58ef69ff7c2483cb9a6a0c0ca4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e02c8789b7530ecdd08c8cfe7e71167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga2e02c8789b7530ecdd08c8cfe7e71167">ccPositionTextureColor_vert</a></td></tr>
+<tr class="separator:ga2e02c8789b7530ecdd08c8cfe7e71167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1cc49a44ad78c0b21002e495b65eeb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gab1cc49a44ad78c0b21002e495b65eeb9">ccPositionTextureColor_noMVP_frag</a></td></tr>
+<tr class="separator:gab1cc49a44ad78c0b21002e495b65eeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5847d77d372e718669c901ddcc12ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaf5847d77d372e718669c901ddcc12ee1">ccPositionTextureColor_noMVP_vert</a></td></tr>
+<tr class="separator:gaf5847d77d372e718669c901ddcc12ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3feca0a48b0f3ed0fe3e8e434b134909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga3feca0a48b0f3ed0fe3e8e434b134909">ccPositionTextureColorAlphaTest_frag</a></td></tr>
+<tr class="separator:ga3feca0a48b0f3ed0fe3e8e434b134909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33473d13a5162e49c87271b664d15602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga33473d13a5162e49c87271b664d15602">ccPositionTexture_uColor_frag</a></td></tr>
+<tr class="separator:ga33473d13a5162e49c87271b664d15602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1b0cbe99775e61560358f550ce4fa6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gaa1b0cbe99775e61560358f550ce4fa6c">ccPositionTexture_uColor_vert</a></td></tr>
+<tr class="separator:gaa1b0cbe99775e61560358f550ce4fa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb5505bee43df0aa72d1566cc6ea422b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gacb5505bee43df0aa72d1566cc6ea422b">ccPositionColorLengthTexture_frag</a></td></tr>
+<tr class="separator:gacb5505bee43df0aa72d1566cc6ea422b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafea78326421fe3f6cbda8e79305adac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#gafea78326421fe3f6cbda8e79305adac0">ccPositionColorLengthTexture_vert</a></td></tr>
+<tr class="separator:gafea78326421fe3f6cbda8e79305adac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b16607876bf84e8f7e9a5ea033c92e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga45b16607876bf84e8f7e9a5ea033c92e">ccLabelDistanceFieldNormal_frag</a></td></tr>
+<tr class="separator:ga45b16607876bf84e8f7e9a5ea033c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08b9ed86e3e720d1be073a12e1517bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga08b9ed86e3e720d1be073a12e1517bdb">ccLabelDistanceFieldGlow_frag</a></td></tr>
+<tr class="separator:ga08b9ed86e3e720d1be073a12e1517bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b376c3f93f569281533e6ab3e3de03e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga9b376c3f93f569281533e6ab3e3de03e">ccLabelNormal_frag</a></td></tr>
+<tr class="separator:ga9b376c3f93f569281533e6ab3e3de03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07dc3214af3e10b022d9eea4351b3b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga07dc3214af3e10b022d9eea4351b3b05">ccLabelOutline_frag</a></td></tr>
+<tr class="separator:ga07dc3214af3e10b022d9eea4351b3b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga011c64dee03940a8ac76f443f3ac4662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga011c64dee03940a8ac76f443f3ac4662">ccLabel_vert</a></td></tr>
+<tr class="separator:ga011c64dee03940a8ac76f443f3ac4662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friend-members"></a>
+友元</h2></td></tr>
+<tr class="memitem:ga0d7667c2227a98d6083a92f3faa2074a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d83/group__shaders.html#ga0d7667c2227a98d6083a92f3faa2074a">GLProgramState</a></td></tr>
+<tr class="separator:ga0d7667c2227a98d6083a92f3faa2074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="gaede84391e087b15090c6398cf4e0bb3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* GLInfoFunction)(GLuint program, GLenum pname, GLint *params)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2e43a53773756cf2431c3fa723569013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* GLLogFunction)(GLuint program, GLsizei bufsize, GLsizei *length, <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *infolog)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="gaaf105ae5beaca1dee30ae54530691fce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcea39dbc29be22217455126a2152096c598"></a>VERTEX_ATTRIB_POSITION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcead1c059ac1d655ca6b4bf84a6b7c506e9"></a>VERTEX_ATTRIB_COLOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcea9c9f523d4c519b48977e3961ba236f43"></a>VERTEX_ATTRIB_TEX_COORD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcea459c40664feb36369e8211eac6726b80"></a>VERTEX_ATTRIB_NORMAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcea5640e9918605e950b30a98d704896b48"></a>VERTEX_ATTRIB_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaaf105ae5beaca1dee30ae54530691fcea2915d013dabe3bd3349e55543bcae604"></a>VERTEX_ATTRIB_TEX_COORDS&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga80155586fa275b28773c9b203f52caba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaae954ee545ffecb09b9970aec0b610960"></a>UNIFORM_P_MATRIX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaae269eca0e1ead70e92847c90c78e8503"></a>UNIFORM_MV_MATRIX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa4afd7017f13581f5b2646b7da21adc6b"></a>UNIFORM_MVP_MATRIX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa3c1325517e1cdd4ed89b33cf423673cd"></a>UNIFORM_TIME&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa5280da4eb53a87db26d2ad2747508057"></a>UNIFORM_SIN_TIME&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa6057bcf38c79071883c50e499a0375d3"></a>UNIFORM_COS_TIME&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa83e8c6d8975c1519c9bbcea4987885cf"></a>UNIFORM_RANDOM01&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaad97324620ab775965033695748ba0984"></a>UNIFORM_SAMPLER0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaac05f6c468ee91c4a44958cc97cfffbe8"></a>UNIFORM_SAMPLER1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa5fe84a409ccd7de58c16a374d84870e3"></a>UNIFORM_SAMPLER2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaaf9d78afc446849f1a827c66255b8bd58"></a>UNIFORM_SAMPLER3&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa4b3129bd8cd6356bfb8c7686e0d4a114"></a>UNIFORM_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="gadb49720dc49f7d4e4cf9adbf2948e409"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>顶点(vertex)的属性标志 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a749e312a528389cd3a2ac03827b6876d"></a>VERTEX_ATTRIB_FLAG_NONE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a0e85ebc87c150c2ea89403224b36840d"></a>VERTEX_ATTRIB_FLAG_POSITION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a74f86c70a1e4d2a0aa06a7cb11c2f7f7"></a>VERTEX_ATTRIB_FLAG_COLOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a0ce3c5b3d1108c4658fc12c95e1a5a81"></a>VERTEX_ATTRIB_FLAG_TEX_COORD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a2631a4a2c18ecb27194fca3ce5caaf20"></a>VERTEX_ATTRIB_FLAG_POS_COLOR_TEX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="gaca37f179fdfa2ee12982e1bf226edf2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flag_struct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gadfdc475f7b8d87632ced304b6c336273"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gae9d98106bdb44967f8dc6b1a43bca02a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~GLProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab4d7a2e2e9a29586650cf432d63fb684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::activeTexture </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选取活动的纹理单元(texture unit). </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将直接调用 glActiveTexture() 方法. </p><dl class="section since"><dt>自从</dt><dd>v3.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafdc58b89aed0ec2643a533339c338912"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void addAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga29aa5636642f5db77f50e007df74c23c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bindAttribLocation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过调用glBindAttribLocation方法添加新的属性到着色器(shader) </p>
+
+</div>
+</div>
+<a class="anchor" id="ga096931771f6b5c4f7d7df285b7c1c7a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bindPredefinedVertexAttribs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf985cbb7182c916a174e1b9d62137476"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::bindTexture2D </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果纹理(texture)没有绑定到纹理单位0,绑定它. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将直接调用 glBindTexture()方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad6ad8a7a93571a962a05287999a5a9df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::bindTexture2DN </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果纹理(texture)没有被绑定到指定的单位，绑定它. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用,它将直接调用 glBindTexture() 方法. </p><dl class="section since"><dt>自从</dt><dd>v2.1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf5be4103d4ccd45a296b75cef9eafeb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::bindVAO </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>vaoId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果顶点(vertex)数组没有绑定, 绑定它. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将直接调用 <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#a4c13098a615d32e7f04aa4105149564f">glBindVertexArray()</a> 方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0c4be207908fc61a11588546283887f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::blendFunc </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>sfactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>dfactor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用混合方法，传人参数(in case)是没有被使用的. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它会直接执行 glBlendFunc()方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga61ce6d0f2b1f01612ec0527ea65a8462"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::blendResetToCache </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重设混合模式恢复缓存状态，假使你使用glBlendFuncSeparate() 或者 glBlendEquation()方法. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将仅仅使用GL_FUNC_ADD设置默认混合模式. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga04bc7f91b28d0823cd62865d599e619c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool compileShader </td>
+          <td>(</td>
+          <td class="paramtype">GLuint *&#160;</td>
+          <td class="paramname"><em>shader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaa247169afde320fde0826fdd457c9797"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static GLProgram* createWithByteArrays </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>vShaderByteArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>fShaderByteArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用顶点(vertex)和字节数组片段初始化GLProgram  initWithString  initWithString </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2f6f488a1aab80b05c82c3aa82ddacb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static GLProgram* createWithFilenames </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vShaderFilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fShaderFilename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用顶点(vertex)和文件名的内容片段初始化GLProgram  init  init </p>
+
+</div>
+</div>
+<a class="anchor" id="ga01152e741e964b0bedbf2c08239379ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static GLProgram* createWithPrecompiledProgramByteArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>vShaderByteArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>fShaderByteArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用顶点(vertex)和片段字节数组初始化GLProgram  initWithString  initWithString </p>
+<p>使用预编译着色器编程初始化CCGLProgram </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3b63ef22d3e062e0a3cc6c43d84eb11a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::deleteProgram </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除 GL编程. </p>
+<p>如果program正在使用，该方法是program无效. 如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 他会直接执行 glDeleteProgram() 方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8cdc90723378d120e7d349ddc799b0c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::deleteTexture </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>它将删除指定的textureId的纹理. </p>
+<p>如果该纹理已经绑定,此方法会是它的缓存无效. 如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将直接调用glDeleteTextures()方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga37cc4ce25c80c5934507045767942648"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::deleteTextureN </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>它将删除指定的textureId的纹理. </p>
+<p>如果该纹理已经绑定, 它将使缓存从给定的纹理单元失效. 如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它将直接调用 glDeleteTextures() 方法. </p><dl class="section since"><dt>自从</dt><dd>v2.1.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga01cbafb599cb1a9fc1ec076a9ad94d9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::enableVertexAttribs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将会使顶点属性像标记一样传递. </p>
+<p>可能的标记(flags): </p><pre class="fragment"> VERTEX_ATTRIB_FLAG_POSITION
+ VERTEX_ATTRIB_FLAG_COLOR
+ VERTEX_ATTRIB_FLAG_TEX_COORDS
+</pre><p>这些标记可以是ORed. 标记没有指定, 将会被禁用.</p>
+<dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafbc71fc9fc6f872f4cbab81d88187706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint getAttribLocation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributeName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 glGetAttribLocation方法 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7ed943b6ae07b0f0a64b5acb31afa153"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaeb9895240a65ec31d5bec99330a4c99b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getFragmentShaderLog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回fragmentShader错误记录 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga774a37d8d7bf4d3166745546a8dcaed5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GLuint getProgram </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7a8fa757fc1dfeecbc51a5bd7bf35ef0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getProgramLog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回编程错误记录 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0aa425490990f8e78b9480f219311589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uniform* getUniform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab3970ef8cd3da1fd84fc16f291e391eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint getUniformLocation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributeName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 glGetUniformLocation()方法 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaac136ac2589073d3c60a29cb9d59ec6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint getUniformLocationForName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用(retrieves)检索此着色器编程的指定名字制式的位置. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac628e0aa94f842200a6f845263068d51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexAttrib* getVertexAttrib </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9f6588bfb92d0c36926775cd512c0422"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getVertexShaderLog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回vertexShader错误记录 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4467ec4f97a12d82bf1aa1c2ab300ebf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithByteArrays </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>vShaderByteArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>fShaderByteArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga16a3750c57823dad947cf4112f5b882b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithFilenames </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vShaderFilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fShaderFilename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf909f7a6cf31647066ae95bcfb4ae02c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithPrecompiledProgramByteArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>vShaderByteArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>fShaderByteArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaee72339b5fc7e2c0ad2282af47271862"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool initWithVertexShaderByteArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>vertexByteArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
+          <td class="paramname"><em>fragByteArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga90202275d9e13feb56bbd11a1aa79b72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool initWithVertexShaderFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vertexFilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fragFilename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga1b7ea7faf5db5abc5a532244166c85b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::invalidateStateCache </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使GL 的状态缓存作废. </p>
+<p>如果启用 CC_ENABLE_GL_STATE_CACHE 会重置 <a class="el" href="../../dc/dde/namespacecocos2d_1_1_g_l.html">GL</a> 状态缓存. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga389ae784c7f2bbfc0deb3bb2db922fdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool link </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>链接 glProgram </p>
+
+</div>
+</div>
+<a class="anchor" id="ga869b952f0b14e29b769028f94add7f26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string logForOpenGLObject </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d83/group__shaders.html#gaede84391e087b15090c6398cf4e0bb3f">GLInfoFunction</a>&#160;</td>
+          <td class="paramname"><em>infoFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d83/group__shaders.html#ga2e43a53773756cf2431c3fa723569013">GLLogFunction</a>&#160;</td>
+          <td class="paramname"><em>logFunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga98b36c83821e41d44f58c82ba55b785f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void parseUniforms </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga6891112e8a181ef543cdec76110f62ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void parseVertexAttribs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad20897c5c8bd47f5d4005989bead0e55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaad953de205b910a063cf3abfb78dd565"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::setProjectionMatrixDirty </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置投影矩阵暗淡(dirty) </p>
+<dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadfef5826d70e32e0700f068fe2a03f2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith1f </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform1f . </p>
+<p>在 js 或 lua中, 请使用 setUniformLocationF32  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ga558294c40f53dba05f03118e0d7d22c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith1i </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform1i. </p>
+<p>setUniformLocationI32  setUniformLocationI32 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga98f92d20009faf3d3f1c308dd4542931"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith2f </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2f . </p>
+<p>在 js 或 lua中, 请使用setUniformLocationF32  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="gadc152f52deb1d2abdb276641b82342de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith2fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>floats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4768d4136fa4848eab763fdd43e6db78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith2i </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2i. </p>
+
+</div>
+</div>
+<a class="anchor" id="gafd22d5dc0e59243a5fb0723126f4257e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith2iv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint *&#160;</td>
+          <td class="paramname"><em>ints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform2iv. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa025048f5e080f77fb678c0d4c3551a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith3f </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3f. </p>
+<p>在 js 或 lua中, 请使用 setUniformLocationF32  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4f94404b20e2804fb0f31e3c2d6abc68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith3fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>floats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaacaa08e6cad8d4bc1c0e483ae323a932"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith3i </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3i. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9434f7167306a389ca682bd5ee713598"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith3iv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint *&#160;</td>
+          <td class="paramname"><em>ints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform3iv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga019178fca8b51d4b91f0f06554716e42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith4f </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>f4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4f. </p>
+<p>I在 js 或 lua中, 请使用setUniformLocationF32  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ga74d9432567ddcee0e0960b4443631094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith4fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>floats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga796668357b2777537a1d97c31fa9fb08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith4i </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>i4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4i,仅仅当该值不同于前一个,相同的着色器(shader)编程才调. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga16d3f876363f7416617bedccb3458281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWith4iv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint *&#160;</td>
+          <td class="paramname"><em>ints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfArrays</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniform4iv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9f8edbe4b94b90c0a622c8fea7ac84a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWithMatrix2fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>matrixArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfMatrices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix2fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad4020c6ac5f63713f19b787ae0741486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWithMatrix3fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>matrixArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfMatrices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix3fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1d654bc1b28ba1a5ac49cc929b805043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformLocationWithMatrix4fv </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLfloat *&#160;</td>
+          <td class="paramname"><em>matrixArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfMatrices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仅当该值不同于前一个调用相同的着色器(shader)编程,调用 glUniformMatrix4fv. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga702aefca412588037aec668535f8ded7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformsForBuiltins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果他们不同于前一个调用相同的着色器(shader),将会更新内键的制式. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga69f75feac3c98363c12a84b9a697c1ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniformsForBuiltins </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>modelView</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga14f3867d42223cfdfa176db4867b390a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool updateUniformLocation </td>
+          <td>(</td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GLvoid *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf284a5a0cee062ea99f6678f363fc06f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateUniforms </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>它将创建4种制式(uniforms): </p>
+<ul>
+<li>kUniformPMatrix</li>
+<li>kUniformMVMatrix</li>
+<li>kUniformMVPMatrix</li>
+<li>GLProgram::UNIFORM_SAMPLER</li>
+</ul>
+<p>且会绑定"GLProgram::UNIFORM_SAMPLER" 到0 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8a05de24712939691a7cf8934d9e5c5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void use </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>它将调用glUseProgram()方法 </p>
+
+</div>
+</div>
+<a class="anchor" id="gafc4f42697bbdf374ebdb8227b759fa4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> cocos2d::GL::useProgram </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用GL编程传人参数(in case)program不同于当前. </p>
+<p>如果 CC_ENABLE_GL_STATE_CACHE 被禁用, 它会直接使用 glUseProgram()方法. </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ga0e29137c2dd41f98b5ad42980cb35916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint _builtInUniforms[UNIFORM_MAX]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga20eb7b33a467095901f508f92ccd638d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../de/dc1/structcocos2d_1_1_g_l_program_1_1flag__struct.html">cocos2d::GLProgram::flag_struct</a>  _flags</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9a9bb181d4f1572719feae90fc7335c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint _fragShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga0b1eb6d5725d9c025c23b8bd013a0cd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct _hashUniformEntry* _hashForUniforms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga8c7f2e155c99e173a80ca7707e44c845"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _hasShaderCompiler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga25fec1c93a555aa88e664a28975d34d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint _program</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga07ea0dfc95d88e3a56291aa4d889ddc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _shaderId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2fb7aeed3faa2f5cdf2964706080ffb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, Uniform&gt; _userUniforms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga1bc300ffa09e91f7ea095effa6d3cfab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, VertexAttrib&gt; _vertexAttribs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafd038a0fc4cf7e32397bf7cff9a9ed8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint _vertShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga871baa7d45ee87060d80ae39dcca44fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ATTRIBUTE_NAME_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf8cc9052744ba346700fc3884d1805a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ATTRIBUTE_NAME_NORMAL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga84458f24e8e44fc26358babbfb914680"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ATTRIBUTE_NAME_POSITION</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga8023282e1f41245e6ad50587540f9cdf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ATTRIBUTE_NAME_TEX_COORD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga011c64dee03940a8ac76f443f3ac4662"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccLabel_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga08b9ed86e3e720d1be073a12e1517bdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccLabelDistanceFieldGlow_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga45b16607876bf84e8f7e9a5ea033c92e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccLabelDistanceFieldNormal_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9b376c3f93f569281533e6ab3e3de03e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccLabelNormal_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga07dc3214af3e10b022d9eea4351b3b05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccLabelOutline_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga006c5d3ff976f600e243143edfe1af4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPosition_uColor_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaeb598d879f3fb20cb331a023bd60abc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPosition_uColor_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga6a894ed3c19f7f3e7bdd2e68906a9920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionColor_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gac40c66ef7531b0f46b39cf57946cda37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionColor_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gacb5505bee43df0aa72d1566cc6ea422b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionColorLengthTexture_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafea78326421fe3f6cbda8e79305adac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionColorLengthTexture_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2cc574b27a0def71c5b5c8d2c1bd6236"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTexture_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga33473d13a5162e49c87271b664d15602"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTexture_uColor_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaa1b0cbe99775e61560358f550ce4fa6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTexture_uColor_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga3aec72114a5851fd82db484c89bd9ff7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTexture_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf74d6f13e65e3acc96c0e8bfb9c2ae41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureA8Color_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaec93a26806e49049fd463c2bdd81eb3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureA8Color_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga815d58ef69ff7c2483cb9a6a0c0ca4db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureColor_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab1cc49a44ad78c0b21002e495b65eeb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureColor_noMVP_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf5847d77d372e718669c901ddcc12ee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureColor_noMVP_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2e02c8789b7530ecdd08c8cfe7e71167"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureColor_vert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga3feca0a48b0f3ed0fe3e8e434b134909"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> const <a class="el" href="../../d8/da2/android_2_c_c_g_l_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a>* ccPositionTextureColorAlphaTest_frag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf7ca775b6d9354291c4d7d01b8b2a8bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gadcb0cc6b682b2ea7b5b8632dd2c84e3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint location</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9b45b3e13bd9167aab02e17e08916231"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9b45b3e13bd9167aab02e17e08916231"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafddd899fc3d56ecdf5277baa0133b641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_LABEL_DISTANCEFIELD_GLOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga09eb38ced3bed0a6593183bb80a09a30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_LABEL_DISTANCEFIELD_NORMAL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaecc6e7cecb0e99d6b6de7bee1cdd0230"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_LABEL_NORMAL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga60faedbaeb81d9e2f0c7b48cd9b6aa57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_LABEL_OUTLINE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2a2d24c68518811a289e3091bbb05a11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga23f1b86b9e53e21c03cb4076321b88ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_COLOR_NO_MVP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafc10154e47359a444b5f3320ff4038c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_LENGTH_TEXTURE_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga28dcdb8c9373d6503e2715a308f39199"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gac92f021c88278c35811041ac3296bfdb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_A8_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gae7cbe4521182a9dafb2f036e49c3929d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_ALPHA_TEST</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7d231398100efdadb38ca97a86e1a13d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_ALPHA_TEST_NO_MV</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2f37eb410c9cd5881c8aec5166999edd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7182d053548fbe5eca4aa41b181ac681"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_COLOR_NO_MVP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga67bcf2c9447f34b846d84b6273c4d104"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_TEXTURE_U_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9933a0514aa43696591609493ff0539d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SHADER_NAME_POSITION_U_COLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga0208b298f4c65e680a58434efb699fe8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga0208b298f4c65e680a58434efb699fe8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLint size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga579922e668b544baacb0839db8d6ae37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLenum type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga579922e668b544baacb0839db8d6ae37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLenum type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga60759d187f8cf737302d58d7fe699a91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_ALPHA_TEST_VALUE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf25b928c74f5461c2c8bfb9c0f586d42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_COS_TIME</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga374728bded2c73b6df42a957d3a669fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_MV_MATRIX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7ad68232c030c26a88c1d2234a227f0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_MVP_MATRIX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab923ae6d268887d812e3680845866857"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_P_MATRIX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gae0accd7eed52b7345b8c5cc68a714c90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_RANDOM01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gabf1a3387ffcf9fb2a0837269cdf90ca4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_SAMPLER0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gacd1b33d22b25e6c17eb1d05e2684a058"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_SAMPLER1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga33fc5d18158bdc5b5d21a5a177c68661"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_SAMPLER2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga439da8fe29d196060ef6463fe523a58a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_SAMPLER3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga72bde0119d87e4e67c66eee483517914"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_SIN_TIME</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga020c51c886db8bd0d044fe737471d6b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* UNIFORM_NAME_TIME</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga07d6db5e5c5f2304eda8f4d364573ee7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int usesMV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaa6b442a80f205f6655c12774f3345e30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int usesMVP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga5979af592f21ffd46f4557d96549da8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int usesP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga97dd57704ce5eee49cfe4fff17c1d205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int usesRandom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9d3827835f3f2426e3ccd4eecbe0e1cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int usesTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元</h2>
+<a class="anchor" id="ga0d7667c2227a98d6083a92f3faa2074a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class GLProgramState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

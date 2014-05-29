@@ -1,0 +1,1313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: GLViewProtocol类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/d77/classcocos2d_1_1_g_l_view_protocol.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../de/dde/classcocos2d_1_1_g_l_view_protocol-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">GLViewProtocol类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">Platform Adaptor</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCGLViewProtocol.h&gt;</code></p>
+<div class="dynheader">
+类 GLViewProtocol 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.png" usemap="#GLViewProtocol_map" alt=""/>
+  <map id="GLViewProtocol_map" name="GLViewProtocol_map">
+<area href="../../de/d4d/classcocos2d_1_1_g_l_view.html" title="Class that represent the OpenGL View. " alt="GLView" shape="rect" coords="0,56,103,80"/>
+<area href="../../de/d4d/classcocos2d_1_1_g_l_view.html" title="Class that represent the OpenGL View. " alt="GLView" shape="rect" coords="113,56,216,80"/>
+<area href="../../de/d4d/classcocos2d_1_1_g_l_view.html" title="Class that represent the OpenGL View. " alt="GLView" shape="rect" coords="226,56,329,80"/>
+<area href="../../de/d4d/classcocos2d_1_1_g_l_view.html" title="Class that represent the OpenGL View. " alt="GLView" shape="rect" coords="339,56,442,80"/>
+<area href="../../de/d4d/classcocos2d_1_1_g_l_view.html" title="Class that represent the OpenGL View. " alt="GLView" shape="rect" coords="452,56,555,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a169247f89f26192ed9f0a969db279f34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a169247f89f26192ed9f0a969db279f34">GLViewProtocol</a> ()</td></tr>
+<tr class="memdesc:a169247f89f26192ed9f0a969db279f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor  <a href="#a169247f89f26192ed9f0a969db279f34">更多...</a><br /></td></tr>
+<tr class="separator:a169247f89f26192ed9f0a969db279f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ec788d9cfde3c2a8a8e85c74f2ec4c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a88ec788d9cfde3c2a8a8e85c74f2ec4c">~GLViewProtocol</a> ()</td></tr>
+<tr class="memdesc:a88ec788d9cfde3c2a8a8e85c74f2ec4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a88ec788d9cfde3c2a8a8e85c74f2ec4c">更多...</a><br /></td></tr>
+<tr class="separator:a88ec788d9cfde3c2a8a8e85c74f2ec4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa540e86022c1f72380d1014d98f38f43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#aa540e86022c1f72380d1014d98f38f43">end</a> ()=0</td></tr>
+<tr class="memdesc:aa540e86022c1f72380d1014d98f38f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">强制销毁EGL视图，子类必须实现这个方法  <a href="#aa540e86022c1f72380d1014d98f38f43">更多...</a><br /></td></tr>
+<tr class="separator:aa540e86022c1f72380d1014d98f38f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffc4e2e6bffc35b00b10e90ce602f53"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a3ffc4e2e6bffc35b00b10e90ce602f53">isOpenGLReady</a> ()=0</td></tr>
+<tr class="memdesc:a3ffc4e2e6bffc35b00b10e90ce602f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取OpenGL渲染系统是否就绪，子类必须实现这个方法  <a href="#a3ffc4e2e6bffc35b00b10e90ce602f53">更多...</a><br /></td></tr>
+<tr class="separator:a3ffc4e2e6bffc35b00b10e90ce602f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960db4e1e503ea5428a1351783fffed3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a960db4e1e503ea5428a1351783fffed3">swapBuffers</a> ()=0</td></tr>
+<tr class="memdesc:a960db4e1e503ea5428a1351783fffed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换前后缓冲区，子类必须实现这个方法  <a href="#a960db4e1e503ea5428a1351783fffed3">更多...</a><br /></td></tr>
+<tr class="separator:a960db4e1e503ea5428a1351783fffed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d391c78e09288e75f8f6400e8841205"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a5d391c78e09288e75f8f6400e8841205">setIMEKeyboardState</a> (bool open)=0</td></tr>
+<tr class="memdesc:a5d391c78e09288e75f8f6400e8841205"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或者关闭键盘，子类必须实现这个方法  <a href="#a5d391c78e09288e75f8f6400e8841205">更多...</a><br /></td></tr>
+<tr class="separator:a5d391c78e09288e75f8f6400e8841205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e5f56b1f00342813fc8caa06ededeb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a01e5f56b1f00342813fc8caa06ededeb">pollInputEvents</a> ()</td></tr>
+<tr class="memdesc:a01e5f56b1f00342813fc8caa06ededeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">轮询输入事件。如果平台没有提供事件回调函数，子类必须实现这个方法  <a href="#a01e5f56b1f00342813fc8caa06ededeb">更多...</a><br /></td></tr>
+<tr class="separator:a01e5f56b1f00342813fc8caa06ededeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3baf2e737de816d1a28c6ebd7e6527"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a0c3baf2e737de816d1a28c6ebd7e6527">getFrameSize</a> () const </td></tr>
+<tr class="memdesc:a0c3baf2e737de816d1a28c6ebd7e6527"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取EGL视图的框架尺寸 一般情况下，因为EGL视图是全屏视图，所以它会返回屏幕的尺寸  <a href="#a0c3baf2e737de816d1a28c6ebd7e6527">更多...</a><br /></td></tr>
+<tr class="separator:a0c3baf2e737de816d1a28c6ebd7e6527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba9c0b8921e8ad2379015aca424cb14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a8ba9c0b8921e8ad2379015aca424cb14">setFrameSize</a> (float width, float height)</td></tr>
+<tr class="memdesc:a8ba9c0b8921e8ad2379015aca424cb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置EGL 视图的框架尺寸  <a href="#a8ba9c0b8921e8ad2379015aca424cb14">更多...</a><br /></td></tr>
+<tr class="separator:a8ba9c0b8921e8ad2379015aca424cb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b2ccdbe27ced709ca4750ad4a1e74b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ac8b2ccdbe27ced709ca4750ad4a1e74b">getVisibleSize</a> () const </td></tr>
+<tr class="memdesc:ac8b2ccdbe27ced709ca4750ad4a1e74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the visible area size of opengl viewport.  <a href="#ac8b2ccdbe27ced709ca4750ad4a1e74b">更多...</a><br /></td></tr>
+<tr class="separator:ac8b2ccdbe27ced709ca4750ad4a1e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4613e5e8b48423025997f14c2469a72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#af4613e5e8b48423025997f14c2469a72">getVisibleOrigin</a> () const </td></tr>
+<tr class="memdesc:af4613e5e8b48423025997f14c2469a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取OpenGL视口的可视原点  <a href="#af4613e5e8b48423025997f14c2469a72">更多...</a><br /></td></tr>
+<tr class="separator:af4613e5e8b48423025997f14c2469a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1afdafc11788e062b769f5573cfb169"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ab1afdafc11788e062b769f5573cfb169">getVisibleRect</a> () const </td></tr>
+<tr class="memdesc:ab1afdafc11788e062b769f5573cfb169"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取OpenGL视口的可视矩形  <a href="#ab1afdafc11788e062b769f5573cfb169">更多...</a><br /></td></tr>
+<tr class="separator:ab1afdafc11788e062b769f5573cfb169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d43ec6b343473157849cf62f18b3825"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a6d43ec6b343473157849cf62f18b3825">setDesignResolutionSize</a> (float width, float height, <a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a> resolutionPolicy)</td></tr>
+<tr class="memdesc:a6d43ec6b343473157849cf62f18b3825"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设计分辨率尺寸  <a href="#a6d43ec6b343473157849cf62f18b3825">更多...</a><br /></td></tr>
+<tr class="separator:a6d43ec6b343473157849cf62f18b3825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90af9322b07d91088517def3153de18"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ae90af9322b07d91088517def3153de18">getDesignResolutionSize</a> () const </td></tr>
+<tr class="memdesc:ae90af9322b07d91088517def3153de18"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得设计分辨率的尺寸。 默认的分辨率尺寸和 'getFrameSize'一样。  <a href="#ae90af9322b07d91088517def3153de18">更多...</a><br /></td></tr>
+<tr class="separator:ae90af9322b07d91088517def3153de18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831d300e7a949d98655eca4150ba75b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a831d300e7a949d98655eca4150ba75b2">setViewPortInPoints</a> (float x, float y, float w, float h)</td></tr>
+<tr class="memdesc:a831d300e7a949d98655eca4150ba75b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过点来设置OpenGL视口的矩形。  <a href="#a831d300e7a949d98655eca4150ba75b2">更多...</a><br /></td></tr>
+<tr class="separator:a831d300e7a949d98655eca4150ba75b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9fa231a5cc24d3b3783ddb0d9211da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a3b9fa231a5cc24d3b3783ddb0d9211da">setScissorInPoints</a> (float x, float y, float w, float h)</td></tr>
+<tr class="memdesc:a3b9fa231a5cc24d3b3783ddb0d9211da"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过点来设置裁剪矩形。  <a href="#a3b9fa231a5cc24d3b3783ddb0d9211da">更多...</a><br /></td></tr>
+<tr class="separator:a3b9fa231a5cc24d3b3783ddb0d9211da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0c13ef929ead38a5a7e13d0d83e3c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a6e0c13ef929ead38a5a7e13d0d83e3c8">isScissorEnabled</a> ()</td></tr>
+<tr class="memdesc:a6e0c13ef929ead38a5a7e13d0d83e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取GL_SCISSOR_TEST 是否可用  <a href="#a6e0c13ef929ead38a5a7e13d0d83e3c8">更多...</a><br /></td></tr>
+<tr class="separator:a6e0c13ef929ead38a5a7e13d0d83e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42acae96b5303f58fbfbda9d2dfaffd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ab42acae96b5303f58fbfbda9d2dfaffd">getScissorRect</a> () const </td></tr>
+<tr class="memdesc:ab42acae96b5303f58fbfbda9d2dfaffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前的裁剪矩形。  <a href="#ab42acae96b5303f58fbfbda9d2dfaffd">更多...</a><br /></td></tr>
+<tr class="separator:ab42acae96b5303f58fbfbda9d2dfaffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7516a56913f7db3b34edb7d7d992d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a8f7516a56913f7db3b34edb7d7d992d2">setViewName</a> (const std::string &amp;viewname)</td></tr>
+<tr class="separator:a8f7516a56913f7db3b34edb7d7d992d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab899755b1f8d24d3cbcadda6ce6704"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a5ab899755b1f8d24d3cbcadda6ce6704">getViewName</a> () const </td></tr>
+<tr class="separator:a5ab899755b1f8d24d3cbcadda6ce6704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e68399910e85726fa6e9f790d4d6ee9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a5e68399910e85726fa6e9f790d4d6ee9">handleTouchesBegin</a> (int num, <a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a> ids[], float xs[], float ys[])</td></tr>
+<tr class="memdesc:a5e68399910e85726fa6e9f790d4d6ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过默认的方式处理触摸事件; 如果你想自定义处理程序，可以重载下面的这些函数：  <a href="#a5e68399910e85726fa6e9f790d4d6ee9">更多...</a><br /></td></tr>
+<tr class="separator:a5e68399910e85726fa6e9f790d4d6ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afb038a29ab49a92af0a4e61ff81f48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a9afb038a29ab49a92af0a4e61ff81f48">handleTouchesMove</a> (int num, <a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a> ids[], float xs[], float ys[])</td></tr>
+<tr class="separator:a9afb038a29ab49a92af0a4e61ff81f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5016ce638b1c40ba3990ede9297a7d4e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a5016ce638b1c40ba3990ede9297a7d4e">handleTouchesEnd</a> (int num, <a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a> ids[], float xs[], float ys[])</td></tr>
+<tr class="separator:a5016ce638b1c40ba3990ede9297a7d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9981649cdf984220cc817e48e6a10275"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a9981649cdf984220cc817e48e6a10275">handleTouchesCancel</a> (int num, <a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a> ids[], float xs[], float ys[])</td></tr>
+<tr class="separator:a9981649cdf984220cc817e48e6a10275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe85adb6fcf3e2ce0ce204d2152c3e2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a6fe85adb6fcf3e2ce0ce204d2152c3e2">getViewPortRect</a> () const </td></tr>
+<tr class="memdesc:a6fe85adb6fcf3e2ce0ce204d2152c3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取OpenGL视口矩形。  <a href="#a6fe85adb6fcf3e2ce0ce204d2152c3e2">更多...</a><br /></td></tr>
+<tr class="separator:a6fe85adb6fcf3e2ce0ce204d2152c3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e295aede25470a6c3cd8bb50abdea77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a8e295aede25470a6c3cd8bb50abdea77">getScaleX</a> () const </td></tr>
+<tr class="memdesc:a8e295aede25470a6c3cd8bb50abdea77"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取水平方向的缩放因子  <a href="#a8e295aede25470a6c3cd8bb50abdea77">更多...</a><br /></td></tr>
+<tr class="separator:a8e295aede25470a6c3cd8bb50abdea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad444e8d15e559a2ea804430ebb3bf8d4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ad444e8d15e559a2ea804430ebb3bf8d4">getScaleY</a> () const </td></tr>
+<tr class="memdesc:ad444e8d15e559a2ea804430ebb3bf8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取垂直方向的缩放因子  <a href="#ad444e8d15e559a2ea804430ebb3bf8d4">更多...</a><br /></td></tr>
+<tr class="separator:ad444e8d15e559a2ea804430ebb3bf8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94d393f860ae3f6ea3dd212130badc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#aa94d393f860ae3f6ea3dd212130badc6">getResolutionPolicy</a> () const </td></tr>
+<tr class="memdesc:aa94d393f860ae3f6ea3dd212130badc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前的分辨率适配规则  <a href="#aa94d393f860ae3f6ea3dd212130badc6">更多...</a><br /></td></tr>
+<tr class="separator:aa94d393f860ae3f6ea3dd212130badc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a740b0d8d7ec9083112a0a77dc05780f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a740b0d8d7ec9083112a0a77dc05780f4">updateDesignResolutionSize</a> ()</td></tr>
+<tr class="separator:a740b0d8d7ec9083112a0a77dc05780f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78d0877255c81dfe4c2fc7d736c55aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#ac78d0877255c81dfe4c2fc7d736c55aa">handleTouchesOfEndOrCancel</a> (<a class="el" href="../../db/d09/classcocos2d_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a> eventCode, int num, <a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a> ids[], float xs[], float ys[])</td></tr>
+<tr class="separator:ac78d0877255c81dfe4c2fc7d736c55aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a115001caa145149371f06a870dfd5010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a115001caa145149371f06a870dfd5010">_screenSize</a></td></tr>
+<tr class="separator:a115001caa145149371f06a870dfd5010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbddc307ebb5998c210944e79ac9f4cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#abbddc307ebb5998c210944e79ac9f4cc">_designResolutionSize</a></td></tr>
+<tr class="separator:abbddc307ebb5998c210944e79ac9f4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f7c2d8d5c2ddb50037caf0361648ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#aa2f7c2d8d5c2ddb50037caf0361648ed">_viewPortRect</a></td></tr>
+<tr class="separator:aa2f7c2d8d5c2ddb50037caf0361648ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f8280a16d5b46953cc731dab60b390"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a58f8280a16d5b46953cc731dab60b390">_viewName</a></td></tr>
+<tr class="separator:a58f8280a16d5b46953cc731dab60b390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c2cf50d095d677e613856d872d2c88"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a11c2cf50d095d677e613856d872d2c88">_scaleX</a></td></tr>
+<tr class="separator:a11c2cf50d095d677e613856d872d2c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541ce281ddec9cb05a8c7899f6b58667"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a541ce281ddec9cb05a8c7899f6b58667">_scaleY</a></td></tr>
+<tr class="separator:a541ce281ddec9cb05a8c7899f6b58667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a98515afbabe1a0657834c3b0b5b783"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html#a4a98515afbabe1a0657834c3b0b5b783">_resolutionPolicy</a></td></tr>
+<tr class="separator:a4a98515afbabe1a0657834c3b0b5b783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a169247f89f26192ed9f0a969db279f34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html">GLViewProtocol</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ctor </p>
+
+</div>
+</div>
+<a class="anchor" id="a88ec788d9cfde3c2a8a8e85c74f2ec4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html">GLViewProtocol</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aa540e86022c1f72380d1014d98f38f43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>强制销毁EGL视图，子类必须实现这个方法 </p>
+
+<p>在 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#adc34417a19a7b70626d19c41072d72a5">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ae827632720ddd6f3037ef1ee69aa3f41">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ae827632720ddd6f3037ef1ee69aa3f41">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#adc34417a19a7b70626d19c41072d72a5">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a64e9fa75beda50a9e8400ee0d4e61984">GLView</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae90af9322b07d91088517def3153de18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&amp; getDesignResolutionSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获得设计分辨率的尺寸。 默认的分辨率尺寸和 'getFrameSize'一样。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c3baf2e737de816d1a28c6ebd7e6527"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&amp; getFrameSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取EGL视图的框架尺寸 一般情况下，因为EGL视图是全屏视图，所以它会返回屏幕的尺寸 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa94d393f860ae3f6ea3dd212130badc6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a> getResolutionPolicy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前的分辨率适配规则 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e295aede25470a6c3cd8bb50abdea77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getScaleX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取水平方向的缩放因子 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad444e8d15e559a2ea804430ebb3bf8d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getScaleY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取垂直方向的缩放因子 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab42acae96b5303f58fbfbda9d2dfaffd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> getScissorRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前的裁剪矩形。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ab899755b1f8d24d3cbcadda6ce6704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; getViewName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fe85adb6fcf3e2ce0ce204d2152c3e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&amp; getViewPortRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取OpenGL视口矩形。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af4613e5e8b48423025997f14c2469a72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> getVisibleOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取OpenGL视口的可视原点 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1afdafc11788e062b769f5573cfb169"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> getVisibleRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取OpenGL视口的可视矩形 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b2ccdbe27ced709ca4750ad4a1e74b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> getVisibleSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the visible area size of opengl viewport. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e68399910e85726fa6e9f790d4d6ee9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void handleTouchesBegin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a>&#160;</td>
+          <td class="paramname"><em>ids</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ys</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过默认的方式处理触摸事件; 如果你想自定义处理程序，可以重载下面的这些函数： </p>
+
+</div>
+</div>
+<a class="anchor" id="a9981649cdf984220cc817e48e6a10275"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void handleTouchesCancel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a>&#160;</td>
+          <td class="paramname"><em>ids</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ys</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5016ce638b1c40ba3990ede9297a7d4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void handleTouchesEnd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a>&#160;</td>
+          <td class="paramname"><em>ids</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ys</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9afb038a29ab49a92af0a4e61ff81f48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void handleTouchesMove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a>&#160;</td>
+          <td class="paramname"><em>ids</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ys</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac78d0877255c81dfe4c2fc7d736c55aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleTouchesOfEndOrCancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d09/classcocos2d_1_1_event_touch.html#a080ee5c80bcb8b9f3fda41b5e4eb0ef8">EventTouch::EventCode</a>&#160;</td>
+          <td class="paramname"><em>eventCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaadb3b51e475a79bc209cfbdb4d6e579">intptr_t</a>&#160;</td>
+          <td class="paramname"><em>ids</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ys</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ffc4e2e6bffc35b00b10e90ce602f53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isOpenGLReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取OpenGL渲染系统是否就绪，子类必须实现这个方法 </p>
+
+<p>在 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a335c9f4aca879b1802c7b73055d3f2d3">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ad2898235b9cd768412e350b2d5e9b763">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ad2898235b9cd768412e350b2d5e9b763">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a335c9f4aca879b1802c7b73055d3f2d3">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a7db3f7851b068876248b2c6be506b50e">GLView</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e0c13ef929ead38a5a7e13d0d83e3c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isScissorEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取GL_SCISSOR_TEST 是否可用 </p>
+
+</div>
+</div>
+<a class="anchor" id="a01e5f56b1f00342813fc8caa06ededeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pollInputEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>轮询输入事件。如果平台没有提供事件回调函数，子类必须实现这个方法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d43ec6b343473157849cf62f18b3825"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setDesignResolutionSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a>&#160;</td>
+          <td class="paramname"><em>resolutionPolicy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置设计分辨率尺寸 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>设计分辨率的宽度 </td></tr>
+    <tr><td class="paramname">height</td><td>设计分辨率的高度 </td></tr>
+    <tr><td class="paramname">resolutionPolicy</td><td>你选择的期望的分辨率规则： [1] EXACT_FIT 伸展以适配屏幕: 如果你的设计分辨率的宽和高的比例与屏幕的分辨率的比例不同，你的游戏视图就会被拉伸。 [2] NO_BORDER 无边框适配屏幕: 如果你的设计分辨率的宽和高的比例与屏幕的分辨率的比例不同，你的游戏视图的两个区域将会被剪切。 [3] SHOW_ALL 有黑框适配屏幕: 如果你的设计分辨率的宽和高的比例与屏幕的分辨率的比例不同，两侧会出现两个黑色的边框。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ba9c0b8921e8ad2379015aca424cb14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setFrameSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置EGL 视图的框架尺寸 </p>
+
+<p>被 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a8ba9c0b8921e8ad2379015aca424cb14">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a60c9506b6cda9386dfcb84e17ff21bdc">GLView</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d391c78e09288e75f8f6400e8841205"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setIMEKeyboardState </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>open</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启或者关闭键盘，子类必须实现这个方法 </p>
+
+<p>在 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ae26cc56ed4d0df3035bbc03329254018">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#af1d25c9357ef6e824214a0de090d5cac">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#ae26cc56ed4d0df3035bbc03329254018">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#af1d25c9357ef6e824214a0de090d5cac">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a943cd8669a78e48a275b40a034c1f058">GLView</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b9fa231a5cc24d3b3783ddb0d9211da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setScissorInPoints </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过点来设置裁剪矩形。 </p>
+
+<p>被 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a3b9fa231a5cc24d3b3783ddb0d9211da">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a3b9fa231a5cc24d3b3783ddb0d9211da">GLView</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f7516a56913f7db3b34edb7d7d992d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setViewName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>viewname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a831d300e7a949d98655eca4150ba75b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setViewPortInPoints </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过点来设置OpenGL视口的矩形。 </p>
+
+<p>被 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a831d300e7a949d98655eca4150ba75b2">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a831d300e7a949d98655eca4150ba75b2">GLView</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a960db4e1e503ea5428a1351783fffed3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void swapBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>交换前后缓冲区，子类必须实现这个方法 </p>
+
+<p>在 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#aff9edb32327f60b6b0f5564b88d1f84f">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a3a155d43eaf97ac6b9705db300bc3178">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a3a155d43eaf97ac6b9705db300bc3178">GLView</a>, <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#aff9edb32327f60b6b0f5564b88d1f84f">GLView</a> , 以及 <a class="el" href="../../de/d4d/classcocos2d_1_1_g_l_view.html#a7131c976cd1fac5bb53ca963bf2128a6">GLView</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a740b0d8d7ec9083112a0a77dc05780f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateDesignResolutionSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="abbddc307ebb5998c210944e79ac9f4cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> _designResolutionSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a98515afbabe1a0657834c3b0b5b783"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html#a1cffba1e93904c18739b3a67171e7894">ResolutionPolicy</a> _resolutionPolicy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11c2cf50d095d677e613856d872d2c88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _scaleX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a541ce281ddec9cb05a8c7899f6b58667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float _scaleY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a115001caa145149371f06a870dfd5010"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> _screenSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58f8280a16d5b46953cc731dab60b390"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _viewName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2f7c2d8d5c2ddb50037caf0361648ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> _viewPortRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/platform/<a class="el" href="../../d3/df4/_c_c_g_l_view_protocol_8h.html">CCGLViewProtocol.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d3/d77/classcocos2d_1_1_g_l_view_protocol.html">GLViewProtocol</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:46 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/ccCArray.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/df1/cc_c_array_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ccCArray.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>基于Chipmunk的cpArray。 ccArray是一个更快的NSMutableArray。 它和NSMutableArray几乎一样 (适当的存储、保持和释放NSObjects)。 它比NSMutableArray快是因为:  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d9/dc8/cc_macros_8h.html">base/ccMacros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d2d/_c_c_ref_8h.html">base/CCRef.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:d2/dc0/namespacecocos2d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></td></tr>
+<tr class="memdesc:d2/dc0/namespacecocos2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add deprecated global functions and variables here. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6a60aa540d05bc2a28632b538f48dc10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df1/cc_c_array_8h.html#a6a60aa540d05bc2a28632b538f48dc10">CCARRAYDATA_FOREACH</a>(__array__, __object__)&#160;&#160;&#160;__object__=__array__-&gt;arr[0]; for(<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> i=0, num=__array__-&gt;num; i&lt;num; i++, __object__=__array__-&gt;arr[i])	\</td></tr>
+<tr class="separator:a6a60aa540d05bc2a28632b538f48dc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a22980e57a1ea76efa874ff8b6b23e10b"><td class="memItemLeft" align="right" valign="top">ccArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a22980e57a1ea76efa874ff8b6b23e10b">ccArrayNew</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> capacity)</td></tr>
+<tr class="memdesc:a22980e57a1ea76efa874ff8b6b23e10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的容量（capacity）分配和初始化一个新的数组  <a href="#a22980e57a1ea76efa874ff8b6b23e10b">更多...</a><br /></td></tr>
+<tr class="separator:a22980e57a1ea76efa874ff8b6b23e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58bb757172fad1106ba20a0502ca50f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ac58bb757172fad1106ba20a0502ca50f">ccArrayFree</a> (ccArray *&amp;arr)</td></tr>
+<tr class="memdesc:ac58bb757172fad1106ba20a0502ca50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">在移除所有执有对象后释放数组。忽略空的数组。  <a href="#ac58bb757172fad1106ba20a0502ca50f">更多...</a><br /></td></tr>
+<tr class="separator:ac58bb757172fad1106ba20a0502ca50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3601542f9c4eea836966024a05d59f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a3601542f9c4eea836966024a05d59f4a">ccArrayDoubleCapacity</a> (ccArray *arr)</td></tr>
+<tr class="memdesc:a3601542f9c4eea836966024a05d59f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">数组容量翻倍  <a href="#a3601542f9c4eea836966024a05d59f4a">更多...</a><br /></td></tr>
+<tr class="separator:a3601542f9c4eea836966024a05d59f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5610cfef355ad932506e1e68cc524779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a5610cfef355ad932506e1e68cc524779">ccArrayEnsureExtraCapacity</a> (ccArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> extra)</td></tr>
+<tr class="memdesc:a5610cfef355ad932506e1e68cc524779"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果数组当前元素数量（num）加额外空间（extra）大于数组容量（max），增加数组容量 译者注：增加方式为让数组容量翻倍  <a href="#a5610cfef355ad932506e1e68cc524779">更多...</a><br /></td></tr>
+<tr class="separator:a5610cfef355ad932506e1e68cc524779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ca8a1ddc9ea6aeb6fb10f42dff16e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a66ca8a1ddc9ea6aeb6fb10f42dff16e8">ccArrayShrink</a> (ccArray *arr)</td></tr>
+<tr class="memdesc:a66ca8a1ddc9ea6aeb6fb10f42dff16e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">把数组的容量收缩为数组内容的数量，让内存符合数组包含的内容  <a href="#a66ca8a1ddc9ea6aeb6fb10f42dff16e8">更多...</a><br /></td></tr>
+<tr class="separator:a66ca8a1ddc9ea6aeb6fb10f42dff16e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0611382009305a1d85288bc3ed376584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a0611382009305a1d85288bc3ed376584">ccArrayGetIndexOfObject</a> (ccArray *arr, Ref *object)</td></tr>
+<tr class="memdesc:a0611382009305a1d85288bc3ed376584"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回第一个匹配对象（Object）的索引（index），如果没有找到返回NSNotFound  <a href="#a0611382009305a1d85288bc3ed376584">更多...</a><br /></td></tr>
+<tr class="separator:a0611382009305a1d85288bc3ed376584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4808f60a0410844cb1123635540a4fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#aa4808f60a0410844cb1123635540a4fe">ccArrayContainsObject</a> (ccArray *arr, Ref *object)</td></tr>
+<tr class="memdesc:aa4808f60a0410844cb1123635540a4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回布尔（Boolean）值代表此对象（object）是否在当前数组中  <a href="#aa4808f60a0410844cb1123635540a4fe">更多...</a><br /></td></tr>
+<tr class="separator:aa4808f60a0410844cb1123635540a4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b3ae8db5369edf9622b96b519db715"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a09b3ae8db5369edf9622b96b519db715">ccArrayAppendObject</a> (ccArray *arr, Ref *object)</td></tr>
+<tr class="memdesc:a09b3ae8db5369edf9622b96b519db715"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加一个对象（object）。如果数组没有足够容量，则执行的结果是不可预料的（Undefined behavior）。  <a href="#a09b3ae8db5369edf9622b96b519db715">更多...</a><br /></td></tr>
+<tr class="separator:a09b3ae8db5369edf9622b96b519db715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845129d4eab01c5cb330ff74253011f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a845129d4eab01c5cb330ff74253011f1">ccArrayAppendObjectWithResize</a> (ccArray *arr, Ref *object)</td></tr>
+<tr class="memdesc:a845129d4eab01c5cb330ff74253011f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加一个对象（object）。如果容量不足，增加数组的容量。  <a href="#a845129d4eab01c5cb330ff74253011f1">更多...</a><br /></td></tr>
+<tr class="separator:a845129d4eab01c5cb330ff74253011f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68a75c672a4ffcba14c8319307c8ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#aa68a75c672a4ffcba14c8319307c8ab7">ccArrayAppendArray</a> (ccArray *arr, ccArray *plusArr)</td></tr>
+<tr class="memdesc:aa68a75c672a4ffcba14c8319307c8ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">从plusArr追加对象（objects）到arr。 如果数组没有足够容量，则执行的结果是不可预料的（Undefined behavior）  <a href="#aa68a75c672a4ffcba14c8319307c8ab7">更多...</a><br /></td></tr>
+<tr class="separator:aa68a75c672a4ffcba14c8319307c8ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7853fb9382441b8993eece92912adb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a7853fb9382441b8993eece92912adb66">ccArrayAppendArrayWithResize</a> (ccArray *arr, ccArray *plusArr)</td></tr>
+<tr class="memdesc:a7853fb9382441b8993eece92912adb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">从plusArr追加对象（objects）到arr。如果容量不足，增加数组的容量。  <a href="#a7853fb9382441b8993eece92912adb66">更多...</a><br /></td></tr>
+<tr class="separator:a7853fb9382441b8993eece92912adb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7ba4758bd4e687a45d567dbab01f28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a9f7ba4758bd4e687a45d567dbab01f28">ccArrayInsertObjectAtIndex</a> (ccArray *arr, Ref *object, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:a9f7ba4758bd4e687a45d567dbab01f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引（index）位置插入对象（object）  <a href="#a9f7ba4758bd4e687a45d567dbab01f28">更多...</a><br /></td></tr>
+<tr class="separator:a9f7ba4758bd4e687a45d567dbab01f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada75c073f6b3a9254f2cb789b9647873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ada75c073f6b3a9254f2cb789b9647873">ccArraySwapObjectsAtIndexes</a> (ccArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index1, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index2)</td></tr>
+<tr class="memdesc:ada75c073f6b3a9254f2cb789b9647873"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换两个对象（object）  <a href="#ada75c073f6b3a9254f2cb789b9647873">更多...</a><br /></td></tr>
+<tr class="separator:ada75c073f6b3a9254f2cb789b9647873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27e5417ddb565bc747bfd5d6997b579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ad27e5417ddb565bc747bfd5d6997b579">ccArrayRemoveAllObjects</a> (ccArray *arr)</td></tr>
+<tr class="memdesc:ad27e5417ddb565bc747bfd5d6997b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除数组的所有对象（objects）  <a href="#ad27e5417ddb565bc747bfd5d6997b579">更多...</a><br /></td></tr>
+<tr class="separator:ad27e5417ddb565bc747bfd5d6997b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf788d4cb443d24692781516b9702b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#acf788d4cb443d24692781516b9702b7a">ccArrayRemoveObjectAtIndex</a> (ccArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index, bool releaseObj=true)</td></tr>
+<tr class="memdesc:acf788d4cb443d24692781516b9702b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定索引（index）的对象（object）然后把索引（index）后面的对象（object）向前移动。 如果索引（index）在[0, num-1]以外，即索引位置没有对象（object），则执行的结果是不可预料的（Undefined behavior）。  <a href="#acf788d4cb443d24692781516b9702b7a">更多...</a><br /></td></tr>
+<tr class="separator:acf788d4cb443d24692781516b9702b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95da0c4833a9f3cd037b346f60924d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ae95da0c4833a9f3cd037b346f60924d3">ccArrayFastRemoveObjectAtIndex</a> (ccArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:ae95da0c4833a9f3cd037b346f60924d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定索引（index）的对象（object）然后把最后一个对象填充到指定索引（index）位置， 从而避免移动后面的对象（objects）。 如果索引（index）在[0, num-1]以外，即索引位置没有对象（object），则执行的结果是不可预料的（Undefined behavior）。  <a href="#ae95da0c4833a9f3cd037b346f60924d3">更多...</a><br /></td></tr>
+<tr class="separator:ae95da0c4833a9f3cd037b346f60924d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8f9abb4e7b5aedf3cc2d46bc1a4b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a8a8f9abb4e7b5aedf3cc2d46bc1a4b1a">ccArrayFastRemoveObject</a> (ccArray *arr, Ref *object)</td></tr>
+<tr class="separator:a8a8f9abb4e7b5aedf3cc2d46bc1a4b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7873d26cb683ea5783790280d3880a57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a7873d26cb683ea5783790280d3880a57">ccArrayRemoveObject</a> (ccArray *arr, Ref *object, bool releaseObj=true)</td></tr>
+<tr class="memdesc:a7873d26cb683ea5783790280d3880a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索第一个匹配的对象（object）并删除它。如果没有找到对象（object），函数不造成任何影响。  <a href="#a7873d26cb683ea5783790280d3880a57">更多...</a><br /></td></tr>
+<tr class="separator:a7873d26cb683ea5783790280d3880a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d173b691ee51abceca5d5e3323df11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a42d173b691ee51abceca5d5e3323df11">ccArrayRemoveArray</a> (ccArray *arr, ccArray *minusArr)</td></tr>
+<tr class="memdesc:a42d173b691ee51abceca5d5e3323df11"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据minusArr数组中的对象（object），删除arr数组中的相同对象（object）。 匹配时，根据minusArr数组中的对象（object），arr数组中的第一个匹配对象（object）将被删除。  <a href="#a42d173b691ee51abceca5d5e3323df11">更多...</a><br /></td></tr>
+<tr class="separator:a42d173b691ee51abceca5d5e3323df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2499c4b982a2f01aca3f11c2f6629368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a2499c4b982a2f01aca3f11c2f6629368">ccArrayFullRemoveArray</a> (ccArray *arr, ccArray *minusArr)</td></tr>
+<tr class="memdesc:a2499c4b982a2f01aca3f11c2f6629368"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据minusArr数组中的对象（object），删除arr数组中的所有相同对象（object）。 匹配时，根据minusArr数组中的对象（object），arr数组中的所有匹配对象（object）将被删除。  <a href="#a2499c4b982a2f01aca3f11c2f6629368">更多...</a><br /></td></tr>
+<tr class="separator:a2499c4b982a2f01aca3f11c2f6629368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad802a27197984a892e14ff976e941228"><td class="memItemLeft" align="right" valign="top">ccCArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ad802a27197984a892e14ff976e941228">ccCArrayNew</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> capacity)</td></tr>
+<tr class="memdesc:ad802a27197984a892e14ff976e941228"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的容量（capacity）分配和初始化一个新的C数组  <a href="#ad802a27197984a892e14ff976e941228">更多...</a><br /></td></tr>
+<tr class="separator:ad802a27197984a892e14ff976e941228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f058e50b1322c9d1d135976c874759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a39f058e50b1322c9d1d135976c874759">ccCArrayFree</a> (ccCArray *arr)</td></tr>
+<tr class="memdesc:a39f058e50b1322c9d1d135976c874759"><td class="mdescLeft">&#160;</td><td class="mdescRight">在移除所有执有对象后释放C数组。忽略空的数组。  <a href="#a39f058e50b1322c9d1d135976c874759">更多...</a><br /></td></tr>
+<tr class="separator:a39f058e50b1322c9d1d135976c874759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa792ddc122d1ef9f9d63a357d7da2e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#aa792ddc122d1ef9f9d63a357d7da2e83">ccCArrayDoubleCapacity</a> (ccCArray *arr)</td></tr>
+<tr class="memdesc:aa792ddc122d1ef9f9d63a357d7da2e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">C数组容量翻倍  <a href="#aa792ddc122d1ef9f9d63a357d7da2e83">更多...</a><br /></td></tr>
+<tr class="separator:aa792ddc122d1ef9f9d63a357d7da2e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363caf7f7bf173e558408af20f5435a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a363caf7f7bf173e558408af20f5435a5">ccCArrayEnsureExtraCapacity</a> (ccCArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> extra)</td></tr>
+<tr class="memdesc:a363caf7f7bf173e558408af20f5435a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果数组当前元素数量（num）加额外空间（extra）大于数组容量（max），增加数组容量 译者注：增加方式为让数组容量翻倍  <a href="#a363caf7f7bf173e558408af20f5435a5">更多...</a><br /></td></tr>
+<tr class="separator:a363caf7f7bf173e558408af20f5435a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c8ec1163bb60cf270af6d81007d21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a97c8ec1163bb60cf270af6d81007d21f">ccCArrayGetIndexOfValue</a> (ccCArray *arr, void *value)</td></tr>
+<tr class="memdesc:a97c8ec1163bb60cf270af6d81007d21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回第一个匹配值（value）的索引（index），如果没有找到返回NSNotFound  <a href="#a97c8ec1163bb60cf270af6d81007d21f">更多...</a><br /></td></tr>
+<tr class="separator:a97c8ec1163bb60cf270af6d81007d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ac1e256ad0f6fb42297451248bde55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a76ac1e256ad0f6fb42297451248bde55">ccCArrayContainsValue</a> (ccCArray *arr, void *value)</td></tr>
+<tr class="memdesc:a76ac1e256ad0f6fb42297451248bde55"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回布尔（Boolean）值代表此值（value）是否在当前C数组中  <a href="#a76ac1e256ad0f6fb42297451248bde55">更多...</a><br /></td></tr>
+<tr class="separator:a76ac1e256ad0f6fb42297451248bde55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad325a535a56138d9c26d767b86d92eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ad325a535a56138d9c26d767b86d92eb9">ccCArrayInsertValueAtIndex</a> (ccCArray *arr, void *value, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:ad325a535a56138d9c26d767b86d92eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引（index）位置插入值（value）。如果数组没有足够容量，则执行的结果是不可预料的（Undefined behavior）。  <a href="#ad325a535a56138d9c26d767b86d92eb9">更多...</a><br /></td></tr>
+<tr class="separator:ad325a535a56138d9c26d767b86d92eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832abdfd58707455d745354a808b2fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a832abdfd58707455d745354a808b2fac">ccCArrayAppendValue</a> (ccCArray *arr, void *value)</td></tr>
+<tr class="memdesc:a832abdfd58707455d745354a808b2fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加一个值（value）。如果数组没有足够容量，则执行的结果是不可预料的（Undefined behavior）。  <a href="#a832abdfd58707455d745354a808b2fac">更多...</a><br /></td></tr>
+<tr class="separator:a832abdfd58707455d745354a808b2fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ad7cceb73ac4d5ca07123bd518a272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#af4ad7cceb73ac4d5ca07123bd518a272">ccCArrayAppendValueWithResize</a> (ccCArray *arr, void *value)</td></tr>
+<tr class="memdesc:af4ad7cceb73ac4d5ca07123bd518a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加一个值（value）。如果容量不足，增加数组的容量。  <a href="#af4ad7cceb73ac4d5ca07123bd518a272">更多...</a><br /></td></tr>
+<tr class="separator:af4ad7cceb73ac4d5ca07123bd518a272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e00a257b9fa7fc442e5225feb623ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ac3e00a257b9fa7fc442e5225feb623ca">ccCArrayAppendArray</a> (ccCArray *arr, ccCArray *plusArr)</td></tr>
+<tr class="memdesc:ac3e00a257b9fa7fc442e5225feb623ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">从plusArr追加值（values）到arr。 如果数组没有足够容量，则执行的结果是不可预料的（Undefined behavior）  <a href="#ac3e00a257b9fa7fc442e5225feb623ca">更多...</a><br /></td></tr>
+<tr class="separator:ac3e00a257b9fa7fc442e5225feb623ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726ffb6e7ae31d9e3c27eb267ffd936b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a726ffb6e7ae31d9e3c27eb267ffd936b">ccCArrayAppendArrayWithResize</a> (ccCArray *arr, ccCArray *plusArr)</td></tr>
+<tr class="memdesc:a726ffb6e7ae31d9e3c27eb267ffd936b"><td class="mdescLeft">&#160;</td><td class="mdescRight">从plusArr追加值（values）到arr。如果容量不足，增加数组的容量。  <a href="#a726ffb6e7ae31d9e3c27eb267ffd936b">更多...</a><br /></td></tr>
+<tr class="separator:a726ffb6e7ae31d9e3c27eb267ffd936b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7ae117f8566e357406d52decb8e0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a5e7ae117f8566e357406d52decb8e0b3">ccCArrayRemoveAllValues</a> (ccCArray *arr)</td></tr>
+<tr class="memdesc:a5e7ae117f8566e357406d52decb8e0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除数组的所有值（values）  <a href="#a5e7ae117f8566e357406d52decb8e0b3">更多...</a><br /></td></tr>
+<tr class="separator:a5e7ae117f8566e357406d52decb8e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d77f5332ea01490c57027445c7c5c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ad5d77f5332ea01490c57027445c7c5c1">ccCArrayRemoveValueAtIndex</a> (ccCArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:ad5d77f5332ea01490c57027445c7c5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定索引（index）的值（value）然后把索引后面的值（values）向前移动。 如果索引（index）在[0, num-1]以外，即索引位置没有值（value），则执行的结果是不可预料的（Undefined behavior）。  <a href="#ad5d77f5332ea01490c57027445c7c5c1">更多...</a><br /></td></tr>
+<tr class="separator:ad5d77f5332ea01490c57027445c7c5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592f2c885cc03bb09ddc42d2497794a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a592f2c885cc03bb09ddc42d2497794a9">ccCArrayFastRemoveValueAtIndex</a> (ccCArray *arr, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:a592f2c885cc03bb09ddc42d2497794a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定索引（index）的值（value）然后把最后一个值（value）填充到指定索引（index）位置， 从而避免移动后面的值（values）。 如果索引（index）在[0, num-1]以外，即索引位置没有值（value），则执行的结果是不可预料的（Undefined behavior）。  <a href="#a592f2c885cc03bb09ddc42d2497794a9">更多...</a><br /></td></tr>
+<tr class="separator:a592f2c885cc03bb09ddc42d2497794a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5358216db7f2c28e75bcafc889d4a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a8b5358216db7f2c28e75bcafc889d4a4">ccCArrayRemoveValue</a> (ccCArray *arr, void *value)</td></tr>
+<tr class="memdesc:a8b5358216db7f2c28e75bcafc889d4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索第一个匹配的值（value）并删除它。如果没有找到值，函数不造成任何影响。  <a href="#a8b5358216db7f2c28e75bcafc889d4a4">更多...</a><br /></td></tr>
+<tr class="separator:a8b5358216db7f2c28e75bcafc889d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e15700de63bd88c5bab0d8a54b6b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a03e15700de63bd88c5bab0d8a54b6b5b">ccCArrayRemoveArray</a> (ccCArray *arr, ccCArray *minusArr)</td></tr>
+<tr class="memdesc:a03e15700de63bd88c5bab0d8a54b6b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据minusArr数组中的值（value），删除arr数组中的相同值（value）。 匹配时，根据minusArr数组中的值（value），arr数组中的第一个匹配值（value）将被删除。  <a href="#a03e15700de63bd88c5bab0d8a54b6b5b">更多...</a><br /></td></tr>
+<tr class="separator:a03e15700de63bd88c5bab0d8a54b6b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9e424b7acba31beb04d2a0ab34e12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html#afd9e424b7acba31beb04d2a0ab34e12a">ccCArrayFullRemoveArray</a> (ccCArray *arr, ccCArray *minusArr)</td></tr>
+<tr class="memdesc:afd9e424b7acba31beb04d2a0ab34e12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据minusArr数组中的值（value），删除arr数组中的所有相同值（value）。 匹配时，根据minusArr数组中的值（value），arr数组中的所有匹配值（value）将被删除。  <a href="#afd9e424b7acba31beb04d2a0ab34e12a">更多...</a><br /></td></tr>
+<tr class="separator:afd9e424b7acba31beb04d2a0ab34e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>基于Chipmunk的cpArray。 ccArray是一个更快的NSMutableArray。 它和NSMutableArray几乎一样 (适当的存储、保持和释放NSObjects)。 它比NSMutableArray快是因为: </p>
+<ul>
+<li>它用原生C接口所以它没有Objective-c的消息机制开销</li>
+<li>它假定你知道你在做什么，所以它没有在安全检查上花时间 （数组越界, 需要的容量等）</li>
+<li>对象比较时用指针比较代替了isEqual函数</li>
+</ul>
+<p>它有两种用法：</p><ul>
+<li>ccArray函数操纵objective-c对象(进行保留和释放操作)</li>
+<li>ccCArray函数像标准的C结构体一样操纵值(不进行保留和释放操作) </li>
+</ul>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a6a60aa540d05bc2a28632b538f48dc10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CCARRAYDATA_FOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__array__, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__object__&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__object__=__array__-&gt;arr[0]; for(<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> i=0, num=__array__-&gt;num; i&lt;num; i++, __object__=__array__-&gt;arr[i])	\</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_1e982c3755f4172b2756317f526913d2.html">2d</a></li><li class="navelem"><a class="el" href="../../d5/df1/cc_c_array_8h.html">ccCArray.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:41 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

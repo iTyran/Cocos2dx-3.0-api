@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/spine/Atlas.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d6/df8/_atlas_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Atlas.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8fe21a64735cf3616576a035e285374e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374e">spAtlasFormat</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374eaa9358652896e4805b38f97e3e4ab5e00">ATLAS_ALPHA</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374ea05c709b07932cc8620ab9ba830c546de">ATLAS_INTENSITY</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374eadf5a427eb2403c5023d960c00f539618">ATLAS_LUMINANCE_ALPHA</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374ea00a857870a24eca04a13d343cfc8210f">ATLAS_RGB565</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374ea340c9d648e8f14de35d7167b35ca7ad0">ATLAS_RGBA4444</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374eadf0b215fa076fb196955a806c89aabfe">ATLAS_RGB888</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374eafa77757a9d4a6c21a35f969b96d7b4b7">ATLAS_RGBA8888</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8fe21a64735cf3616576a035e285374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac875bf7c6dd44911645785af73bb21ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21ba">spAtlasFilter</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baab786d4c02004aebef4f1fa1cd63c8763">ATLAS_NEAREST</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baafa7a6cf5272e90c5e23865d2fa4e5691">ATLAS_LINEAR</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baab117b0ac1bba4b47bdafa7f5054fded2">ATLAS_MIPMAP</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baad578a0338926a5a875b16fc33b883e01">ATLAS_MIPMAP_NEAREST_NEAREST</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baa285251b883edcc50b8c4f5253960554d">ATLAS_MIPMAP_LINEAR_NEAREST</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baa020f2aaaa98e3fb43c508043aea82550">ATLAS_MIPMAP_NEAREST_LINEAR</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21baaf2ed9a6e67fb23450d3334bd31522943">ATLAS_MIPMAP_LINEAR_LINEAR</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac875bf7c6dd44911645785af73bb21ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805ba9df4d75a0998b4d87899349abf1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a805ba9df4d75a0998b4d87899349abf1">spAtlasWrap</a> { <a class="el" href="../../d6/df8/_atlas_8h.html#a805ba9df4d75a0998b4d87899349abf1acb282414da6ee53e899f960514ea5b23">ATLAS_MIRROREDREPEAT</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a805ba9df4d75a0998b4d87899349abf1aeedda8394ce0f3c1b9b844aee4b75cae">ATLAS_CLAMPTOEDGE</a>, 
+<a class="el" href="../../d6/df8/_atlas_8h.html#a805ba9df4d75a0998b4d87899349abf1a2378f616a47bac07a07c121266d8e552">ATLAS_REPEAT</a>
+ }</td></tr>
+<tr class="separator:a805ba9df4d75a0998b4d87899349abf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2a0c6aa0b1d5964cfde3f06d3dc31127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a2a0c6aa0b1d5964cfde3f06d3dc31127">spAtlasPage_create</a> (const char *name)</td></tr>
+<tr class="separator:a2a0c6aa0b1d5964cfde3f06d3dc31127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae69283e8807fb5ecd5ea86ed6eedfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#acae69283e8807fb5ecd5ea86ed6eedfa">spAtlasPage_dispose</a> (<a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *self)</td></tr>
+<tr class="separator:acae69283e8807fb5ecd5ea86ed6eedfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba985b4b5f32579c09226f17be1031d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#aba985b4b5f32579c09226f17be1031d8">spAtlasRegion_create</a> ()</td></tr>
+<tr class="separator:aba985b4b5f32579c09226f17be1031d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6a7dc29e16745191a6162b347de373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a4e6a7dc29e16745191a6162b347de373">spAtlasRegion_dispose</a> (<a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a> *self)</td></tr>
+<tr class="separator:a4e6a7dc29e16745191a6162b347de373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13662c11cc562e98bc78207ecc7a59b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a13662c11cc562e98bc78207ecc7a59b1">spAtlas_readAtlas</a> (const char *data, int length, const char *dir)</td></tr>
+<tr class="separator:a13662c11cc562e98bc78207ecc7a59b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5650d1315ba39018a52d484644f9316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#ad5650d1315ba39018a52d484644f9316">spAtlas_readAtlasFile</a> (const char *path)</td></tr>
+<tr class="separator:ad5650d1315ba39018a52d484644f9316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b04b9c7eea404048f4c24692660efe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a6b04b9c7eea404048f4c24692660efe5">spAtlas_dispose</a> (<a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *atlas)</td></tr>
+<tr class="separator:a6b04b9c7eea404048f4c24692660efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914f47bb48cfd4a976748bb5cfb18d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df8/_atlas_8h.html#a914f47bb48cfd4a976748bb5cfb18d27">spAtlas_findRegion</a> (const <a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *self, const char *name)</td></tr>
+<tr class="separator:a914f47bb48cfd4a976748bb5cfb18d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ac875bf7c6dd44911645785af73bb21ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/df8/_atlas_8h.html#ac875bf7c6dd44911645785af73bb21ba">spAtlasFilter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baab786d4c02004aebef4f1fa1cd63c8763"></a>ATLAS_NEAREST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baafa7a6cf5272e90c5e23865d2fa4e5691"></a>ATLAS_LINEAR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baab117b0ac1bba4b47bdafa7f5054fded2"></a>ATLAS_MIPMAP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baad578a0338926a5a875b16fc33b883e01"></a>ATLAS_MIPMAP_NEAREST_NEAREST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baa285251b883edcc50b8c4f5253960554d"></a>ATLAS_MIPMAP_LINEAR_NEAREST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baa020f2aaaa98e3fb43c508043aea82550"></a>ATLAS_MIPMAP_NEAREST_LINEAR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac875bf7c6dd44911645785af73bb21baaf2ed9a6e67fb23450d3334bd31522943"></a>ATLAS_MIPMAP_LINEAR_LINEAR&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a8fe21a64735cf3616576a035e285374e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/df8/_atlas_8h.html#a8fe21a64735cf3616576a035e285374e">spAtlasFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374eaa9358652896e4805b38f97e3e4ab5e00"></a>ATLAS_ALPHA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374ea05c709b07932cc8620ab9ba830c546de"></a>ATLAS_INTENSITY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374eadf5a427eb2403c5023d960c00f539618"></a>ATLAS_LUMINANCE_ALPHA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374ea00a857870a24eca04a13d343cfc8210f"></a>ATLAS_RGB565&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374ea340c9d648e8f14de35d7167b35ca7ad0"></a>ATLAS_RGBA4444&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374eadf0b215fa076fb196955a806c89aabfe"></a>ATLAS_RGB888&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8fe21a64735cf3616576a035e285374eafa77757a9d4a6c21a35f969b96d7b4b7"></a>ATLAS_RGBA8888&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a805ba9df4d75a0998b4d87899349abf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/df8/_atlas_8h.html#a805ba9df4d75a0998b4d87899349abf1">spAtlasWrap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a805ba9df4d75a0998b4d87899349abf1acb282414da6ee53e899f960514ea5b23"></a>ATLAS_MIRROREDREPEAT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a805ba9df4d75a0998b4d87899349abf1aeedda8394ce0f3c1b9b844aee4b75cae"></a>ATLAS_CLAMPTOEDGE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a805ba9df4d75a0998b4d87899349abf1a2378f616a47bac07a07c121266d8e552"></a>ATLAS_REPEAT&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a6b04b9c7eea404048f4c24692660efe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAtlas_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *&#160;</td>
+          <td class="paramname"><em>atlas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a914f47bb48cfd4a976748bb5cfb18d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a>* spAtlas_findRegion </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13662c11cc562e98bc78207ecc7a59b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a>* spAtlas_readAtlas </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5650d1315ba39018a52d484644f9316"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d6b/structsp_atlas.html">spAtlas</a>* spAtlas_readAtlasFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a0c6aa0b1d5964cfde3f06d3dc31127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a>* spAtlasPage_create </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acae69283e8807fb5ecd5ea86ed6eedfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAtlasPage_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dbf/structsp_atlas_page.html">spAtlasPage</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba985b4b5f32579c09226f17be1031d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a>* spAtlasRegion_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e6a7dc29e16745191a6162b347de373"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spAtlasRegion_dispose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/daf/structsp_atlas_region.html">spAtlasRegion</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_fd4f0d2e565942d0b258d739eb9baf6f.html">editor-support</a></li><li class="navelem"><a class="el" href="../../dir_a2c234a85ab6bcec71aa847aef5dfa52.html">spine</a></li><li class="navelem"><a class="el" href="../../d6/df8/_atlas_8h.html">Atlas.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

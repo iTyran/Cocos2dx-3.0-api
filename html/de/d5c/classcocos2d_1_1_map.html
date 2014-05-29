@@ -1,0 +1,1157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Map&lt; K, V &gt; 模板类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d5c/classcocos2d_1_1_map.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../d7/d49/classcocos2d_1_1_map-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Map&lt; K, V &gt; 模板类 参考<div class="ingroups"><a class="el" href="../../df/db3/group__data__structures.html">Data Structures</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCMap.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a053c175f33d4c46374ca7ae6953baa8a"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; K, V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a053c175f33d4c46374ca7ae6953baa8a">RefMap</a></td></tr>
+<tr class="separator:a053c175f33d4c46374ca7ae6953baa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6986abdaccfdf9e9d831e99d12d6c816"><td class="memItemLeft" align="right" valign="top">typedef RefMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a></td></tr>
+<tr class="separator:a6986abdaccfdf9e9d831e99d12d6c816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef12971b4a6959a7d3ff967a862a1738"><td class="memItemLeft" align="right" valign="top">typedef RefMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a></td></tr>
+<tr class="separator:aef12971b4a6959a7d3ff967a862a1738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad69bd11391be1a1dba5c8202259664f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ad69bd11391be1a1dba5c8202259664f8">begin</a> ()</td></tr>
+<tr class="separator:ad69bd11391be1a1dba5c8202259664f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b02d4f1a8500fb07a551069060709f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aa4b02d4f1a8500fb07a551069060709f">begin</a> () const </td></tr>
+<tr class="separator:aa4b02d4f1a8500fb07a551069060709f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad38d52497a975bfb6f2f6acd76631f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#acad38d52497a975bfb6f2f6acd76631f">end</a> ()</td></tr>
+<tr class="separator:acad38d52497a975bfb6f2f6acd76631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350132543d80a1c1e5be844e6d2878ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a350132543d80a1c1e5be844e6d2878ea">end</a> () const </td></tr>
+<tr class="separator:a350132543d80a1c1e5be844e6d2878ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbe5a8d1c228764829c9826cfe48910"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#abcbe5a8d1c228764829c9826cfe48910">cbegin</a> () const </td></tr>
+<tr class="separator:abcbe5a8d1c228764829c9826cfe48910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ed5283a097925e2c2f96e6daae6a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a02ed5283a097925e2c2f96e6daae6a80">cend</a> () const </td></tr>
+<tr class="separator:a02ed5283a097925e2c2f96e6daae6a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49848ab3a0e1934c5615242b67af68c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a49848ab3a0e1934c5615242b67af68c7">Map</a> ()</td></tr>
+<tr class="memdesc:a49848ab3a0e1934c5615242b67af68c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a49848ab3a0e1934c5615242b67af68c7">更多...</a><br /></td></tr>
+<tr class="separator:a49848ab3a0e1934c5615242b67af68c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ecf5bbb515eb7ce1e5c1bae83da432"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a88ecf5bbb515eb7ce1e5c1bae83da432">Map</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> capacity)</td></tr>
+<tr class="memdesc:a88ecf5bbb515eb7ce1e5c1bae83da432"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定容量构造  <a href="#a88ecf5bbb515eb7ce1e5c1bae83da432">更多...</a><br /></td></tr>
+<tr class="separator:a88ecf5bbb515eb7ce1e5c1bae83da432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3adb4c62cc58cb8c6699df61facdca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a1a3adb4c62cc58cb8c6699df61facdca">Map</a> (const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;other)</td></tr>
+<tr class="memdesc:a1a3adb4c62cc58cb8c6699df61facdca"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数  <a href="#a1a3adb4c62cc58cb8c6699df61facdca">更多...</a><br /></td></tr>
+<tr class="separator:a1a3adb4c62cc58cb8c6699df61facdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7793587de288f1ee6b32ad7c417468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a1a7793587de288f1ee6b32ad7c417468">Map</a> (<a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&amp;other)</td></tr>
+<tr class="memdesc:a1a7793587de288f1ee6b32ad7c417468"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动构造函数（Move constructor）  <a href="#a1a7793587de288f1ee6b32ad7c417468">更多...</a><br /></td></tr>
+<tr class="separator:a1a7793587de288f1ee6b32ad7c417468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59b12e62f61360298c324334ecc6bc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ac59b12e62f61360298c324334ecc6bc9">~Map</a> ()</td></tr>
+<tr class="memdesc:ac59b12e62f61360298c324334ecc6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚构函数 它会释放map中的所有对象.  <a href="#ac59b12e62f61360298c324334ecc6bc9">更多...</a><br /></td></tr>
+<tr class="separator:ac59b12e62f61360298c324334ecc6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72a3342ad94da4f0ec078e7f68f75cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ac72a3342ad94da4f0ec078e7f68f75cf">reserve</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> capacity)</td></tr>
+<tr class="memdesc:ac72a3342ad94da4f0ec078e7f68f75cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置map的容量  <a href="#ac72a3342ad94da4f0ec078e7f68f75cf">更多...</a><br /></td></tr>
+<tr class="separator:ac72a3342ad94da4f0ec078e7f68f75cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58246b181aa23e559878c13a47b37a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a58246b181aa23e559878c13a47b37a3b">bucketCount</a> () const </td></tr>
+<tr class="memdesc:a58246b181aa23e559878c13a47b37a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 Map容器中桶的容量.  <a href="#a58246b181aa23e559878c13a47b37a3b">更多...</a><br /></td></tr>
+<tr class="separator:a58246b181aa23e559878c13a47b37a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a82bb366d4afcdef29565f32a5a95ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a0a82bb366d4afcdef29565f32a5a95ef">bucketSize</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> n) const </td></tr>
+<tr class="memdesc:a0a82bb366d4afcdef29565f32a5a95ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回n桶中元素的数量 .  <a href="#a0a82bb366d4afcdef29565f32a5a95ef">更多...</a><br /></td></tr>
+<tr class="separator:a0a82bb366d4afcdef29565f32a5a95ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61b3ca7c55989e70f0b07fc857490fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ab61b3ca7c55989e70f0b07fc857490fb">bucket</a> (const K &amp;k) const </td></tr>
+<tr class="memdesc:ab61b3ca7c55989e70f0b07fc857490fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回关键字k所在位置桶的数量.  <a href="#ab61b3ca7c55989e70f0b07fc857490fb">更多...</a><br /></td></tr>
+<tr class="separator:ab61b3ca7c55989e70f0b07fc857490fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549355df7b7668d845508822af93bc98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a549355df7b7668d845508822af93bc98">size</a> () const </td></tr>
+<tr class="memdesc:a549355df7b7668d845508822af93bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">map中元素的数量.  <a href="#a549355df7b7668d845508822af93bc98">更多...</a><br /></td></tr>
+<tr class="separator:a549355df7b7668d845508822af93bc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e61de369e994009e36f344f99c15ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ac6e61de369e994009e36f344f99c15ad">empty</a> () const </td></tr>
+<tr class="memdesc:ac6e61de369e994009e36f344f99c15ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个布尔值表示该map容器是否为空，如果为空它的大小为0.  <a href="#ac6e61de369e994009e36f344f99c15ad">更多...</a><br /></td></tr>
+<tr class="separator:ac6e61de369e994009e36f344f99c15ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587430b37fe881c197a565f523853f48"><td class="memItemLeft" align="right" valign="top">std::vector&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a587430b37fe881c197a565f523853f48">keys</a> () const </td></tr>
+<tr class="memdesc:a587430b37fe881c197a565f523853f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回map中所有关键字key的集合  <a href="#a587430b37fe881c197a565f523853f48">更多...</a><br /></td></tr>
+<tr class="separator:a587430b37fe881c197a565f523853f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecfb2ffde455a864e9634f57a66dad0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; K &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aeecfb2ffde455a864e9634f57a66dad0">keys</a> (V object) const </td></tr>
+<tr class="memdesc:aeecfb2ffde455a864e9634f57a66dad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回所有匹配该对象的key  <a href="#aeecfb2ffde455a864e9634f57a66dad0">更多...</a><br /></td></tr>
+<tr class="separator:aeecfb2ffde455a864e9634f57a66dad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386a6635027699ea854f780d30589a50"><td class="memItemLeft" align="right" valign="top">const V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a386a6635027699ea854f780d30589a50">at</a> (const K &amp;key) const </td></tr>
+<tr class="memdesc:a386a6635027699ea854f780d30589a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回map中key映射的元素的值 .  <a href="#a386a6635027699ea854f780d30589a50">更多...</a><br /></td></tr>
+<tr class="separator:a386a6635027699ea854f780d30589a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aaaad9461ee585bd35ced029eb2f099"><td class="memItemLeft" align="right" valign="top">V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6aaaad9461ee585bd35ced029eb2f099">at</a> (const K &amp;key)</td></tr>
+<tr class="separator:a6aaaad9461ee585bd35ced029eb2f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cd79e46f530cb1e3dad22951c97ec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a23cd79e46f530cb1e3dad22951c97ec3">find</a> (const K &amp;key) const </td></tr>
+<tr class="memdesc:a23cd79e46f530cb1e3dad22951c97ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">用参数key搜索容器的一个元素，如果找到返回iterator，相反返回 <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#acad38d52497a975bfb6f2f6acd76631f">Map&lt;K, V&gt;::end</a> 的iterator（容器中的最后一个元素）  <a href="#a23cd79e46f530cb1e3dad22951c97ec3">更多...</a><br /></td></tr>
+<tr class="separator:a23cd79e46f530cb1e3dad22951c97ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2923ef9dd69684eaf3c812163b4e4bf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a2923ef9dd69684eaf3c812163b4e4bf2">find</a> (const K &amp;key)</td></tr>
+<tr class="separator:a2923ef9dd69684eaf3c812163b4e4bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dde96d8427697272318e3aba179b2f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a8dde96d8427697272318e3aba179b2f8">insert</a> (const K &amp;key, V object)</td></tr>
+<tr class="memdesc:a8dde96d8427697272318e3aba179b2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入新元素到map.  <a href="#a8dde96d8427697272318e3aba179b2f8">更多...</a><br /></td></tr>
+<tr class="separator:a8dde96d8427697272318e3aba179b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1599afff263aee5545ca01e80f3176fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a1599afff263aee5545ca01e80f3176fd">erase</a> (<a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> position)</td></tr>
+<tr class="memdesc:a1599afff263aee5545ca01e80f3176fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定 iterator 从 Map&lt;K, V&gt; 容器中移除元素.  <a href="#a1599afff263aee5545ca01e80f3176fd">更多...</a><br /></td></tr>
+<tr class="separator:a1599afff263aee5545ca01e80f3176fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa411e89b8ca1e0107c2e0c5952cf5e5e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aa411e89b8ca1e0107c2e0c5952cf5e5e">erase</a> (const K &amp;k)</td></tr>
+<tr class="memdesc:aa411e89b8ca1e0107c2e0c5952cf5e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从Map&lt;K, V&gt; 容器中移除元素.  <a href="#aa411e89b8ca1e0107c2e0c5952cf5e5e">更多...</a><br /></td></tr>
+<tr class="separator:aa411e89b8ca1e0107c2e0c5952cf5e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6ad798a9852bdc19b311c3edd7c793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6c6ad798a9852bdc19b311c3edd7c793">erase</a> (const std::vector&lt; K &gt; &amp;<a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a587430b37fe881c197a565f523853f48">keys</a>)</td></tr>
+<tr class="memdesc:a6c6ad798a9852bdc19b311c3edd7c793"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除map中vector集合键值key相关的一些元素.  <a href="#a6c6ad798a9852bdc19b311c3edd7c793">更多...</a><br /></td></tr>
+<tr class="separator:a6c6ad798a9852bdc19b311c3edd7c793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map&lt;K,V&gt;容器中的所有元素被丢弃: 他们的引用计数会减1, 且被从容器中移除,直到容器大小为0.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">更多...</a><br /></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e6ab6d9a75eb1b70731c06f83c5a15"><td class="memItemLeft" align="right" valign="top">V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a07e6ab6d9a75eb1b70731c06f83c5a15">getRandomObject</a> () const </td></tr>
+<tr class="memdesc:a07e6ab6d9a75eb1b70731c06f83c5a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 map中的一个随机对象  <a href="#a07e6ab6d9a75eb1b70731c06f83c5a15">更多...</a><br /></td></tr>
+<tr class="separator:a07e6ab6d9a75eb1b70731c06f83c5a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af201f2c360b4e58ba8938d5596fa6e74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#af201f2c360b4e58ba8938d5596fa6e74">operator=</a> (const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;other)</td></tr>
+<tr class="memdesc:af201f2c360b4e58ba8938d5596fa6e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝赋值运算符  <a href="#af201f2c360b4e58ba8938d5596fa6e74">更多...</a><br /></td></tr>
+<tr class="separator:af201f2c360b4e58ba8938d5596fa6e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385bf94d4e161dfd72b0773967758d13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a385bf94d4e161dfd72b0773967758d13">operator=</a> (<a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&amp;other)</td></tr>
+<tr class="memdesc:a385bf94d4e161dfd72b0773967758d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动赋值运算符  <a href="#a385bf94d4e161dfd72b0773967758d13">更多...</a><br /></td></tr>
+<tr class="separator:a385bf94d4e161dfd72b0773967758d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab7edae6f3e01544de707f1cf39dd6b9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#ab7edae6f3e01544de707f1cf39dd6b9d">addRefForAllObjects</a> ()</td></tr>
+<tr class="memdesc:ab7edae6f3e01544de707f1cf39dd6b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">对map中的所有元素执行retain操作  <a href="#ab7edae6f3e01544de707f1cf39dd6b9d">更多...</a><br /></td></tr>
+<tr class="separator:ab7edae6f3e01544de707f1cf39dd6b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a290bc688f5d86f2152e3ae474aed2404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a053c175f33d4c46374ca7ae6953baa8a">RefMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a290bc688f5d86f2152e3ae474aed2404">_data</a></td></tr>
+<tr class="separator:a290bc688f5d86f2152e3ae474aed2404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="aef12971b4a6959a7d3ff967a862a1738"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RefMap::const_iterator <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6986abdaccfdf9e9d831e99d12d6c816"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RefMap::iterator <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a053c175f33d4c46374ca7ae6953baa8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;K, V&gt; <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a053c175f33d4c46374ca7ae6953baa8a">RefMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a49848ab3a0e1934c5615242b67af68c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88ecf5bbb515eb7ce1e5c1bae83da432"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定容量构造 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a3adb4c62cc58cb8c6699df61facdca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拷贝构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a7793587de288f1ee6b32ad7c417468"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动构造函数（Move constructor） </p>
+
+</div>
+</div>
+<a class="anchor" id="ac59b12e62f61360298c324334ecc6bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>虚构函数 它会释放map中的所有对象. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ab7edae6f3e01544de707f1cf39dd6b9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addRefForAllObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>对map中的所有元素执行retain操作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a386a6635027699ea854f780d30589a50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const V at </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回map中key映射的元素的值 . </p>
+<dl class="section note"><dt>注解</dt><dd>如果容器中没有匹配的该key的元素，此方法返回 nullptr. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>传人Key的值是元素的键值映射的值. 成员类型K 是容器中元素的keys. <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> &lt; K、V &gt;中定义的别名,它的第一个模板参数(键). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6aaaad9461ee585bd35ced029eb2f099"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V at </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad69bd11391be1a1dba5c8202259664f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a> begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4b02d4f1a8500fb07a551069060709f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab61b3ca7c55989e70f0b07fc857490fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> bucket </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回关键字k所在位置桶的数量. </p>
+
+</div>
+</div>
+<a class="anchor" id="a58246b181aa23e559878c13a47b37a3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> bucketCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回 Map容器中桶的容量. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a82bb366d4afcdef29565f32a5a95ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> bucketSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回n桶中元素的数量 . </p>
+
+</div>
+</div>
+<a class="anchor" id="abcbe5a8d1c228764829c9826cfe48910"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02ed5283a097925e2c2f96e6daae6a80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map&lt;K,V&gt;容器中的所有元素被丢弃: 他们的引用计数会减1, 且被从容器中移除,直到容器大小为0. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6e61de369e994009e36f344f99c15ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回一个布尔值表示该map容器是否为空，如果为空它的大小为0. </p>
+<dl class="section note"><dt>注解</dt><dd>此方法不会以任何方式修改容器的内容. 已存在成员函数nordered_map::clear 清理数组对象的内容. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acad38d52497a975bfb6f2f6acd76631f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a> end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a350132543d80a1c1e5be844e6d2878ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1599afff263aee5545ca01e80f3176fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a> erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定 iterator 从 Map&lt;K, V&gt; 容器中移除元素. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Iterator 指向的单个元素被从 Map&lt;K, V&gt; 移除. 成员类型 const_iterator 是一个前向 iterator 类型. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa411e89b8ca1e0107c2e0c5952cf5e5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t erase </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从Map&lt;K, V&gt; 容器中移除元素. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>key对应的元素被移除. 成员类型K 是容器中元素的keys. <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> &lt; K、V &gt;中定义的别名,它的第一个模板参数(键). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c6ad798a9852bdc19b311c3edd7c793"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void erase </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; K &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除map中vector集合键值key相关的一些元素. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td>键值相关的元素被移除. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a23cd79e46f530cb1e3dad22951c97ec3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#aef12971b4a6959a7d3ff967a862a1738">const_iterator</a> find </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用参数key搜索容器的一个元素，如果找到返回iterator，相反返回 <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#acad38d52497a975bfb6f2f6acd76631f">Map&lt;K, V&gt;::end</a> 的iterator（容器中的最后一个元素） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>用于搜索的Key. 成员类型K 是容器中元素的keys. <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a> &lt; K、V &gt;中定义的别名,它的第一个模板参数(键). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2923ef9dd69684eaf3c812163b4e4bf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a6986abdaccfdf9e9d831e99d12d6c816">iterator</a> find </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07e6ab6d9a75eb1b70731c06f83c5a15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V getRandomObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 map中的一个随机对象 </p>
+<dl class="section return"><dt>返回</dt><dd>返回非空map中的一个随机对象, 相反返回nullptr. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8dde96d8427697272318e3aba179b2f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insert </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">V&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>插入新元素到map. </p>
+<dl class="section note"><dt>注解</dt><dd>如果容器中已经包含该key,此方法将移除容器中旧的键值对(key, object)然后插入. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>插入的Key键. </td></tr>
+    <tr><td class="paramname">object</td><td>插入的对象. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a587430b37fe881c197a565f523853f48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;K&gt; keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回map中所有关键字key的集合 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeecfb2ffde455a864e9634f57a66dad0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;K&gt; keys </td>
+          <td>(</td>
+          <td class="paramtype">V&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回所有匹配该对象的key </p>
+
+</div>
+</div>
+<a class="anchor" id="af201f2c360b4e58ba8938d5596fa6e74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt;K, V&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拷贝赋值运算符 </p>
+
+</div>
+</div>
+<a class="anchor" id="a385bf94d4e161dfd72b0773967758d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt;K, V&gt;&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a>&lt; K, V &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动赋值运算符 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac72a3342ad94da4f0ec078e7f68f75cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reserve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置map的容量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a549355df7b7668d845508822af93bc98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>map中元素的数量. </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a290bc688f5d86f2152e3ae474aed2404"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html#a053c175f33d4c46374ca7ae6953baa8a">RefMap</a> _data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/base/<a class="el" href="../../d4/de7/_c_c_map_8h.html">CCMap.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">Map</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:47 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

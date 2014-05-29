@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/base/ccConfig.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d9f/cc_config_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle">
+<div class="title">ccConfig.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> (cc) configuration file  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/d96/_c_c_platform_config_8h.html">base/CCPlatformConfig.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a80b38e27eef3f6d0d924b44450babfbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a80b38e27eef3f6d0d924b44450babfbb">CC_ENABLE_STACKABLE_ACTIONS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a80b38e27eef3f6d0d924b44450babfbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 改变位置属性的动作(如 MoveBy, JumpBy, BezierBy..)将会放到栈里面.  <a href="#a80b38e27eef3f6d0d924b44450babfbb">更多...</a><br /></td></tr>
+<tr class="separator:a80b38e27eef3f6d0d924b44450babfbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681e28ff1c3be58c23e7d5edbf676ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a681e28ff1c3be58c23e7d5edbf676ac2">CC_ENABLE_GL_STATE_CACHE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a681e28ff1c3be58c23e7d5edbf676ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 会内部维护一个OpenGL状态缓存来避免不必要的切换.  <a href="#a681e28ff1c3be58c23e7d5edbf676ac2">更多...</a><br /></td></tr>
+<tr class="separator:a681e28ff1c3be58c23e7d5edbf676ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1dbba32b8583567435406fe7b964003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#aa1dbba32b8583567435406fe7b964003">CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:aa1dbba32b8583567435406fe7b964003"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 纹理贴图坐标将会使用以下公式计算:  <a href="#aa1dbba32b8583567435406fe7b964003">更多...</a><br /></td></tr>
+<tr class="separator:aa1dbba32b8583567435406fe7b964003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5a20ca67e535a3f0c4df065812be15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#acc5a20ca67e535a3f0c4df065812be15">CC_DIRECTOR_STATS_INTERVAL</a>&#160;&#160;&#160;(0.1f)</td></tr>
+<tr class="separator:acc5a20ca67e535a3f0c4df065812be15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bab9813cdf877857fc432d82e88979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a45bab9813cdf877857fc432d82e88979">CC_DIRECTOR_FPS_POSITION</a>&#160;&#160;&#160;<a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>(0,0)</td></tr>
+<tr class="memdesc:a45bab9813cdf877857fc432d82e88979"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPS 数字的位置  <a href="#a45bab9813cdf877857fc432d82e88979">更多...</a><br /></td></tr>
+<tr class="separator:a45bab9813cdf877857fc432d82e88979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ac1deb7192e46515ec2cc3b6b62166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#af7ac1deb7192e46515ec2cc3b6b62166">CC_DIRECTOR_DISPATCH_FAST_EVENTS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:af7ac1deb7192e46515ec2cc3b6b62166"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 只有此功能被FastDirector使用时, 主循环才会等待 0.04 秒去分发所有的活动(Event), 即使此时没有 任何活动需要分发.  <a href="#af7ac1deb7192e46515ec2cc3b6b62166">更多...</a><br /></td></tr>
+<tr class="separator:af7ac1deb7192e46515ec2cc3b6b62166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a8665eef21ec7e65fa63eb22d8a502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a25a8665eef21ec7e65fa63eb22d8a502">CC_DIRECTOR_MAC_USE_DISPLAY_LINK_THREAD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a25a8665eef21ec7e65fa63eb22d8a502"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, cocos2d-mac 将会在Display Link线程上运行.  <a href="#a25a8665eef21ec7e65fa63eb22d8a502">更多...</a><br /></td></tr>
+<tr class="separator:a25a8665eef21ec7e65fa63eb22d8a502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13e7747317d74c8d23746de658da13d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#ab13e7747317d74c8d23746de658da13d">CC_NODE_RENDER_SUBPIXEL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ab13e7747317d74c8d23746de658da13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, Node 对象(Sprite, Label等)将会以亚像素(subpixels)级别渲染.  <a href="#ab13e7747317d74c8d23746de658da13d">更多...</a><br /></td></tr>
+<tr class="separator:ab13e7747317d74c8d23746de658da13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b18e29ae8fa92b9a3392108b4bfd06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a63b18e29ae8fa92b9a3392108b4bfd06">CC_SPRITEBATCHNODE_RENDER_SUBPIXEL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a63b18e29ae8fa92b9a3392108b4bfd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 使用 SpriteBatchNode 渲染的 Sprite 对象将会以亚像素(subpixels)渲染.  <a href="#a63b18e29ae8fa92b9a3392108b4bfd06">更多...</a><br /></td></tr>
+<tr class="separator:a63b18e29ae8fa92b9a3392108b4bfd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843586bad8c4678765f24e077d06639d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a843586bad8c4678765f24e077d06639d">CC_TEXTURE_ATLAS_USE_VAO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a843586bad8c4678765f24e077d06639d"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认情况下, TextureAtlas(被很多 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 类使用)将会使用VAO(Vertex Array Objects).  <a href="#a843586bad8c4678765f24e077d06639d">更多...</a><br /></td></tr>
+<tr class="separator:a843586bad8c4678765f24e077d06639d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18846a5ddb26b6a8e38f24d97790234"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#ac18846a5ddb26b6a8e38f24d97790234">CC_USE_LA88_LABELS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac18846a5ddb26b6a8e38f24d97790234"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, LabelTTF 对象将使用 LA88(Luminance Alpha 16-bit textures); 如果禁用,将使用A8 (Alpha 8-bit textures).  <a href="#ac18846a5ddb26b6a8e38f24d97790234">更多...</a><br /></td></tr>
+<tr class="separator:ac18846a5ddb26b6a8e38f24d97790234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be378e696dde019aef27ac742167ddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a1be378e696dde019aef27ac742167ddf">CC_SPRITE_DEBUG_DRAW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a1be378e696dde019aef27ac742167ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 所有 Sprite 的子类都将绘制一个边界框(bounding box).  <a href="#a1be378e696dde019aef27ac742167ddf">更多...</a><br /></td></tr>
+<tr class="separator:a1be378e696dde019aef27ac742167ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ab74eb158fbd5612c54707097b0d85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a20ab74eb158fbd5612c54707097b0d85">CC_SPRITEBATCHNODE_DEBUG_DRAW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a20ab74eb158fbd5612c54707097b0d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 所有渲染使用 SpriteBatchNode 的 Sprite 的子类都将绘制一个边界框(bounding box).  <a href="#a20ab74eb158fbd5612c54707097b0d85">更多...</a><br /></td></tr>
+<tr class="separator:a20ab74eb158fbd5612c54707097b0d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56a44d7647fb541c5a51bccc7d9f38c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#af56a44d7647fb541c5a51bccc7d9f38c">CC_LABELBMFONT_DEBUG_DRAW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:af56a44d7647fb541c5a51bccc7d9f38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 所有 LabelBMFont 的子类都将绘制一个边界框(bounding box).  <a href="#af56a44d7647fb541c5a51bccc7d9f38c">更多...</a><br /></td></tr>
+<tr class="separator:af56a44d7647fb541c5a51bccc7d9f38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685f101466e5362ee6b6a9fb6a215714"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a685f101466e5362ee6b6a9fb6a215714">CC_LABELATLAS_DEBUG_DRAW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a685f101466e5362ee6b6a9fb6a215714"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 所有 LabeltAtlas 的子类都将绘制一个边界框(bounding box).  <a href="#a685f101466e5362ee6b6a9fb6a215714">更多...</a><br /></td></tr>
+<tr class="separator:a685f101466e5362ee6b6a9fb6a215714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02be2077a84bda4c0ad4a8025237d6a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a02be2077a84bda4c0ad4a8025237d6a5">CC_NODE_DEBUG_VERIFY_EVENT_LISTENERS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a02be2077a84bda4c0ad4a8025237d6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用(和断言一起), 将会验证 Node 对象析构—— node 析构时没有与 EventDispather 联系的 EventListener.  <a href="#a02be2077a84bda4c0ad4a8025237d6a5">更多...</a><br /></td></tr>
+<tr class="separator:a02be2077a84bda4c0ad4a8025237d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d1621f0191439c39d567b99a8693fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a98d1621f0191439c39d567b99a8693fa">CC_ENABLE_PROFILERS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a98d1621f0191439c39d567b99a8693fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果启用, 将会激活 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 内各种各样的 profiler(分析工具).  <a href="#a98d1621f0191439c39d567b99a8693fa">更多...</a><br /></td></tr>
+<tr class="separator:a98d1621f0191439c39d567b99a8693fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339a942a05393a51adf21299c4b20797"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a339a942a05393a51adf21299c4b20797">CC_LUA_ENGINE_DEBUG</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a339a942a05393a51adf21299c4b20797"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用 lua 引擎调试日志  <a href="#a339a942a05393a51adf21299c4b20797">更多...</a><br /></td></tr>
+<tr class="separator:a339a942a05393a51adf21299c4b20797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3ee88f1b40eccad2a9eda99e7e1001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a0c3ee88f1b40eccad2a9eda99e7e1001">CC_USE_PHYSICS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a0c3ee88f1b40eccad2a9eda99e7e1001"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用 physics 集成API  <a href="#a0c3ee88f1b40eccad2a9eda99e7e1001">更多...</a><br /></td></tr>
+<tr class="separator:a0c3ee88f1b40eccad2a9eda99e7e1001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa296f1d5c760c0daacd9a76cc48f42ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#aa296f1d5c760c0daacd9a76cc48f42ba">CC_ENABLE_SCRIPT_BINDING</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:aa296f1d5c760c0daacd9a76cc48f42ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用脚本绑定  <a href="#aa296f1d5c760c0daacd9a76cc48f42ba">更多...</a><br /></td></tr>
+<tr class="separator:aa296f1d5c760c0daacd9a76cc48f42ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ef1314f97c35a2ed3d029b0ead6da0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/cc_config_8h.html#a25ef1314f97c35a2ed3d029b0ead6da0">CC_CONSTRUCTOR_ACCESS</a>&#160;&#160;&#160;protected</td></tr>
+<tr class="memdesc:a25ef1314f97c35a2ed3d029b0ead6da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数的访问修饰符 如果值为 protected, 那在这个修饰符下的函数都是 protected 的.  <a href="#a25ef1314f97c35a2ed3d029b0ead6da0">更多...</a><br /></td></tr>
+<tr class="separator:a25ef1314f97c35a2ed3d029b0ead6da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> (cc) configuration file </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a25ef1314f97c35a2ed3d029b0ead6da0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_CONSTRUCTOR_ACCESS&#160;&#160;&#160;protected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化函数的访问修饰符 如果值为 protected, 那在这个修饰符下的函数都是 protected 的. </p>
+<p>如果值是 public, 那些函数就是 public 的. 默认值 protected. </p>
+
+</div>
+</div>
+<a class="anchor" id="af7ac1deb7192e46515ec2cc3b6b62166"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_DIRECTOR_DISPATCH_FAST_EVENTS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 只有此功能被FastDirector使用时, 主循环才会等待 0.04 秒去分发所有的活动(Event), 即使此时没有 任何活动需要分发. </p>
+<p>如果你的游戏使用了大量的活动(如:touches), 使用此功能是个不错的主意. 否则的话, 安全起见保持禁用.</p>
+<p>启用请设置值为 1. 默认禁用.</p>
+<dl class="section warning"><dt>警告</dt><dd>This feature is experimental </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45bab9813cdf877857fc432d82e88979"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_DIRECTOR_FPS_POSITION&#160;&#160;&#160;<a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>(0,0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPS 数字的位置 </p>
+<p>默认值: 0,0(左下角) </p>
+
+</div>
+</div>
+<a class="anchor" id="a25a8665eef21ec7e65fa63eb22d8a502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_DIRECTOR_MAC_USE_DISPLAY_LINK_THREAD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, cocos2d-mac 将会在Display Link线程上运行. </p>
+<p>如果禁用, cocos2d-mac 将会在自己的线程上运行. 如果启用, 图像将会在正确的时间绘制出, 但是活动(Event)可能不会很及时响应. 如果禁用, 一些帧会被跳过, 但是活动(Event)将会在到达时分发(产生即分发,及时响应).</p>
+<p>启用请设置值为 1. 禁用请设置值为 0. 默认启用.</p>
+<p>仅仅在cocos2d-mac上有效. 不支持cocos2d-ios. </p>
+
+</div>
+</div>
+<a class="anchor" id="acc5a20ca67e535a3f0c4df065812be15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_DIRECTOR_STATS_INTERVAL&#160;&#160;&#160;(0.1f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a681e28ff1c3be58c23e7d5edbf676ac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_ENABLE_GL_STATE_CACHE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 会内部维护一个OpenGL状态缓存来避免不必要的切换. </p>
+<p>为了使用它们, 你必须要使用以下函数来替代 GL 那些.</p><ul>
+<li><a class="el" href="../../df/db3/group__data__structures.html#gada5fa8dc6697f2e5a4781daff819dc33">ccGLUseProgram()</a> 替代 glUseProgram()</li>
+<li><a class="el" href="../../d4/d83/group__shaders.html#ga3b63ef22d3e062e0a3cc6c43d84eb11a" title="删除 GL编程. ">GL::deleteProgram()</a> 替代 glDeleteProgram()</li>
+<li><a class="el" href="../../d4/d83/group__shaders.html#ga0c4be207908fc61a11588546283887f8" title="使用混合方法，传人参数(in case)是没有被使用的. ">GL::blendFunc()</a> 替代 glBlendFunc() 如果这个功能禁用了, <a class="el" href="../../df/db3/group__data__structures.html#gada5fa8dc6697f2e5a4781daff819dc33">ccGLUseProgram()</a>, <a class="el" href="../../d4/d83/group__shaders.html#ga3b63ef22d3e062e0a3cc6c43d84eb11a" title="删除 GL编程. ">GL::deleteProgram()</a>, <a class="el" href="../../d4/d83/group__shaders.html#ga0c4be207908fc61a11588546283887f8" title="使用混合方法，传人参数(in case)是没有被使用的. ">GL::blendFunc()</a>会不使用(OpenGL状态)缓存调用 GL 那些函数. 推荐启用, 无论何时都有可能提升速度. 如果你在从GL ES1.1迁移代码, 请保持禁用. 当所有代码都如预期那样工作的时候, 再启用这项功能.</li>
+</ul>
+<p>默认值: 默认启用 </p><dl class="section since"><dt>自从</dt><dd>v2.0.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a98d1621f0191439c39d567b99a8693fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_ENABLE_PROFILERS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 将会激活 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 内各种各样的 profiler(分析工具). </p>
+<p>这个统计数据每秒一次输出到控制台, 显示执行这些特定程式所需的平均时间(单位: 毫秒). 仅在调试模式下有用. 推荐保持为禁用状态.</p>
+<p>设置一个非 0 值启用. 默认禁用. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa296f1d5c760c0daacd9a76cc48f42ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_ENABLE_SCRIPT_BINDING&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用脚本绑定 </p>
+
+</div>
+</div>
+<a class="anchor" id="a80b38e27eef3f6d0d924b44450babfbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_ENABLE_STACKABLE_ACTIONS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 改变位置属性的动作(如 MoveBy, JumpBy, BezierBy..)将会放到栈里面. </p>
+<p>如果在一个对象(<code>node</code>)上同时运行了2个或更多改变位置属性的动作, 这个对象(<code>node</code>)的最终位置会是所有改变位置属性动作的矢量和. 如果禁用, 只有最后一个改变位置属性的动作会生效.</p>
+<p>默认启用. 禁用是为了和v2.0或更旧的版本兼容. </p><dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa1dbba32b8583567435406fe7b964003"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 纹理贴图坐标将会使用以下公式计算: </p>
+<ul>
+<li>texCoord.left = (rect.origin.x*2+1) / (texture.wide*2);</li>
+<li>texCoord.right = texCoord.left + (rect.size.width*2-2)/(texture.wide*2); 纹理贴图坐标的顶部和底部公式是同样的.</li>
+</ul>
+<p>这个公式使用了其纹理的99的防止失真. 正确防止失真的方法是使用spritesheet-artifact-fixer.py或一个相似的工具.</p>
+<p>影响的对象(nodes):</p><ul>
+<li>Sprite / SpriteBatchNode 和子类: LabelBMFont, TMXTiledMap</li>
+<li>LabelAtlas</li>
+<li>QuadParticleSystem</li>
+<li>TileMap 启用请设置值为 1, 默认禁用.</li>
+</ul>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a685f101466e5362ee6b6a9fb6a215714"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_LABELATLAS_DEBUG_DRAW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 所有 LabeltAtlas 的子类都将绘制一个边界框(bounding box). </p>
+<p>仅在调试模式下有用. 推荐保持为禁用状态.</p>
+<p>设置一个非 0 值启用. 默认禁用. </p>
+
+</div>
+</div>
+<a class="anchor" id="af56a44d7647fb541c5a51bccc7d9f38c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_LABELBMFONT_DEBUG_DRAW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 所有 LabelBMFont 的子类都将绘制一个边界框(bounding box). </p>
+<p>仅在调试模式下有用. 推荐保持为禁用状态.</p>
+<p>设置一个非 0 值启用. 默认禁用. </p>
+
+</div>
+</div>
+<a class="anchor" id="a339a942a05393a51adf21299c4b20797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_LUA_ENGINE_DEBUG&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用 lua 引擎调试日志 </p>
+
+</div>
+</div>
+<a class="anchor" id="a02be2077a84bda4c0ad4a8025237d6a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_NODE_DEBUG_VERIFY_EVENT_LISTENERS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用(和断言一起), 将会验证 Node 对象析构—— node 析构时没有与 EventDispather 联系的 EventListener. </p>
+<p>这个可以用来查出那些问题—— EventDispather 系统含有指向已析构node的悬空指针.</p>
+<p>注意: 当断言被禁用时, 无论此处设置为何值, 构建过程中 EventListener 验证将总是禁用的. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab13e7747317d74c8d23746de658da13d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_NODE_RENDER_SUBPIXEL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, Node 对象(Sprite, Label等)将会以亚像素(subpixels)级别渲染. </p>
+<p>如果禁用, 将会使用整像素(integer pixels).</p>
+<p>启用请设置值为 1. 默认启用. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1be378e696dde019aef27ac742167ddf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_SPRITE_DEBUG_DRAW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 所有 Sprite 的子类都将绘制一个边界框(bounding box). </p>
+<p>仅在调试模式下有用. 推荐保持为禁用状态.</p>
+<p>设置一个非 0 值启用. 默认禁用. 0 &ndash; disabled 1 &ndash; draw bounding box // 绘制边界框 2 &ndash; draw texture box // 绘制纹理框 </p>
+
+</div>
+</div>
+<a class="anchor" id="a20ab74eb158fbd5612c54707097b0d85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_SPRITEBATCHNODE_DEBUG_DRAW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 所有渲染使用 SpriteBatchNode 的 Sprite 的子类都将绘制一个边界框(bounding box). </p>
+<p>仅在调试模式下有用. 推荐保持为禁用状态.</p>
+<p>设置一个非 0 值启用. 默认禁用. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63b18e29ae8fa92b9a3392108b4bfd06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_SPRITEBATCHNODE_RENDER_SUBPIXEL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, 使用 SpriteBatchNode 渲染的 Sprite 对象将会以亚像素(subpixels)渲染. </p>
+<p>如果禁用, 将会使用整像素(integer pixels).</p>
+<p>启用请设置值为 1. 默认启用. </p>
+
+</div>
+</div>
+<a class="anchor" id="a843586bad8c4678765f24e077d06639d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_TEXTURE_ATLAS_USE_VAO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>默认情况下, TextureAtlas(被很多 <a class="el" href="../../d2/dc0/namespacecocos2d.html" title="Add deprecated global functions and variables here. ">cocos2d</a> 类使用)将会使用VAO(Vertex Array Objects). </p>
+<p>苹果公司推荐使用VAO, 不过VAO可能会消耗掉大量内存, 尤其是使用太多VAO的时候. 所以在某些情况下, 当你需要使用数百个TextureAtlas对象时, 最好关闭这个功能.</p>
+<p>禁用请设置值为 0. 默认启用. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac18846a5ddb26b6a8e38f24d97790234"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_USE_LA88_LABELS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果启用, LabelTTF 对象将使用 LA88(Luminance Alpha 16-bit textures); 如果禁用,将使用A8 (Alpha 8-bit textures). </p>
+<p>LA88 纹理比 A8 快 6%, 但LA88纹理使用了2倍于A8纹理的内存.</p>
+<p>这个功能默认启用.</p>
+<dl class="section since"><dt>自从</dt><dd>v0.99.5 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c3ee88f1b40eccad2a9eda99e7e1001"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CC_USE_PHYSICS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启用 physics 集成API </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_9f2e59fab79e2604b1c42af85cafaa78.html">base</a></li><li class="navelem"><a class="el" href="../../db/d9f/cc_config_8h.html">ccConfig.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:41 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

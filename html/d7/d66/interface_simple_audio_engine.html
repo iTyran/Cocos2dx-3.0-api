@@ -1,0 +1,1278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: SimpleAudioEngine类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/d66/interface_simple_audio_engine.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#pub-static-methods">Class Methods</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="../../d5/d9f/class_simple_audio_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">SimpleAudioEngine类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A wrapper to the <a class="el" href="../../d6/db4/interface_c_d_audio_manager.html" title="CDAudioManager 管理游戏的音频。它用于提供通过CDSoundEngine对象来播放音效的权限。CDAudioManager内部包�...">CDAudioManager</a> object.  
+ <a href="../../d7/d66/interface_simple_audio_engine.html#details">更多...</a></p>
+
+<p><code>#import &lt;SimpleAudioEngine_objc.h&gt;</code></p>
+<div class="dynheader">
+类 SimpleAudioEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d7/d66/interface_simple_audio_engine.png" usemap="#SimpleAudioEngine_map" alt=""/>
+  <map id="SimpleAudioEngine_map" name="SimpleAudioEngine_map">
+<area href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html" alt="&lt;CDAudioInterruptProtocol&gt;" shape="rect" coords="181,56,352,80"/>
+<area href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html" alt="&lt;CDAudioInterruptProtocol&gt;" shape="rect" coords="543,56,714,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a11ef13b95047bd87aed001f09bf9c540"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a11ef13b95047bd87aed001f09bf9c540">preloadBackgroundMusic:</a></td></tr>
+<tr class="memdesc:a11ef13b95047bd87aed001f09bf9c540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preloads a music file so it will be ready to play as background music.  <a href="#a11ef13b95047bd87aed001f09bf9c540">更多...</a><br /></td></tr>
+<tr class="separator:a11ef13b95047bd87aed001f09bf9c540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#af61eb67f2edea0ac7c7b501c0a6d2c21">playBackgroundMusic:</a></td></tr>
+<tr class="memdesc:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays background music in a loop  <a href="#af61eb67f2edea0ac7c7b501c0a6d2c21">更多...</a><br /></td></tr>
+<tr class="separator:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9c99f476a6072398d65663cb94c3cf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a6a9c99f476a6072398d65663cb94c3cf">playBackgroundMusic:loop:</a></td></tr>
+<tr class="memdesc:a6a9c99f476a6072398d65663cb94c3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays background music, if loop is true the music will repeat otherwise it will be played once  <a href="#a6a9c99f476a6072398d65663cb94c3cf">更多...</a><br /></td></tr>
+<tr class="separator:a6a9c99f476a6072398d65663cb94c3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa512eb635d0172fc57956f0d5b9a676"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aaa512eb635d0172fc57956f0d5b9a676">stopBackgroundMusic</a></td></tr>
+<tr class="memdesc:aaa512eb635d0172fc57956f0d5b9a676"><td class="mdescLeft">&#160;</td><td class="mdescRight">stops playing background music  <a href="#aaa512eb635d0172fc57956f0d5b9a676">更多...</a><br /></td></tr>
+<tr class="separator:aaa512eb635d0172fc57956f0d5b9a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed63f6c8140eee0715b957837da17074"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aed63f6c8140eee0715b957837da17074">pauseBackgroundMusic</a></td></tr>
+<tr class="memdesc:aed63f6c8140eee0715b957837da17074"><td class="mdescLeft">&#160;</td><td class="mdescRight">pauses the background music  <a href="#aed63f6c8140eee0715b957837da17074">更多...</a><br /></td></tr>
+<tr class="separator:aed63f6c8140eee0715b957837da17074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a1fc27ab8abbb88ac075139f1a1bb3c6c">resumeBackgroundMusic</a></td></tr>
+<tr class="memdesc:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume background music that has been paused  <a href="#a1fc27ab8abbb88ac075139f1a1bb3c6c">更多...</a><br /></td></tr>
+<tr class="separator:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12133da309674c1aab8679f6cb517165"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a12133da309674c1aab8679f6cb517165">rewindBackgroundMusic</a></td></tr>
+<tr class="memdesc:a12133da309674c1aab8679f6cb517165"><td class="mdescLeft">&#160;</td><td class="mdescRight">rewind the background music  <a href="#a12133da309674c1aab8679f6cb517165">更多...</a><br /></td></tr>
+<tr class="separator:a12133da309674c1aab8679f6cb517165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ac7d1e6d6b6934b7b4a11238b4f1e28cb">isBackgroundMusicPlaying</a></td></tr>
+<tr class="memdesc:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether or not the background music is playing  <a href="#ac7d1e6d6b6934b7b4a11238b4f1e28cb">更多...</a><br /></td></tr>
+<tr class="separator:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae326a594293b9b56c1f14b228ca5cbf1"><td class="memItemLeft" align="right" valign="top">(ALuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae326a594293b9b56c1f14b228ca5cbf1">playEffect:loop:</a></td></tr>
+<tr class="memdesc:ae326a594293b9b56c1f14b228ca5cbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays an audio effect with a file path  <a href="#ae326a594293b9b56c1f14b228ca5cbf1">更多...</a><br /></td></tr>
+<tr class="separator:ae326a594293b9b56c1f14b228ca5cbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe613fad73ef6db4533128a29e9eefe"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a4fe613fad73ef6db4533128a29e9eefe">stopEffect:</a></td></tr>
+<tr class="memdesc:a4fe613fad73ef6db4533128a29e9eefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop a sound that is playing, note you must pass in the soundId that is returned when you started playing the sound with playEffect  <a href="#a4fe613fad73ef6db4533128a29e9eefe">更多...</a><br /></td></tr>
+<tr class="separator:a4fe613fad73ef6db4533128a29e9eefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8506930c941deb0c7be135bb968ebc"><td class="memItemLeft" align="right" valign="top">(ALuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a7d8506930c941deb0c7be135bb968ebc">playEffect:loop:pitch:pan:gain:</a></td></tr>
+<tr class="memdesc:a7d8506930c941deb0c7be135bb968ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays an audio effect with a file path, pitch, pan and gain  <a href="#a7d8506930c941deb0c7be135bb968ebc">更多...</a><br /></td></tr>
+<tr class="separator:a7d8506930c941deb0c7be135bb968ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d73fc616c487454c13d51a57054c87"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ab1d73fc616c487454c13d51a57054c87">pauseEffect:</a></td></tr>
+<tr class="memdesc:ab1d73fc616c487454c13d51a57054c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause an audio  <a href="#ab1d73fc616c487454c13d51a57054c87">更多...</a><br /></td></tr>
+<tr class="separator:ab1d73fc616c487454c13d51a57054c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7906248cd4d609c31251c30e27e3d5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a4d7906248cd4d609c31251c30e27e3d5">pauseAllEffects</a></td></tr>
+<tr class="memdesc:a4d7906248cd4d609c31251c30e27e3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause all audioes  <a href="#a4d7906248cd4d609c31251c30e27e3d5">更多...</a><br /></td></tr>
+<tr class="separator:a4d7906248cd4d609c31251c30e27e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b27d956983c924cdb83c0c5b7c2802"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae3b27d956983c924cdb83c0c5b7c2802">resumeEffect:</a></td></tr>
+<tr class="memdesc:ae3b27d956983c924cdb83c0c5b7c2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume an audio  <a href="#ae3b27d956983c924cdb83c0c5b7c2802">更多...</a><br /></td></tr>
+<tr class="separator:ae3b27d956983c924cdb83c0c5b7c2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a7372b438a9fde8ed9908f6880dd7d5a4">resumeAllEffects</a></td></tr>
+<tr class="memdesc:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume all audioes  <a href="#a7372b438a9fde8ed9908f6880dd7d5a4">更多...</a><br /></td></tr>
+<tr class="separator:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78207f1470d2d8895d0184ba3eefe21"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ad78207f1470d2d8895d0184ba3eefe21">stopAllEffects</a></td></tr>
+<tr class="memdesc:ad78207f1470d2d8895d0184ba3eefe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all audioes  <a href="#ad78207f1470d2d8895d0184ba3eefe21">更多...</a><br /></td></tr>
+<tr class="separator:ad78207f1470d2d8895d0184ba3eefe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a42dce6a6c02d7d706616631b6e0a6fa7">preloadEffect:</a></td></tr>
+<tr class="memdesc:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">preloads an audio effect  <a href="#a42dce6a6c02d7d706616631b6e0a6fa7">更多...</a><br /></td></tr>
+<tr class="separator:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#adb4a16160ebd6af2ac4d82dd318f35e0">unloadEffect:</a></td></tr>
+<tr class="memdesc:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">unloads an audio effect from memory  <a href="#adb4a16160ebd6af2ac4d82dd318f35e0">更多...</a><br /></td></tr>
+<tr class="separator:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec5147d5a738b022c4261cf18dc5f14"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="../../d4/de9/interface_c_d_sound_source.html">CDSoundSource</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a3ec5147d5a738b022c4261cf18dc5f14">soundSourceForFile:</a></td></tr>
+<tr class="memdesc:a3ec5147d5a738b022c4261cf18dc5f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="../../d4/de9/interface_c_d_sound_source.html" title="CDSoundSource is a wrapper around an OpenAL sound source. ">CDSoundSource</a> object set up to play the specified file.  <a href="#a3ec5147d5a738b022c4261cf18dc5f14">更多...</a><br /></td></tr>
+<tr class="separator:a3ec5147d5a738b022c4261cf18dc5f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ef13b95047bd87aed001f09bf9c540"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a11ef13b95047bd87aed001f09bf9c540">preloadBackgroundMusic:</a></td></tr>
+<tr class="memdesc:a11ef13b95047bd87aed001f09bf9c540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preloads a music file so it will be ready to play as background music.  <a href="#a11ef13b95047bd87aed001f09bf9c540">更多...</a><br /></td></tr>
+<tr class="separator:a11ef13b95047bd87aed001f09bf9c540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#af61eb67f2edea0ac7c7b501c0a6d2c21">playBackgroundMusic:</a></td></tr>
+<tr class="memdesc:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays background music in a loop  <a href="#af61eb67f2edea0ac7c7b501c0a6d2c21">更多...</a><br /></td></tr>
+<tr class="separator:af61eb67f2edea0ac7c7b501c0a6d2c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9c99f476a6072398d65663cb94c3cf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a6a9c99f476a6072398d65663cb94c3cf">playBackgroundMusic:loop:</a></td></tr>
+<tr class="memdesc:a6a9c99f476a6072398d65663cb94c3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays background music, if loop is true the music will repeat otherwise it will be played once  <a href="#a6a9c99f476a6072398d65663cb94c3cf">更多...</a><br /></td></tr>
+<tr class="separator:a6a9c99f476a6072398d65663cb94c3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa512eb635d0172fc57956f0d5b9a676"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aaa512eb635d0172fc57956f0d5b9a676">stopBackgroundMusic</a></td></tr>
+<tr class="memdesc:aaa512eb635d0172fc57956f0d5b9a676"><td class="mdescLeft">&#160;</td><td class="mdescRight">stops playing background music  <a href="#aaa512eb635d0172fc57956f0d5b9a676">更多...</a><br /></td></tr>
+<tr class="separator:aaa512eb635d0172fc57956f0d5b9a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed63f6c8140eee0715b957837da17074"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aed63f6c8140eee0715b957837da17074">pauseBackgroundMusic</a></td></tr>
+<tr class="memdesc:aed63f6c8140eee0715b957837da17074"><td class="mdescLeft">&#160;</td><td class="mdescRight">pauses the background music  <a href="#aed63f6c8140eee0715b957837da17074">更多...</a><br /></td></tr>
+<tr class="separator:aed63f6c8140eee0715b957837da17074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a1fc27ab8abbb88ac075139f1a1bb3c6c">resumeBackgroundMusic</a></td></tr>
+<tr class="memdesc:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume background music that has been paused  <a href="#a1fc27ab8abbb88ac075139f1a1bb3c6c">更多...</a><br /></td></tr>
+<tr class="separator:a1fc27ab8abbb88ac075139f1a1bb3c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12133da309674c1aab8679f6cb517165"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a12133da309674c1aab8679f6cb517165">rewindBackgroundMusic</a></td></tr>
+<tr class="memdesc:a12133da309674c1aab8679f6cb517165"><td class="mdescLeft">&#160;</td><td class="mdescRight">rewind the background music  <a href="#a12133da309674c1aab8679f6cb517165">更多...</a><br /></td></tr>
+<tr class="separator:a12133da309674c1aab8679f6cb517165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ac7d1e6d6b6934b7b4a11238b4f1e28cb">isBackgroundMusicPlaying</a></td></tr>
+<tr class="memdesc:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether or not the background music is playing  <a href="#ac7d1e6d6b6934b7b4a11238b4f1e28cb">更多...</a><br /></td></tr>
+<tr class="separator:ac7d1e6d6b6934b7b4a11238b4f1e28cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae326a594293b9b56c1f14b228ca5cbf1"><td class="memItemLeft" align="right" valign="top">(ALuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae326a594293b9b56c1f14b228ca5cbf1">playEffect:loop:</a></td></tr>
+<tr class="memdesc:ae326a594293b9b56c1f14b228ca5cbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays an audio effect with a file path  <a href="#ae326a594293b9b56c1f14b228ca5cbf1">更多...</a><br /></td></tr>
+<tr class="separator:ae326a594293b9b56c1f14b228ca5cbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe613fad73ef6db4533128a29e9eefe"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a4fe613fad73ef6db4533128a29e9eefe">stopEffect:</a></td></tr>
+<tr class="memdesc:a4fe613fad73ef6db4533128a29e9eefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop a sound that is playing, note you must pass in the soundId that is returned when you started playing the sound with playEffect  <a href="#a4fe613fad73ef6db4533128a29e9eefe">更多...</a><br /></td></tr>
+<tr class="separator:a4fe613fad73ef6db4533128a29e9eefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8506930c941deb0c7be135bb968ebc"><td class="memItemLeft" align="right" valign="top">(ALuint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a7d8506930c941deb0c7be135bb968ebc">playEffect:loop:pitch:pan:gain:</a></td></tr>
+<tr class="memdesc:a7d8506930c941deb0c7be135bb968ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">plays an audio effect with a file path, pitch, pan and gain  <a href="#a7d8506930c941deb0c7be135bb968ebc">更多...</a><br /></td></tr>
+<tr class="separator:a7d8506930c941deb0c7be135bb968ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d73fc616c487454c13d51a57054c87"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ab1d73fc616c487454c13d51a57054c87">pauseEffect:</a></td></tr>
+<tr class="memdesc:ab1d73fc616c487454c13d51a57054c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause an audio  <a href="#ab1d73fc616c487454c13d51a57054c87">更多...</a><br /></td></tr>
+<tr class="separator:ab1d73fc616c487454c13d51a57054c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7906248cd4d609c31251c30e27e3d5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a4d7906248cd4d609c31251c30e27e3d5">pauseAllEffects</a></td></tr>
+<tr class="memdesc:a4d7906248cd4d609c31251c30e27e3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause all audioes  <a href="#a4d7906248cd4d609c31251c30e27e3d5">更多...</a><br /></td></tr>
+<tr class="separator:a4d7906248cd4d609c31251c30e27e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b27d956983c924cdb83c0c5b7c2802"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae3b27d956983c924cdb83c0c5b7c2802">resumeEffect:</a></td></tr>
+<tr class="memdesc:ae3b27d956983c924cdb83c0c5b7c2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume an audio  <a href="#ae3b27d956983c924cdb83c0c5b7c2802">更多...</a><br /></td></tr>
+<tr class="separator:ae3b27d956983c924cdb83c0c5b7c2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a7372b438a9fde8ed9908f6880dd7d5a4">resumeAllEffects</a></td></tr>
+<tr class="memdesc:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">resume all audioes  <a href="#a7372b438a9fde8ed9908f6880dd7d5a4">更多...</a><br /></td></tr>
+<tr class="separator:a7372b438a9fde8ed9908f6880dd7d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78207f1470d2d8895d0184ba3eefe21"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ad78207f1470d2d8895d0184ba3eefe21">stopAllEffects</a></td></tr>
+<tr class="memdesc:ad78207f1470d2d8895d0184ba3eefe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all audioes  <a href="#ad78207f1470d2d8895d0184ba3eefe21">更多...</a><br /></td></tr>
+<tr class="separator:ad78207f1470d2d8895d0184ba3eefe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a42dce6a6c02d7d706616631b6e0a6fa7">preloadEffect:</a></td></tr>
+<tr class="memdesc:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">preloads an audio effect  <a href="#a42dce6a6c02d7d706616631b6e0a6fa7">更多...</a><br /></td></tr>
+<tr class="separator:a42dce6a6c02d7d706616631b6e0a6fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#adb4a16160ebd6af2ac4d82dd318f35e0">unloadEffect:</a></td></tr>
+<tr class="memdesc:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">unloads an audio effect from memory  <a href="#adb4a16160ebd6af2ac4d82dd318f35e0">更多...</a><br /></td></tr>
+<tr class="separator:adb4a16160ebd6af2ac4d82dd318f35e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec5147d5a738b022c4261cf18dc5f14"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="../../d4/de9/interface_c_d_sound_source.html">CDSoundSource</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a3ec5147d5a738b022c4261cf18dc5f14">soundSourceForFile:</a></td></tr>
+<tr class="memdesc:a3ec5147d5a738b022c4261cf18dc5f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="../../d4/de9/interface_c_d_sound_source.html" title="CDSoundSource is a wrapper around an OpenAL sound source. ">CDSoundSource</a> object set up to play the specified file.  <a href="#a3ec5147d5a738b022c4261cf18dc5f14">更多...</a><br /></td></tr>
+<tr class="separator:a3ec5147d5a738b022c4261cf18dc5f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_protocol_c_d_audio_interrupt_protocol-p')"><img src="../../closed.png" alt="-"/>&#160;Instance Methods 继承自 <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html">&lt;CDAudioInterruptProtocol&gt;</a></td></tr>
+<tr class="memitem:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6e1984f088c150c38a21011bfc6bb8cb">mute</a></td></tr>
+<tr class="memdesc:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is audio mute.  <a href="#a6e1984f088c150c38a21011bfc6bb8cb">更多...</a><br /></td></tr>
+<tr class="separator:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a4a354eb1ea1fd160e23c13bfb3e3f9e8">setMute:</a></td></tr>
+<tr class="memdesc:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">If YES then audio is silenced but not stopped, calls to start new audio will proceed but silently.  <a href="#a4a354eb1ea1fd160e23c13bfb3e3f9e8">更多...</a><br /></td></tr>
+<tr class="separator:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6ff90094246f2965b38e117885b0f69e">enabled</a></td></tr>
+<tr class="memdesc:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is audio enabled.  <a href="#a6ff90094246f2965b38e117885b0f69e">更多...</a><br /></td></tr>
+<tr class="separator:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6c7c5eff3a4d584c5f6e6c81bddd43e7">setEnabled:</a></td></tr>
+<tr class="memdesc:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">If NO then all audio is stopped and any calls to start new audio will be ignored.  <a href="#a6c7c5eff3a4d584c5f6e6c81bddd43e7">更多...</a><br /></td></tr>
+<tr class="separator:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6e1984f088c150c38a21011bfc6bb8cb">mute</a></td></tr>
+<tr class="memdesc:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is audio mute.  <a href="#a6e1984f088c150c38a21011bfc6bb8cb">更多...</a><br /></td></tr>
+<tr class="separator:a6e1984f088c150c38a21011bfc6bb8cb inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a4a354eb1ea1fd160e23c13bfb3e3f9e8">setMute:</a></td></tr>
+<tr class="memdesc:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">If YES then audio is silenced but not stopped, calls to start new audio will proceed but silently.  <a href="#a4a354eb1ea1fd160e23c13bfb3e3f9e8">更多...</a><br /></td></tr>
+<tr class="separator:a4a354eb1ea1fd160e23c13bfb3e3f9e8 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6ff90094246f2965b38e117885b0f69e">enabled</a></td></tr>
+<tr class="memdesc:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is audio enabled.  <a href="#a6ff90094246f2965b38e117885b0f69e">更多...</a><br /></td></tr>
+<tr class="separator:a6ff90094246f2965b38e117885b0f69e inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="../../d3/d3b/protocol_c_d_audio_interrupt_protocol-p.html#a6c7c5eff3a4d584c5f6e6c81bddd43e7">setEnabled:</a></td></tr>
+<tr class="memdesc:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">If NO then all audio is stopped and any calls to start new audio will be ignored.  <a href="#a6c7c5eff3a4d584c5f6e6c81bddd43e7">更多...</a><br /></td></tr>
+<tr class="separator:a6c7c5eff3a4d584c5f6e6c81bddd43e7 inherit pub_methods_protocol_c_d_audio_interrupt_protocol-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Class Methods</h2></td></tr>
+<tr class="memitem:ae532a8bc3a1a7b67847e266f03015541"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="../../d7/d66/interface_simple_audio_engine.html">SimpleAudioEngine</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae532a8bc3a1a7b67847e266f03015541">sharedEngine</a></td></tr>
+<tr class="memdesc:ae532a8bc3a1a7b67847e266f03015541"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the shared instance of the <a class="el" href="../../d7/d66/interface_simple_audio_engine.html" title="A wrapper to the CDAudioManager object. ">SimpleAudioEngine</a> object  <a href="#ae532a8bc3a1a7b67847e266f03015541">更多...</a><br /></td></tr>
+<tr class="separator:ae532a8bc3a1a7b67847e266f03015541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf81d3fdaf258088d7692fa70cece087"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aaf81d3fdaf258088d7692fa70cece087">end</a></td></tr>
+<tr class="memdesc:aaf81d3fdaf258088d7692fa70cece087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the shared audio engine instance so that it can be reinitialised.  <a href="#aaf81d3fdaf258088d7692fa70cece087">更多...</a><br /></td></tr>
+<tr class="separator:aaf81d3fdaf258088d7692fa70cece087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532a8bc3a1a7b67847e266f03015541"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="../../d7/d66/interface_simple_audio_engine.html">SimpleAudioEngine</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ae532a8bc3a1a7b67847e266f03015541">sharedEngine</a></td></tr>
+<tr class="memdesc:ae532a8bc3a1a7b67847e266f03015541"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the shared instance of the <a class="el" href="../../d7/d66/interface_simple_audio_engine.html" title="A wrapper to the CDAudioManager object. ">SimpleAudioEngine</a> object  <a href="#ae532a8bc3a1a7b67847e266f03015541">更多...</a><br /></td></tr>
+<tr class="separator:ae532a8bc3a1a7b67847e266f03015541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf81d3fdaf258088d7692fa70cece087"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aaf81d3fdaf258088d7692fa70cece087">end</a></td></tr>
+<tr class="memdesc:aaf81d3fdaf258088d7692fa70cece087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the shared audio engine instance so that it can be reinitialised.  <a href="#aaf81d3fdaf258088d7692fa70cece087">更多...</a><br /></td></tr>
+<tr class="separator:aaf81d3fdaf258088d7692fa70cece087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ad5109d9329d6c14ebb5de34d3fd95ca7"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ad5109d9329d6c14ebb5de34d3fd95ca7">mute_</a></td></tr>
+<tr class="separator:ad5109d9329d6c14ebb5de34d3fd95ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73329755c6a755f5db770a5358f841eb"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a73329755c6a755f5db770a5358f841eb">enabled_</a></td></tr>
+<tr class="separator:a73329755c6a755f5db770a5358f841eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aa0245dd797726fb8eaa5aa967ed2c794"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html#aa0245dd797726fb8eaa5aa967ed2c794">backgroundMusicVolume</a></td></tr>
+<tr class="memdesc:aa0245dd797726fb8eaa5aa967ed2c794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background music volume.  <a href="#aa0245dd797726fb8eaa5aa967ed2c794">更多...</a><br /></td></tr>
+<tr class="separator:aa0245dd797726fb8eaa5aa967ed2c794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3ee288012a1924a8bd0596734d9e39"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html#a2d3ee288012a1924a8bd0596734d9e39">effectsVolume</a></td></tr>
+<tr class="memdesc:a2d3ee288012a1924a8bd0596734d9e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effects volume.  <a href="#a2d3ee288012a1924a8bd0596734d9e39">更多...</a><br /></td></tr>
+<tr class="separator:a2d3ee288012a1924a8bd0596734d9e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0fb605cbe72eb82da2dc0468adc963"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html#ace0fb605cbe72eb82da2dc0468adc963">willPlayBackgroundMusic</a></td></tr>
+<tr class="memdesc:ace0fb605cbe72eb82da2dc0468adc963"><td class="mdescLeft">&#160;</td><td class="mdescRight">If NO it indicates background music will not be played either because no background music is loaded or the audio session does not permit it.  <a href="#ace0fb605cbe72eb82da2dc0468adc963">更多...</a><br /></td></tr>
+<tr class="separator:ace0fb605cbe72eb82da2dc0468adc963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A wrapper to the <a class="el" href="../../d6/db4/interface_c_d_audio_manager.html" title="CDAudioManager 管理游戏的音频。它用于提供通过CDSoundEngine对象来播放音效的权限。CDAudioManager内部包�...">CDAudioManager</a> object. </p>
+<p>This is recommended for basic audio requirements. If you just want to play some sound fx and some background music and have no interest in learning the lower level workings then this is the interface to use.</p>
+<p>Requirements:</p><ul>
+<li>Firmware: OS 2.2 or greater</li>
+<li>Files: <a class="el" href="../../d7/d66/interface_simple_audio_engine.html" title="A wrapper to the CDAudioManager object. ">SimpleAudioEngine</a>.*, <a class="el" href="../../d7/d39/namespace_cocos_denshion.html">CocosDenshion</a>.*</li>
+<li>Frameworks: OpenAL, AudioToolbox, AVFoundation <dl class="section since"><dt>自从</dt><dd>v0.8 </dd></dl>
+</li>
+</ul>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="aaf81d3fdaf258088d7692fa70cece087"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) end </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shuts down the shared audio engine instance so that it can be reinitialised. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf81d3fdaf258088d7692fa70cece087"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) end </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shuts down the shared audio engine instance so that it can be reinitialised. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7d1e6d6b6934b7b4a11238b4f1e28cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isBackgroundMusicPlaying </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns whether or not the background music is playing </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7d1e6d6b6934b7b4a11238b4f1e28cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isBackgroundMusicPlaying </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns whether or not the background music is playing </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d7906248cd4d609c31251c30e27e3d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pause all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d7906248cd4d609c31251c30e27e3d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pause all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="aed63f6c8140eee0715b957837da17074"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pauses the background music </p>
+
+</div>
+</div>
+<a class="anchor" id="aed63f6c8140eee0715b957837da17074"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pauses the background music </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1d73fc616c487454c13d51a57054c87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pause an audio </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1d73fc616c487454c13d51a57054c87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pauseEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pause an audio </p>
+
+</div>
+</div>
+<a class="anchor" id="af61eb67f2edea0ac7c7b501c0a6d2c21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) playBackgroundMusic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays background music in a loop </p>
+
+</div>
+</div>
+<a class="anchor" id="af61eb67f2edea0ac7c7b501c0a6d2c21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) playBackgroundMusic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays background music in a loop </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9c99f476a6072398d65663cb94c3cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#af61eb67f2edea0ac7c7b501c0a6d2c21">playBackgroundMusic:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays background music, if loop is true the music will repeat otherwise it will be played once </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9c99f476a6072398d65663cb94c3cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="../../d7/d66/interface_simple_audio_engine.html#af61eb67f2edea0ac7c7b501c0a6d2c21">playBackgroundMusic:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays background music, if loop is true the music will repeat otherwise it will be played once </p>
+
+</div>
+</div>
+<a class="anchor" id="ae326a594293b9b56c1f14b228ca5cbf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ALuint) playEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays an audio effect with a file path </p>
+
+</div>
+</div>
+<a class="anchor" id="ae326a594293b9b56c1f14b228ca5cbf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ALuint) playEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays an audio effect with a file path </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d8506930c941deb0c7be135bb968ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ALuint) playEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pitch:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>pitch</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pan:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>pan</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">gain:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays an audio effect with a file path, pitch, pan and gain </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d8506930c941deb0c7be135bb968ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ALuint) playEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">loop:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>loop</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pitch:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>pitch</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">pan:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>pan</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">gain:</td>
+          <td></td>
+          <td class="paramtype">(Float32)&#160;</td>
+          <td class="paramname"><em>gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>plays an audio effect with a file path, pitch, pan and gain </p>
+
+</div>
+</div>
+<a class="anchor" id="a11ef13b95047bd87aed001f09bf9c540"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) preloadBackgroundMusic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Preloads a music file so it will be ready to play as background music. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11ef13b95047bd87aed001f09bf9c540"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) preloadBackgroundMusic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Preloads a music file so it will be ready to play as background music. </p>
+
+</div>
+</div>
+<a class="anchor" id="a42dce6a6c02d7d706616631b6e0a6fa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) preloadEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>preloads an audio effect </p>
+
+</div>
+</div>
+<a class="anchor" id="a42dce6a6c02d7d706616631b6e0a6fa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) preloadEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>preloads an audio effect </p>
+
+</div>
+</div>
+<a class="anchor" id="a7372b438a9fde8ed9908f6880dd7d5a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="a7372b438a9fde8ed9908f6880dd7d5a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fc27ab8abbb88ac075139f1a1bb3c6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume background music that has been paused </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fc27ab8abbb88ac075139f1a1bb3c6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume background music that has been paused </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3b27d956983c924cdb83c0c5b7c2802"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume an audio </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3b27d956983c924cdb83c0c5b7c2802"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resumeEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resume an audio </p>
+
+</div>
+</div>
+<a class="anchor" id="a12133da309674c1aab8679f6cb517165"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rewindBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rewind the background music </p>
+
+</div>
+</div>
+<a class="anchor" id="a12133da309674c1aab8679f6cb517165"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rewindBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rewind the background music </p>
+
+</div>
+</div>
+<a class="anchor" id="ae532a8bc3a1a7b67847e266f03015541"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="../../d7/d66/interface_simple_audio_engine.html">SimpleAudioEngine</a>*) sharedEngine </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the shared instance of the <a class="el" href="../../d7/d66/interface_simple_audio_engine.html" title="A wrapper to the CDAudioManager object. ">SimpleAudioEngine</a> object </p>
+
+</div>
+</div>
+<a class="anchor" id="ae532a8bc3a1a7b67847e266f03015541"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="../../d7/d66/interface_simple_audio_engine.html">SimpleAudioEngine</a>*) sharedEngine </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the shared instance of the <a class="el" href="../../d7/d66/interface_simple_audio_engine.html" title="A wrapper to the CDAudioManager object. ">SimpleAudioEngine</a> object </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ec5147d5a738b022c4261cf18dc5f14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="../../d4/de9/interface_c_d_sound_source.html">CDSoundSource</a> *) soundSourceForFile: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a <a class="el" href="../../d4/de9/interface_c_d_sound_source.html" title="CDSoundSource is a wrapper around an OpenAL sound source. ">CDSoundSource</a> object set up to play the specified file. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ec5147d5a738b022c4261cf18dc5f14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="../../d4/de9/interface_c_d_sound_source.html">CDSoundSource</a> *) soundSourceForFile: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a <a class="el" href="../../d4/de9/interface_c_d_sound_source.html" title="CDSoundSource is a wrapper around an OpenAL sound source. ">CDSoundSource</a> object set up to play the specified file. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad78207f1470d2d8895d0184ba3eefe21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="ad78207f1470d2d8895d0184ba3eefe21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopAllEffects </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop all audioes </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa512eb635d0172fc57956f0d5b9a676"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stops playing background music </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa512eb635d0172fc57956f0d5b9a676"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopBackgroundMusic </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stops playing background music </p>
+
+</div>
+</div>
+<a class="anchor" id="a4fe613fad73ef6db4533128a29e9eefe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop a sound that is playing, note you must pass in the soundId that is returned when you started playing the sound with playEffect </p>
+
+</div>
+</div>
+<a class="anchor" id="a4fe613fad73ef6db4533128a29e9eefe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopEffect: </td>
+          <td></td>
+          <td class="paramtype">(ALuint)&#160;</td>
+          <td class="paramname"><em>soundId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop a sound that is playing, note you must pass in the soundId that is returned when you started playing the sound with playEffect </p>
+
+</div>
+</div>
+<a class="anchor" id="adb4a16160ebd6af2ac4d82dd318f35e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) unloadEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unloads an audio effect from memory </p>
+
+</div>
+</div>
+<a class="anchor" id="adb4a16160ebd6af2ac4d82dd318f35e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) unloadEffect: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>filePath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unloads an audio effect from memory </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a73329755c6a755f5db770a5358f841eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) enabled_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5109d9329d6c14ebb5de34d3fd95ca7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) mute_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a class="anchor" id="aa0245dd797726fb8eaa5aa967ed2c794"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (float) backgroundMusicVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Background music volume. </p>
+<p>Range is 0.0f to 1.0f. This will only have an effect if willPlayBackgroundMusic returns YES </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d3ee288012a1924a8bd0596734d9e39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (float) effectsVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Effects volume. </p>
+<p>Range is 0.0f to 1.0f </p>
+
+</div>
+</div>
+<a class="anchor" id="ace0fb605cbe72eb82da2dc0468adc963"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) willPlayBackgroundMusic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If NO it indicates background music will not be played either because no background music is loaded or the audio session does not permit it. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/audio/ios/<a class="el" href="../../db/dc0/ios_2_simple_audio_engine__objc_8h.html">SimpleAudioEngine_objc.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/d66/interface_simple_audio_engine.html">SimpleAudioEngine</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:43 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

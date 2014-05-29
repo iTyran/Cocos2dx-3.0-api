@@ -1,0 +1,1201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: SpriteFrame类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/d35/classcocos2d_1_1_sprite_frame.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="../../de/d79/classcocos2d_1_1_sprite_frame-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">SpriteFrame类 参考<div class="ingroups"><a class="el" href="../../d8/de9/group__sprite__nodes.html">Sprite Nodes</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> has:  
+ <a href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCSpriteFrame.h&gt;</code></p>
+<div class="dynheader">
+类 SpriteFrame 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d3/d35/classcocos2d_1_1_sprite_frame.png" usemap="#SpriteFrame_map" alt=""/>
+  <map id="SpriteFrame_map" name="SpriteFrame_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,81,24"/>
+<area href="../../db/d5f/classcocos2d_1_1_clonable.html" title="如何克隆一个Ref对象的接口定义 " alt="Clonable" shape="rect" coords="91,0,172,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6f61c06738a61c654c1b273a3e8aaa23"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a6f61c06738a61c654c1b273a3e8aaa23">~SpriteFrame</a> (void)</td></tr>
+<tr class="memdesc:a6f61c06738a61c654c1b273a3e8aaa23"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a6f61c06738a61c654c1b273a3e8aaa23">更多...</a><br /></td></tr>
+<tr class="separator:a6f61c06738a61c654c1b273a3e8aaa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a5ed7f46aeebf706ccba875cb0008c2a9">initWithTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect in points.  <a href="#a5ed7f46aeebf706ccba875cb0008c2a9">更多...</a><br /></td></tr>
+<tr class="separator:a5ed7f46aeebf706ccba875cb0008c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8280f31b301349e21c23f7b48def8ef3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a8280f31b301349e21c23f7b48def8ef3">initWithTextureFilename</a> (const std::string &amp;filename, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a8280f31b301349e21c23f7b48def8ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect in points; It is assumed that the frame was not trimmed.  <a href="#a8280f31b301349e21c23f7b48def8ef3">更多...</a><br /></td></tr>
+<tr class="separator:a8280f31b301349e21c23f7b48def8ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801075187a9ad692d91d3e231370247e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a801075187a9ad692d91d3e231370247e">initWithTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a801075187a9ad692d91d3e231370247e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <a href="#a801075187a9ad692d91d3e231370247e">更多...</a><br /></td></tr>
+<tr class="separator:a801075187a9ad692d91d3e231370247e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a30a5650aa5f1570d3606ed9c67a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a95a30a5650aa5f1570d3606ed9c67a81">initWithTextureFilename</a> (const std::string &amp;filename, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a95a30a5650aa5f1570d3606ed9c67a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <a href="#a95a30a5650aa5f1570d3606ed9c67a81">更多...</a><br /></td></tr>
+<tr class="separator:a95a30a5650aa5f1570d3606ed9c67a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0349781e18653af097fed00005941a7d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a0349781e18653af097fed00005941a7d">getRectInPixels</a> () const </td></tr>
+<tr class="separator:a0349781e18653af097fed00005941a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4f598ed861ce4465b8a61ab082c16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#adf4f598ed861ce4465b8a61ab082c16a">setRectInPixels</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rectInPixels)</td></tr>
+<tr class="separator:adf4f598ed861ce4465b8a61ab082c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae7d41537762d438ad1c5710ae870c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#abae7d41537762d438ad1c5710ae870c6">isRotated</a> (void) const </td></tr>
+<tr class="separator:abae7d41537762d438ad1c5710ae870c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5602063671778d01e7234a31f42357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ade5602063671778d01e7234a31f42357">setRotated</a> (bool rotated)</td></tr>
+<tr class="separator:ade5602063671778d01e7234a31f42357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde3f53e968b02f6f4a0fb24c3d0c660"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#acde3f53e968b02f6f4a0fb24c3d0c660">getRect</a> (void) const </td></tr>
+<tr class="memdesc:acde3f53e968b02f6f4a0fb24c3d0c660"><td class="mdescLeft">&#160;</td><td class="mdescRight">get rect of the frame  <a href="#acde3f53e968b02f6f4a0fb24c3d0c660">更多...</a><br /></td></tr>
+<tr class="separator:acde3f53e968b02f6f4a0fb24c3d0c660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af062da89d2035532c1aaa875cbc72001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#af062da89d2035532c1aaa875cbc72001">setRect</a> (const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:af062da89d2035532c1aaa875cbc72001"><td class="mdescLeft">&#160;</td><td class="mdescRight">set rect of the frame  <a href="#af062da89d2035532c1aaa875cbc72001">更多...</a><br /></td></tr>
+<tr class="separator:af062da89d2035532c1aaa875cbc72001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65edc88dbf230c337320d4b1d142e429"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a65edc88dbf230c337320d4b1d142e429">getOffsetInPixels</a> (void) const </td></tr>
+<tr class="memdesc:a65edc88dbf230c337320d4b1d142e429"><td class="mdescLeft">&#160;</td><td class="mdescRight">get offset of the frame  <a href="#a65edc88dbf230c337320d4b1d142e429">更多...</a><br /></td></tr>
+<tr class="separator:a65edc88dbf230c337320d4b1d142e429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ab5679d2cd4bccbb7b37b8cfc8d3c191b">setOffsetInPixels</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offsetInPixels)</td></tr>
+<tr class="memdesc:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set offset of the frame  <a href="#ab5679d2cd4bccbb7b37b8cfc8d3c191b">更多...</a><br /></td></tr>
+<tr class="separator:ab5679d2cd4bccbb7b37b8cfc8d3c191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1c62d7e38582718a2553264225d38e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a1b1c62d7e38582718a2553264225d38e">getOriginalSizeInPixels</a> (void) const </td></tr>
+<tr class="memdesc:a1b1c62d7e38582718a2553264225d38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get original size of the trimmed image  <a href="#a1b1c62d7e38582718a2553264225d38e">更多...</a><br /></td></tr>
+<tr class="separator:a1b1c62d7e38582718a2553264225d38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04405e9ee2aaf04ea849a215be8463b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a04405e9ee2aaf04ea849a215be8463b8">setOriginalSizeInPixels</a> (const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;sizeInPixels)</td></tr>
+<tr class="memdesc:a04405e9ee2aaf04ea849a215be8463b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">set original size of the trimmed image  <a href="#a04405e9ee2aaf04ea849a215be8463b8">更多...</a><br /></td></tr>
+<tr class="separator:a04405e9ee2aaf04ea849a215be8463b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fde295b9f2ecb005cb1594512f7f37"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ac3fde295b9f2ecb005cb1594512f7f37">getOriginalSize</a> (void) const </td></tr>
+<tr class="memdesc:ac3fde295b9f2ecb005cb1594512f7f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">get original size of the trimmed image  <a href="#ac3fde295b9f2ecb005cb1594512f7f37">更多...</a><br /></td></tr>
+<tr class="separator:ac3fde295b9f2ecb005cb1594512f7f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810f885645646fe3557da0250b90714f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a810f885645646fe3557da0250b90714f">setOriginalSize</a> (const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;sizeInPixels)</td></tr>
+<tr class="memdesc:a810f885645646fe3557da0250b90714f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set original size of the trimmed image  <a href="#a810f885645646fe3557da0250b90714f">更多...</a><br /></td></tr>
+<tr class="separator:a810f885645646fe3557da0250b90714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ca528f396a688cacbd7594cf227684"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ad8ca528f396a688cacbd7594cf227684">getTexture</a> (void)</td></tr>
+<tr class="memdesc:ad8ca528f396a688cacbd7594cf227684"><td class="mdescLeft">&#160;</td><td class="mdescRight">get texture of the frame  <a href="#ad8ca528f396a688cacbd7594cf227684">更多...</a><br /></td></tr>
+<tr class="separator:ad8ca528f396a688cacbd7594cf227684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a1e2af5ae957e261dc365df2eeec7f6ef">setTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture)</td></tr>
+<tr class="memdesc:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">set texture of the frame, the texture is retained  <a href="#a1e2af5ae957e261dc365df2eeec7f6ef">更多...</a><br /></td></tr>
+<tr class="separator:a1e2af5ae957e261dc365df2eeec7f6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ace2ad94c08bdfc7c156693a8390bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a81ace2ad94c08bdfc7c156693a8390bb">getOffset</a> (void) const </td></tr>
+<tr class="separator:a81ace2ad94c08bdfc7c156693a8390bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29281a4383cf4969e179415e3250ef02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a29281a4383cf4969e179415e3250ef02">setOffset</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offsets)</td></tr>
+<tr class="separator:a29281a4383cf4969e179415e3250ef02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cefeff76bfdd886037673453362a92"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ad9cefeff76bfdd886037673453362a92">clone</a> () const override</td></tr>
+<tr class="memdesc:ad9cefeff76bfdd886037673453362a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象的一份拷贝  <a href="#ad9cefeff76bfdd886037673453362a92">更多...</a><br /></td></tr>
+<tr class="separator:ad9cefeff76bfdd886037673453362a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_clonable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_clonable')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html">Clonable</a></td></tr>
+<tr class="memitem:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a76f2cea395fcb3087c75c52eff668c1e">~Clonable</a> ()</td></tr>
+<tr class="memdesc:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a76f2cea395fcb3087c75c52eff668c1e">更多...</a><br /></td></tr>
+<tr class="separator:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a4fb86ee00f7fece8747e2438f112b449">copy</a> () const </td></tr>
+<tr class="memdesc:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象的一份拷贝.  <a href="#a4fb86ee00f7fece8747e2438f112b449">更多...</a><br /></td></tr>
+<tr class="separator:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4fae364d310049446f4a5f2fc023eae1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a4fae364d310049446f4a5f2fc023eae1">create</a> (const std::string &amp;filename, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a4fae364d310049446f4a5f2fc023eae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect in points.  <a href="#a4fae364d310049446f4a5f2fc023eae1">更多...</a><br /></td></tr>
+<tr class="separator:a4fae364d310049446f4a5f2fc023eae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f827febef47a87f92b9ed8cc7f4cbea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a3f827febef47a87f92b9ed8cc7f4cbea">create</a> (const std::string &amp;filename, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a3f827febef47a87f92b9ed8cc7f4cbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect, rotated, offset and originalSize in pixels.  <a href="#a3f827febef47a87f92b9ed8cc7f4cbea">更多...</a><br /></td></tr>
+<tr class="separator:a3f827febef47a87f92b9ed8cc7f4cbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2878ceca2ccb4c9bdf8a4aebc9c69862"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a2878ceca2ccb4c9bdf8a4aebc9c69862">createWithTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a2878ceca2ccb4c9bdf8a4aebc9c69862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect in points.  <a href="#a2878ceca2ccb4c9bdf8a4aebc9c69862">更多...</a><br /></td></tr>
+<tr class="separator:a2878ceca2ccb4c9bdf8a4aebc9c69862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2791e69a5645e2d78ee050123d8a0eec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a2791e69a5645e2d78ee050123d8a0eec">createWithTexture</a> (<a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *pobTexture, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rect, bool rotated, const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;offset, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;originalSize)</td></tr>
+<tr class="memdesc:a2791e69a5645e2d78ee050123d8a0eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels.  <a href="#a2791e69a5645e2d78ee050123d8a0eec">更多...</a><br /></td></tr>
+<tr class="separator:a2791e69a5645e2d78ee050123d8a0eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a5e1d4cccd7eb2a1225b2c56ac986aed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a5e1d4cccd7eb2a1225b2c56ac986aed4">_offset</a></td></tr>
+<tr class="separator:a5e1d4cccd7eb2a1225b2c56ac986aed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9bb4c93efb18f7201bdaf1772885cae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ab9bb4c93efb18f7201bdaf1772885cae">_originalSize</a></td></tr>
+<tr class="separator:ab9bb4c93efb18f7201bdaf1772885cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc1d7cce129a7de036bf8e6d1b98918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#afbc1d7cce129a7de036bf8e6d1b98918">_rectInPixels</a></td></tr>
+<tr class="separator:afbc1d7cce129a7de036bf8e6d1b98918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb93a4e9a60e536d19998c2d43440b9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#acb93a4e9a60e536d19998c2d43440b9f">_rotated</a></td></tr>
+<tr class="separator:acb93a4e9a60e536d19998c2d43440b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a9a96057e99346f547f258dbf22457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a54a9a96057e99346f547f258dbf22457">_rect</a></td></tr>
+<tr class="separator:a54a9a96057e99346f547f258dbf22457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3309e997e63d15e18d5464a9121c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#acb3309e997e63d15e18d5464a9121c21">_offsetInPixels</a></td></tr>
+<tr class="separator:acb3309e997e63d15e18d5464a9121c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf15475c7fa181b951f17c657b7a47da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#abf15475c7fa181b951f17c657b7a47da">_originalSizeInPixels</a></td></tr>
+<tr class="separator:abf15475c7fa181b951f17c657b7a47da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f553a0b06795049c5990a6b78af39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#ad9f553a0b06795049c5990a6b78af39d">_texture</a></td></tr>
+<tr class="separator:ad9f553a0b06795049c5990a6b78af39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524971cc8085658497d6a8b2a8a8c040"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#a524971cc8085658497d6a8b2a8a8c040">_textureFilename</a></td></tr>
+<tr class="separator:a524971cc8085658497d6a8b2a8a8c040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> has: </p>
+<ul>
+<li>texture: A <a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html" title="Texture2D 通过Texture2D类，可以根据图像、文本或者原始数据（raw data）创建OpenGL 2D纹理。 创建的纹理的...">Texture2D</a> that will be used by the <a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html" title="Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ) ...">Sprite</a></li>
+<li>rectangle: A rectangle of the texture</li>
+</ul>
+<p>You can modify the frame of a <a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html" title="Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ) ...">Sprite</a> by doing:</p>
+<p><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> *frame = SpriteFrame::frameWithTexture(texture, rect, offset); sprite-&gt;setDisplayFrame(frame); </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a6f61c06738a61c654c1b273a3e8aaa23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad9cefeff76bfdd886037673453362a92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a>* clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Ref对象的一份拷贝 </p>
+
+<p>实现了 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a01ecf272fe5ca557cec86bb1a1ba068f">Clonable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fae364d310049446f4a5f2fc023eae1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a>* create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect in points. </p>
+<p>It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f827febef47a87f92b9ed8cc7f4cbea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a>* create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in pixels of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2878ceca2ccb4c9bdf8a4aebc9c69862"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a>* createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect in points. </p>
+<p>It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2791e69a5645e2d78ee050123d8a0eec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a>* createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in points of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81ace2ad94c08bdfc7c156693a8390bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&amp; getOffset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65edc88dbf230c337320d4b1d142e429"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&amp; getOffsetInPixels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get offset of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3fde295b9f2ecb005cb1594512f7f37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&amp; getOriginalSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get original size of the trimmed image </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b1c62d7e38582718a2553264225d38e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a>&amp; getOriginalSizeInPixels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get original size of the trimmed image </p>
+
+</div>
+</div>
+<a class="anchor" id="acde3f53e968b02f6f4a0fb24c3d0c660"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&amp; getRect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get rect of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="a0349781e18653af097fed00005941a7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&amp; getRectInPixels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8ca528f396a688cacbd7594cf227684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* getTexture </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get texture of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ed7f46aeebf706ccba875cb0008c2a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect in points. </p>
+<p>It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a801075187a9ad692d91d3e231370247e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in points of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8280f31b301349e21c23f7b48def8ef3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTextureFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture filename, rect in points; It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a95a30a5650aa5f1570d3606ed9c67a81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithTextureFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. </p>
+<p>The originalSize is the size in pixels of the frame before being trimmed.</p>
+<dl class="section since"><dt>自从</dt><dd>v1.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abae7d41537762d438ad1c5710ae870c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isRotated </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29281a4383cf4969e179415e3250ef02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5679d2cd4bccbb7b37b8cfc8d3c191b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOffsetInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>offsetInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set offset of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="a810f885645646fe3557da0250b90714f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOriginalSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>sizeInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set original size of the trimmed image </p>
+
+</div>
+</div>
+<a class="anchor" id="a04405e9ee2aaf04ea849a215be8463b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setOriginalSizeInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>sizeInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set original size of the trimmed image </p>
+
+</div>
+</div>
+<a class="anchor" id="af062da89d2035532c1aaa875cbc72001"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set rect of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="adf4f598ed861ce4465b8a61ab082c16a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRectInPixels </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rectInPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade5602063671778d01e7234a31f42357"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRotated </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e2af5ae957e261dc365df2eeec7f6ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>pobTexture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set texture of the frame, the texture is retained </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a5e1d4cccd7eb2a1225b2c56ac986aed4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> _offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb3309e997e63d15e18d5464a9121c21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> _offsetInPixels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9bb4c93efb18f7201bdaf1772885cae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> _originalSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf15475c7fa181b951f17c657b7a47da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> _originalSizeInPixels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54a9a96057e99346f547f258dbf22457"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> _rect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afbc1d7cce129a7de036bf8e6d1b98918"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> _rectInPixels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb93a4e9a60e536d19998c2d43440b9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _rotated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad9f553a0b06795049c5990a6b78af39d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a>* _texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a524971cc8085658497d6a8b2a8a8c040"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _textureFilename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../dd/d89/_c_c_sprite_frame_8h.html">CCSpriteFrame.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:50 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

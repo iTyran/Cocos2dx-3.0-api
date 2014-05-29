@@ -1,0 +1,1479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: __Array类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/dae/classcocos2d_1_1_____array.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="../../df/d62/classcocos2d_1_1_____array-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">__Array类 参考<div class="ingroups"><a class="el" href="../../df/db3/group__data__structures.html">Data Structures</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCArray.h&gt;</code></p>
+<div class="dynheader">
+类 __Array 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d0/dae/classcocos2d_1_1_____array.png" usemap="#__Array_map" alt=""/>
+  <map id="__Array_map" name="__Array_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,62,24"/>
+<area href="../../db/d5f/classcocos2d_1_1_clonable.html" title="如何克隆一个Ref对象的接口定义 " alt="Clonable" shape="rect" coords="72,0,134,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae8079c57263820827449c71ac8386cde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ae8079c57263820827449c71ac8386cde">~__Array</a> ()</td></tr>
+<tr class="memdesc:ae8079c57263820827449c71ac8386cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ae8079c57263820827449c71ac8386cde">更多...</a><br /></td></tr>
+<tr class="separator:ae8079c57263820827449c71ac8386cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aee8048628ff2b5c026c9e15acdcaacb8">init</a> ()</td></tr>
+<tr class="memdesc:aee8048628ff2b5c026c9e15acdcaacb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化一个数组  NA  NA  <a href="#aee8048628ff2b5c026c9e15acdcaacb8">更多...</a><br /></td></tr>
+<tr class="separator:aee8048628ff2b5c026c9e15acdcaacb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3d0b4da72657e72bc40a32a4b30eaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aad3d0b4da72657e72bc40a32a4b30eaf">initWithObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object)</td></tr>
+<tr class="memdesc:aad3d0b4da72657e72bc40a32a4b30eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用一个object初始化数组。  NA  NA  <a href="#aad3d0b4da72657e72bc40a32a4b30eaf">更多...</a><br /></td></tr>
+<tr class="separator:aad3d0b4da72657e72bc40a32a4b30eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbfcfd8a92bba9d1c13d426578cc8c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1fbfcfd8a92bba9d1c13d426578cc8c5">initWithObjects</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object,...) <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#af262a42a53ea88de55e2f35740faf20d">CC_REQUIRES_NULL_TERMINATION</a></td></tr>
+<tr class="memdesc:a1fbfcfd8a92bba9d1c13d426578cc8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用多个object初始化数组。  NA  NA  <a href="#a1fbfcfd8a92bba9d1c13d426578cc8c5">更多...</a><br /></td></tr>
+<tr class="separator:a1fbfcfd8a92bba9d1c13d426578cc8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a41b97634bd9cd2822c88ab125ca9de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a7a41b97634bd9cd2822c88ab125ca9de">initWithCapacity</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1a1336822528336178fb429216ce94f0">capacity</a>)</td></tr>
+<tr class="memdesc:a7a41b97634bd9cd2822c88ab125ca9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据容量（capacity）初始化一个数组。  NA  NA  <a href="#a7a41b97634bd9cd2822c88ab125ca9de">更多...</a><br /></td></tr>
+<tr class="separator:a7a41b97634bd9cd2822c88ab125ca9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaaddd71e8f65c8606cac7e737550adc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#adaaddd71e8f65c8606cac7e737550adc">initWithArray</a> (<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *otherArray)</td></tr>
+<tr class="memdesc:adaaddd71e8f65c8606cac7e737550adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过已有的数组初始化一个新的数组。  NA  NA  <a href="#adaaddd71e8f65c8606cac7e737550adc">更多...</a><br /></td></tr>
+<tr class="separator:adaaddd71e8f65c8606cac7e737550adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84312dea5b55cf1ed09881b2e2d627e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ac84312dea5b55cf1ed09881b2e2d627e">count</a> () const </td></tr>
+<tr class="memdesc:ac84312dea5b55cf1ed09881b2e2d627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回数组中数据总数。  NA  <a href="#ac84312dea5b55cf1ed09881b2e2d627e">更多...</a><br /></td></tr>
+<tr class="separator:ac84312dea5b55cf1ed09881b2e2d627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1336822528336178fb429216ce94f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1a1336822528336178fb429216ce94f0">capacity</a> () const </td></tr>
+<tr class="memdesc:a1a1336822528336178fb429216ce94f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回数组的容量。  NA  <a href="#a1a1336822528336178fb429216ce94f0">更多...</a><br /></td></tr>
+<tr class="separator:a1a1336822528336178fb429216ce94f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bbbafa5f0621045ea2d45b7764051c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ac5bbbafa5f0621045ea2d45b7764051c">getIndexOfObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object) const </td></tr>
+<tr class="memdesc:ac5bbbafa5f0621045ea2d45b7764051c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回index指定的object；如果未指定index，返回UINT_MAX。  NA  NA  <a href="#ac5bbbafa5f0621045ea2d45b7764051c">更多...</a><br /></td></tr>
+<tr class="separator:ac5bbbafa5f0621045ea2d45b7764051c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f35f71cb19b735c8073e7a1afff972a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a9f35f71cb19b735c8073e7a1afff972a">indexOfObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object) const </td></tr>
+<tr class="memdesc:a9f35f71cb19b735c8073e7a1afff972a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#a9f35f71cb19b735c8073e7a1afff972a">更多...</a><br /></td></tr>
+<tr class="separator:a9f35f71cb19b735c8073e7a1afff972a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa3c324e242afb11ac879d31ae855c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1fa3c324e242afb11ac879d31ae855c8">getObjectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:a1fa3c324e242afb11ac879d31ae855c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回用index指定的元素（element）。  NA  NA  <a href="#a1fa3c324e242afb11ac879d31ae855c8">更多...</a><br /></td></tr>
+<tr class="separator:a1fa3c324e242afb11ac879d31ae855c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a0449b70a6bbf6728e8e4c00e231d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ad6a0449b70a6bbf6728e8e4c00e231d2">objectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="separator:ad6a0449b70a6bbf6728e8e4c00e231d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886613f97df83d678bc4c3dcdf29fcb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a886613f97df83d678bc4c3dcdf29fcb8">getLastObject</a> ()</td></tr>
+<tr class="memdesc:a886613f97df83d678bc4c3dcdf29fcb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回数组最后一个元素（element）。  NA  <a href="#a886613f97df83d678bc4c3dcdf29fcb8">更多...</a><br /></td></tr>
+<tr class="separator:a886613f97df83d678bc4c3dcdf29fcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7604fbc6e48c313668f24aafc9b8e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ac7604fbc6e48c313668f24aafc9b8e69">lastObject</a> ()</td></tr>
+<tr class="memdesc:ac7604fbc6e48c313668f24aafc9b8e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#ac7604fbc6e48c313668f24aafc9b8e69">更多...</a><br /></td></tr>
+<tr class="separator:ac7604fbc6e48c313668f24aafc9b8e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab726612e3f6a66179ec4df70e31355c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ab726612e3f6a66179ec4df70e31355c1">getRandomObject</a> ()</td></tr>
+<tr class="memdesc:ab726612e3f6a66179ec4df70e31355c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个随机元素（element）。  NA  NA  <a href="#ab726612e3f6a66179ec4df70e31355c1">更多...</a><br /></td></tr>
+<tr class="separator:ab726612e3f6a66179ec4df70e31355c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54bcaf81e7bae61830f0cb6185646f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aa54bcaf81e7bae61830f0cb6185646f7">randomObject</a> ()</td></tr>
+<tr class="memdesc:aa54bcaf81e7bae61830f0cb6185646f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#aa54bcaf81e7bae61830f0cb6185646f7">更多...</a><br /></td></tr>
+<tr class="separator:aa54bcaf81e7bae61830f0cb6185646f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afbe278afed03eea863f0293f8f4951"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a6afbe278afed03eea863f0293f8f4951">containsObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object) const </td></tr>
+<tr class="memdesc:a6afbe278afed03eea863f0293f8f4951"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回一个表示object是否出现在数组中的布偶值（Boolean value）。  NA  <a href="#a6afbe278afed03eea863f0293f8f4951">更多...</a><br /></td></tr>
+<tr class="separator:a6afbe278afed03eea863f0293f8f4951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b65121e913adb8eacce6f0204cbc428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a7b65121e913adb8eacce6f0204cbc428">isEqualToArray</a> (<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *otherArray)</td></tr>
+<tr class="separator:a7b65121e913adb8eacce6f0204cbc428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525ffa74dd14b2295edbff61a1152e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a525ffa74dd14b2295edbff61a1152e1b">addObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object)</td></tr>
+<tr class="memdesc:a525ffa74dd14b2295edbff61a1152e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加指定的对象（object）。  NA  <a href="#a525ffa74dd14b2295edbff61a1152e1b">更多...</a><br /></td></tr>
+<tr class="separator:a525ffa74dd14b2295edbff61a1152e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfef572c016bb8db6a8651b0fe901f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#adfef572c016bb8db6a8651b0fe901f1d">addObjectsFromArray</a> (<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *otherArray)</td></tr>
+<tr class="memdesc:adfef572c016bb8db6a8651b0fe901f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  <a href="#adfef572c016bb8db6a8651b0fe901f1d">更多...</a><br /></td></tr>
+<tr class="separator:adfef572c016bb8db6a8651b0fe901f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed030f24daca336e856107f231429ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aed030f24daca336e856107f231429ec1">insertObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:aed030f24daca336e856107f231429ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">在index指定的位置插入指定的对象（object）。  NA  <a href="#aed030f24daca336e856107f231429ec1">更多...</a><br /></td></tr>
+<tr class="separator:aed030f24daca336e856107f231429ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e98a8341581beb51edc9a2a1ad251d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1e98a8341581beb51edc9a2a1ad251d8">setObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:a1e98a8341581beb51edc9a2a1ad251d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index设置一个指定的对象（object）。  NA  NA  <a href="#a1e98a8341581beb51edc9a2a1ad251d8">更多...</a><br /></td></tr>
+<tr class="separator:a1e98a8341581beb51edc9a2a1ad251d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e43e02396746e8764d433d8850c45f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#af5e43e02396746e8764d433d8850c45f">fastSetObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:af5e43e02396746e8764d433d8850c45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index设置一个指定的对象（object）并且不使用自动引用计数。请谨慎使用此功能。  NA  NA  <a href="#af5e43e02396746e8764d433d8850c45f">更多...</a><br /></td></tr>
+<tr class="separator:af5e43e02396746e8764d433d8850c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dc07a10a30e082f6820bcb14155049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a46dc07a10a30e082f6820bcb14155049">swap</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> indexOne, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> indexTwo)</td></tr>
+<tr class="memdesc:a46dc07a10a30e082f6820bcb14155049"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a46dc07a10a30e082f6820bcb14155049">更多...</a><br /></td></tr>
+<tr class="separator:a46dc07a10a30e082f6820bcb14155049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad208c68d0778ed5e920307c3256d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#acad208c68d0778ed5e920307c3256d24">removeLastObject</a> (bool releaseObj=true)</td></tr>
+<tr class="memdesc:acad208c68d0778ed5e920307c3256d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除最后一个对象（object）。  NA  <a href="#acad208c68d0778ed5e920307c3256d24">更多...</a><br /></td></tr>
+<tr class="separator:acad208c68d0778ed5e920307c3256d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb12c085c04102e735109df68ebc914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1bb12c085c04102e735109df68ebc914">removeObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object, bool releaseObj=true)</td></tr>
+<tr class="memdesc:a1bb12c085c04102e735109df68ebc914"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除一个指定对象（object）。  NA  <a href="#a1bb12c085c04102e735109df68ebc914">更多...</a><br /></td></tr>
+<tr class="separator:a1bb12c085c04102e735109df68ebc914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947f5aa71e789f6666cda1ba652f3ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a947f5aa71e789f6666cda1ba652f3ce6">removeObjectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index, bool releaseObj=true)</td></tr>
+<tr class="memdesc:a947f5aa71e789f6666cda1ba652f3ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index指定并移除一个元素（element）。  NA  <a href="#a947f5aa71e789f6666cda1ba652f3ce6">更多...</a><br /></td></tr>
+<tr class="separator:a947f5aa71e789f6666cda1ba652f3ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d9b7c5d57370d12aff1e9ca4415562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a52d9b7c5d57370d12aff1e9ca4415562">removeObjectsInArray</a> (<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *otherArray)</td></tr>
+<tr class="memdesc:a52d9b7c5d57370d12aff1e9ca4415562"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除所有元素（element）。  NA  <a href="#a52d9b7c5d57370d12aff1e9ca4415562">更多...</a><br /></td></tr>
+<tr class="separator:a52d9b7c5d57370d12aff1e9ca4415562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263619d4f2cf50636e85271fe47767ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a263619d4f2cf50636e85271fe47767ba">removeAllObjects</a> ()</td></tr>
+<tr class="memdesc:a263619d4f2cf50636e85271fe47767ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除所有对象（object）。  NA  <a href="#a263619d4f2cf50636e85271fe47767ba">更多...</a><br /></td></tr>
+<tr class="separator:a263619d4f2cf50636e85271fe47767ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9198a685e48477f4db5e7f2aface76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aba9198a685e48477f4db5e7f2aface76">fastRemoveObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object)</td></tr>
+<tr class="memdesc:aba9198a685e48477f4db5e7f2aface76"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速移除一个指定对象（object）。  NA  <a href="#aba9198a685e48477f4db5e7f2aface76">更多...</a><br /></td></tr>
+<tr class="separator:aba9198a685e48477f4db5e7f2aface76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de014121c8424c0875e15b83649a870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a4de014121c8424c0875e15b83649a870">fastRemoveObjectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index)</td></tr>
+<tr class="memdesc:a4de014121c8424c0875e15b83649a870"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index指定一个元素，并将它快速移除  NA  <a href="#a4de014121c8424c0875e15b83649a870">更多...</a><br /></td></tr>
+<tr class="separator:a4de014121c8424c0875e15b83649a870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa0e27a6a70a24c5233d60cf5ec550c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a4aa0e27a6a70a24c5233d60cf5ec550c">exchangeObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object1, <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object2)</td></tr>
+<tr class="memdesc:a4aa0e27a6a70a24c5233d60cf5ec550c"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换两个元素（element）。  NA  <a href="#a4aa0e27a6a70a24c5233d60cf5ec550c">更多...</a><br /></td></tr>
+<tr class="separator:a4aa0e27a6a70a24c5233d60cf5ec550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35fd6f3edb8198b8aa269a87c938608e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a35fd6f3edb8198b8aa269a87c938608e">exchangeObjectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index1, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index2)</td></tr>
+<tr class="memdesc:a35fd6f3edb8198b8aa269a87c938608e"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index指定并交换两个元素（element）。  NA  <a href="#a35fd6f3edb8198b8aa269a87c938608e">更多...</a><br /></td></tr>
+<tr class="separator:a35fd6f3edb8198b8aa269a87c938608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2275a9b4984643891f9959c1617ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aaf2275a9b4984643891f9959c1617ff2">replaceObjectAtIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> index, <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object, bool releaseObject=true)</td></tr>
+<tr class="memdesc:aaf2275a9b4984643891f9959c1617ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过index指定并覆盖一个旧的元素。  NA  <a href="#aaf2275a9b4984643891f9959c1617ff2">更多...</a><br /></td></tr>
+<tr class="separator:aaf2275a9b4984643891f9959c1617ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148a29c272fab859525b83d6be51c5fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a148a29c272fab859525b83d6be51c5fe">reverseObjects</a> ()</td></tr>
+<tr class="memdesc:a148a29c272fab859525b83d6be51c5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">倒序一个数组。  NA  <a href="#a148a29c272fab859525b83d6be51c5fe">更多...</a><br /></td></tr>
+<tr class="separator:a148a29c272fab859525b83d6be51c5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92f58d57f74df55b5359612565cd2c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ae92f58d57f74df55b5359612565cd2c7">reduceMemoryFootprint</a> ()</td></tr>
+<tr class="separator:ae92f58d57f74df55b5359612565cd2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e1c3bbf9df8d5bb6800f817c81d70d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a51e1c3bbf9df8d5bb6800f817c81d70d">acceptVisitor</a> (<a class="el" href="../../d9/d33/classcocos2d_1_1_data_visitor.html">DataVisitor</a> &amp;visitor)</td></tr>
+<tr class="separator:a51e1c3bbf9df8d5bb6800f817c81d70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab541eaef08c87400bfada8a18cf4d3ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ab541eaef08c87400bfada8a18cf4d3ca">clone</a> () const </td></tr>
+<tr class="memdesc:ab541eaef08c87400bfada8a18cf4d3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ab541eaef08c87400bfada8a18cf4d3ca">更多...</a><br /></td></tr>
+<tr class="separator:ab541eaef08c87400bfada8a18cf4d3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9116814e48e93bb191c7c00397ce0818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a9116814e48e93bb191c7c00397ce0818">begin</a> ()</td></tr>
+<tr class="memdesc:a9116814e48e93bb191c7c00397ce0818"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a9116814e48e93bb191c7c00397ce0818">更多...</a><br /></td></tr>
+<tr class="separator:a9116814e48e93bb191c7c00397ce0818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada47a96caf03d03fd519604a31c68f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#aada47a96caf03d03fd519604a31c68f6">end</a> ()</td></tr>
+<tr class="memdesc:aada47a96caf03d03fd519604a31c68f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#aada47a96caf03d03fd519604a31c68f6">更多...</a><br /></td></tr>
+<tr class="separator:aada47a96caf03d03fd519604a31c68f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e428b18c06c283ad6a34550fd5ed6a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a0e428b18c06c283ad6a34550fd5ed6a3">__Array</a> ()</td></tr>
+<tr class="memdesc:a0e428b18c06c283ad6a34550fd5ed6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a0e428b18c06c283ad6a34550fd5ed6a3">更多...</a><br /></td></tr>
+<tr class="separator:a0e428b18c06c283ad6a34550fd5ed6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_clonable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_clonable')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html">Clonable</a></td></tr>
+<tr class="memitem:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a76f2cea395fcb3087c75c52eff668c1e">~Clonable</a> ()</td></tr>
+<tr class="memdesc:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a76f2cea395fcb3087c75c52eff668c1e">更多...</a><br /></td></tr>
+<tr class="separator:a76f2cea395fcb3087c75c52eff668c1e inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a4fb86ee00f7fece8747e2438f112b449">copy</a> () const </td></tr>
+<tr class="memdesc:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象的一份拷贝.  <a href="#a4fb86ee00f7fece8747e2438f112b449">更多...</a><br /></td></tr>
+<tr class="separator:a4fb86ee00f7fece8747e2438f112b449 inherit pub_methods_classcocos2d_1_1_clonable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a18dd12d8700748ac1323e6fa07fb86be"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a18dd12d8700748ac1323e6fa07fb86be">create</a> ()</td></tr>
+<tr class="memdesc:a18dd12d8700748ac1323e6fa07fb86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个空数组。默认容量是 10.  <a href="#a18dd12d8700748ac1323e6fa07fb86be">更多...</a><br /></td></tr>
+<tr class="separator:a18dd12d8700748ac1323e6fa07fb86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3485570a808260a41751939db587f775"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a3485570a808260a41751939db587f775">create</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object,...) <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#af262a42a53ea88de55e2f35740faf20d">CC_REQUIRES_NULL_TERMINATION</a></td></tr>
+<tr class="memdesc:a3485570a808260a41751939db587f775"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过多个object创建一个数组。  NA  <a href="#a3485570a808260a41751939db587f775">更多...</a><br /></td></tr>
+<tr class="separator:a3485570a808260a41751939db587f775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16170c93c9ee14683cbac2a40e1c28e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a16170c93c9ee14683cbac2a40e1c28e5">createWithObject</a> (<a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *object)</td></tr>
+<tr class="memdesc:a16170c93c9ee14683cbac2a40e1c28e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过单个object创建一个数组。  NA  <a href="#a16170c93c9ee14683cbac2a40e1c28e5">更多...</a><br /></td></tr>
+<tr class="separator:a16170c93c9ee14683cbac2a40e1c28e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e813ae8ef3b64b6e9dc2823a802397"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ac3e813ae8ef3b64b6e9dc2823a802397">createWithCapacity</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a1a1336822528336178fb429216ce94f0">capacity</a>)</td></tr>
+<tr class="memdesc:ac3e813ae8ef3b64b6e9dc2823a802397"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过默认容量创建一个数组。  NA  <a href="#ac3e813ae8ef3b64b6e9dc2823a802397">更多...</a><br /></td></tr>
+<tr class="separator:ac3e813ae8ef3b64b6e9dc2823a802397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c9a2b89b6072467608e7233e08f202"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#ae8c9a2b89b6072467608e7233e08f202">createWithArray</a> (<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *otherArray)</td></tr>
+<tr class="memdesc:ae8c9a2b89b6072467608e7233e08f202"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过已有数组创建一个新数组。  NA  <a href="#ae8c9a2b89b6072467608e7233e08f202">更多...</a><br /></td></tr>
+<tr class="separator:ae8c9a2b89b6072467608e7233e08f202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2573080253c7c2a2e10910de162c010c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a2573080253c7c2a2e10910de162c010c">createWithContentsOfFile</a> (const std::string &amp;pFileName)</td></tr>
+<tr class="memdesc:a2573080253c7c2a2e10910de162c010c"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过文件内容创建一个数组。  <a href="#a2573080253c7c2a2e10910de162c010c">更多...</a><br /></td></tr>
+<tr class="separator:a2573080253c7c2a2e10910de162c010c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1412e399d6ec52adf096fa1d053dd37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#af1412e399d6ec52adf096fa1d053dd37">createWithContentsOfFileThreadSafe</a> (const std::string &amp;pFileName)</td></tr>
+<tr class="separator:af1412e399d6ec52adf096fa1d053dd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4f90703d755e36e37a27624e7d62fa15"><td class="memItemLeft" align="right" valign="top">ccArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html#a4f90703d755e36e37a27624e7d62fa15">data</a></td></tr>
+<tr class="separator:a4f90703d755e36e37a27624e7d62fa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae8079c57263820827449c71ac8386cde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e428b18c06c283ad6a34550fd5ed6a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a51e1c3bbf9df8d5bb6800f817c81d70d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void acceptVisitor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d33/classcocos2d_1_1_data_visitor.html">DataVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a525ffa74dd14b2295edbff61a1152e1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加指定的对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adfef572c016bb8db6a8651b0fe901f1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addObjectsFromArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>otherArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA </p>
+<p>添加已存在的数组中的所有元素（elements）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a9116814e48e93bb191c7c00397ce0818"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>** begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a1336822528336178fb429216ce94f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回数组的容量。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ab541eaef08c87400bfada8a18cf4d3ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+<p>实现了 <a class="el" href="../../db/d5f/classcocos2d_1_1_clonable.html#a01ecf272fe5ca557cec86bb1a1ba068f">Clonable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6afbe278afed03eea863f0293f8f4951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool containsObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回一个表示object是否出现在数组中的布偶值（Boolean value）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ac84312dea5b55cf1ed09881b2e2d627e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回数组中数据总数。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a18dd12d8700748ac1323e6fa07fb86be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个空数组。默认容量是 10. </p>
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a3485570a808260a41751939db587f775"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过多个object创建一个数组。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8c9a2b89b6072467608e7233e08f202"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* createWithArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>otherArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过已有数组创建一个新数组。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3e813ae8ef3b64b6e9dc2823a802397"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* createWithCapacity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过默认容量创建一个数组。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a2573080253c7c2a2e10910de162c010c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* createWithContentsOfFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过文件内容创建一个数组。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFileName</td><td>文件名，比如：*.plist </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数组  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1412e399d6ec52adf096fa1d053dd37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* createWithContentsOfFileThreadSafe </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16170c93c9ee14683cbac2a40e1c28e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a>* createWithObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过单个object创建一个数组。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aada47a96caf03d03fd519604a31c68f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>** end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a4aa0e27a6a70a24c5233d60cf5ec550c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exchangeObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>交换两个元素（element）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a35fd6f3edb8198b8aa269a87c938608e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exchangeObjectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过index指定并交换两个元素（element）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aba9198a685e48477f4db5e7f2aface76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fastRemoveObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>快速移除一个指定对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a4de014121c8424c0875e15b83649a870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fastRemoveObjectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过index指定一个元素，并将它快速移除  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="af5e43e02396746e8764d433d8850c45f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fastSetObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过index设置一个指定的对象（object）并且不使用自动引用计数。请谨慎使用此功能。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5bbbafa5f0621045ea2d45b7764051c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> getIndexOfObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回index指定的object；如果未指定index，返回UINT_MAX。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a886613f97df83d678bc4c3dcdf29fcb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* getLastObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回数组最后一个元素（element）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fa3c324e242afb11ac879d31ae855c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* getObjectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回用index指定的元素（element）。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ab726612e3f6a66179ec4df70e31355c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* getRandomObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回一个随机元素（element）。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f35f71cb19b735c8073e7a1afff972a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> indexOfObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aee8048628ff2b5c026c9e15acdcaacb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化一个数组  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="adaaddd71e8f65c8606cac7e737550adc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>otherArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过已有的数组初始化一个新的数组。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a41b97634bd9cd2822c88ab125ca9de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithCapacity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据容量（capacity）初始化一个数组。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aad3d0b4da72657e72bc40a32a4b30eaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用一个object初始化数组。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fbfcfd8a92bba9d1c13d426578cc8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool initWithObjects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用多个object初始化数组。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aed030f24daca336e856107f231429ec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insertObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在index指定的位置插入指定的对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b65121e913adb8eacce6f0204cbc428"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isEqualToArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>otherArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section since"><dt>自从</dt><dd>1.1  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7604fbc6e48c313668f24aafc9b8e69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* lastObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6a0449b70a6bbf6728e8e4c00e231d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* objectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa54bcaf81e7bae61830f0cb6185646f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a>* randomObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae92f58d57f74df55b5359612565cd2c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reduceMemoryFootprint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a263619d4f2cf50636e85271fe47767ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeAllObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除所有对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="acad208c68d0778ed5e920307c3256d24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeLastObject </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseObj</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除最后一个对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bb12c085c04102e735109df68ebc914"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseObj</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除一个指定对象（object）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a947f5aa71e789f6666cda1ba652f3ce6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeObjectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseObj</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过index指定并移除一个元素（element）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a52d9b7c5d57370d12aff1e9ca4415562"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeObjectsInArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>otherArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除所有元素（element）。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf2275a9b4984643891f9959c1617ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void replaceObjectAtIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseObject</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过index指定并覆盖一个旧的元素。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a148a29c272fab859525b83d6be51c5fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reverseObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>倒序一个数组。  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a1e98a8341581beb51edc9a2a1ad251d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过index设置一个指定的对象（object）。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a46dc07a10a30e082f6820bcb14155049"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>indexOne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>indexTwo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a4f90703d755e36e37a27624e7d62fa15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccArray* data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/deprecated/<a class="el" href="../../da/d35/_c_c_array_8h.html">CCArray.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:43 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

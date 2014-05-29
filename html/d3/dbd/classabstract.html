@@ -1,0 +1,1254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: abstract类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/dbd/classabstract.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="../../d5/d98/classabstract-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">abstract类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;DirectXBase.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a09f1ff6e96a9f4100ba416a86b820b08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a09f1ff6e96a9f4100ba416a86b820b08">Initialize</a> (Windows::UI::Core::CoreWindow^window, Windows::UI::Xaml::Controls::SwapChainBackgroundPanel^panel, float dpi)</td></tr>
+<tr class="separator:a09f1ff6e96a9f4100ba416a86b820b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af378e3bce924b746e562426b3f4a3649"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#af378e3bce924b746e562426b3f4a3649">CreateDeviceIndependentResources</a> ()</td></tr>
+<tr class="separator:af378e3bce924b746e562426b3f4a3649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d2e98dbe1805a0a40d046c385407be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aa5d2e98dbe1805a0a40d046c385407be">CreateDeviceResources</a> ()</td></tr>
+<tr class="separator:aa5d2e98dbe1805a0a40d046c385407be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616e91ff895113fe39c8c6c91a771e8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a616e91ff895113fe39c8c6c91a771e8a">SetDpi</a> (float dpi)</td></tr>
+<tr class="separator:a616e91ff895113fe39c8c6c91a771e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9534fbf4a61e63344fc5af078a6ca286"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a9534fbf4a61e63344fc5af078a6ca286">CreateWindowSizeDependentResources</a> ()</td></tr>
+<tr class="separator:a9534fbf4a61e63344fc5af078a6ca286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e8a95e186bd336547602d14eb3590a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a91e8a95e186bd336547602d14eb3590a">UpdateForWindowSizeChange</a> ()</td></tr>
+<tr class="separator:a91e8a95e186bd336547602d14eb3590a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#afc3b3c55cdd08934cd11a8fa33d3769e">Present</a> ()</td></tr>
+<tr class="separator:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2575ada3e15c228fddec70e0a7f64057"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a2575ada3e15c228fddec70e0a7f64057">ConvertDipsToPixels</a> (float dips)</td></tr>
+<tr class="separator:a2575ada3e15c228fddec70e0a7f64057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627a3037c323c7252789b81d3666e9da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a627a3037c323c7252789b81d3666e9da">Initialize</a> (Windows::UI::Core::CoreWindow^window)</td></tr>
+<tr class="separator:a627a3037c323c7252789b81d3666e9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2733fd599051b336de9499e885ed10d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#ac2733fd599051b336de9499e885ed10d">HandleDeviceLost</a> ()</td></tr>
+<tr class="separator:ac2733fd599051b336de9499e885ed10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d2e98dbe1805a0a40d046c385407be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aa5d2e98dbe1805a0a40d046c385407be">CreateDeviceResources</a> ()</td></tr>
+<tr class="separator:aa5d2e98dbe1805a0a40d046c385407be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9534fbf4a61e63344fc5af078a6ca286"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a9534fbf4a61e63344fc5af078a6ca286">CreateWindowSizeDependentResources</a> ()</td></tr>
+<tr class="separator:a9534fbf4a61e63344fc5af078a6ca286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e8a95e186bd336547602d14eb3590a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a91e8a95e186bd336547602d14eb3590a">UpdateForWindowSizeChange</a> ()</td></tr>
+<tr class="separator:a91e8a95e186bd336547602d14eb3590a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8912c038e461a29b52eeed273de9b3ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a8912c038e461a29b52eeed273de9b3ed">ReleaseResourcesForSuspending</a> ()</td></tr>
+<tr class="separator:a8912c038e461a29b52eeed273de9b3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#afc3b3c55cdd08934cd11a8fa33d3769e">Present</a> ()</td></tr>
+<tr class="separator:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2575ada3e15c228fddec70e0a7f64057"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a2575ada3e15c228fddec70e0a7f64057">ConvertDipsToPixels</a> (float dips)</td></tr>
+<tr class="separator:a2575ada3e15c228fddec70e0a7f64057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afded73bee1a97a80babbb1405ec4651f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#afded73bee1a97a80babbb1405ec4651f">ComputeOrientationMatrices</a> ()</td></tr>
+<tr class="separator:afded73bee1a97a80babbb1405ec4651f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c199fb5f928270ad7de9fbebde65ee"><td class="memItemLeft" align="right" valign="top">virtual Windows::Foundation::Vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a44c199fb5f928270ad7de9fbebde65ee">TransformToOrientation</a> (Windows::Foundation::Vec2 point, bool dipsToPixels=true)</td></tr>
+<tr class="separator:a44c199fb5f928270ad7de9fbebde65ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782ee3b762281de10fc0b06c99571bf4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a782ee3b762281de10fc0b06c99571bf4">getOrientedWindowWidth</a> ()</td></tr>
+<tr class="separator:a782ee3b762281de10fc0b06c99571bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae359cfe6fd945dd76c1f3b3e717994b1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#ae359cfe6fd945dd76c1f3b3e717994b1">getOrientedWindowHeight</a> ()</td></tr>
+<tr class="separator:ae359cfe6fd945dd76c1f3b3e717994b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4b12131bb3390a366248a5c54b9863"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a1f4b12131bb3390a366248a5c54b9863">Initialize</a> (Windows::UI::Core::CoreWindow^window, float dpi)</td></tr>
+<tr class="separator:a1f4b12131bb3390a366248a5c54b9863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2733fd599051b336de9499e885ed10d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#ac2733fd599051b336de9499e885ed10d">HandleDeviceLost</a> ()</td></tr>
+<tr class="separator:ac2733fd599051b336de9499e885ed10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d2e98dbe1805a0a40d046c385407be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aa5d2e98dbe1805a0a40d046c385407be">CreateDeviceResources</a> ()</td></tr>
+<tr class="separator:aa5d2e98dbe1805a0a40d046c385407be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9534fbf4a61e63344fc5af078a6ca286"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a9534fbf4a61e63344fc5af078a6ca286">CreateWindowSizeDependentResources</a> ()</td></tr>
+<tr class="separator:a9534fbf4a61e63344fc5af078a6ca286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e8a95e186bd336547602d14eb3590a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a91e8a95e186bd336547602d14eb3590a">UpdateForWindowSizeChange</a> ()</td></tr>
+<tr class="separator:a91e8a95e186bd336547602d14eb3590a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8912c038e461a29b52eeed273de9b3ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a8912c038e461a29b52eeed273de9b3ed">ReleaseResourcesForSuspending</a> ()</td></tr>
+<tr class="separator:a8912c038e461a29b52eeed273de9b3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#afc3b3c55cdd08934cd11a8fa33d3769e">Present</a> ()</td></tr>
+<tr class="separator:afc3b3c55cdd08934cd11a8fa33d3769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2575ada3e15c228fddec70e0a7f64057"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a2575ada3e15c228fddec70e0a7f64057">ConvertDipsToPixels</a> (float dips)</td></tr>
+<tr class="separator:a2575ada3e15c228fddec70e0a7f64057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616e91ff895113fe39c8c6c91a771e8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a616e91ff895113fe39c8c6c91a771e8a">SetDpi</a> (float dpi)</td></tr>
+<tr class="separator:a616e91ff895113fe39c8c6c91a771e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32ab0cc76b4eaa37077e89ee9e3cdc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#ab32ab0cc76b4eaa37077e89ee9e3cdc1">Initialize</a> ()</td></tr>
+<tr class="separator:ab32ab0cc76b4eaa37077e89ee9e3cdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d2e98dbe1805a0a40d046c385407be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aa5d2e98dbe1805a0a40d046c385407be">CreateDeviceResources</a> ()</td></tr>
+<tr class="separator:aa5d2e98dbe1805a0a40d046c385407be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf3c2a342765eca93b39f08295dd452"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aecf3c2a342765eca93b39f08295dd452">SetDevice</a> (ID3D11Device1 *device)</td></tr>
+<tr class="separator:aecf3c2a342765eca93b39f08295dd452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c22b304109536ee79ab0f07fec76881"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a9c22b304109536ee79ab0f07fec76881">UpdateDevice</a> (ID3D11Device1 *device, ID3D11DeviceContext1 *context, ID3D11RenderTargetView *renderTargetView)</td></tr>
+<tr class="separator:a9c22b304109536ee79ab0f07fec76881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d347ea1dff651b4e55c0b9ad9f45b1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a3d347ea1dff651b4e55c0b9ad9f45b1d">UpdateForWindowSizeChange</a> (float width, float height)</td></tr>
+<tr class="separator:a3d347ea1dff651b4e55c0b9ad9f45b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9534fbf4a61e63344fc5af078a6ca286"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a9534fbf4a61e63344fc5af078a6ca286">CreateWindowSizeDependentResources</a> ()</td></tr>
+<tr class="separator:a9534fbf4a61e63344fc5af078a6ca286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780d7390fc123e56678bcb3fbef75c51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a780d7390fc123e56678bcb3fbef75c51">OnOrientationChanged</a> (Windows::Graphics::Display::DisplayOrientations orientation)</td></tr>
+<tr class="separator:a780d7390fc123e56678bcb3fbef75c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8854a0b2d96ae47656af30b6d38a0672"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a8854a0b2d96ae47656af30b6d38a0672">CreateGLResources</a> ()=0</td></tr>
+<tr class="separator:a8854a0b2d96ae47656af30b6d38a0672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436830dff9fbce05c931c5a6d8d5366d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a436830dff9fbce05c931c5a6d8d5366d">Render</a> ()</td></tr>
+<tr class="separator:a436830dff9fbce05c931c5a6d8d5366d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a1925aa93c315d2c88349e8de52961945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d20/_c_c_free_type_font_8h.html#ae2fbec0fb24e703b10fda10b1ec34109">internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a1925aa93c315d2c88349e8de52961945">__pad0__</a>: DirectXBase()</td></tr>
+<tr class="separator:a1925aa93c315d2c88349e8de52961945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:affdb9ba4b224dceeadf1184a7c6738c9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#affdb9ba4b224dceeadf1184a7c6738c9">OnRender</a> ()=0</td></tr>
+<tr class="separator:affdb9ba4b224dceeadf1184a7c6738c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe995f2617f563de908e7a39154e979"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#a2fe995f2617f563de908e7a39154e979">OnUpdateDevice</a> ()=0</td></tr>
+<tr class="separator:a2fe995f2617f563de908e7a39154e979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e9498b57810a50ae996c478a238a1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbd/classabstract.html#aa6e9498b57810a50ae996c478a238a1d">CloseAngle</a> ()</td></tr>
+<tr class="separator:aa6e9498b57810a50ae996c478a238a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aa6e9498b57810a50ae996c478a238a1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CloseAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afded73bee1a97a80babbb1405ec4651f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ComputeOrientationMatrices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2575ada3e15c228fddec70e0a7f64057"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float ConvertDipsToPixels </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dips</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2575ada3e15c228fddec70e0a7f64057"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float ConvertDipsToPixels </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dips</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2575ada3e15c228fddec70e0a7f64057"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float ConvertDipsToPixels </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dips</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af378e3bce924b746e562426b3f4a3649"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateDeviceIndependentResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5d2e98dbe1805a0a40d046c385407be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateDeviceResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5d2e98dbe1805a0a40d046c385407be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateDeviceResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5d2e98dbe1805a0a40d046c385407be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateDeviceResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5d2e98dbe1805a0a40d046c385407be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateDeviceResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8854a0b2d96ae47656af30b6d38a0672"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateGLResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9534fbf4a61e63344fc5af078a6ca286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateWindowSizeDependentResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9534fbf4a61e63344fc5af078a6ca286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateWindowSizeDependentResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9534fbf4a61e63344fc5af078a6ca286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateWindowSizeDependentResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9534fbf4a61e63344fc5af078a6ca286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CreateWindowSizeDependentResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae359cfe6fd945dd76c1f3b3e717994b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getOrientedWindowHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a782ee3b762281de10fc0b06c99571bf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getOrientedWindowWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2733fd599051b336de9499e885ed10d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleDeviceLost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2733fd599051b336de9499e885ed10d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleDeviceLost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f4b12131bb3390a366248a5c54b9863"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Initialize </td>
+          <td>(</td>
+          <td class="paramtype">Windows::UI::Core::CoreWindow^&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a627a3037c323c7252789b81d3666e9da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Initialize </td>
+          <td>(</td>
+          <td class="paramtype">Windows::UI::Core::CoreWindow^&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab32ab0cc76b4eaa37077e89ee9e3cdc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09f1ff6e96a9f4100ba416a86b820b08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Initialize </td>
+          <td>(</td>
+          <td class="paramtype">Windows::UI::Core::CoreWindow^&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Windows::UI::Xaml::Controls::SwapChainBackgroundPanel^&#160;</td>
+          <td class="paramname"><em>panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a780d7390fc123e56678bcb3fbef75c51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OnOrientationChanged </td>
+          <td>(</td>
+          <td class="paramtype">Windows::Graphics::Display::DisplayOrientations&#160;</td>
+          <td class="paramname"><em>orientation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affdb9ba4b224dceeadf1184a7c6738c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool OnRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fe995f2617f563de908e7a39154e979"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OnUpdateDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc3b3c55cdd08934cd11a8fa33d3769e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Present </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc3b3c55cdd08934cd11a8fa33d3769e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Present </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc3b3c55cdd08934cd11a8fa33d3769e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Present </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8912c038e461a29b52eeed273de9b3ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ReleaseResourcesForSuspending </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8912c038e461a29b52eeed273de9b3ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ReleaseResourcesForSuspending </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a436830dff9fbce05c931c5a6d8d5366d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aecf3c2a342765eca93b39f08295dd452"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDevice </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11Device1 *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a616e91ff895113fe39c8c6c91a771e8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDpi </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a616e91ff895113fe39c8c6c91a771e8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDpi </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dpi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44c199fb5f928270ad7de9fbebde65ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Windows::Foundation::Vec2 TransformToOrientation </td>
+          <td>(</td>
+          <td class="paramtype">Windows::Foundation::Vec2&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dipsToPixels</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c22b304109536ee79ab0f07fec76881"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateDevice </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11Device1 *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11DeviceContext1 *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11RenderTargetView *&#160;</td>
+          <td class="paramname"><em>renderTargetView</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91e8a95e186bd336547602d14eb3590a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateForWindowSizeChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91e8a95e186bd336547602d14eb3590a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateForWindowSizeChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d347ea1dff651b4e55c0b9ad9f45b1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateForWindowSizeChange </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91e8a95e186bd336547602d14eb3590a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateForWindowSizeChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1925aa93c315d2c88349e8de52961945"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d20/_c_c_free_type_font_8h.html#ae2fbec0fb24e703b10fda10b1ec34109">internal</a> __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/platform/winrt/<a class="el" href="../../dc/d81/winrt_2_direct_x_base_8h.html">DirectXBase.h</a></li>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/platform/wp8/<a class="el" href="../../db/d33/_direct3_d_base_8h.html">Direct3DBase.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dbd/classabstract.html">abstract</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,3468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Sprite Nodes</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d8/de9/group__sprite__nodes.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">Sprite Nodes</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html">AnimationFrame</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/d7d/classcocos2d_1_1_animation_frame.html" title="AnimationFrame 动画帧 动画的一帧. ">AnimationFrame</a> 动画帧 动画的一帧.  <a href="../../df/d7d/classcocos2d_1_1_animation_frame.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/classcocos2d_1_1_animation.html">Animation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个用来在精灵对象上表现动画的动画对象.  <a href="../../d3/dc5/classcocos2d_1_1_animation.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/classcocos2d_1_1_animation_cache.html">AnimationCache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画缓存单例类。 如何你想要保存动画，你需要使用这个缓存。  <a href="../../d6/dc7/classcocos2d_1_1_animation_cache.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html">Sprite</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) )  <a href="../../d3/d5c/classcocos2d_1_1_sprite.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2f/classcocos2d_1_1_sprite_batch_node.html">SpriteBatchNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchNode与批量节点类似，如果包含子节点会在一次OpenGL调用内绘制完成(一般称为"batch draw")  <a href="../../dd/d2f/classcocos2d_1_1_sprite_batch_node.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html" title="A SpriteFrame has: ">SpriteFrame</a> has:  <a href="../../d3/d35/classcocos2d_1_1_sprite_frame.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d76/classcocos2d_1_1_sprite_frame_cache.html">SpriteFrameCache</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton that handles the loading of the sprite frames.  <a href="../../d7/d76/classcocos2d_1_1_sprite_frame_cache.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga0352035c6c9b8ec436988ddcb4d28ddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0352035c6c9b8ec436988ddcb4d28ddb">isFlipY</a> ()</td></tr>
+<tr class="separator:ga0352035c6c9b8ec436988ddcb4d28ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4fa45d6a2dd52ff02605d5d817109f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gac4fa45d6a2dd52ff02605d5d817109f6">setFlipY</a> (bool flippedY)</td></tr>
+<tr class="separator:gac4fa45d6a2dd52ff02605d5d817109f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52b7741f1ccd38d665e153882b7dc0dd"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga52b7741f1ccd38d665e153882b7dc0dd">getDescription</a> () const override</td></tr>
+<tr class="memdesc:ga52b7741f1ccd38d665e153882b7dc0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到描述性的字符串。这将会使得调试更加简单。  <a href="#ga52b7741f1ccd38d665e153882b7dc0dd">更多...</a><br /></td></tr>
+<tr class="separator:ga52b7741f1ccd38d665e153882b7dc0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8352ecacc26c640cab9f4e84d4431bb4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga8352ecacc26c640cab9f4e84d4431bb4">~Sprite</a> (void)</td></tr>
+<tr class="separator:ga8352ecacc26c640cab9f4e84d4431bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fbcc50a466079c2f2573709887e8859"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga2fbcc50a466079c2f2573709887e8859">init</a> (void)</td></tr>
+<tr class="memdesc:ga2fbcc50a466079c2f2573709887e8859"><td class="mdescLeft">&#160;</td><td class="mdescRight">对未初始化的空Sprite执行初始化操作。  <a href="#ga2fbcc50a466079c2f2573709887e8859">更多...</a><br /></td></tr>
+<tr class="separator:ga2fbcc50a466079c2f2573709887e8859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7ad1fdbf19a0bf60f21e8e565c37d4d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gab7ad1fdbf19a0bf60f21e8e565c37d4d">initWithTexture</a> (Texture2D *texture)</td></tr>
+<tr class="memdesc:gab7ad1fdbf19a0bf60f21e8e565c37d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理初始化Sprite。  <a href="#gab7ad1fdbf19a0bf60f21e8e565c37d4d">更多...</a><br /></td></tr>
+<tr class="separator:gab7ad1fdbf19a0bf60f21e8e565c37d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d1c74e5a8560fa562cc35bbbb994044"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga7d1c74e5a8560fa562cc35bbbb994044">initWithTexture</a> (Texture2D *texture, const Rect &amp;rect)</td></tr>
+<tr class="memdesc:ga7d1c74e5a8560fa562cc35bbbb994044"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理对象及Rect参数初始化Sprite。  <a href="#ga7d1c74e5a8560fa562cc35bbbb994044">更多...</a><br /></td></tr>
+<tr class="separator:ga7d1c74e5a8560fa562cc35bbbb994044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad584036b6c0112e5af1f853ff6d350a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad584036b6c0112e5af1f853ff6d350a7">initWithTexture</a> (Texture2D *texture, const Rect &amp;rect, bool rotated)</td></tr>
+<tr class="memdesc:gad584036b6c0112e5af1f853ff6d350a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理对象、Rect参数及是否旋转初始化Sprite。  <a href="#gad584036b6c0112e5af1f853ff6d350a7">更多...</a><br /></td></tr>
+<tr class="separator:gad584036b6c0112e5af1f853ff6d350a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c05fe90b1b9cfb4f6081567a7486a81"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9c05fe90b1b9cfb4f6081567a7486a81">initWithSpriteFrame</a> (SpriteFrame *pSpriteFrame)</td></tr>
+<tr class="memdesc:ga9c05fe90b1b9cfb4f6081567a7486a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定SpriteFrame初始化Sprite，SpriteFrame中的纹理(texture)和Rect参数将被用于此Sprite。  <a href="#ga9c05fe90b1b9cfb4f6081567a7486a81">更多...</a><br /></td></tr>
+<tr class="separator:ga9c05fe90b1b9cfb4f6081567a7486a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aa8e8582b27fa2554bd0946f4555f16"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga5aa8e8582b27fa2554bd0946f4555f16">initWithSpriteFrameName</a> (const std::string &amp;spriteFrameName)</td></tr>
+<tr class="memdesc:ga5aa8e8582b27fa2554bd0946f4555f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Sprite帧名称初始化Sprite。  <a href="#ga5aa8e8582b27fa2554bd0946f4555f16">更多...</a><br /></td></tr>
+<tr class="separator:ga5aa8e8582b27fa2554bd0946f4555f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e06220c8a6e41fdbb5bc05c75bbd3fd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga8e06220c8a6e41fdbb5bc05c75bbd3fd">initWithFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ga8e06220c8a6e41fdbb5bc05c75bbd3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定图像文件初始化Sprite。  <a href="#ga8e06220c8a6e41fdbb5bc05c75bbd3fd">更多...</a><br /></td></tr>
+<tr class="separator:ga8e06220c8a6e41fdbb5bc05c75bbd3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b4a5e1a76d56e58763d93cf18f41aa1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga3b4a5e1a76d56e58763d93cf18f41aa1">initWithFile</a> (const std::string &amp;filename, const Rect &amp;rect)</td></tr>
+<tr class="memdesc:ga3b4a5e1a76d56e58763d93cf18f41aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定图像文件名及Rect参数初始化Sprite。  <a href="#ga3b4a5e1a76d56e58763d93cf18f41aa1">更多...</a><br /></td></tr>
+<tr class="separator:ga3b4a5e1a76d56e58763d93cf18f41aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62a7e9a63ed5e7629312b9cd1599d0f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga62a7e9a63ed5e7629312b9cd1599d0f1">updateColor</a> (void)</td></tr>
+<tr class="separator:ga62a7e9a63ed5e7629312b9cd1599d0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb5115927e0969e224e39d643407bda0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gabb5115927e0969e224e39d643407bda0">setTextureCoords</a> (Rect rect)</td></tr>
+<tr class="separator:gabb5115927e0969e224e39d643407bda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71bd98603fa2aba19ffe467a5d39125e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga71bd98603fa2aba19ffe467a5d39125e">updateBlendFunc</a> (void)</td></tr>
+<tr class="separator:ga71bd98603fa2aba19ffe467a5d39125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6b995b1a8a2e0b088bce83dba19b926"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad6b995b1a8a2e0b088bce83dba19b926">setReorderChildDirtyRecursively</a> (void)</td></tr>
+<tr class="separator:gad6b995b1a8a2e0b088bce83dba19b926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4afadda2b0757df5a7a7326c7a44136d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga4afadda2b0757df5a7a7326c7a44136d">setDirtyRecursively</a> (bool bValue)</td></tr>
+<tr class="separator:ga4afadda2b0757df5a7a7326c7a44136d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga111fce2fb3d1886083559f4b9ecba3b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d9f/cc_config_8h.html#a25ef1314f97c35a2ed3d029b0ead6da0">CC_CONSTRUCTOR_ACCESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga111fce2fb3d1886083559f4b9ecba3b3">__pad0__</a>: Sprite(void)</td></tr>
+<tr class="separator:ga111fce2fb3d1886083559f4b9ecba3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a531382690c05fc1397a7eaee50120d"><td class="memItemLeft" align="right" valign="top">TextureAtlas *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga2a531382690c05fc1397a7eaee50120d">_textureAtlas</a></td></tr>
+<tr class="separator:ga2a531382690c05fc1397a7eaee50120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ce63af0698bf6503231679508a3b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga61ce63af0698bf6503231679508a3b38">_atlasIndex</a></td></tr>
+<tr class="memdesc:ga61ce63af0698bf6503231679508a3b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteBatchNode纹理集(弱引用)  <a href="#ga61ce63af0698bf6503231679508a3b38">更多...</a><br /></td></tr>
+<tr class="separator:ga61ce63af0698bf6503231679508a3b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9da696d8690dd55e3ece5f449f450cd7"><td class="memItemLeft" align="right" valign="top">SpriteBatchNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9da696d8690dd55e3ece5f449f450cd7">_batchNode</a></td></tr>
+<tr class="memdesc:ga9da696d8690dd55e3ece5f449f450cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpriteSheet绝对(实际)索引  <a href="#ga9da696d8690dd55e3ece5f449f450cd7">更多...</a><br /></td></tr>
+<tr class="separator:ga9da696d8690dd55e3ece5f449f450cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d7d92a6dc33a9bf186020af3053844"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad9d7d92a6dc33a9bf186020af3053844">_dirty</a></td></tr>
+<tr class="memdesc:gad9d7d92a6dc33a9bf186020af3053844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite已加入的SpriteBatchNode(弱引用)  <a href="#gad9d7d92a6dc33a9bf186020af3053844">更多...</a><br /></td></tr>
+<tr class="separator:gad9d7d92a6dc33a9bf186020af3053844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c4c82a9c8b93a81f83ed78124b5181e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga6c4c82a9c8b93a81f83ed78124b5181e">_recursiveDirty</a></td></tr>
+<tr class="memdesc:ga6c4c82a9c8b93a81f83ed78124b5181e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite是否需要更新  <a href="#ga6c4c82a9c8b93a81f83ed78124b5181e">更多...</a><br /></td></tr>
+<tr class="separator:ga6c4c82a9c8b93a81f83ed78124b5181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc63b941fcadeae9bf12c526fbe53551"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gacc63b941fcadeae9bf12c526fbe53551">_shouldBeHidden</a></td></tr>
+<tr class="memdesc:gacc63b941fcadeae9bf12c526fbe53551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite的所有子节点是否需要更新  <a href="#gacc63b941fcadeae9bf12c526fbe53551">更多...</a><br /></td></tr>
+<tr class="separator:gacc63b941fcadeae9bf12c526fbe53551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67a54d3003764497e58840fc43b774a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dce/class_mat4.html">Mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga67a54d3003764497e58840fc43b774a8">_transformToBatch</a></td></tr>
+<tr class="memdesc:ga67a54d3003764497e58840fc43b774a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">不能被绘制，因为Sprite的其中一个祖先不可见  <a href="#ga67a54d3003764497e58840fc43b774a8">更多...</a><br /></td></tr>
+<tr class="separator:ga67a54d3003764497e58840fc43b774a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6a38b8ea3b353af924472ed15b6e3aa"><td class="memItemLeft" align="right" valign="top">BlendFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaa6a38b8ea3b353af924472ed15b6e3aa">_blendFunc</a></td></tr>
+<tr class="separator:gaa6a38b8ea3b353af924472ed15b6e3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9f553a0b06795049c5990a6b78af39d"><td class="memItemLeft" align="right" valign="top">Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad9f553a0b06795049c5990a6b78af39d">_texture</a></td></tr>
+<tr class="memdesc:gad9f553a0b06795049c5990a6b78af39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">TextureProtocol继承使用  <a href="#gad9f553a0b06795049c5990a6b78af39d">更多...</a><br /></td></tr>
+<tr class="separator:gad9f553a0b06795049c5990a6b78af39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27b6bf2e4c2fb6616f04c9efa99a7ffb"><td class="memItemLeft" align="right" valign="top">QuadCommand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga27b6bf2e4c2fb6616f04c9efa99a7ffb">_quadCommand</a></td></tr>
+<tr class="memdesc:ga27b6bf2e4c2fb6616f04c9efa99a7ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于渲染Sprite的Texture2D对象  <a href="#ga27b6bf2e4c2fb6616f04c9efa99a7ffb">更多...</a><br /></td></tr>
+<tr class="separator:ga27b6bf2e4c2fb6616f04c9efa99a7ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54a9a96057e99346f547f258dbf22457"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga54a9a96057e99346f547f258dbf22457">_rect</a></td></tr>
+<tr class="memdesc:ga54a9a96057e99346f547f258dbf22457"><td class="mdescLeft">&#160;</td><td class="mdescRight">quad命令  <a href="#ga54a9a96057e99346f547f258dbf22457">更多...</a><br /></td></tr>
+<tr class="separator:ga54a9a96057e99346f547f258dbf22457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bc307d652b6493a05a5a74cddda19e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0bc307d652b6493a05a5a74cddda19e2">_rectRotated</a></td></tr>
+<tr class="memdesc:ga0bc307d652b6493a05a5a74cddda19e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture2D矩形框  <a href="#ga0bc307d652b6493a05a5a74cddda19e2">更多...</a><br /></td></tr>
+<tr class="separator:ga0bc307d652b6493a05a5a74cddda19e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b7a3d8ee8d942395479f06b5f0eb5b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9b7a3d8ee8d942395479f06b5f0eb5b5">_offsetPosition</a></td></tr>
+<tr class="memdesc:ga9b7a3d8ee8d942395479f06b5f0eb5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">纹理是否旋转  <a href="#ga9b7a3d8ee8d942395479f06b5f0eb5b5">更多...</a><br /></td></tr>
+<tr class="separator:ga9b7a3d8ee8d942395479f06b5f0eb5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b6566e7ec13f281309615d458537c64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0b6566e7ec13f281309615d458537c64">_unflippedOffsetPositionFromCenter</a></td></tr>
+<tr class="separator:ga0b6566e7ec13f281309615d458537c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3aeab120220e52641cc03d03b494fd82"><td class="memItemLeft" align="right" valign="top">V3F_C4B_T2F_Quad&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga3aeab120220e52641cc03d03b494fd82">_quad</a></td></tr>
+<tr class="separator:ga3aeab120220e52641cc03d03b494fd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb4815c292efea3bf5552f315a23b4c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaeb4815c292efea3bf5552f315a23b4c7">_opacityModifyRGB</a></td></tr>
+<tr class="separator:gaeb4815c292efea3bf5552f315a23b4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec1cbaf6e950ae1baffa582c4b6f54e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaec1cbaf6e950ae1baffa582c4b6f54e4">_flippedX</a></td></tr>
+<tr class="separator:gaec1cbaf6e950ae1baffa582c4b6f54e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73dd586705cc3e80f837775b91c3b973"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga73dd586705cc3e80f837775b91c3b973">_flippedY</a></td></tr>
+<tr class="memdesc:ga73dd586705cc3e80f837775b91c3b973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite是否水平旋转  <a href="#ga73dd586705cc3e80f837775b91c3b973">更多...</a><br /></td></tr>
+<tr class="separator:ga73dd586705cc3e80f837775b91c3b973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga516993d10156c2d4f8eb4778f45357ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga516993d10156c2d4f8eb4778f45357ba">_insideBounds</a></td></tr>
+<tr class="memdesc:ga516993d10156c2d4f8eb4778f45357ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite是否垂直旋转  <a href="#ga516993d10156c2d4f8eb4778f45357ba">更多...</a><br /></td></tr>
+<tr class="separator:ga516993d10156c2d4f8eb4778f45357ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Creators</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpd6ab9e3e0af68d85bef320ebd22bcb05"></a><a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html" title="Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ) ...">Sprite</a> invalid index on the <a class="el" href="../../dd/d2f/classcocos2d_1_1_sprite_batch_node.html" title="SpriteBatchNode与批量节点类似，如果包含子节点会在一次OpenGL调用内绘制完成(一般称为&quot;batch draw&quot;) ...">SpriteBatchNode</a> </p>
+</td></tr>
+<tr class="memitem:ga3f75a553fe02f3de82042e81b76da010"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga3f75a553fe02f3de82042e81b76da010">create</a> ()</td></tr>
+<tr class="memdesc:ga3f75a553fe02f3de82042e81b76da010"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个无纹理Sprite，可以在创建后调用setTexture方法设置纹理。  <a href="#ga3f75a553fe02f3de82042e81b76da010">更多...</a><br /></td></tr>
+<tr class="separator:ga3f75a553fe02f3de82042e81b76da010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f52563e6b10e2a69825f39fa8a74115"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga3f52563e6b10e2a69825f39fa8a74115">create</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ga3f52563e6b10e2a69825f39fa8a74115"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定图像文件名创建Sprite  <a href="#ga3f52563e6b10e2a69825f39fa8a74115">更多...</a><br /></td></tr>
+<tr class="separator:ga3f52563e6b10e2a69825f39fa8a74115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bd63b3c6cdcc492d271d737bbfd03fe"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0bd63b3c6cdcc492d271d737bbfd03fe">create</a> (const std::string &amp;filename, const Rect &amp;rect)</td></tr>
+<tr class="memdesc:ga0bd63b3c6cdcc492d271d737bbfd03fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定图像文件名及Rect参数创建Sprite  <a href="#ga0bd63b3c6cdcc492d271d737bbfd03fe">更多...</a><br /></td></tr>
+<tr class="separator:ga0bd63b3c6cdcc492d271d737bbfd03fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d3dbe1fa3ea566d416ff8edd697dd7"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga90d3dbe1fa3ea566d416ff8edd697dd7">createWithTexture</a> (Texture2D *texture)</td></tr>
+<tr class="memdesc:ga90d3dbe1fa3ea566d416ff8edd697dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理对象创建Sprite  <a href="#ga90d3dbe1fa3ea566d416ff8edd697dd7">更多...</a><br /></td></tr>
+<tr class="separator:ga90d3dbe1fa3ea566d416ff8edd697dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82daaff3dd879eacd862690c51060fe3"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga82daaff3dd879eacd862690c51060fe3">createWithTexture</a> (Texture2D *texture, const Rect &amp;rect, bool rotated=false)</td></tr>
+<tr class="memdesc:ga82daaff3dd879eacd862690c51060fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理对象及Rect参数创建Sprite  <a href="#ga82daaff3dd879eacd862690c51060fe3">更多...</a><br /></td></tr>
+<tr class="separator:ga82daaff3dd879eacd862690c51060fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfbb06d0f75d3d9706482fc870da02fe"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gabfbb06d0f75d3d9706482fc870da02fe">createWithSpriteFrame</a> (SpriteFrame *spriteFrame)</td></tr>
+<tr class="memdesc:gabfbb06d0f75d3d9706482fc870da02fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Sprite帧(SpriteFrame)创建Sprite  <a href="#gabfbb06d0f75d3d9706482fc870da02fe">更多...</a><br /></td></tr>
+<tr class="separator:gabfbb06d0f75d3d9706482fc870da02fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9fd6627920420774095afb109783bb7"><td class="memItemLeft" align="right" valign="top">static Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gac9fd6627920420774095afb109783bb7">createWithSpriteFrameName</a> (const std::string &amp;spriteFrameName)</td></tr>
+<tr class="memdesc:gac9fd6627920420774095afb109783bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Sprite帧名称创建Sprite  <a href="#gac9fd6627920420774095afb109783bb7">更多...</a><br /></td></tr>
+<tr class="separator:gac9fd6627920420774095afb109783bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+BatchNode methods</h2></td></tr>
+<tr class="memitem:gafe551d53c274410baa0cbf4d1db7b3d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gafe551d53c274410baa0cbf4d1db7b3d3">updateTransform</a> (void)</td></tr>
+<tr class="memdesc:gafe551d53c274410baa0cbf4d1db7b3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据旋转、位置、缩放比例值更新quad数据。  <a href="#gafe551d53c274410baa0cbf4d1db7b3d3">更多...</a><br /></td></tr>
+<tr class="separator:gafe551d53c274410baa0cbf4d1db7b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99ee27c986e990cb8b22e2bfa516d392"><td class="memItemLeft" align="right" valign="top">virtual SpriteBatchNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga99ee27c986e990cb8b22e2bfa516d392">getBatchNode</a> (void)</td></tr>
+<tr class="memdesc:ga99ee27c986e990cb8b22e2bfa516d392"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果Sprite已经加入SpriteBatchNode返回SpriteBatchNode对象。  <a href="#ga99ee27c986e990cb8b22e2bfa516d392">更多...</a><br /></td></tr>
+<tr class="separator:ga99ee27c986e990cb8b22e2bfa516d392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga091145ef619babb53505061d34393d2b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga091145ef619babb53505061d34393d2b">setBatchNode</a> (SpriteBatchNode *spriteBatchNode)</td></tr>
+<tr class="memdesc:ga091145ef619babb53505061d34393d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置SpriteBatchNode对象。  <a href="#ga091145ef619babb53505061d34393d2b">更多...</a><br /></td></tr>
+<tr class="separator:ga091145ef619babb53505061d34393d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Texture / Frame methods</h2></td></tr>
+<tr class="memitem:ga2d5e5b2268888fdd00887fed0944cac5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga2d5e5b2268888fdd00887fed0944cac5">setTexture</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ga2d5e5b2268888fdd00887fed0944cac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定图像文件名重新设置Sprite纹理(texture)。 方法内会同时调用setTextureRect设置Sprite的尺寸。 TODO: The whole <a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html" title="Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ) ...">Sprite</a> API needs to be reviewed.  <a href="#ga2d5e5b2268888fdd00887fed0944cac5">更多...</a><br /></td></tr>
+<tr class="separator:ga2d5e5b2268888fdd00887fed0944cac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba3fe65130fa3d800d4e30753e833975"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaba3fe65130fa3d800d4e30753e833975">setTexture</a> (Texture2D *texture) override</td></tr>
+<tr class="memdesc:gaba3fe65130fa3d800d4e30753e833975"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Texture2D纹理对象重新设置Sprite纹理(texture)。 纹理(texture)的矩形尺寸大小不会发生改变。  <a href="#gaba3fe65130fa3d800d4e30753e833975">更多...</a><br /></td></tr>
+<tr class="separator:gaba3fe65130fa3d800d4e30753e833975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaceea3bb2e419d30e0c26bfcac31f16fe"><td class="memItemLeft" align="right" valign="top">virtual Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaceea3bb2e419d30e0c26bfcac31f16fe">getTexture</a> () const override</td></tr>
+<tr class="memdesc:gaceea3bb2e419d30e0c26bfcac31f16fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite当前使用的Texture2D纹理对象  <a href="#gaceea3bb2e419d30e0c26bfcac31f16fe">更多...</a><br /></td></tr>
+<tr class="separator:gaceea3bb2e419d30e0c26bfcac31f16fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad527178ae1d61e6898dfca6f3eb76dde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad527178ae1d61e6898dfca6f3eb76dde">setTextureRect</a> (const Rect &amp;rect)</td></tr>
+<tr class="memdesc:gad527178ae1d61e6898dfca6f3eb76dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite纹理(texture)的Rect尺寸。 通过调用setTextureRect(const Rect&amp; rect, bool rotated, const Size&amp; untrimmedSize)实现，其中入参为：<code>rotated</code> = false, <code>utrimmedSize</code> = rect.size.  <a href="#gad527178ae1d61e6898dfca6f3eb76dde">更多...</a><br /></td></tr>
+<tr class="separator:gad527178ae1d61e6898dfca6f3eb76dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga600087e7812c4404f6804086b7792616"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga600087e7812c4404f6804086b7792616">setTextureRect</a> (const Rect &amp;rect, bool rotated, const Size &amp;untrimmedSize)</td></tr>
+<tr class="memdesc:ga600087e7812c4404f6804086b7792616"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite纹理(texture)的Rect尺寸(rect)、 是否旋转(rotated)、裁剪尺寸(untrimmedSize)。 调用此方法会修改纹理(texture)的坐标和顶点位置。  <a href="#ga600087e7812c4404f6804086b7792616">更多...</a><br /></td></tr>
+<tr class="separator:ga600087e7812c4404f6804086b7792616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b614df84073daab9f8c6bf103e33585"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga4b614df84073daab9f8c6bf103e33585">setVertexRect</a> (const Rect &amp;rect)</td></tr>
+<tr class="memdesc:ga4b614df84073daab9f8c6bf103e33585"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite的顶点Rect。 此方法由setTextureRect内部调用，用于在视网膜屏(Retina Display)上显示2倍大小的标清图像。 不能手工调用此方法，应该调用setTextureRect实现相应的功能。  <a href="#ga4b614df84073daab9f8c6bf103e33585">更多...</a><br /></td></tr>
+<tr class="separator:ga4b614df84073daab9f8c6bf103e33585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga440ecab99a9851fc6007d09e9c358842"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga440ecab99a9851fc6007d09e9c358842">setSpriteFrame</a> (const std::string &amp;spriteFrameName)</td></tr>
+<tr class="memdesc:ga440ecab99a9851fc6007d09e9c358842"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过指定的spriteFrameName参数设置新的Sprite帧(SpriteFrame)。  <a href="#ga440ecab99a9851fc6007d09e9c358842">更多...</a><br /></td></tr>
+<tr class="separator:ga440ecab99a9851fc6007d09e9c358842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b7490375645e7d4b44b16a38426b770"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga2b7490375645e7d4b44b16a38426b770">setSpriteFrame</a> (SpriteFrame *newFrame)</td></tr>
+<tr class="memdesc:ga2b7490375645e7d4b44b16a38426b770"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置新的Sprite帧(SpriteFrame)。  <a href="#ga2b7490375645e7d4b44b16a38426b770">更多...</a><br /></td></tr>
+<tr class="separator:ga2b7490375645e7d4b44b16a38426b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1790a6dac6cc50aa50b7dc764d66f64"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak" />
+<a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gab1790a6dac6cc50aa50b7dc764d66f64">setDisplayFrame</a> (SpriteFrame *newFrame)</td></tr>
+<tr class="separator:gab1790a6dac6cc50aa50b7dc764d66f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f9cf7bac8619ec1785caf41f999a5da"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga3f9cf7bac8619ec1785caf41f999a5da">isFrameDisplayed</a> (SpriteFrame *pFrame) const </td></tr>
+<tr class="memdesc:ga3f9cf7bac8619ec1785caf41f999a5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指定的Sprite帧(SpriteFrame)是否正在显示。  <a href="#ga3f9cf7bac8619ec1785caf41f999a5da">更多...</a><br /></td></tr>
+<tr class="separator:ga3f9cf7bac8619ec1785caf41f999a5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5cd6aead73f1498345f978d6b6ce20e"><td class="memItemLeft" align="right" valign="top">virtual SpriteFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf5cd6aead73f1498345f978d6b6ce20e">getSpriteFrame</a> () const </td></tr>
+<tr class="memdesc:gaf5cd6aead73f1498345f978d6b6ce20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前正在显示的Sprite帧(SpriteFrame)。  <a href="#gaf5cd6aead73f1498345f978d6b6ce20e">更多...</a><br /></td></tr>
+<tr class="separator:gaf5cd6aead73f1498345f978d6b6ce20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7e68ff6d5af54b717402c00c5941c06"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak" />
+<a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+SpriteFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gae7e68ff6d5af54b717402c00c5941c06">getDisplayFrame</a> () const </td></tr>
+<tr class="separator:gae7e68ff6d5af54b717402c00c5941c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e6031085a6e0c2d7c2d34e5cb82bcf0"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak" />
+<a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+SpriteFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9e6031085a6e0c2d7c2d34e5cb82bcf0">displayFrame</a> () const </td></tr>
+<tr class="separator:ga9e6031085a6e0c2d7c2d34e5cb82bcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Animation methods</h2></td></tr>
+<tr class="memitem:gaf2517cde68ecea5c8a2c00e641ff06d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf2517cde68ecea5c8a2c00e641ff06d9">setDisplayFrameWithAnimationName</a> (const std::string &amp;animationName, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> frameIndex)</td></tr>
+<tr class="memdesc:gaf2517cde68ecea5c8a2c00e641ff06d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定动画名称(animationName)和帧索引(frameIndex)修改要显示的帧，动画名称从AnimationCache中获取。  <a href="#gaf2517cde68ecea5c8a2c00e641ff06d9">更多...</a><br /></td></tr>
+<tr class="separator:gaf2517cde68ecea5c8a2c00e641ff06d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Sprite Properties' setter/getters</h2></td></tr>
+<tr class="memitem:gae55502143db35842eb6f8a57dcf072f3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gae55502143db35842eb6f8a57dcf072f3">isDirty</a> (void) const </td></tr>
+<tr class="memdesc:gae55502143db35842eb6f8a57dcf072f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断Sprite在Atlas中是否需要更新。  <a href="#gae55502143db35842eb6f8a57dcf072f3">更多...</a><br /></td></tr>
+<tr class="separator:gae55502143db35842eb6f8a57dcf072f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cc6a803bf8aab25672ac009aa32f695"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga7cc6a803bf8aab25672ac009aa32f695">setDirty</a> (bool dirty)</td></tr>
+<tr class="memdesc:ga7cc6a803bf8aab25672ac009aa32f695"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite在Atlas中是否需要更新  <a href="#ga7cc6a803bf8aab25672ac009aa32f695">更多...</a><br /></td></tr>
+<tr class="separator:ga7cc6a803bf8aab25672ac009aa32f695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5934a9798a8ba06eb78648f6e88289a2"><td class="memItemLeft" align="right" valign="top">V3F_C4B_T2F_Quad&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga5934a9798a8ba06eb78648f6e88289a2">getQuad</a> (void) const </td></tr>
+<tr class="memdesc:ga5934a9798a8ba06eb78648f6e88289a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回quad(纹理坐标，顶点坐标和颜色)信息。  NA  NA  <a href="#ga5934a9798a8ba06eb78648f6e88289a2">更多...</a><br /></td></tr>
+<tr class="separator:ga5934a9798a8ba06eb78648f6e88289a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8373a64d67b8335331e4d2fa059a5345"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga8373a64d67b8335331e4d2fa059a5345">isTextureRectRotated</a> (void) const </td></tr>
+<tr class="memdesc:ga8373a64d67b8335331e4d2fa059a5345"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回纹理(texture)是否已经旋转。  <a href="#ga8373a64d67b8335331e4d2fa059a5345">更多...</a><br /></td></tr>
+<tr class="separator:ga8373a64d67b8335331e4d2fa059a5345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd386b16f4bb27b3383b0806dfe12f7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gabd386b16f4bb27b3383b0806dfe12f7d">getAtlasIndex</a> (void) const </td></tr>
+<tr class="memdesc:gabd386b16f4bb27b3383b0806dfe12f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回纹理集(TextureAtlas)的当前使用索引。  <a href="#gabd386b16f4bb27b3383b0806dfe12f7d">更多...</a><br /></td></tr>
+<tr class="separator:gabd386b16f4bb27b3383b0806dfe12f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f1597422578c4dd6a264d299098f00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga6f1597422578c4dd6a264d299098f00a">setAtlasIndex</a> (<a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> atlasIndex)</td></tr>
+<tr class="memdesc:ga6f1597422578c4dd6a264d299098f00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纹理集(TextureAtlas)的当前使用索引。  <a href="#ga6f1597422578c4dd6a264d299098f00a">更多...</a><br /></td></tr>
+<tr class="separator:ga6f1597422578c4dd6a264d299098f00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga672982bc6485d4237007be8cb711062e"><td class="memItemLeft" align="right" valign="top">const Rect &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga672982bc6485d4237007be8cb711062e">getTextureRect</a> (void)</td></tr>
+<tr class="memdesc:ga672982bc6485d4237007be8cb711062e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite的Rect信息  <a href="#ga672982bc6485d4237007be8cb711062e">更多...</a><br /></td></tr>
+<tr class="separator:ga672982bc6485d4237007be8cb711062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga903af614cd193602a0b0844b2e980846"><td class="memItemLeft" align="right" valign="top">TextureAtlas *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga903af614cd193602a0b0844b2e980846">getTextureAtlas</a> (void)</td></tr>
+<tr class="memdesc:ga903af614cd193602a0b0844b2e980846"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite被SpriteBatchNode使用时纹理集(TextureAtlas)的弱引用  <a href="#ga903af614cd193602a0b0844b2e980846">更多...</a><br /></td></tr>
+<tr class="separator:ga903af614cd193602a0b0844b2e980846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9995f95d9027a900d6dafa07dd64e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf9995f95d9027a900d6dafa07dd64e3b">setTextureAtlas</a> (TextureAtlas *pobTextureAtlas)</td></tr>
+<tr class="memdesc:gaf9995f95d9027a900d6dafa07dd64e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite被SpriteBatchNode使用时纹理集(TextureAtlas)的弱引用  <a href="#gaf9995f95d9027a900d6dafa07dd64e3b">更多...</a><br /></td></tr>
+<tr class="separator:gaf9995f95d9027a900d6dafa07dd64e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad54565bd6b30f691eae63a761b830bda"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gad54565bd6b30f691eae63a761b830bda">getOffsetPosition</a> (void) const </td></tr>
+<tr class="memdesc:gad54565bd6b30f691eae63a761b830bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite的偏移位置，像Zwoptex一样由编辑器自动计算。  <a href="#gad54565bd6b30f691eae63a761b830bda">更多...</a><br /></td></tr>
+<tr class="separator:gad54565bd6b30f691eae63a761b830bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec8b12abe4318c3e055d7b9b42e7ef5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaec8b12abe4318c3e055d7b9b42e7ef5d">isFlippedX</a> (void) const </td></tr>
+<tr class="memdesc:gaec8b12abe4318c3e055d7b9b42e7ef5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite是否水平翻转。  <a href="#gaec8b12abe4318c3e055d7b9b42e7ef5d">更多...</a><br /></td></tr>
+<tr class="separator:gaec8b12abe4318c3e055d7b9b42e7ef5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5c337848ad0070a3bdf3e32393a9214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gae5c337848ad0070a3bdf3e32393a9214">setFlippedX</a> (bool flippedX)</td></tr>
+<tr class="memdesc:gae5c337848ad0070a3bdf3e32393a9214"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite是否水平翻转。  <a href="#gae5c337848ad0070a3bdf3e32393a9214">更多...</a><br /></td></tr>
+<tr class="separator:gae5c337848ad0070a3bdf3e32393a9214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52e92c9a10aaff81b02050bfc99d6deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga52e92c9a10aaff81b02050bfc99d6deb">isFlipX</a> ()</td></tr>
+<tr class="separator:ga52e92c9a10aaff81b02050bfc99d6deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90f7c0b747a3c0ea96a08a67ccf83755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga90f7c0b747a3c0ea96a08a67ccf83755">setFlipX</a> (bool flippedX)</td></tr>
+<tr class="separator:ga90f7c0b747a3c0ea96a08a67ccf83755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf24ddf411e01fce2f68de2694f4b04c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf24ddf411e01fce2f68de2694f4b04c3">isFlippedY</a> (void) const </td></tr>
+<tr class="memdesc:gaf24ddf411e01fce2f68de2694f4b04c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Sprite是否垂直翻转。  <a href="#gaf24ddf411e01fce2f68de2694f4b04c3">更多...</a><br /></td></tr>
+<tr class="separator:gaf24ddf411e01fce2f68de2694f4b04c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab147ec91d225a67202ac401061134f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gab147ec91d225a67202ac401061134f80">setFlippedY</a> (bool flippedY)</td></tr>
+<tr class="memdesc:gab147ec91d225a67202ac401061134f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Sprite是否垂直翻转。  <a href="#gab147ec91d225a67202ac401061134f80">更多...</a><br /></td></tr>
+<tr class="separator:gab147ec91d225a67202ac401061134f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Functions inherited from TextureProtocol</h2></td></tr>
+<tr class="memitem:ga8260900844faf4e9e4261f1477b07b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga8260900844faf4e9e4261f1477b07b1a">setBlendFunc</a> (const BlendFunc &amp;blendFunc) override</td></tr>
+<tr class="separator:ga8260900844faf4e9e4261f1477b07b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0863123e20a5cbf0ee97ea84defef98e"><td class="memItemLeft" align="right" valign="top">const BlendFunc &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0863123e20a5cbf0ee97ea84defef98e">getBlendFunc</a> () const override</td></tr>
+<tr class="memdesc:ga0863123e20a5cbf0ee97ea84defef98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ga0863123e20a5cbf0ee97ea84defef98e">更多...</a><br /></td></tr>
+<tr class="separator:ga0863123e20a5cbf0ee97ea84defef98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Functions inherited from Node</h2></td></tr>
+<tr class="memitem:gabbf536d9e9fdbdb51ed9337fe9ddccd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gabbf536d9e9fdbdb51ed9337fe9ddccd1">setScaleX</a> (float scaleX) override</td></tr>
+<tr class="memdesc:gabbf536d9e9fdbdb51ed9337fe9ddccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点的缩放（x）。  <a href="#gabbf536d9e9fdbdb51ed9337fe9ddccd1">更多...</a><br /></td></tr>
+<tr class="separator:gabbf536d9e9fdbdb51ed9337fe9ddccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ff1c296d7635bcbf74e6afbd75bf2c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0ff1c296d7635bcbf74e6afbd75bf2c8">setScaleY</a> (float scaleY) override</td></tr>
+<tr class="memdesc:ga0ff1c296d7635bcbf74e6afbd75bf2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点的缩放（y）。  <a href="#ga0ff1c296d7635bcbf74e6afbd75bf2c8">更多...</a><br /></td></tr>
+<tr class="separator:ga0ff1c296d7635bcbf74e6afbd75bf2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10a101451c2fcd3e847ad10e8c04d757"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga10a101451c2fcd3e847ad10e8c04d757">setScale</a> (float scaleX, float scaleY) override</td></tr>
+<tr class="memdesc:ga10a101451c2fcd3e847ad10e8c04d757"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点的缩放（x,y）.  <a href="#ga10a101451c2fcd3e847ad10e8c04d757">更多...</a><br /></td></tr>
+<tr class="separator:ga10a101451c2fcd3e847ad10e8c04d757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1be6ca229d92a1a145fda8a7eece771"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gac1be6ca229d92a1a145fda8a7eece771">setPosition</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;pos) override</td></tr>
+<tr class="memdesc:gac1be6ca229d92a1a145fda8a7eece771"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#gac1be6ca229d92a1a145fda8a7eece771">更多...</a><br /></td></tr>
+<tr class="separator:gac1be6ca229d92a1a145fda8a7eece771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga915b097d1f266fd315ab2151e5af887d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga915b097d1f266fd315ab2151e5af887d">setPosition</a> (float x, float y) override</td></tr>
+<tr class="memdesc:ga915b097d1f266fd315ab2151e5af887d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点在它父节点坐标系中的位置（x,y）。  <a href="#ga915b097d1f266fd315ab2151e5af887d">更多...</a><br /></td></tr>
+<tr class="separator:ga915b097d1f266fd315ab2151e5af887d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d8fc948a289f8628745bc4c7f382996"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9d8fc948a289f8628745bc4c7f382996">setRotation</a> (float rotation) override</td></tr>
+<tr class="memdesc:ga9d8fc948a289f8628745bc4c7f382996"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点的旋转（angle）角度。  <a href="#ga9d8fc948a289f8628745bc4c7f382996">更多...</a><br /></td></tr>
+<tr class="separator:ga9d8fc948a289f8628745bc4c7f382996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga960d510ca897a764062a0bf22fa3dbc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga960d510ca897a764062a0bf22fa3dbc3">setRotationSkewX</a> (float rotationX) override</td></tr>
+<tr class="memdesc:ga960d510ca897a764062a0bf22fa3dbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点X轴的旋转角度，表现为水平旋转倾斜。  <a href="#ga960d510ca897a764062a0bf22fa3dbc3">更多...</a><br /></td></tr>
+<tr class="separator:ga960d510ca897a764062a0bf22fa3dbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa805b84f34c11e8b9d4e9c1d6cba1c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gafa805b84f34c11e8b9d4e9c1d6cba1c7">setRotationSkewY</a> (float rotationY) override</td></tr>
+<tr class="memdesc:gafa805b84f34c11e8b9d4e9c1d6cba1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置Y轴节点的旋转角度，表现为垂直旋转倾斜。  <a href="#gafa805b84f34c11e8b9d4e9c1d6cba1c7">更多...</a><br /></td></tr>
+<tr class="separator:gafa805b84f34c11e8b9d4e9c1d6cba1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ddb221e19282c51743bf18c5be81b73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga0ddb221e19282c51743bf18c5be81b73">setSkewX</a> (float sx) override</td></tr>
+<tr class="memdesc:ga0ddb221e19282c51743bf18c5be81b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变该节点X轴的倾斜角，单位是度。  <a href="#ga0ddb221e19282c51743bf18c5be81b73">更多...</a><br /></td></tr>
+<tr class="separator:ga0ddb221e19282c51743bf18c5be81b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb24aba0a9f48408005c6fa2185ea6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gacdb24aba0a9f48408005c6fa2185ea6a">setSkewY</a> (float sy) override</td></tr>
+<tr class="memdesc:gacdb24aba0a9f48408005c6fa2185ea6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变该节点Y轴的倾斜角，单位是度。  <a href="#gacdb24aba0a9f48408005c6fa2185ea6a">更多...</a><br /></td></tr>
+<tr class="separator:gacdb24aba0a9f48408005c6fa2185ea6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74b228862740a68c4f1e2a31bac069e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga74b228862740a68c4f1e2a31bac069e4">removeChild</a> (Node *child, bool cleanup) override</td></tr>
+<tr class="memdesc:ga74b228862740a68c4f1e2a31bac069e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">从容器中删除一个孩子，取决于cleanup参数同时会清除所有的活动的动作。  <a href="#ga74b228862740a68c4f1e2a31bac069e4">更多...</a><br /></td></tr>
+<tr class="separator:ga74b228862740a68c4f1e2a31bac069e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadf73dfdd41e1754ef0e2c65dff30755"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaadf73dfdd41e1754ef0e2c65dff30755">removeAllChildrenWithCleanup</a> (bool cleanup) override</td></tr>
+<tr class="memdesc:gaadf73dfdd41e1754ef0e2c65dff30755"><td class="mdescLeft">&#160;</td><td class="mdescRight">从容器中删除所有的孩子, 取决于cleanup参数同时会清除所有的活动的动作。  <a href="#gaadf73dfdd41e1754ef0e2c65dff30755">更多...</a><br /></td></tr>
+<tr class="separator:gaadf73dfdd41e1754ef0e2c65dff30755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1461c8513c94a6c205448da6d23fef28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga1461c8513c94a6c205448da6d23fef28">reorderChild</a> (Node *child, int zOrder) override</td></tr>
+<tr class="memdesc:ga1461c8513c94a6c205448da6d23fef28"><td class="mdescLeft">&#160;</td><td class="mdescRight">对一个孩子重新排序，设定一个新的z轴的值。  <a href="#ga1461c8513c94a6c205448da6d23fef28">更多...</a><br /></td></tr>
+<tr class="separator:ga1461c8513c94a6c205448da6d23fef28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bc3fb695690f6b9a722415004eefb24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga9bc3fb695690f6b9a722415004eefb24">addChild</a> (Node *child, int zOrder, int tag) override</td></tr>
+<tr class="memdesc:ga9bc3fb695690f6b9a722415004eefb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个子节点到容器中，有Z轴顺序和一个标记。  <a href="#ga9bc3fb695690f6b9a722415004eefb24">更多...</a><br /></td></tr>
+<tr class="separator:ga9bc3fb695690f6b9a722415004eefb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff5dacbfb9541bde2108ad94edbbe6cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaff5dacbfb9541bde2108ad94edbbe6cc">sortAllChildren</a> () override</td></tr>
+<tr class="memdesc:gaff5dacbfb9541bde2108ad94edbbe6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">在绘画之前，排列所有的孩子数组一次，而不是每次添加或者删除子节点时都排序。 这个方法可以大量地提高性能。  <a href="#gaff5dacbfb9541bde2108ad94edbbe6cc">更多...</a><br /></td></tr>
+<tr class="separator:gaff5dacbfb9541bde2108ad94edbbe6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba8cb6b2364f18f8b8cb2abc9fe6828f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaba8cb6b2364f18f8b8cb2abc9fe6828f">setScale</a> (float scale) override</td></tr>
+<tr class="memdesc:gaba8cb6b2364f18f8b8cb2abc9fe6828f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置几点的缩放（x,y,z）.  <a href="#gaba8cb6b2364f18f8b8cb2abc9fe6828f">更多...</a><br /></td></tr>
+<tr class="separator:gaba8cb6b2364f18f8b8cb2abc9fe6828f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga815dbbcdb2a48189e685166f3e71926c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga815dbbcdb2a48189e685166f3e71926c">setPositionZ</a> (float positionZ) override</td></tr>
+<tr class="memdesc:ga815dbbcdb2a48189e685166f3e71926c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置位置的“z”轴坐标系，是OpneGL Z 定点值。  <a href="#ga815dbbcdb2a48189e685166f3e71926c">更多...</a><br /></td></tr>
+<tr class="separator:ga815dbbcdb2a48189e685166f3e71926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e6d20338e65d260f589c188305df66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga27e6d20338e65d260f589c188305df66">setAnchorPoint</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;anchor) override</td></tr>
+<tr class="memdesc:ga27e6d20338e65d260f589c188305df66"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置锚点，用百分比表示。  <a href="#ga27e6d20338e65d260f589c188305df66">更多...</a><br /></td></tr>
+<tr class="separator:ga27e6d20338e65d260f589c188305df66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07914843bd924a04129f301728a5d830"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga07914843bd924a04129f301728a5d830">ignoreAnchorPointForPosition</a> (bool value) override</td></tr>
+<tr class="memdesc:ga07914843bd924a04129f301728a5d830"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置抹点为（0,0）当你摆放这个节点的时候。  <a href="#ga07914843bd924a04129f301728a5d830">更多...</a><br /></td></tr>
+<tr class="separator:ga07914843bd924a04129f301728a5d830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6df7f98422c04133e00f03324078ac78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga6df7f98422c04133e00f03324078ac78">setVisible</a> (bool bVisible) override</td></tr>
+<tr class="memdesc:ga6df7f98422c04133e00f03324078ac78"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置节点是否可见。  <a href="#ga6df7f98422c04133e00f03324078ac78">更多...</a><br /></td></tr>
+<tr class="separator:ga6df7f98422c04133e00f03324078ac78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga157adff0789268b907f88abb5f6c1000"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga157adff0789268b907f88abb5f6c1000">draw</a> (Renderer *renderer, const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;transform, bool transformUpdated) override</td></tr>
+<tr class="memdesc:ga157adff0789268b907f88abb5f6c1000"><td class="mdescLeft">&#160;</td><td class="mdescRight">重写这个方法来绘制你自己的节点。 以下的GL状态是默认开启的：  <a href="#ga157adff0789268b907f88abb5f6c1000">更多...</a><br /></td></tr>
+<tr class="separator:ga157adff0789268b907f88abb5f6c1000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e8279c03b7acf14855fa31c1ad08abb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga1e8279c03b7acf14855fa31c1ad08abb">setOpacityModifyRGB</a> (bool modify) override</td></tr>
+<tr class="separator:ga1e8279c03b7acf14855fa31c1ad08abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47afb8850aa8dad9a9f4580e4af932c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga47afb8850aa8dad9a9f4580e4af932c3">isOpacityModifyRGB</a> (void) const override</td></tr>
+<tr class="separator:ga47afb8850aa8dad9a9f4580e4af932c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ga8352ecacc26c640cab9f4e84d4431bb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~Sprite </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9bc3fb695690f6b9a722415004eefb24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void addChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>localZOrder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加一个子节点到容器中，有Z轴顺序和一个标记。 </p>
+<p>如果子节点被添加到了一个“running（活动着的）”节点，那么'onEnter'喝 'onEnterTransitionDidFinish' 将会立即调用。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>一个子节点 </td></tr>
+    <tr><td class="paramname">zOrder</td><td>Z轴顺序为了绘画的优先权。 请参考 <code><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a30da2e2f84bf5dab27e7bf850ad80ec1" title="LocalZOrder是“key”(关键)来分辨节点和它兄弟节点的相关性。 ">setLocalZOrder(int)</a></code> </td></tr>
+    <tr><td class="paramname">tag</td><td>一个用来更容易分辨节点的整数。请参考 <code><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#af833eb63c35974aff52d336565fd89cd" title="改变这个用来更容易分辨节点的标记。 ">setTag(int)</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a81750b6b1e67c0e99c71bae5ce5779bc">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3f75a553fe02f3de82042e81b76da010"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个无纹理Sprite，可以在创建后调用setTexture方法设置纹理。 </p>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3f52563e6b10e2a69825f39fa8a74115"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定图像文件名创建Sprite </p>
+<p>创建之后，Sprite的尺寸大小与图像相同，且偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>包含路径的图像文件名，比如"scene1/monster.png" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0bd63b3c6cdcc492d271d737bbfd03fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定图像文件名及Rect参数创建Sprite </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>包含路径的图像文件名，比如"scene1/monster.png" </td></tr>
+    <tr><td class="paramname">rect</td><td>图像文件裁剪矩形框，仅位于rect矩形框内的图像内容被应用于此Sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An 自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabfbb06d0f75d3d9706482fc870da02fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* createWithSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>spriteFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Sprite帧(SpriteFrame)创建Sprite </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteFrame</td><td>Sprite帧，包括了纹理(texture)和裁剪矩形框(rect)属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac9fd6627920420774095afb109783bb7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* createWithSpriteFrameName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>spriteFrameName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Sprite帧名称创建Sprite </p>
+<p>通过指定的spriteFrameName参数从SpriteFrameCache中提取SpriteFrame，如SpriteFrame不存在将抛出异常。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteFrameName</td><td>Sprite帧名称，参数类型为以null结尾的字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga90d3dbe1fa3ea566d416ff8edd697dd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理对象创建Sprite </p>
+<p>创建之后，Sprite的尺寸大小与纹理对象相同，且偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture2D纹理对象指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga82daaff3dd879eacd862690c51060fe3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Sprite* createWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理对象及Rect参数创建Sprite </p>
+<p>创建之后，Sprite偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture2D纹理对象指针 多个Sprite可使用同一个Texture2D纹理对象 </td></tr>
+    <tr><td class="paramname">rect</td><td>图像文件裁剪矩形框，仅位于rect矩形框内的纹理内容被应用于此Sprite </td></tr>
+    <tr><td class="paramname">rotated</td><td>rect矩形框是否旋转 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动释放的Sprite对象 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9e6031085a6e0c2d7c2d34e5cb82bcf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> SpriteFrame* displayFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000032">弃用:</a></b></dt><dd>使用<code><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf5cd6aead73f1498345f978d6b6ce20e" title="返回当前正在显示的Sprite帧(SpriteFrame)。 ">getSpriteFrame()</a></code>方法替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga157adff0789268b907f88abb5f6c1000"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d6d/classcocos2d_1_1_renderer.html">Renderer</a> *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>transformUpdated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重写这个方法来绘制你自己的节点。 以下的GL状态是默认开启的： </p>
+<ul>
+<li><code>glEnableClientState(GL_VERTEX_ARRAY);</code></li>
+<li><code>glEnableClientState(GL_COLOR_ARRAY);</code></li>
+<li><code>glEnableClientState(GL_TEXTURE_COORD_ARRAY);</code></li>
+<li><code>glEnable(GL_TEXTURE_2D);</code> 并且你不能够关闭他们在绘制完你的节点之后。 但是如果你开启了其他的GL状态，那么你要关闭他们在绘制完你的节点之后。 </li>
+</ul>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a089aacfc6059e735b301f81ee97638bf">Node</a> .</p>
+
+<p>被 <a class="el" href="../../d7/d50/classcocos2d_1_1extension_1_1_physics_sprite.html#a157adff0789268b907f88abb5f6c1000">PhysicsSprite</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabd386b16f4bb27b3383b0806dfe12f7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> getAtlasIndex </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回纹理集(TextureAtlas)的当前使用索引。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga99ee27c986e990cb8b22e2bfa516d392"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SpriteBatchNode* getBatchNode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如果Sprite已经加入SpriteBatchNode返回SpriteBatchNode对象。 </p>
+<dl class="section return"><dt>返回</dt><dd>如果Sprite已经加入SpriteBatchNode返回SpriteBatchNode对象，否则返回空指针。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0863123e20a5cbf0ee97ea84defef98e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const BlendFunc&amp; getBlendFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+<p>实现了 <a class="el" href="../../d8/d7a/classcocos2d_1_1_blend_protocol.html#a8fc680625235f4de5a7bddcd9e9208eb">BlendProtocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga52b7741f1ccd38d665e153882b7dc0dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>得到描述性的字符串。这将会使得调试更加简单。 </p>
+<dl class="section return"><dt>返回</dt><dd>一个字符串  NA  NA </dd></dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a7ed943b6ae07b0f0a64b5acb31afa153">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gae7e68ff6d5af54b717402c00c5941c06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> SpriteFrame* getDisplayFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000031">弃用:</a></b></dt><dd>使用<code><a class="el" href="../../d8/de9/group__sprite__nodes.html#gaf5cd6aead73f1498345f978d6b6ce20e" title="返回当前正在显示的Sprite帧(SpriteFrame)。 ">getSpriteFrame()</a></code>方法替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad54565bd6b30f691eae63a761b830bda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a>&amp; getOffsetPosition </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Sprite的偏移位置，像Zwoptex一样由编辑器自动计算。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5934a9798a8ba06eb78648f6e88289a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V3F_C4B_T2F_Quad getQuad </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回quad(纹理坐标，顶点坐标和颜色)信息。  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="gaf5cd6aead73f1498345f978d6b6ce20e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SpriteFrame* getSpriteFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前正在显示的Sprite帧(SpriteFrame)。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaceea3bb2e419d30e0c26bfcac31f16fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Texture2D* getTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Sprite当前使用的Texture2D纹理对象 </p>
+
+<p>实现了 <a class="el" href="../../de/d3b/classcocos2d_1_1_texture_protocol.html#a319a8b8cff7436fa7202c10f54ac54a9">TextureProtocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga903af614cd193602a0b0844b2e980846"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureAtlas* getTextureAtlas </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Sprite被SpriteBatchNode使用时纹理集(TextureAtlas)的弱引用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga672982bc6485d4237007be8cb711062e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Rect&amp; getTextureRect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回Sprite的Rect信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga07914843bd924a04129f301728a5d830"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ignoreAnchorPointForPosition </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置抹点为（0,0）当你摆放这个节点的时候。 </p>
+<p>这是一个内部方法，仅仅被Layer和Scene使用。不要在框架外调用。 默认值是false,但是在Layer和Scene中是true.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore</td><td>true 如果锚点是（0,0）当你摆放这个节点的时候。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">待办事项:</a></b></dt><dd>这个方法应该被命名为setIgnoreAnchorPointForPosition(bool) 或者其他的有“set”的名称。 </dd></dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a28670606fb35d4cb50fab5d61e568afa">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2fbcc50a466079c2f2573709887e8859"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>对未初始化的空Sprite执行初始化操作。 </p>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#ac4ae554e242cee73c504038d88855eba">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8e06220c8a6e41fdbb5bc05c75bbd3fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定图像文件初始化Sprite。 </p>
+<p>此方法从本地文件系统查找该文件并使用Texture2D加载文件内容，然后使用Texture2D对象创建Sprite。 初始化之后，Sprite的尺寸大小与图像相同，且偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>本地文件系统中的含路径图像文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。  init  init </dd></dl>
+
+<p>被 <a class="el" href="../../d2/d4f/classcocostudio_1_1_skin.html#a96f2b5dec7d1060d03564adb19c2da7d">Skin</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3b4a5e1a76d56e58763d93cf18f41aa1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定图像文件名及Rect参数初始化Sprite。 </p>
+<p>此方法从本地文件系统查找该文件并使用Texture2D加载文件内容，然后使用Texture2D对象创建Sprite。 初始化之后，Sprite偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>本地文件系统中的含路径图像文件名。 </td></tr>
+    <tr><td class="paramname">rect</td><td>指定纹理的内容区域的Rect矩形框。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。  init  init </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9c05fe90b1b9cfb4f6081567a7486a81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>pSpriteFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定SpriteFrame初始化Sprite，SpriteFrame中的纹理(texture)和Rect参数将被用于此Sprite。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSpriteFrame</td><td>SpriteFrame对象，包括了纹理(texture)和裁剪矩形框(rect)属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5aa8e8582b27fa2554bd0946f4555f16"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithSpriteFrameName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>spriteFrameName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Sprite帧名称初始化Sprite。 </p>
+<p>通过指定的spriteFrameName参数从SpriteFrameCache中提取SpriteFrame，如SpriteFrame不存在将抛出异常。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spriteFrameName</td><td>可以从SpriteFrameCache中提取SpriteFrame的关键字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。 </dd></dl>
+
+<p>被 <a class="el" href="../../d2/d4f/classcocostudio_1_1_skin.html#af5940c83bacf553a166f65ddb1e5fd4a">Skin</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab7ad1fdbf19a0bf60f21e8e565c37d4d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理初始化Sprite。 </p>
+<p>初始化之后，Sprite的尺寸大小与纹理对象相同，且偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture2D纹理对象指针 多个Sprite可使用同一个Texture2D纹理对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7d1c74e5a8560fa562cc35bbbb994044"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理对象及Rect参数初始化Sprite。 </p>
+<p>初始化之后，Sprite偏移被置为(0,0)。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture2D纹理对象指针 多个Sprite可使用同一个Texture2D纹理对象 </td></tr>
+    <tr><td class="paramname">rect</td><td>图像文件裁剪矩形框，仅位于rect矩形框内的纹理内容被应用于此Sprite </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad584036b6c0112e5af1f853ff6d350a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool initWithTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理对象、Rect参数及是否旋转初始化Sprite。 </p>
+<p>初始化之后，Sprite偏移被置为(0,0)。 </p><dl class="section note"><dt>注解</dt><dd>这是特定用途的初始化方法。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Texture2D对象，该对象纹理(texture)将用于Sprite。 </td></tr>
+    <tr><td class="paramname">rect</td><td>指定纹理的内容的Rect矩形框。 </td></tr>
+    <tr><td class="paramname">rotated</td><td>纹理矩形框是否旋转。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Sprite正确初始化返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae55502143db35842eb6f8a57dcf072f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isDirty </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断Sprite在Atlas中是否需要更新。 </p>
+<dl class="section return"><dt>返回</dt><dd>如Sprite在Atlas中需要更新返回true，否则返回false。 </dd></dl>
+
+<p>被 <a class="el" href="../../d7/d50/classcocos2d_1_1extension_1_1_physics_sprite.html#a4fea28bac5516879f343a5a905717337">PhysicsSprite</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaec8b12abe4318c3e055d7b9b42e7ef5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isFlippedX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回Sprite是否水平翻转。 </p>
+<p>返回结果只表明Sprite纹理(texture)是否翻转，而不是Sprite子节点的纹理(texture)是否翻转。 此外，翻转纹理(texture)不会改变锚点(anchorPoint)。 如果需要同时翻转锚点(anchorPoint)，和/或同时翻转Sprite子节点，可使用以下方法实现: sprite-&gt;setScaleX(sprite-&gt;<a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a3361e58621f4a2bf9a4d45b08acef04f" title="返回该节点的X轴的缩放因子。 ">getScaleX()</a> * -1);</p>
+<dl class="section return"><dt>返回</dt><dd>如Sprite已水平翻转返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf24ddf411e01fce2f68de2694f4b04c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isFlippedY </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回Sprite是否垂直翻转。 </p>
+<p>返回结果只表明Sprite纹理(texture)是否翻转，而不是Sprite子节点的纹理(texture)是否翻转。 此外，翻转纹理(texture)不会改变锚点(anchorPoint)。 如果需要同时翻转锚点(anchorPoint)，和/或同时翻转Sprite子节点，可使用以下方法实现: sprite-&gt;setScaleY(sprite-&gt;<a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a647778654ef5a8568caf042309f169da" title="返回该节点的Y轴的缩放因子。 ">getScaleY()</a> * -1);</p>
+<dl class="section return"><dt>返回</dt><dd>如Sprite已垂直翻转返回true，否则返回false。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga52e92c9a10aaff81b02050bfc99d6deb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool isFlipX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000033">弃用:</a></b></dt><dd>使用isFlippedX()替代  NA  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0352035c6c9b8ec436988ddcb4d28ddb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> bool isFlipY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000035">弃用:</a></b></dt><dd>使用isFlippedY()替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3f9cf7bac8619ec1785caf41f999a5da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isFrameDisplayed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>pFrame</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指定的Sprite帧(SpriteFrame)是否正在显示。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga47afb8850aa8dad9a9f4580e4af932c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isOpacityModifyRGB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a3271690f7c32c966727202a44b04dfdc">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8373a64d67b8335331e4d2fa059a5345"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isTextureRectRotated </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回纹理(texture)是否已经旋转。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaadf73dfdd41e1754ef0e2c65dff30755"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void removeAllChildrenWithCleanup </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cleanup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从容器中删除所有的孩子, 取决于cleanup参数同时会清除所有的活动的动作。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cleanup</td><td>true 在这个节点上所有的动作和回调都会被删除, false 就不会删除。  removeAllChildren  removeAllChildren </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a0b5b225479b416b6d9f701c5de7e7e63">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga74b228862740a68c4f1e2a31bac069e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void removeChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cleanup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从容器中删除一个孩子，取决于cleanup参数同时会清除所有的活动的动作。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>被删除的子节点。 </td></tr>
+    <tr><td class="paramname">cleanup</td><td>true 在这个节点上所有的动作和回调都会被删除, false 就不会删除。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#ad4548a27e089986fad71fdc09220fd32">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1461c8513c94a6c205448da6d23fef28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void reorderChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>localZOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>对一个孩子重新排序，设定一个新的z轴的值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>一个已经被添加的子节点，它必须是已经添加的。 </td></tr>
+    <tr><td class="paramname">localZOrder</td><td>Z轴顺序为了绘画优先级，请参考setLocalZOrder(int) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#aa0dac0681a42c82d993a06c364cfc615">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga27e6d20338e65d260f589c188305df66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setAnchorPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>anchorPoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置锚点，用百分比表示。 </p>
+<p>一个锚点是所有的转换和定位操作发生的点。 它就像在节点上连接其父类的大头针。 锚点是标准化的，就像百分比一样。(0,0)表示左下角，(1,1)表示右上角。 但是你可以使用比（1,1,）更高的值或者比（0,0）更低的值。 默认的锚点是（0.5,0.5），因此它开始于节点的中心位置。 </p><dl class="section note"><dt>注解</dt><dd>如果节点有物理体，锚点必须在中心，你不能够这个值。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">anchorPoint</td><td>节点的锚点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#abf77210f31f01d0f564600c94c90e2be">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6f1597422578c4dd6a264d299098f00a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAtlasIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>atlasIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置纹理集(TextureAtlas)的当前使用索引。 </p>
+<dl class="section warning"><dt>警告</dt><dd>除非你了解调用此方法的影响，否则不要改变此值 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga091145ef619babb53505061d34393d2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setBatchNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d2f/classcocos2d_1_1_sprite_batch_node.html">SpriteBatchNode</a> *&#160;</td>
+          <td class="paramname"><em>spriteBatchNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置SpriteBatchNode对象。 </p>
+<dl class="section warning"><dt>警告</dt><dd>不推荐手工调用此方法，可参照以下示例代码使用SpriteBatchNode <div class="fragment"><div class="line">SpriteBatchNode *batch = <a class="code" href="../../d3/d82/classcocos2d_1_1_node.html#a94a8cc552de7cd11356b526935fab55d">SpriteBatchNode::create</a>(<span class="stringliteral">&quot;Images/grossini_dance_atlas.png&quot;</span>, 15);</div>
+<div class="line">Sprite *sprite = <a class="code" href="../../d8/de9/group__sprite__nodes.html#ga90d3dbe1fa3ea566d416ff8edd697dd7">Sprite::createWithTexture</a>(batch-&gt;getTexture(), Rect(0, 0, 57, 57));</div>
+<div class="line">batch-&gt;<a class="code" href="../../d8/de9/group__sprite__nodes.html#ga9bc3fb695690f6b9a722415004eefb24">addChild</a>(sprite);</div>
+<div class="line">layer-&gt;addChild(batch);</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8260900844faf4e9e4261f1477b07b1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBlendFunc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d14/structcocos2d_1_1_blend_func.html">BlendFunc</a> &amp;&#160;</td>
+          <td class="paramname"><em>blendFunc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line">*当此函数绑定到js或lua时，函数参数将被改变</div>
+<div class="line">*js函数声明: var <a class="code" href="../../d8/de9/group__sprite__nodes.html#ga8260900844faf4e9e4261f1477b07b1a">setBlendFunc</a>(var src, var dst)</div>
+<div class="line">*lua函数声明: local <a class="code" href="../../d8/de9/group__sprite__nodes.html#ga8260900844faf4e9e4261f1477b07b1a">setBlendFunc</a>(local src, local dst)</div>
+</div><!-- fragment --> 
+<p>实现了 <a class="el" href="../../d8/d7a/classcocos2d_1_1_blend_protocol.html#a9587e028be3f98d8fb2027a55ab967be">BlendProtocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7cc6a803bf8aab25672ac009aa32f695"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setDirty </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dirty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Sprite在Atlas中是否需要更新 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4afadda2b0757df5a7a7326c7a44136d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setDirtyRecursively </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab1790a6dac6cc50aa50b7dc764d66f64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void setDisplayFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>newFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000030">弃用:</a></b></dt><dd>使用<code><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga440ecab99a9851fc6007d09e9c358842" title="通过指定的spriteFrameName参数设置新的Sprite帧(SpriteFrame)。 ">setSpriteFrame()</a></code>方法替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf2517cde68ecea5c8a2c00e641ff06d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setDisplayFrameWithAnimationName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>animationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
+          <td class="paramname"><em>frameIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定动画名称(animationName)和帧索引(frameIndex)修改要显示的帧，动画名称从AnimationCache中获取。 </p>
+
+</div>
+</div>
+<a class="anchor" id="gae5c337848ad0070a3bdf3e32393a9214"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFlippedX </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flippedX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置Sprite是否水平翻转。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flippedX</td><td>如设置水平翻转传入true，否则传入false。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab147ec91d225a67202ac401061134f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFlippedY </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flippedY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置Sprite是否垂直翻转。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flippedY</td><td>如设置垂直翻转传入true，否则传入false。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga90f7c0b747a3c0ea96a08a67ccf83755"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void setFlipX </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flippedX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000034">弃用:</a></b></dt><dd>使用setFlippedX()替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac4fa45d6a2dd52ff02605d5d817109f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void setFlipY </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flippedY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000036">弃用:</a></b></dt><dd>使用setFlippedY()替代 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1e8279c03b7acf14855fa31c1ad08abb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setOpacityModifyRGB </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>modify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a9b28e83c9ee125b2cb37bd1d3eb8aabd">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gac1be6ca229d92a1a145fda8a7eece771"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a818b0254d354593ea2319a2c28b32f2e">Node</a> .</p>
+
+<p>被 <a class="el" href="../../d7/d50/classcocos2d_1_1extension_1_1_physics_sprite.html#ac97b486c8bd6f2c29a796327f3a5d535">PhysicsSprite</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga915b097d1f266fd315ab2151e5af887d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setPosition </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点在它父节点坐标系中的位置（x,y）。 </p>
+<p>传递两个数字（x,y）比传递Vec2对象更有效率。 这个方法要在Lua和JavaScript下。 从Lua到C++传递一个数字比传递一个对象快10倍。</p>
+<div class="fragment"><div class="line"><span class="comment">// sample code in Lua</span></div>
+<div class="line">local pos  = node::getPosition()  -- returns <a class="code" href="../../d9/d7f/class_vec2.html">Vec2</a> <span class="keywordtype">object</span> from C++</div>
+<div class="line">node:<a class="code" href="../../d8/de9/group__sprite__nodes.html#gac1be6ca229d92a1a145fda8a7eece771">setPosition</a>(x, y)            -- pass x, y coordinate to C++</div>
+</div><!-- fragment --><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>位置的X轴坐标系 </td></tr>
+    <tr><td class="paramname">y</td><td>位置的Y轴坐标系 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a331195336739d9167f1e8ffd611bb325">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga815dbbcdb2a48189e685166f3e71926c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setPositionZ </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>positionZ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置位置的“z”轴坐标系，是OpneGL Z 定点值。 </p>
+<p>OpenGL深度缓存和深度测试默认值是关闭的，你需要打开它们 来正确的使用这个属性。</p>
+<p><code><a class="el" href="../../d8/de9/group__sprite__nodes.html#ga815dbbcdb2a48189e685166f3e71926c" title="设置位置的“z”轴坐标系，是OpneGL Z 定点值。 ">setPositionZ()</a></code> 同样设置 <code>setGlobalZValue()</code> 用“positionZ” 作为值。</p>
+<dl class="section see"><dt>参见</dt><dd><code>setGlobalZValue()</code></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexZ</td><td>该节点的penGL Z 定点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a36332c25df9b0c9f0197a645658d1581">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gad6b995b1a8a2e0b088bce83dba19b926"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setReorderChildDirtyRecursively </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9d8fc948a289f8628745bc4c7f382996"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setRotation </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点的旋转（angle）角度。 </p>
+<p>0 是默认的旋转角度。 负数顺时针旋转节点，正数逆时针旋转节点。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>节点的旋转角度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#adababeeaed26db2306df84e337b4ea37">Node</a> .</p>
+
+<p>被 <a class="el" href="../../d7/d50/classcocos2d_1_1extension_1_1_physics_sprite.html#a89f36b5a042b70fe5298ccc1e5be6c21">PhysicsSprite</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga960d510ca897a764062a0bf22fa3dbc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setRotationSkewX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rotationX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点X轴的旋转角度，表现为水平旋转倾斜。 </p>
+<p><code>setRotationalSkew()</code> 和 <code>setSkew()</code>的不同是前一个是模拟Flash的倾斜功能 然而后一个使用真正的倾斜功能。</p>
+<p>0 是默认的旋转角度。 负数节点顺时针旋转，正数节点逆时针旋转。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationX</td><td>X轴的旋转角度表现为水平旋转倾斜。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a274823dc85882e933932f4a24c24eec8">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gafa805b84f34c11e8b9d4e9c1d6cba1c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setRotationSkewY </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rotationY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Y轴节点的旋转角度，表现为垂直旋转倾斜。 </p>
+<p><code>setRotationalSkew()</code> 和<code>setSkew()</code> 的不同是前一个使用Flash倾斜功能 后一个使用了真正的倾斜功能。</p>
+<p>0 默认的旋转角度。 负数表示顺时针旋转，正数表示逆时针旋转。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationY</td><td>Y轴的旋转角度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a4a5ee7b3580ff634d02e172be8351e4c">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga10a101451c2fcd3e847ad10e8c04d757"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点的缩放（x,y）. </p>
+<p>缩放因子乘以该节点和它子节点的宽与高。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaleX</td><td>X轴的缩放因子。 </td></tr>
+    <tr><td class="paramname">scaleY</td><td>Y轴的缩放因子。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#ad890743ea7159925d7a677da89bd94b6">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gaba8cb6b2364f18f8b8cb2abc9fe6828f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置几点的缩放（x,y,z）. </p>
+<p>缩放因子将会乘以该节点和它子节点的宽，高和深度。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>X轴和Y轴的缩放因子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#ac91c54136908f520b748be4a69ace0c0">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gabbf536d9e9fdbdb51ed9337fe9ddccd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setScaleX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点的缩放（x）。 </p>
+<p>它是一个缩放因子，将会乘以节点的宽以及它的子节点。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaleX</td><td>X轴的缩放因子. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#aed0ec67a2bb5ae4d2049abf37c76be81">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0ff1c296d7635bcbf74e6afbd75bf2c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setScaleY </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点的缩放（y）。 </p>
+<p>它是一个缩放因子，将会乘以节点的宽以及它的子节点。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaleY</td><td>Y轴的缩放因子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a4db8536a9f45dd467512e55bb18403ad">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0ddb221e19282c51743bf18c5be81b73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSkewX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>skewX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变该节点X轴的倾斜角，单位是度。 </p>
+<p><code>setRotationalSkew()</code>和 <code>setSkew()</code> 的不同时是前一个模拟Flash的倾斜功能。 然而后一个使用真正的倾斜功能。</p>
+<p>这个角度描述了在X轴方向的切形变（shear distortion）。 因此，这个角度在Y轴和图形左边之间。 默认值skewX角度是0，负值使该节点按顺时针变形。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skewX</td><td>该节点的X轴的倾斜角。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a1086d6be1498e0db8a4cacbd3ebded48">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gacdb24aba0a9f48408005c6fa2185ea6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSkewY </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>skewY</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变该节点Y轴的倾斜角，单位是度。 </p>
+<p><code>setRotationalSkew()</code>和 <code>setSkew()</code> 的不同时是前一个模拟Flash的倾斜功能。 然而后一个使用真正的倾斜功能。</p>
+<p>这个角度描述了在Y轴方向的切形变（shear distortion）。 因此，这个角度在X轴和图形底边之间。 默认值skewY角度是0，负值使该节点按顺时针变形。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skewY</td><td>该节点的Y轴的倾斜角。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#ae8b0dd476af42d56ecf7994283286664">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga440ecab99a9851fc6007d09e9c358842"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>spriteFrameName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过指定的spriteFrameName参数设置新的Sprite帧(SpriteFrame)。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2b7490375645e7d4b44b16a38426b770"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d35/classcocos2d_1_1_sprite_frame.html">SpriteFrame</a> *&#160;</td>
+          <td class="paramname"><em>newFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置新的Sprite帧(SpriteFrame)。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2d5e5b2268888fdd00887fed0944cac5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定图像文件名重新设置Sprite纹理(texture)。 方法内会同时调用setTextureRect设置Sprite的尺寸。 TODO: The whole <a class="el" href="../../d3/d5c/classcocos2d_1_1_sprite.html" title="Sprite定义为二维图像 ( 参见：http://en.wikipedia.org/wiki/Sprite_(computer_graphics) ) ...">Sprite</a> API needs to be reviewed. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaba3fe65130fa3d800d4e30753e833975"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d6a/classcocos2d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Texture2D纹理对象重新设置Sprite纹理(texture)。 纹理(texture)的矩形尺寸大小不会发生改变。 </p>
+
+<p>实现了 <a class="el" href="../../de/d3b/classcocos2d_1_1_texture_protocol.html#ab5609dbd966a95921b62a78a6a77b4bc">TextureProtocol</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf9995f95d9027a900d6dafa07dd64e3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTextureAtlas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d58/classcocos2d_1_1_texture_atlas.html">TextureAtlas</a> *&#160;</td>
+          <td class="paramname"><em>pobTextureAtlas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Sprite被SpriteBatchNode使用时纹理集(TextureAtlas)的弱引用 </p>
+
+</div>
+</div>
+<a class="anchor" id="gabb5115927e0969e224e39d643407bda0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setTextureCoords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad527178ae1d61e6898dfca6f3eb76dde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setTextureRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Sprite纹理(texture)的Rect尺寸。 通过调用setTextureRect(const Rect&amp; rect, bool rotated, const Size&amp; untrimmedSize)实现，其中入参为：<code>rotated</code> = false, <code>utrimmedSize</code> = rect.size. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga600087e7812c4404f6804086b7792616"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setTextureRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rotated</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>untrimmedSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Sprite纹理(texture)的Rect尺寸(rect)、 是否旋转(rotated)、裁剪尺寸(untrimmedSize)。 调用此方法会修改纹理(texture)的坐标和顶点位置。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4b614df84073daab9f8c6bf103e33585"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setVertexRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置Sprite的顶点Rect。 此方法由setTextureRect内部调用，用于在视网膜屏(Retina Display)上显示2倍大小的标清图像。 不能手工调用此方法，应该调用setTextureRect实现相应的功能。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga6df7f98422c04133e00f03324078ac78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置节点是否可见。 </p>
+<p>默认值是true,一个节点默认是可见的。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visible</td><td>true 如果节点是可见的，false 如果节点是隐藏的。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#aff6547edc5bdc358ad27566775035b3c">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gaff5dacbfb9541bde2108ad94edbbe6cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void sortAllChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在绘画之前，排列所有的孩子数组一次，而不是每次添加或者删除子节点时都排序。 这个方法可以大量地提高性能。 </p>
+<dl class="section note"><dt>注解</dt><dd>不要手动调用这个方法，除非一个添加过的子节点将要被删除在这个结构内。 </dd></dl>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a123d030d1b3aa3293d13252aa3bddf85">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="ga71bd98603fa2aba19ffe467a5d39125e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void updateBlendFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga62a7e9a63ed5e7629312b9cd1599d0f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateColor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a462e256610fbdba5743b8be5b287d01b">Node</a> .</p>
+
+</div>
+</div>
+<a class="anchor" id="gafe551d53c274410baa0cbf4d1db7b3d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void updateTransform </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据旋转、位置、缩放比例值更新quad数据。 </p>
+
+<p>重载 <a class="el" href="../../d3/d82/classcocos2d_1_1_node.html#a512fb3ef56081b3878dc78ee3b1261a1">Node</a> .</p>
+
+<p>被 <a class="el" href="../../d2/d4f/classcocostudio_1_1_skin.html#a6274bcceb7f61cedde5774a9600b46ea">Skin</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ga111fce2fb3d1886083559f4b9ecba3b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d9f/cc_config_8h.html#a25ef1314f97c35a2ed3d029b0ead6da0">CC_CONSTRUCTOR_ACCESS</a> __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga61ce63af0698bf6503231679508a3b38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> _atlasIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SpriteBatchNode纹理集(弱引用) </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9da696d8690dd55e3ece5f449f450cd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpriteBatchNode* _batchNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SpriteSheet绝对(实际)索引 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa6a38b8ea3b353af924472ed15b6e3aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BlendFunc _blendFunc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad9d7d92a6dc33a9bf186020af3053844"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _dirty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprite已加入的SpriteBatchNode(弱引用) </p>
+
+</div>
+</div>
+<a class="anchor" id="gaec1cbaf6e950ae1baffa582c4b6f54e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _flippedX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga73dd586705cc3e80f837775b91c3b973"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _flippedY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprite是否水平旋转 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga516993d10156c2d4f8eb4778f45357ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _insideBounds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprite是否垂直旋转 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9b7a3d8ee8d942395479f06b5f0eb5b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> _offsetPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纹理是否旋转 </p>
+
+</div>
+</div>
+<a class="anchor" id="gaeb4815c292efea3bf5552f315a23b4c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _opacityModifyRGB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga3aeab120220e52641cc03d03b494fd82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V3F_C4B_T2F_Quad _quad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga27b6bf2e4c2fb6616f04c9efa99a7ffb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuadCommand _quadCommand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用于渲染Sprite的Texture2D对象 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga54a9a96057e99346f547f258dbf22457"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rect _rect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>quad命令 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0bc307d652b6493a05a5a74cddda19e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _rectRotated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Texture2D矩形框 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga6c4c82a9c8b93a81f83ed78124b5181e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _recursiveDirty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprite是否需要更新 </p>
+
+</div>
+</div>
+<a class="anchor" id="gacc63b941fcadeae9bf12c526fbe53551"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _shouldBeHidden</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprite的所有子节点是否需要更新 </p>
+
+</div>
+</div>
+<a class="anchor" id="gad9f553a0b06795049c5990a6b78af39d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D* _texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TextureProtocol继承使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2a531382690c05fc1397a7eaee50120d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureAtlas* _textureAtlas</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga67a54d3003764497e58840fc43b774a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> _transformToBatch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>不能被绘制，因为Sprite的其中一个祖先不可见 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0b6566e7ec13f281309615d458537c64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> _unflippedOffsetPositionFromCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

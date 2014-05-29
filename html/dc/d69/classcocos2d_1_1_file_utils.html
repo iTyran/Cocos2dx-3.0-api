@@ -1,0 +1,1585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: FileUtils类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dc/d69/classcocos2d_1_1_file_utils.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="../../d5/d04/classcocos2d_1_1_file_utils-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">FileUtils类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">Platform Adaptor</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>处理文件操作的协助类  
+ <a href="../../dc/d69/classcocos2d_1_1_file_utils.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCFileUtils.h&gt;</code></p>
+<div class="dynheader">
+类 FileUtils 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../dc/d69/classcocos2d_1_1_file_utils.png" usemap="#FileUtils_map" alt=""/>
+  <map id="FileUtils_map" name="FileUtils_map">
+<area href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html" title="Helper class to handle file operations. " alt="CCFileUtilsWinRT" shape="rect" coords="0,56,110,80"/>
+<area href="../../d4/d04/classcocos2d_1_1_file_utils_android.html" title="处理文件操作的协助类 " alt="FileUtilsAndroid" shape="rect" coords="120,56,230,80"/>
+<area href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html" title="处理文件操作的协助类 " alt="FileUtilsApple" shape="rect" coords="240,56,350,80"/>
+<area href="../../d7/da7/classcocos2d_1_1_file_utils_linux.html" title="Helper class to handle file operations. " alt="FileUtilsLinux" shape="rect" coords="360,56,470,80"/>
+<area href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html" title="Helper class to handle file operations. " alt="FileUtilsWin32" shape="rect" coords="480,56,590,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aaf15781d0d63273a6e4047b768b92a27"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aaf15781d0d63273a6e4047b768b92a27">~FileUtils</a> ()</td></tr>
+<tr class="memdesc:aaf15781d0d63273a6e4047b768b92a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileUtils的析构函数  NA  NA.  <a href="#aaf15781d0d63273a6e4047b768b92a27">更多...</a><br /></td></tr>
+<tr class="separator:aaf15781d0d63273a6e4047b768b92a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba4ea8dbcc361e1cd8f538c9df532ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a3ba4ea8dbcc361e1cd8f538c9df532ac">purgeCachedEntries</a> ()</td></tr>
+<tr class="memdesc:a3ba4ea8dbcc361e1cd8f538c9df532ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">清理文件查找缓存  <a href="#a3ba4ea8dbcc361e1cd8f538c9df532ac">更多...</a><br /></td></tr>
+<tr class="separator:a3ba4ea8dbcc361e1cd8f538c9df532ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd49adb67a1d672882a6fa4b18ba2aa"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a1fd49adb67a1d672882a6fa4b18ba2aa">getStringFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a1fd49adb67a1d672882a6fa4b18ba2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过文件名获得文件内容，返回string类型  <a href="#a1fd49adb67a1d672882a6fa4b18ba2aa">更多...</a><br /></td></tr>
+<tr class="separator:a1fd49adb67a1d672882a6fa4b18ba2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af840e40a6e561e066eed211deab28730"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#af840e40a6e561e066eed211deab28730">getDataFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:af840e40a6e561e066eed211deab28730"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建文件内容的二进制数据  <a href="#af840e40a6e561e066eed211deab28730">更多...</a><br /></td></tr>
+<tr class="separator:af840e40a6e561e066eed211deab28730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6f2f5f8771d48b8031041f8bd1c880"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak" />
+<a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a0d6f2f5f8771d48b8031041f8bd1c880">getFileData</a> (const std::string &amp;filename, const char *mode, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *size)</td></tr>
+<tr class="memdesc:a0d6f2f5f8771d48b8031041f8bd1c880"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取资源文件数据  <a href="#a0d6f2f5f8771d48b8031041f8bd1c880">更多...</a><br /></td></tr>
+<tr class="separator:a0d6f2f5f8771d48b8031041f8bd1c880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117ccf9a5599f06381fdc6ad9188810b"><td class="memItemLeft" align="right" valign="top">virtual unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a117ccf9a5599f06381fdc6ad9188810b">getFileDataFromZip</a> (const std::string &amp;zipFilePath, const std::string &amp;filename, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *size)</td></tr>
+<tr class="memdesc:a117ccf9a5599f06381fdc6ad9188810b"><td class="mdescLeft">&#160;</td><td class="mdescRight">从zip文件中获取资源文件数据  <a href="#a117ccf9a5599f06381fdc6ad9188810b">更多...</a><br /></td></tr>
+<tr class="separator:a117ccf9a5599f06381fdc6ad9188810b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64d0bdc6c2d5e84a03f4e6bd37ea603"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aa64d0bdc6c2d5e84a03f4e6bd37ea603">fullPathForFilename</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:aa64d0bdc6c2d5e84a03f4e6bd37ea603"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回给定的文件名的完整路径  <a href="#aa64d0bdc6c2d5e84a03f4e6bd37ea603">更多...</a><br /></td></tr>
+<tr class="separator:aa64d0bdc6c2d5e84a03f4e6bd37ea603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9caa25f8e7d514cc7c320308c8380c3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a9caa25f8e7d514cc7c320308c8380c3c">loadFilenameLookupDictionaryFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a9caa25f8e7d514cc7c320308c8380c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过文件名加载文件查找词典。  <a href="#a9caa25f8e7d514cc7c320308c8380c3c">更多...</a><br /></td></tr>
+<tr class="separator:a9caa25f8e7d514cc7c320308c8380c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91bd7403e5b19458411f07d46a962dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ab91bd7403e5b19458411f07d46a962dc">setFilenameLookupDictionary</a> (const <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> &amp;filenameLookupDict)</td></tr>
+<tr class="memdesc:ab91bd7403e5b19458411f07d46a962dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置文件查找词典  <a href="#ab91bd7403e5b19458411f07d46a962dc">更多...</a><br /></td></tr>
+<tr class="separator:ab91bd7403e5b19458411f07d46a962dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6329e0810555c2cacc42d2c9eded4064"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a6329e0810555c2cacc42d2c9eded4064">fullPathFromRelativeFile</a> (const std::string &amp;filename, const std::string &amp;relativeFile)</td></tr>
+<tr class="memdesc:a6329e0810555c2cacc42d2c9eded4064"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过文件名和文件的湘桂路径获取完整路径  <a href="#a6329e0810555c2cacc42d2c9eded4064">更多...</a><br /></td></tr>
+<tr class="separator:a6329e0810555c2cacc42d2c9eded4064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a66e22c212489b0ac3638023f2ea23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#af9a66e22c212489b0ac3638023f2ea23">setSearchResolutionsOrder</a> (const std::vector&lt; std::string &gt; &amp;searchResolutionsOrder)</td></tr>
+<tr class="memdesc:af9a66e22c212489b0ac3638023f2ea23"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置包含资源查找路径的array  <a href="#af9a66e22c212489b0ac3638023f2ea23">更多...</a><br /></td></tr>
+<tr class="separator:af9a66e22c212489b0ac3638023f2ea23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2a387af7a3bbb22c8b18388f51f358"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a1a2a387af7a3bbb22c8b18388f51f358">addSearchResolutionsOrder</a> (const std::string &amp;order)</td></tr>
+<tr class="memdesc:a1a2a387af7a3bbb22c8b18388f51f358"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加资源的查找顺序  <a href="#a1a2a387af7a3bbb22c8b18388f51f358">更多...</a><br /></td></tr>
+<tr class="separator:a1a2a387af7a3bbb22c8b18388f51f358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdeb8171db1a4d5f2cb603f235cbc58"><td class="memItemLeft" align="right" valign="top">virtual const std::vector<br class="typebreak" />
+&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aebdeb8171db1a4d5f2cb603f235cbc58">getSearchResolutionsOrder</a> ()</td></tr>
+<tr class="memdesc:aebdeb8171db1a4d5f2cb603f235cbc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取包含资源查找顺序的array  <a href="#aebdeb8171db1a4d5f2cb603f235cbc58">更多...</a><br /></td></tr>
+<tr class="separator:aebdeb8171db1a4d5f2cb603f235cbc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad906224664baff99aaadb3a8b0e5c92d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ad906224664baff99aaadb3a8b0e5c92d">setSearchPaths</a> (const std::vector&lt; std::string &gt; &amp;searchPaths)</td></tr>
+<tr class="memdesc:ad906224664baff99aaadb3a8b0e5c92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一组查找路径  <a href="#ad906224664baff99aaadb3a8b0e5c92d">更多...</a><br /></td></tr>
+<tr class="separator:ad906224664baff99aaadb3a8b0e5c92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1fc1a244f5206378a8adea681eca5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aab1fc1a244f5206378a8adea681eca5e">addSearchPath</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:aab1fc1a244f5206378a8adea681eca5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加查找路径  <a href="#aab1fc1a244f5206378a8adea681eca5e">更多...</a><br /></td></tr>
+<tr class="separator:aab1fc1a244f5206378a8adea681eca5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac775251aed9a31fd8bc9b6f3abd9959e"><td class="memItemLeft" align="right" valign="top">virtual const std::vector<br class="typebreak" />
+&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ac775251aed9a31fd8bc9b6f3abd9959e">getSearchPaths</a> () const </td></tr>
+<tr class="memdesc:ac775251aed9a31fd8bc9b6f3abd9959e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取一组查找路径  <a href="#ac775251aed9a31fd8bc9b6f3abd9959e">更多...</a><br /></td></tr>
+<tr class="separator:ac775251aed9a31fd8bc9b6f3abd9959e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48a5687f4beadd50a7ead62bfa63c52"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aa48a5687f4beadd50a7ead62bfa63c52">getWritablePath</a> () const =0</td></tr>
+<tr class="memdesc:aa48a5687f4beadd50a7ead62bfa63c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取可写的路径  <a href="#aa48a5687f4beadd50a7ead62bfa63c52">更多...</a><br /></td></tr>
+<tr class="separator:aa48a5687f4beadd50a7ead62bfa63c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac472e2a26799b57ad1f7674af871ed81"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ac472e2a26799b57ad1f7674af871ed81">isFileExist</a> (const std::string &amp;filename) const </td></tr>
+<tr class="memdesc:ac472e2a26799b57ad1f7674af871ed81"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查文件是否存在  <a href="#ac472e2a26799b57ad1f7674af871ed81">更多...</a><br /></td></tr>
+<tr class="separator:ac472e2a26799b57ad1f7674af871ed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e3291bc4f86d6453b225574814299d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ab8e3291bc4f86d6453b225574814299d">isAbsolutePath</a> (const std::string &amp;path) const </td></tr>
+<tr class="memdesc:ab8e3291bc4f86d6453b225574814299d"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查路径是不是绝对路径  <a href="#ab8e3291bc4f86d6453b225574814299d">更多...</a><br /></td></tr>
+<tr class="separator:ab8e3291bc4f86d6453b225574814299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9546c0181d5d44303522c27c2a8d41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#acb9546c0181d5d44303522c27c2a8d41">setPopupNotify</a> (bool notify)</td></tr>
+<tr class="memdesc:acb9546c0181d5d44303522c27c2a8d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置或获得当图片加载失败的时候是否弹出一个消息框  <a href="#acb9546c0181d5d44303522c27c2a8d41">更多...</a><br /></td></tr>
+<tr class="separator:acb9546c0181d5d44303522c27c2a8d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8af55c48a5437b04d6804b511b0fdc1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ab8af55c48a5437b04d6804b511b0fdc1">isPopupNotify</a> ()</td></tr>
+<tr class="separator:ab8af55c48a5437b04d6804b511b0fdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a3fc9ff4eff9339e20c67116c56a90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a22a3fc9ff4eff9339e20c67116c56a90">getValueMapFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a22a3fc9ff4eff9339e20c67116c56a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">把文件的内容转换成ValueMap  <a href="#a22a3fc9ff4eff9339e20c67116c56a90">更多...</a><br /></td></tr>
+<tr class="separator:a22a3fc9ff4eff9339e20c67116c56a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a9f14d66e72c24a1fc613b8e474549"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a44a9f14d66e72c24a1fc613b8e474549">writeToFile</a> (<a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> &amp;dict, const std::string &amp;fullPath)</td></tr>
+<tr class="memdesc:a44a9f14d66e72c24a1fc613b8e474549"><td class="mdescLeft">&#160;</td><td class="mdescRight">把ValueMap写到一个plist文件中  <a href="#a44a9f14d66e72c24a1fc613b8e474549">更多...</a><br /></td></tr>
+<tr class="separator:a44a9f14d66e72c24a1fc613b8e474549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7268676855fe750d1e830ffd263836"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">ValueVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a2e7268676855fe750d1e830ffd263836">getValueVectorFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a2e7268676855fe750d1e830ffd263836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the contents of a file to a ValueVector.  <a href="#a2e7268676855fe750d1e830ffd263836">更多...</a><br /></td></tr>
+<tr class="separator:a2e7268676855fe750d1e830ffd263836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c352b74e6542e70d0c4521b15bc8e8"><td class="memItemLeft" align="right" valign="top">const std::unordered_map<br class="typebreak" />
+&lt; std::string, std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a61c352b74e6542e70d0c4521b15bc8e8">getFullPathCache</a> () const </td></tr>
+<tr class="memdesc:a61c352b74e6542e70d0c4521b15bc8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回完整路径的缓存  <a href="#a61c352b74e6542e70d0c4521b15bc8e8">更多...</a><br /></td></tr>
+<tr class="separator:a61c352b74e6542e70d0c4521b15bc8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a14f872ec6904938a056618e1c4074165"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a14f872ec6904938a056618e1c4074165">getInstance</a> ()</td></tr>
+<tr class="memdesc:a14f872ec6904938a056618e1c4074165"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 FileUtils的实例  <a href="#a14f872ec6904938a056618e1c4074165">更多...</a><br /></td></tr>
+<tr class="separator:a14f872ec6904938a056618e1c4074165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05351a268226fab089bd81f68d9b4904"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a05351a268226fab089bd81f68d9b4904">destroyInstance</a> ()</td></tr>
+<tr class="memdesc:a05351a268226fab089bd81f68d9b4904"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁FileUtils的实例  <a href="#a05351a268226fab089bd81f68d9b4904">更多...</a><br /></td></tr>
+<tr class="separator:a05351a268226fab089bd81f68d9b4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a78d707b8d9ab168016b9af89cc49f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a9a78d707b8d9ab168016b9af89cc49f4">sharedFileUtils</a> ()</td></tr>
+<tr class="separator:a9a78d707b8d9ab168016b9af89cc49f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b45f7ecbf01673d42c8791ff9bf8b1a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a3b45f7ecbf01673d42c8791ff9bf8b1a">purgeFileUtils</a> ()</td></tr>
+<tr class="separator:a3b45f7ecbf01673d42c8791ff9bf8b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a46df16dcf5479582c51ac481a3419bd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a46df16dcf5479582c51ac481a3419bd2">FileUtils</a> ()</td></tr>
+<tr class="memdesc:a46df16dcf5479582c51ac481a3419bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数.  <a href="#a46df16dcf5479582c51ac481a3419bd2">更多...</a><br /></td></tr>
+<tr class="separator:a46df16dcf5479582c51ac481a3419bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ae554e242cee73c504038d88855eba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ac4ae554e242cee73c504038d88855eba">init</a> ()</td></tr>
+<tr class="memdesc:ac4ae554e242cee73c504038d88855eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化FileUtils实例.  <a href="#ac4ae554e242cee73c504038d88855eba">更多...</a><br /></td></tr>
+<tr class="separator:ac4ae554e242cee73c504038d88855eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b2d7b85b2c226a58575da578222447"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#af2b2d7b85b2c226a58575da578222447">getNewFilename</a> (const std::string &amp;filename) const </td></tr>
+<tr class="memdesc:af2b2d7b85b2c226a58575da578222447"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件名查找词典中获取新的文件名 它可能有一个重写的名字  <a href="#af2b2d7b85b2c226a58575da578222447">更多...</a><br /></td></tr>
+<tr class="separator:af2b2d7b85b2c226a58575da578222447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1568bcbe38196449c5d1906f68f8d13a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a1568bcbe38196449c5d1906f68f8d13a">isFileExistInternal</a> (const std::string &amp;filename) const =0</td></tr>
+<tr class="memdesc:a1568bcbe38196449c5d1906f68f8d13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在不考虑查找路径和解析顺序的情况下，检查文件是否存在  <a href="#a1568bcbe38196449c5d1906f68f8d13a">更多...</a><br /></td></tr>
+<tr class="separator:a1568bcbe38196449c5d1906f68f8d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b632602461ab6b557c6654bc9f86c5"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a26b632602461ab6b557c6654bc9f86c5">getPathForFilename</a> (const std::string &amp;filename, const std::string &amp;resolutionDirectory, const std::string &amp;searchPath)</td></tr>
+<tr class="memdesc:a26b632602461ab6b557c6654bc9f86c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">以文件名、解析目录和查找路径为参数获取完整路径  <a href="#a26b632602461ab6b557c6654bc9f86c5">更多...</a><br /></td></tr>
+<tr class="separator:a26b632602461ab6b557c6654bc9f86c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4621f68741c594f3d21f4a9117f3c30"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ab4621f68741c594f3d21f4a9117f3c30">getFullPathForDirectoryAndFilename</a> (const std::string &amp;directory, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ab4621f68741c594f3d21f4a9117f3c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">以目录和文件名为参数获取完整路径  <a href="#ab4621f68741c594f3d21f4a9117f3c30">更多...</a><br /></td></tr>
+<tr class="separator:ab4621f68741c594f3d21f4a9117f3c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a51ead18ba342ef8c0cd4a1caa95a1290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a51ead18ba342ef8c0cd4a1caa95a1290">_filenameLookupDict</a></td></tr>
+<tr class="memdesc:a51ead18ba342ef8c0cd4a1caa95a1290"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于键值查找文件名的Dictionary变量 常下面的这些方法中使用：  <a href="#a51ead18ba342ef8c0cd4a1caa95a1290">更多...</a><br /></td></tr>
+<tr class="separator:a51ead18ba342ef8c0cd4a1caa95a1290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f20f47290a1a4a27285b120159284d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a38f20f47290a1a4a27285b120159284d">_searchResolutionsOrderArray</a></td></tr>
+<tr class="memdesc:a38f20f47290a1a4a27285b120159284d"><td class="mdescLeft">&#160;</td><td class="mdescRight">包含分辨率文件夹的vector对象 在vector中的索引值越小，对应的分辨率从目录的优先级就越高  <a href="#a38f20f47290a1a4a27285b120159284d">更多...</a><br /></td></tr>
+<tr class="separator:a38f20f47290a1a4a27285b120159284d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6063698ed4d7eb748738c93b6c13f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a4b6063698ed4d7eb748738c93b6c13f9">_searchPathArray</a></td></tr>
+<tr class="memdesc:a4b6063698ed4d7eb748738c93b6c13f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">包含查找路径的vector变量 在vector中的索引值越小，对应的查找路径的优先级就越高  <a href="#a4b6063698ed4d7eb748738c93b6c13f9">更多...</a><br /></td></tr>
+<tr class="separator:a4b6063698ed4d7eb748738c93b6c13f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44271febc1f5d436b8f9f850de53c27f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a44271febc1f5d436b8f9f850de53c27f">_defaultResRootPath</a></td></tr>
+<tr class="memdesc:a44271febc1f5d436b8f9f850de53c27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">资源的默认的根路径 如果要改变这个资源的默认的根路径，我们可以在FileUtils子类的init方法中完成 例如： 在Android平台上，资源的默认根路径会在FileUtilsAndroid::init()中被赋值为"assets/" 在Blackberry平台上，我们在FileUtilsBlackberry::init()中把"app/native/Resources/"赋给这个变量。  <a href="#a44271febc1f5d436b8f9f850de53c27f">更多...</a><br /></td></tr>
+<tr class="separator:a44271febc1f5d436b8f9f850de53c27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14749f69b1eb2c86aba0e3d668a2d22"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#ab14749f69b1eb2c86aba0e3d668a2d22">_fullPathCache</a></td></tr>
+<tr class="memdesc:ab14749f69b1eb2c86aba0e3d668a2d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">完整路径的缓存。在文件被查找到之后，会把文件的完整路径添加到这个缓存中。 这个变量是用来提高文件查找性能的。  <a href="#ab14749f69b1eb2c86aba0e3d668a2d22">更多...</a><br /></td></tr>
+<tr class="separator:ab14749f69b1eb2c86aba0e3d668a2d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:a290ffa656af77bffd9c938add78d2e06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#a290ffa656af77bffd9c938add78d2e06">s_sharedFileUtils</a></td></tr>
+<tr class="memdesc:a290ffa656af77bffd9c938add78d2e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileUtils的单例指针  <a href="#a290ffa656af77bffd9c938add78d2e06">更多...</a><br /></td></tr>
+<tr class="separator:a290ffa656af77bffd9c938add78d2e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>处理文件操作的协助类 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aaf15781d0d63273a6e4047b768b92a27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FileUtils的析构函数  NA  NA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a46df16dcf5479582c51ac481a3419bd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认构造函数. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aab1fc1a244f5206378a8adea681eca5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSearchPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加查找路径 </p>
+<dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a2a387af7a3bbb22c8b18388f51f358"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void addSearchResolutionsOrder </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>order</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加资源的查找顺序 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#af9a66e22c212489b0ac3638023f2ea23" title="设置包含资源查找路径的array ">setSearchResolutionsOrder()</a>, <a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aa64d0bdc6c2d5e84a03f4e6bd37ea603" title="返回给定的文件名的完整路径 ">fullPathForFilename()</a>. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a05351a268226fab089bd81f68d9b4904"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void destroyInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>销毁FileUtils的实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa64d0bdc6c2d5e84a03f4e6bd37ea603"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string fullPathForFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回给定的文件名的完整路径 </p>
+<p>首先我们试着在“filenameLookup”词典中获得新的文件名。 如果找不到新的文件名，则还是用原来的文件名。 然后尝试使用FileUtils 的查找规则：resolutions, and search paths来获得该文件名的完整路径。 文件查找是在数组中存放的查找路径的元素顺序和解析目录的基础上实现的。</p>
+<p>例如：</p>
+<p>我们通过setSearchPaths给存放查找路径的vector设置两个元素（"/mnt/sdcard/", "internal_dir/"）， 并通过setSearchResolutionsOrder给存放解析顺序的vector设置三个元素（"resources-ipadhd/", "resources-ipad/", "resources-iphonehd"） "internal_dir"是"Resources/"下的文件 </p><pre class="fragment">如果我们有一个名为‘sprite.png’的文件，并且在文件查找词典中包含key为sprite.png、value为sprite.pvr.gz的键值对。
+那么就会用'sprite.pvr.gz'代替'sprite.png'，然后按照下面的顺序查找文件sprite.pvr.gz：
+
+    /mnt/sdcard/resources-ipadhd/sprite.pvr.gz      (如果找不到，则查找下一个)
+    /mnt/sdcard/resources-ipad/sprite.pvr.gz        (如果找不到，则查找下一个)
+    /mnt/sdcard/resources-iphonehd/sprite.pvr.gz    (如果找不到，则查找下一个)
+    /mnt/sdcard/sprite.pvr.gz                       (如果找不到，则查找下一个)
+    internal_dir/resources-ipadhd/sprite.pvr.gz     (如果找不到，则查找下一个)
+    internal_dir/resources-ipad/sprite.pvr.gz       (如果找不到，则查找下一个)
+    internal_dir/resources-iphonehd/sprite.pvr.gz   (如果找不到，则查找下一个)
+    internal_dir/sprite.pvr.gz                      (如果找不到，则返回 "sprite.png")
+
+如果文件名包含像"gamescene/uilayer/sprite.png"的相对路径，
+并且文件查找词典中包含key为gamescene/uilayer/sprite.png、value为gamescene/uilayer/sprite.pvr.gz的键值对，
+那么将按下面的顺序查找文件：
+
+    /mnt/sdcard/gamescene/uilayer/resources-ipadhd/sprite.pvr.gz      (如果找不到，则查找下一个)
+    /mnt/sdcard/gamescene/uilayer/resources-ipad/sprite.pvr.gz        (如果找不到，则查找下一个)
+    /mnt/sdcard/gamescene/uilayer/resources-iphonehd/sprite.pvr.gz    (如果找不到，则查找下一个)
+    /mnt/sdcard/gamescene/uilayer/sprite.pvr.gz                       (如果找不到，则查找下一个)
+    internal_dir/gamescene/uilayer/resources-ipadhd/sprite.pvr.gz     (如果找不到，则查找下一个)
+    internal_dir/gamescene/uilayer/resources-ipad/sprite.pvr.gz       (如果找不到，则查找下一个)
+    internal_dir/gamescene/uilayer/resources-iphonehd/sprite.pvr.gz   (如果找不到，则查找下一个)
+    internal_dir/gamescene/uilayer/sprite.pvr.gz                      (如果找不到，则返回 "gamescene/uilayer/sprite.png")
+</pre><p>如果在文件系统中找不到新文件，就会直接返回文件名的那个参数。 这个方法添加了跨平台的支持。你使用的无论是cocos2d-js还是其他的像StellaSDK 和 Apportable一样的跨平台编译工具链， 对于不同平台下的给定的文件，你也许需要加载不同的资源。 </p><dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6329e0810555c2cacc42d2c9eded4064"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string fullPathFromRelativeFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>relativeFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过文件名和文件的湘桂路径获取完整路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramname">pszRelativeFile</td><td>文件的相对路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>完整路径 例如：文件名: hello.png, pszRelativeFile: /User/path1/path2/hello.plist 返回: /User/path1/path2/hello.pvr （如果有key为hello.png、value为hello.pvr的键值对） </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af840e40a6e561e066eed211deab28730"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d5/dda/classcocos2d_1_1_data.html">Data</a> getDataFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建文件内容的二进制数据 </p>
+<dl class="section return"><dt>返回</dt><dd>返回一个数据对象. </dd></dl>
+
+<p>被 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#ae80dd2425eb8baa770d962e6cb058c15">FileUtilsWin32</a> , 以及 <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#ae80dd2425eb8baa770d962e6cb058c15">FileUtilsAndroid</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d6f2f5f8771d48b8031041f8bd1c880"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> unsigned char* getFileData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取资源文件数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>包含查找路径的资源文件的文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pszMode</td><td>文件的读取模式 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pSize</td><td>如果文件读取成功，这个值就是数据的大小，否则就是零 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果成功，则返回数据指针，否则返回NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>注意：你应该对返回的非空指针调用free()函数负责 </dd></dl>
+
+<p>被 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#a130702a4495ab45a5c39c614bf9777c1">FileUtilsWin32</a> , 以及 <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#a6670261b069e917e099a557d970f31c6">FileUtilsAndroid</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a117ccf9a5599f06381fdc6ad9188810b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned char* getFileDataFromZip </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>zipFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从zip文件中获取资源文件数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>包含zip文件的相对路径的资源文件的文件名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">size</td><td>如果文件读取成功，这个值就是数据的大小，否则就是零 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果成功，则返回数据指针，否则返回 nullptr. </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>注意：你应该对返回的非空指针调用free()函数负责 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a61c352b74e6542e70d0c4521b15bc8e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt;std::string, std::string&gt;&amp; getFullPathCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回完整路径的缓存 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4621f68741c594f3d21f4a9117f3c30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getFullPathForDirectoryAndFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以目录和文件名为参数获取完整路径 </p>
+<dl class="section note"><dt>注解</dt><dd>只有在IOS和Mac平台上需要重载这个方法，因为这两个平台上他们使用<code>[[NSBundle mainBundle] pathForResource: ofType: inDirectory:]</code> 来获得完整路径。在其他的平台上则是使用这个方法的默认实现 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strDirectory</td><td>包含我们将要查找文件的目录 </td></tr>
+    <tr><td class="paramname">strFilename</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回文件的完整路径，如果查找不到此文件，则放回一个空的string对象 </dd></dl>
+
+<p>被 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#ad26d000da95247f5eb8408bd87d62ada">FileUtilsWin32</a>, <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#a5c103db0ad90417f89d8ba17e1a624c5">CCFileUtilsWinRT</a> , 以及 <a class="el" href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html#ad26d000da95247f5eb8408bd87d62ada">FileUtilsApple</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14f872ec6904938a056618e1c4074165"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 FileUtils的实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="af2b2d7b85b2c226a58575da578222447"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getNewFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从文件名查找词典中获取新的文件名 它可能有一个重写的名字 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>原始文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>从文件名查找词典中返回的新的文件名 如果原始文件名不在查找词典中，则返回原始的文件名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26b632602461ab6b557c6654bc9f86c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getPathForFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>resolutionDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>searchPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以文件名、解析目录和查找路径为参数获取完整路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramname">resolutionDirectory</td><td>解析目录 </td></tr>
+    <tr><td class="paramname">searchPath</td><td>查找路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回文件的完整路径。如果文件的完整路径不存在，则返回一个空的string对象 </dd></dl>
+
+<p>被 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#a37a3935892defe898a3f76a594d5db02">FileUtilsWin32</a> , 以及 <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#a37a3935892defe898a3f76a594d5db02">CCFileUtilsWinRT</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac775251aed9a31fd8bc9b6f3abd9959e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;std::string&gt;&amp; getSearchPaths </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取一组查找路径 </p>
+<dl class="section return"><dt>返回</dt><dd>返回查找路径的数组 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>fullPathForFilename(const char*).  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebdeb8171db1a4d5f2cb603f235cbc58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;std::string&gt;&amp; getSearchResolutionsOrder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取包含资源查找顺序的array </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#af9a66e22c212489b0ac3638023f2ea23" title="设置包含资源查找路径的array ">setSearchResolutionsOrder(const std::vector&lt;std::string&gt;&amp;)</a>, fullPathForFilename(const char*). </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fd49adb67a1d672882a6fa4b18ba2aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getStringFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过文件名获得文件内容，返回string类型 </p>
+
+<p>被 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#af778a5ef053e5862a058bd439d51ace0">FileUtilsWin32</a>, <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#af778a5ef053e5862a058bd439d51ace0">FileUtilsAndroid</a> , 以及 <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#af778a5ef053e5862a058bd439d51ace0">CCFileUtilsWinRT</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22a3fc9ff4eff9339e20c67116c56a90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> getValueMapFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>把文件的内容转换成ValueMap </p>
+<dl class="section note"><dt>注解</dt><dd>这是个内部调用的函数 </dd></dl>
+
+<p>被 <a class="el" href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html#aa8a8d46f4446dda6b0114fa44f95b7a1">FileUtilsApple</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e7268676855fe750d1e830ffd263836"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">ValueVector</a> getValueVectorFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the contents of a file to a ValueVector. </p>
+<dl class="section note"><dt>注解</dt><dd>This method is used internally. </dd></dl>
+
+<p>被 <a class="el" href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html#ab361a5de93f26d88f4713f111fe406e2">FileUtilsApple</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa48a5687f4beadd50a7ead62bfa63c52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string getWritablePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取可写的路径 </p>
+<dl class="section return"><dt>返回</dt><dd>返回一个可以写入或读取文件的路径 </dd></dl>
+
+<p>在 <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#a0ac92c6962db9e570fe092b01c5dde60">FileUtilsAndroid</a>, <a class="el" href="../../d7/da7/classcocos2d_1_1_file_utils_linux.html#a0ac92c6962db9e570fe092b01c5dde60">FileUtilsLinux</a>, <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#a0ac92c6962db9e570fe092b01c5dde60">FileUtilsWin32</a>, <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#a0ac92c6962db9e570fe092b01c5dde60">CCFileUtilsWinRT</a> , 以及 <a class="el" href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html#ab9f5fe4f728e81312b4bf24320870c35">FileUtilsApple</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4ae554e242cee73c504038d88855eba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化FileUtils实例. </p>
+<p>set _searchPathArray and _searchResolutionsOrderArray 将被赋予默认的值</p>
+<dl class="section note"><dt>注解</dt><dd>当你把Cocos2d-x移植到一个新的平台，你要注意这个方法。 你可以在FileUtils的子类中（如：FileUtilsAndroid）给value to _defaultResRootPath赋一个默认值，然后调用FileUtils::init(). </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>如果成功则返回true，否则返回false </dd></dl>
+
+<p>被 <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#aee8048628ff2b5c026c9e15acdcaacb8">FileUtilsAndroid</a>, <a class="el" href="../../d7/da7/classcocos2d_1_1_file_utils_linux.html#aee8048628ff2b5c026c9e15acdcaacb8">FileUtilsLinux</a>, <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#aee8048628ff2b5c026c9e15acdcaacb8">FileUtilsWin32</a> , 以及 <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#aee8048628ff2b5c026c9e15acdcaacb8">CCFileUtilsWinRT</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8e3291bc4f86d6453b225574814299d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isAbsolutePath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查路径是不是绝对路径 </p>
+<dl class="section note"><dt>注解</dt><dd>在Android平台上，如果传递进来的参数是相对于"assets/"，这个方法就会把它当成绝对路径 在blackBarry平台上，以"app/native/Resources/"开头的路径被看成绝对路径</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strPath</td><td>需要检查的路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果是绝对路径返回true，否则返回false </dd></dl>
+
+<p>被 <a class="el" href="../../d4/d04/classcocos2d_1_1_file_utils_android.html#a3ba30596dd3156fd2a157ddc2fe2b5b5">FileUtilsAndroid</a>, <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#a3ba30596dd3156fd2a157ddc2fe2b5b5">FileUtilsWin32</a> , 以及 <a class="el" href="../../d4/d1e/classcocos2d_1_1_c_c_file_utils_win_r_t.html#a3ba30596dd3156fd2a157ddc2fe2b5b5">CCFileUtilsWinRT</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac472e2a26799b57ad1f7674af871ed81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isFileExist </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查文件是否存在 </p>
+<dl class="section note"><dt>注解</dt><dd>如果传递进来的参数是一个相对路径，将会在其开头加上一个默认的根路径 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strFilePath</td><td>文件的路径。可以使绝对路径，也可以是相对路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果文件存在返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1568bcbe38196449c5d1906f68f8d13a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isFileExistInternal </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在不考虑查找路径和解析顺序的情况下，检查文件是否存在 </p>
+
+<p>在 <a class="el" href="../../dd/dca/classcocos2d_1_1_file_utils_win32.html#a1ec3cbd61616152389afa70261557e68">FileUtilsWin32</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8af55c48a5437b04d6804b511b0fdc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool isPopupNotify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9caa25f8e7d514cc7c320308c8380c3c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void loadFilenameLookupDictionaryFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过文件名加载文件查找词典。 </p>
+<dl class="section note"><dt>注解</dt><dd>plist文件应该遵循如下的格式：</dd></dl>
+<div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
+<div class="line">&lt;!DOCTYPE plist PUBLIC <span class="stringliteral">&quot;-//Apple//DTD PLIST 1.0//EN&quot;</span> <span class="stringliteral">&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;</span>&gt;</div>
+<div class="line">&lt;plist version=<span class="stringliteral">&quot;1.0&quot;</span>&gt;</div>
+<div class="line">&lt;dict&gt;</div>
+<div class="line">    &lt;key&gt;filenames&lt;/key&gt;</div>
+<div class="line">    &lt;dict&gt;</div>
+<div class="line">        &lt;key&gt;sounds/click.wav&lt;/key&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">string</span>&gt;sounds/click.caf&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">        &lt;key&gt;sounds/endgame.wav&lt;/key&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">string</span>&gt;sounds/endgame.caf&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">        &lt;key&gt;sounds/gem-0.wav&lt;/key&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">string</span>&gt;sounds/gem-0.caf&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">    &lt;/dict&gt;</div>
+<div class="line">    &lt;key&gt;metadata&lt;/key&gt;</div>
+<div class="line">    &lt;dict&gt;</div>
+<div class="line">        &lt;key&gt;version&lt;/key&gt;</div>
+<div class="line">        &lt;integer&gt;1&lt;/integer&gt;</div>
+<div class="line">    &lt;/dict&gt;</div>
+<div class="line">&lt;/dict&gt;</div>
+<div class="line">&lt;/plist&gt;</div>
+</div><!-- fragment --> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>plist文件名</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1  loadFilenameLookup  loadFilenameLookup </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3ba4ea8dbcc361e1cd8f538c9df532ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void purgeCachedEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清理文件查找缓存 </p>
+<dl class="section note"><dt>注解</dt><dd>它应该在资源更新之后被调用。 例如：在CocosPlayer这个示例中，每次你从CocosBuilder运行程序的时候， 所有的资源都会下载到可写的文件夹里面。 在js程序运行之前，这个方法应该被调用来清空文件查找缓存 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b45f7ecbf01673d42c8791ff9bf8b1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void purgeFileUtils </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000055">弃用:</a></b></dt><dd>使用destroyInstance() 代替 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab91bd7403e5b19458411f07d46a962dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setFilenameLookupDictionary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>filenameLookupDict</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置文件查找词典 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFilenameLookupDict</td><td>代替文件名的词典 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb9546c0181d5d44303522c27c2a8d41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setPopupNotify </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>notify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置或获得当图片加载失败的时候是否弹出一个消息框 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad906224664baff99aaadb3a8b0e5c92d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSearchPaths </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>searchPaths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置一组查找路径 </p>
+<p>你可以用这个数组去修改资源的查找路径 如果你想使用缓存中主题或者是资源，你可以在这个数组中添加新的成员（资源的入口地址） </p><dl class="section note"><dt>注解</dt><dd>这个方法既可以访问绝对路径又可以访问相对路径。 如果给vector传递的是一个相对路径，FileUtils会在这个相对路径的前面加上默认的资源目录 例如： 在Android上，默认的资源根路径是 "assets/". 如果把"/mnt/sdcard/" 和"resources-large" 传递到 查找路径的vector中,因为它是一个相对路径， 所以"resources-large" 会被转换成 "assets/resources-large"</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">searchPaths</td><td>包含查找路径的array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>fullPathForFilename(const char*) </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1 In js:var setSearchPaths(var jsval);  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9a66e22c212489b0ac3638023f2ea23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void setSearchResolutionsOrder </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>searchResolutionsOrder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置包含资源查找路径的array </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">searchResolutionsOrder</td><td>包含资源查找顺序的原数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html#aebdeb8171db1a4d5f2cb603f235cbc58" title="获取包含资源查找顺序的array ">getSearchResolutionsOrder(void)</a>, fullPathForFilename(const char*). </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v2.1 In js:var setSearchResolutionsOrder(var jsval)  NA </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a78d707b8d9ab168016b9af89cc49f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a>* sharedFileUtils </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000054">弃用:</a></b></dt><dd>使用getInstance()代替 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44a9f14d66e72c24a1fc613b8e474549"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool writeToFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>dict</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fullPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>把ValueMap写到一个plist文件中 </p>
+<dl class="section note"><dt>注解</dt><dd>这是个内部调用的函数 </dd></dl>
+
+<p>被 <a class="el" href="../../d7/dbe/classcocos2d_1_1_file_utils_apple.html#a69ac871a4d9bd9d285e8a803cffdbb09">FileUtilsApple</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a44271febc1f5d436b8f9f850de53c27f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _defaultResRootPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>资源的默认的根路径 如果要改变这个资源的默认的根路径，我们可以在FileUtils子类的init方法中完成 例如： 在Android平台上，资源的默认根路径会在FileUtilsAndroid::init()中被赋值为"assets/" 在Blackberry平台上，我们在FileUtilsBlackberry::init()中把"app/native/Resources/"赋给这个变量。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a51ead18ba342ef8c0cd4a1caa95a1290"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">ValueMap</a> _filenameLookupDict</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>基于键值查找文件名的Dictionary变量 常下面的这些方法中使用： </p>
+<p>std::string fullPathForFilename(const char*);</p>
+<dl class="section since"><dt>自从</dt><dd>v2.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab14749f69b1eb2c86aba0e3d668a2d22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, std::string&gt; _fullPathCache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>完整路径的缓存。在文件被查找到之后，会把文件的完整路径添加到这个缓存中。 这个变量是用来提高文件查找性能的。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b6063698ed4d7eb748738c93b6c13f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; _searchPathArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>包含查找路径的vector变量 在vector中的索引值越小，对应的查找路径的优先级就越高 </p>
+
+</div>
+</div>
+<a class="anchor" id="a38f20f47290a1a4a27285b120159284d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; _searchResolutionsOrderArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>包含分辨率文件夹的vector对象 在vector中的索引值越小，对应的分辨率从目录的优先级就越高 </p>
+
+</div>
+</div>
+<a class="anchor" id="a290ffa656af77bffd9c938add78d2e06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a>* s_sharedFileUtils</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FileUtils的单例指针 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/platform/<a class="el" href="../../d5/d8e/_c_c_file_utils_8h.html">CCFileUtils.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../dc/d69/classcocos2d_1_1_file_utils.html">FileUtils</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:45 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

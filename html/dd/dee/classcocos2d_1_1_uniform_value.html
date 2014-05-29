@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: UniformValue类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dd/dee/classcocos2d_1_1_uniform_value.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="../../dc/d2d/classcocos2d_1_1_uniform_value-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">UniformValue类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCGLProgramState.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d99/unioncocos2d_1_1_uniform_value_1_1_u.html">U</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ade0506b41302c0fcb78c7b1d32585c61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#ade0506b41302c0fcb78c7b1d32585c61">UniformValue</a> ()</td></tr>
+<tr class="separator:ade0506b41302c0fcb78c7b1d32585c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7d7d00fe56398cde23a681d2bf5a07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#aaf7d7d00fe56398cde23a681d2bf5a07">UniformValue</a> (<a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a> *uniform, <a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a> *glprogram)</td></tr>
+<tr class="separator:aaf7d7d00fe56398cde23a681d2bf5a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927ea1a077312ffe3e210b13d8633344"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a927ea1a077312ffe3e210b13d8633344">~UniformValue</a> ()</td></tr>
+<tr class="separator:a927ea1a077312ffe3e210b13d8633344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d224edbf747906f59ff7fd76842a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#ae8d224edbf747906f59ff7fd76842a9c">setFloat</a> (float value)</td></tr>
+<tr class="separator:ae8d224edbf747906f59ff7fd76842a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccae3ddf79203d2b0d6024b4e48fc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a0ccae3ddf79203d2b0d6024b4e48fc7f">setInt</a> (int value)</td></tr>
+<tr class="separator:a0ccae3ddf79203d2b0d6024b4e48fc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4332a5c333c12d8d299b402a555bf16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#aa4332a5c333c12d8d299b402a555bf16">setVec2</a> (const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;value)</td></tr>
+<tr class="separator:aa4332a5c333c12d8d299b402a555bf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d97228642436f83e6f1e04977625971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a7d97228642436f83e6f1e04977625971">setVec3</a> (const <a class="el" href="../../df/d24/class_vec3.html">Vec3</a> &amp;value)</td></tr>
+<tr class="separator:a7d97228642436f83e6f1e04977625971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66fe9f447a49ca1d9435dcac602442b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#af66fe9f447a49ca1d9435dcac602442b">setVec4</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;value)</td></tr>
+<tr class="separator:af66fe9f447a49ca1d9435dcac602442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0723b6bc9f388d4c69fe5ee16bf5e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#ae0723b6bc9f388d4c69fe5ee16bf5e7c">setMat4</a> (const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;value)</td></tr>
+<tr class="separator:ae0723b6bc9f388d4c69fe5ee16bf5e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b0ea1e65cc01efd36005325d3b7140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a85b0ea1e65cc01efd36005325d3b7140">setCallback</a> (const std::function&lt; void(<a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a> *)&gt; &amp;callback)</td></tr>
+<tr class="separator:a85b0ea1e65cc01efd36005325d3b7140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e60c9972ef85a04e19a75ecc974b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#ac1e60c9972ef85a04e19a75ecc974b8b">setTexture</a> (GLuint textureId, GLuint activeTexture)</td></tr>
+<tr class="separator:ac1e60c9972ef85a04e19a75ecc974b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95067243b72a23863ec07c821797455c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a95067243b72a23863ec07c821797455c">apply</a> ()</td></tr>
+<tr class="separator:a95067243b72a23863ec07c821797455c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a9857ddc4ab8210a138425c78b795c35a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a9857ddc4ab8210a138425c78b795c35a">_uniform</a></td></tr>
+<tr class="separator:a9857ddc4ab8210a138425c78b795c35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d154660fd8b4f4998ca2f3f8c333d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#af9d154660fd8b4f4998ca2f3f8c333d9">_glprogram</a></td></tr>
+<tr class="separator:af9d154660fd8b4f4998ca2f3f8c333d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882a8bd46499a1269910b85b473c9d70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a882a8bd46499a1269910b85b473c9d70">_useCallback</a></td></tr>
+<tr class="separator:a882a8bd46499a1269910b85b473c9d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9988359cdd1c10a9917788c44ad4fdb9"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="../../d8/d99/unioncocos2d_1_1_uniform_value_1_1_u.html">cocos2d::UniformValue::U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a9988359cdd1c10a9917788c44ad4fdb9">_value</a></td></tr>
+<tr class="separator:a9988359cdd1c10a9917788c44ad4fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a02718b0d855639a48678638d815726a1"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html#a02718b0d855639a48678638d815726a1">GLProgram</a></td></tr>
+<tr class="separator:a02718b0d855639a48678638d815726a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ade0506b41302c0fcb78c7b1d32585c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html">UniformValue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf7d7d00fe56398cde23a681d2bf5a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html">UniformValue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a> *&#160;</td>
+          <td class="paramname"><em>uniform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a> *&#160;</td>
+          <td class="paramname"><em>glprogram</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a927ea1a077312ffe3e210b13d8633344"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html">UniformValue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a95067243b72a23863ec07c821797455c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85b0ea1e65cc01efd36005325d3b7140"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCallback </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a> *)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8d224edbf747906f59ff7fd76842a9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFloat </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ccae3ddf79203d2b0d6024b4e48fc7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setInt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0723b6bc9f388d4c69fe5ee16bf5e7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setMat4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/dce/class_mat4.html">Mat4</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac1e60c9972ef85a04e19a75ecc974b8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTexture </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>textureId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint&#160;</td>
+          <td class="paramname"><em>activeTexture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4332a5c333c12d8d299b402a555bf16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVec2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d7f/class_vec2.html">Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d97228642436f83e6f1e04977625971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d24/class_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af66fe9f447a49ca1d9435dcac602442b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVec4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="a02718b0d855639a48678638d815726a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="af9d154660fd8b4f4998ca2f3f8c333d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d35/classcocos2d_1_1_g_l_program.html">GLProgram</a>* _glprogram</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9857ddc4ab8210a138425c78b795c35a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d0d/structcocos2d_1_1_uniform.html">Uniform</a>* _uniform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a882a8bd46499a1269910b85b473c9d70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _useCallback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9988359cdd1c10a9917788c44ad4fdb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="../../d8/d99/unioncocos2d_1_1_uniform_value_1_1_u.html">cocos2d::UniformValue::U</a>  _value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/renderer/<a class="el" href="../../d6/d33/_c_c_g_l_program_state_8h.html">CCGLProgramState.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../dd/dee/classcocos2d_1_1_uniform_value.html">UniformValue</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:53 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

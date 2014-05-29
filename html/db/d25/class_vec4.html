@@ -1,0 +1,1514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: Vec4类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d25/class_vec4.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="../../d6/d0c/class_vec4-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Vec4类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>定义一个四维浮点向量  
+ <a href="../../db/d25/class_vec4.html#details">更多...</a></p>
+
+<p><code>#include &lt;Vector4.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af1ab5af804d206e7bf9bcd28a8348d07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af1ab5af804d206e7bf9bcd28a8348d07">Vec4</a> ()</td></tr>
+<tr class="memdesc:af1ab5af804d206e7bf9bcd28a8348d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个初始值为零的向量  <a href="#af1ab5af804d206e7bf9bcd28a8348d07">更多...</a><br /></td></tr>
+<tr class="separator:af1ab5af804d206e7bf9bcd28a8348d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af40a6213b398ecfc36af7f73c1acde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a6af40a6213b398ecfc36af7f73c1acde">Vec4</a> (float xx, float yy, float zz, float ww)</td></tr>
+<tr class="memdesc:a6af40a6213b398ecfc36af7f73c1acde"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个新的向量并用特定值初始化 xx为x方向的值 yy为y方向的值 zz为z方向的值 ww为w方向的值  <a href="#a6af40a6213b398ecfc36af7f73c1acde">更多...</a><br /></td></tr>
+<tr class="separator:a6af40a6213b398ecfc36af7f73c1acde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f56cdc496ba33ef83c061f4c7818bce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a7f56cdc496ba33ef83c061f4c7818bce">Vec4</a> (const float *array)</td></tr>
+<tr class="memdesc:a7f56cdc496ba33ef83c061f4c7818bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">用特定array来构造一个新的向量 该array顺序包含向量x,y,z,w各分量的值。  <a href="#a7f56cdc496ba33ef83c061f4c7818bce">更多...</a><br /></td></tr>
+<tr class="separator:a7f56cdc496ba33ef83c061f4c7818bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b161ae96b3f76a6b3d4fec3d43bcd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ab3b161ae96b3f76a6b3d4fec3d43bcd3">Vec4</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;p1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;p2)</td></tr>
+<tr class="memdesc:ab3b161ae96b3f76a6b3d4fec3d43bcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个由p1指向p2的向量。  <a href="#ab3b161ae96b3f76a6b3d4fec3d43bcd3">更多...</a><br /></td></tr>
+<tr class="separator:ab3b161ae96b3f76a6b3d4fec3d43bcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0e925b27decc47d05e4bbe747c1015"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aba0e925b27decc47d05e4bbe747c1015">Vec4</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;copy)</td></tr>
+<tr class="memdesc:aba0e925b27decc47d05e4bbe747c1015"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝一个已有向量  <a href="#aba0e925b27decc47d05e4bbe747c1015">更多...</a><br /></td></tr>
+<tr class="separator:aba0e925b27decc47d05e4bbe747c1015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8416baaba428c1685d61fd0f24523739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a8416baaba428c1685d61fd0f24523739">~Vec4</a> ()</td></tr>
+<tr class="memdesc:a8416baaba428c1685d61fd0f24523739"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚构函数  <a href="#a8416baaba428c1685d61fd0f24523739">更多...</a><br /></td></tr>
+<tr class="separator:a8416baaba428c1685d61fd0f24523739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec59a91554c568eaf28cae204d961bc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aec59a91554c568eaf28cae204d961bc2">isZero</a> () const </td></tr>
+<tr class="memdesc:aec59a91554c568eaf28cae204d961bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">该向量是否为零（每个分量都为零） 如果该向量为零返回true，否则返回false  <a href="#aec59a91554c568eaf28cae204d961bc2">更多...</a><br /></td></tr>
+<tr class="separator:aec59a91554c568eaf28cae204d961bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af091fecdcb7d67b679f696f91faef754"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af091fecdcb7d67b679f696f91faef754">isOne</a> () const </td></tr>
+<tr class="memdesc:af091fecdcb7d67b679f696f91faef754"><td class="mdescLeft">&#160;</td><td class="mdescRight">该向量是否为单位向量（每个分量都为1） 如果该向量为单位向量则返回true,否则返回false  <a href="#af091fecdcb7d67b679f696f91faef754">更多...</a><br /></td></tr>
+<tr class="separator:af091fecdcb7d67b679f696f91faef754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cb8258019e68f3bab808bc5bc99fb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ac2cb8258019e68f3bab808bc5bc99fb8">add</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v)</td></tr>
+<tr class="memdesc:ac2cb8258019e68f3bab808bc5bc99fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">与给定向量v求和，结果保存在本向量中  <a href="#ac2cb8258019e68f3bab808bc5bc99fb8">更多...</a><br /></td></tr>
+<tr class="separator:ac2cb8258019e68f3bab808bc5bc99fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad650aaae446d87d2ec781f33fe83c0ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ad650aaae446d87d2ec781f33fe83c0ae">clamp</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;min, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;max)</td></tr>
+<tr class="memdesc:ad650aaae446d87d2ec781f33fe83c0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量限制在指定范围内，min为最小值，max为最大值。  <a href="#ad650aaae446d87d2ec781f33fe83c0ae">更多...</a><br /></td></tr>
+<tr class="separator:ad650aaae446d87d2ec781f33fe83c0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2638490d6d0ea55d515e0f2d8138ae32"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a2638490d6d0ea55d515e0f2d8138ae32">distance</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:a2638490d6d0ea55d515e0f2d8138ae32"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量与v的距离并返回  <a href="#a2638490d6d0ea55d515e0f2d8138ae32">更多...</a><br /></td></tr>
+<tr class="separator:a2638490d6d0ea55d515e0f2d8138ae32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e861899725c06b5d66f76ea10401b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a93e861899725c06b5d66f76ea10401b5">distanceSquared</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:a93e861899725c06b5d66f76ea10401b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量与v的距离的平方并返回  <a href="#a93e861899725c06b5d66f76ea10401b5">更多...</a><br /></td></tr>
+<tr class="separator:a93e861899725c06b5d66f76ea10401b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603a673923e2bb9f9e133fdb0ca0b36b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a603a673923e2bb9f9e133fdb0ca0b36b">dot</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:a603a673923e2bb9f9e133fdb0ca0b36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量与v的点积并返回  <a href="#a603a673923e2bb9f9e133fdb0ca0b36b">更多...</a><br /></td></tr>
+<tr class="separator:a603a673923e2bb9f9e133fdb0ca0b36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7f525adfb7ab1af7df4b0b6b34d4eb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a7c7f525adfb7ab1af7df4b0b6b34d4eb">length</a> () const </td></tr>
+<tr class="memdesc:a7c7f525adfb7ab1af7df4b0b6b34d4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量的长度并返回  <a href="#a7c7f525adfb7ab1af7df4b0b6b34d4eb">更多...</a><br /></td></tr>
+<tr class="separator:a7c7f525adfb7ab1af7df4b0b6b34d4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d591ba393fbf93a8e1989b0e50ed8f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a6d591ba393fbf93a8e1989b0e50ed8f9">lengthSquared</a> () const </td></tr>
+<tr class="memdesc:a6d591ba393fbf93a8e1989b0e50ed8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算向量长度的平方并返回 当不是必须使用精确长度的时候建议使用本方法代替length(）（如比较不同向量的长度）。  <a href="#a6d591ba393fbf93a8e1989b0e50ed8f9">更多...</a><br /></td></tr>
+<tr class="separator:a6d591ba393fbf93a8e1989b0e50ed8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdb1512395327f8236a4f4a4d4ff648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#abcdb1512395327f8236a4f4a4d4ff648">negate</a> ()</td></tr>
+<tr class="memdesc:abcdb1512395327f8236a4f4a4d4ff648"><td class="mdescLeft">&#160;</td><td class="mdescRight">求反向量  <a href="#abcdb1512395327f8236a4f4a4d4ff648">更多...</a><br /></td></tr>
+<tr class="separator:abcdb1512395327f8236a4f4a4d4ff648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0de676568888d848beb97dcc53ae47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#acd0de676568888d848beb97dcc53ae47">normalize</a> ()</td></tr>
+<tr class="memdesc:acd0de676568888d848beb97dcc53ae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">求向量的标准化向量  <a href="#acd0de676568888d848beb97dcc53ae47">更多...</a><br /></td></tr>
+<tr class="separator:acd0de676568888d848beb97dcc53ae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4256a280aeb2dab4a04d89066242185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ac4256a280aeb2dab4a04d89066242185">getNormalized</a> () const </td></tr>
+<tr class="memdesc:ac4256a280aeb2dab4a04d89066242185"><td class="mdescLeft">&#160;</td><td class="mdescRight">标准化这个向量并将结果保存在dst中  <a href="#ac4256a280aeb2dab4a04d89066242185">更多...</a><br /></td></tr>
+<tr class="separator:ac4256a280aeb2dab4a04d89066242185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089a64c131eb6e65b7220929a53748f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a089a64c131eb6e65b7220929a53748f5">scale</a> (float scalar)</td></tr>
+<tr class="memdesc:a089a64c131eb6e65b7220929a53748f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">用指定的放缩系数scalar对向量的各分量进行放缩  <a href="#a089a64c131eb6e65b7220929a53748f5">更多...</a><br /></td></tr>
+<tr class="separator:a089a64c131eb6e65b7220929a53748f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade95a4464036129b2f8c80311d0e6f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ade95a4464036129b2f8c80311d0e6f2f">set</a> (float xx, float yy, float zz, float ww)</td></tr>
+<tr class="memdesc:ade95a4464036129b2f8c80311d0e6f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前向量各分量值为指定值 xx是新的x分量值 yy是新的y分量值 zz是新的z分量值 ww是新的w分量值  <a href="#ade95a4464036129b2f8c80311d0e6f2f">更多...</a><br /></td></tr>
+<tr class="separator:ade95a4464036129b2f8c80311d0e6f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4915accd52fc64c5b3baf6407e74cf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af4915accd52fc64c5b3baf6407e74cf6">set</a> (const float *array)</td></tr>
+<tr class="memdesc:af4915accd52fc64c5b3baf6407e74cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定array序列，依序设置向量x,y,z，w各分量的值。  <a href="#af4915accd52fc64c5b3baf6407e74cf6">更多...</a><br /></td></tr>
+<tr class="separator:af4915accd52fc64c5b3baf6407e74cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebea2429cc31551b14acf049f17553e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a4ebea2429cc31551b14acf049f17553e">set</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v)</td></tr>
+<tr class="memdesc:a4ebea2429cc31551b14acf049f17553e"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝向量v的值到本向量中  <a href="#a4ebea2429cc31551b14acf049f17553e">更多...</a><br /></td></tr>
+<tr class="separator:a4ebea2429cc31551b14acf049f17553e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62af036a0571146585a2c3eec6616592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a62af036a0571146585a2c3eec6616592">set</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;p1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;p2)</td></tr>
+<tr class="memdesc:a62af036a0571146585a2c3eec6616592"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置向量值由给定两点求得。  <a href="#a62af036a0571146585a2c3eec6616592">更多...</a><br /></td></tr>
+<tr class="separator:a62af036a0571146585a2c3eec6616592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b4eb6cc8a8e86875b72937b7cf4a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ab4b4eb6cc8a8e86875b72937b7cf4a42">subtract</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v)</td></tr>
+<tr class="memdesc:ab4b4eb6cc8a8e86875b72937b7cf4a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">求与向量v的差（this-v），并将结果保存在本向量中.  <a href="#ab4b4eb6cc8a8e86875b72937b7cf4a42">更多...</a><br /></td></tr>
+<tr class="separator:ab4b4eb6cc8a8e86875b72937b7cf4a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af652f3f61a335ac7b021a1789e0907b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af652f3f61a335ac7b021a1789e0907b0">operator+</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:af652f3f61a335ac7b021a1789e0907b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量加法，求向量与给定向量v的和 注意：这个加法并不改变原向量的值，返回值单独定义。  <a href="#af652f3f61a335ac7b021a1789e0907b0">更多...</a><br /></td></tr>
+<tr class="separator:af652f3f61a335ac7b021a1789e0907b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4147ef96b0b68f8e696804425f350dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ac4147ef96b0b68f8e696804425f350dd">operator+=</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v)</td></tr>
+<tr class="memdesc:ac4147ef96b0b68f8e696804425f350dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量加法，求向量与给定向量v的和，将结果保存在该向量中，并返回。  <a href="#ac4147ef96b0b68f8e696804425f350dd">更多...</a><br /></td></tr>
+<tr class="separator:ac4147ef96b0b68f8e696804425f350dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391c5eb0dddc26eca99f802e248a231f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a391c5eb0dddc26eca99f802e248a231f">operator-</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:a391c5eb0dddc26eca99f802e248a231f"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量减法，求向量与给定向量v的差 注意：这个减法并不改变原向量的值，返回值单独定义  <a href="#a391c5eb0dddc26eca99f802e248a231f">更多...</a><br /></td></tr>
+<tr class="separator:a391c5eb0dddc26eca99f802e248a231f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef86ba3a87a2afd1203c790a86327cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a8ef86ba3a87a2afd1203c790a86327cf">operator-=</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v)</td></tr>
+<tr class="memdesc:a8ef86ba3a87a2afd1203c790a86327cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量减法，求向量与给定向量v的差，将结果保存在该向量中，并返回。  <a href="#a8ef86ba3a87a2afd1203c790a86327cf">更多...</a><br /></td></tr>
+<tr class="separator:a8ef86ba3a87a2afd1203c790a86327cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77985e37c74c1bd640bbeb729c9d1822"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a77985e37c74c1bd640bbeb729c9d1822">operator-</a> () const </td></tr>
+<tr class="memdesc:a77985e37c74c1bd640bbeb729c9d1822"><td class="mdescLeft">&#160;</td><td class="mdescRight">求反向量 注意：这个方法并不改变原向量的值，返回值单独定义  <a href="#a77985e37c74c1bd640bbeb729c9d1822">更多...</a><br /></td></tr>
+<tr class="separator:a77985e37c74c1bd640bbeb729c9d1822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4470111497a4127da213aaaad96ca10"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ad4470111497a4127da213aaaad96ca10">operator*</a> (float s) const </td></tr>
+<tr class="memdesc:ad4470111497a4127da213aaaad96ca10"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量乘法，给定浮点数s，求向量各分量分别乘以s后的值。 注意：这个方法并不改变原向量的值，返回值单独保存。  <a href="#ad4470111497a4127da213aaaad96ca10">更多...</a><br /></td></tr>
+<tr class="separator:ad4470111497a4127da213aaaad96ca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3b42f12c538230e236596a528bd412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aba3b42f12c538230e236596a528bd412">operator*=</a> (float s)</td></tr>
+<tr class="memdesc:aba3b42f12c538230e236596a528bd412"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量乘法，给定浮点数s，求向量各分量分别乘以s后的值，将所得结果保存在原向量中。  <a href="#aba3b42f12c538230e236596a528bd412">更多...</a><br /></td></tr>
+<tr class="separator:aba3b42f12c538230e236596a528bd412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09244a726ad67306d0bfae604162004c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a09244a726ad67306d0bfae604162004c">operator/</a> (float s) const </td></tr>
+<tr class="memdesc:a09244a726ad67306d0bfae604162004c"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量除法，给定浮点数s，求向量各分量分别除以s后的值。 注意：这个方法并不改变原向量的值，返回值单独保存。  <a href="#a09244a726ad67306d0bfae604162004c">更多...</a><br /></td></tr>
+<tr class="separator:a09244a726ad67306d0bfae604162004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ac1b25136caa06a0a509ae15c2b051"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a51ac1b25136caa06a0a509ae15c2b051">operator&lt;</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:a51ac1b25136caa06a0a509ae15c2b051"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断该向量是否小于给定向量v，如果小于则返回true，否则返回false。  <a href="#a51ac1b25136caa06a0a509ae15c2b051">更多...</a><br /></td></tr>
+<tr class="separator:a51ac1b25136caa06a0a509ae15c2b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8a6465794730e8b107eda073aea5c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aaa8a6465794730e8b107eda073aea5c9">operator==</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:aaa8a6465794730e8b107eda073aea5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断该向量是否等于给定向量v，如果等于则返回True，否则返回false。  <a href="#aaa8a6465794730e8b107eda073aea5c9">更多...</a><br /></td></tr>
+<tr class="separator:aaa8a6465794730e8b107eda073aea5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54f1a634a557e1ab9b5621e3cd8fc95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af54f1a634a557e1ab9b5621e3cd8fc95">operator!=</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v) const </td></tr>
+<tr class="memdesc:af54f1a634a557e1ab9b5621e3cd8fc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断该向量是否不等于给定向量v，如果不等则返回True，否则返回False。  <a href="#af54f1a634a557e1ab9b5621e3cd8fc95">更多...</a><br /></td></tr>
+<tr class="separator:af54f1a634a557e1ab9b5621e3cd8fc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a5eb5c9434d97bcf2408ca006a8fe9b55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a5eb5c9434d97bcf2408ca006a8fe9b55">fromColor</a> (unsigned int color)</td></tr>
+<tr class="memdesc:a5eb5c9434d97bcf2408ca006a8fe9b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">用一个表示RGBA颜色值的整数来创建一个向量 例如：Oxff0000ff表示不透明红色，向量值为（1，0，0，1）.  <a href="#a5eb5c9434d97bcf2408ca006a8fe9b55">更多...</a><br /></td></tr>
+<tr class="separator:a5eb5c9434d97bcf2408ca006a8fe9b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f12f247fd537636381725239c696a9c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a9f12f247fd537636381725239c696a9c">angle</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v2)</td></tr>
+<tr class="memdesc:a9f12f247fd537636381725239c696a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回两个给定向量v1,v2之间的角度（单位为弧度）  <a href="#a9f12f247fd537636381725239c696a9c">更多...</a><br /></td></tr>
+<tr class="separator:a9f12f247fd537636381725239c696a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4e0b87372dc2d6a8a29e695e9fca7c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ade4e0b87372dc2d6a8a29e695e9fca7c">add</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v2, <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *dst)</td></tr>
+<tr class="memdesc:ade4e0b87372dc2d6a8a29e695e9fca7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">求向量v1与v2的和，结果保存在dst中  <a href="#ade4e0b87372dc2d6a8a29e695e9fca7c">更多...</a><br /></td></tr>
+<tr class="separator:ade4e0b87372dc2d6a8a29e695e9fca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28c74590256f0e5799251f91f0095c5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af28c74590256f0e5799251f91f0095c5">clamp</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;min, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;max, <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *dst)</td></tr>
+<tr class="memdesc:af28c74590256f0e5799251f91f0095c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将给定的向量v限制在指定范围[min,max]内，结果保存在dst中。  <a href="#af28c74590256f0e5799251f91f0095c5">更多...</a><br /></td></tr>
+<tr class="separator:af28c74590256f0e5799251f91f0095c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1b6f3e8e7aa5a362b8c9b3800903ef"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a4b1b6f3e8e7aa5a362b8c9b3800903ef">dot</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v2)</td></tr>
+<tr class="memdesc:a4b1b6f3e8e7aa5a362b8c9b3800903ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算v1与v2的点积并返回。  <a href="#a4b1b6f3e8e7aa5a362b8c9b3800903ef">更多...</a><br /></td></tr>
+<tr class="separator:a4b1b6f3e8e7aa5a362b8c9b3800903ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20069126f53529c0f85b8684d6ada0e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aa20069126f53529c0f85b8684d6ada0e">subtract</a> (const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v1, const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;v2, <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *dst)</td></tr>
+<tr class="memdesc:aa20069126f53529c0f85b8684d6ada0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">求v1-v2的值，将结果保存在dst中。  <a href="#aa20069126f53529c0f85b8684d6ada0e">更多...</a><br /></td></tr>
+<tr class="separator:aa20069126f53529c0f85b8684d6ada0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad0da36b2558901e21e7a30f6c227a45e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></td></tr>
+<tr class="memdesc:ad0da36b2558901e21e7a30f6c227a45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">x方向分量  <a href="#ad0da36b2558901e21e7a30f6c227a45e">更多...</a><br /></td></tr>
+<tr class="separator:ad0da36b2558901e21e7a30f6c227a45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></td></tr>
+<tr class="memdesc:aa4f0d3eebc3c443f9be81bf48561a217"><td class="mdescLeft">&#160;</td><td class="mdescRight">y方向分量  <a href="#aa4f0d3eebc3c443f9be81bf48561a217">更多...</a><br /></td></tr>
+<tr class="separator:aa4f0d3eebc3c443f9be81bf48561a217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73583b1e980b0aa03f9884812e9fd4d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#af73583b1e980b0aa03f9884812e9fd4d">z</a></td></tr>
+<tr class="memdesc:af73583b1e980b0aa03f9884812e9fd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">z方向分量  <a href="#af73583b1e980b0aa03f9884812e9fd4d">更多...</a><br /></td></tr>
+<tr class="separator:af73583b1e980b0aa03f9884812e9fd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56eca241e2896b9f57a79589e76fd24b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a56eca241e2896b9f57a79589e76fd24b">w</a></td></tr>
+<tr class="memdesc:a56eca241e2896b9f57a79589e76fd24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">w方向分量  <a href="#a56eca241e2896b9f57a79589e76fd24b">更多...</a><br /></td></tr>
+<tr class="separator:a56eca241e2896b9f57a79589e76fd24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a841ce44c7e9a8245342e994d38abfc92"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a841ce44c7e9a8245342e994d38abfc92">ZERO</a></td></tr>
+<tr class="memdesc:a841ce44c7e9a8245342e994d38abfc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,0,0)</a>  <a href="#a841ce44c7e9a8245342e994d38abfc92">更多...</a><br /></td></tr>
+<tr class="separator:a841ce44c7e9a8245342e994d38abfc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac381f3cf183dfb27fa9127527c677326"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ac381f3cf183dfb27fa9127527c677326">ONE</a></td></tr>
+<tr class="memdesc:ac381f3cf183dfb27fa9127527c677326"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(1,1,1,1)</a>  <a href="#ac381f3cf183dfb27fa9127527c677326">更多...</a><br /></td></tr>
+<tr class="separator:ac381f3cf183dfb27fa9127527c677326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bad2d03fe9055a1e9b8e10fa86b658b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a3bad2d03fe9055a1e9b8e10fa86b658b">UNIT_X</a></td></tr>
+<tr class="memdesc:a3bad2d03fe9055a1e9b8e10fa86b658b"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(1,0,0,0)</a>  <a href="#a3bad2d03fe9055a1e9b8e10fa86b658b">更多...</a><br /></td></tr>
+<tr class="separator:a3bad2d03fe9055a1e9b8e10fa86b658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36a927ca86312b34d5691f92bdbaf50"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#ab36a927ca86312b34d5691f92bdbaf50">UNIT_Y</a></td></tr>
+<tr class="memdesc:ab36a927ca86312b34d5691f92bdbaf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,1,0,0)</a>  <a href="#ab36a927ca86312b34d5691f92bdbaf50">更多...</a><br /></td></tr>
+<tr class="separator:ab36a927ca86312b34d5691f92bdbaf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db40b9aa505e83b08552e8b4722b858"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a8db40b9aa505e83b08552e8b4722b858">UNIT_Z</a></td></tr>
+<tr class="memdesc:a8db40b9aa505e83b08552e8b4722b858"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,1,0)</a>  <a href="#a8db40b9aa505e83b08552e8b4722b858">更多...</a><br /></td></tr>
+<tr class="separator:a8db40b9aa505e83b08552e8b4722b858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7795c0ad0c56b6c9558bc47d656e1d72"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/class_vec4.html#a7795c0ad0c56b6c9558bc47d656e1d72">UNIT_W</a></td></tr>
+<tr class="memdesc:a7795c0ad0c56b6c9558bc47d656e1d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,0,1)</a>  <a href="#a7795c0ad0c56b6c9558bc47d656e1d72">更多...</a><br /></td></tr>
+<tr class="separator:a7795c0ad0c56b6c9558bc47d656e1d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义一个四维浮点向量 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="af1ab5af804d206e7bf9bcd28a8348d07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个初始值为零的向量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6af40a6213b398ecfc36af7f73c1acde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ww</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个新的向量并用特定值初始化 xx为x方向的值 yy为y方向的值 zz为z方向的值 ww为w方向的值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f56cdc496ba33ef83c061f4c7818bce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用特定array来构造一个新的向量 该array顺序包含向量x,y,z,w各分量的值。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3b161ae96b3f76a6b3d4fec3d43bcd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个由p1指向p2的向量。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aba0e925b27decc47d05e4bbe747c1015"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝一个已有向量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8416baaba428c1685d61fd0f24523739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../db/d25/class_vec4.html">Vec4</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>虚构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ac2cb8258019e68f3bab808bc5bc99fb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>与给定向量v求和，结果保存在本向量中 </p>
+
+</div>
+</div>
+<a class="anchor" id="ade4e0b87372dc2d6a8a29e695e9fca7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求向量v1与v2的和，结果保存在dst中 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f12f247fd537636381725239c696a9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float angle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回两个给定向量v1,v2之间的角度（单位为弧度） </p>
+
+</div>
+</div>
+<a class="anchor" id="ad650aaae446d87d2ec781f33fe83c0ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将向量限制在指定范围内，min为最小值，max为最大值。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af28c74590256f0e5799251f91f0095c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void clamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将给定的向量v限制在指定范围[min,max]内，结果保存在dst中。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2638490d6d0ea55d515e0f2d8138ae32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算向量与v的距离并返回 </p>
+
+</div>
+</div>
+<a class="anchor" id="a93e861899725c06b5d66f76ea10401b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distanceSquared </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算向量与v的距离的平方并返回 </p>
+<p>当不是必须使用精确距离的时候建议使用本方法代替distance(const <a class="el" href="../../df/d24/class_vec3.html" title="定义一个三维浮点向量 当用作表面法向量时，该向量必须标准化。 用作方向向量的时候可能会保持原向量的大小�...">Vec3</a>&amp; v） （如比较不同向量间距离大小） </p>
+
+</div>
+</div>
+<a class="anchor" id="a603a673923e2bb9f9e133fdb0ca0b36b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算向量与v的点积并返回 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b1b6f3e8e7aa5a362b8c9b3800903ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算v1与v2的点积并返回。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5eb5c9434d97bcf2408ca006a8fe9b55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> fromColor </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用一个表示RGBA颜色值的整数来创建一个向量 例如：Oxff0000ff表示不透明红色，向量值为（1，0，0，1）. </p>
+<p>参数color为该RGBA值 返回该颜色值对应生成的向量 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4256a280aeb2dab4a04d89066242185"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> getNormalized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>标准化这个向量并将结果保存在dst中 </p>
+<p>如果向量已经是单位长度或者长度为零，这个方法将简单的把当前向量值拷贝到dst中。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af091fecdcb7d67b679f696f91faef754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isOne </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该向量是否为单位向量（每个分量都为1） 如果该向量为单位向量则返回true,否则返回false </p>
+
+</div>
+</div>
+<a class="anchor" id="aec59a91554c568eaf28cae204d961bc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该向量是否为零（每个分量都为零） 如果该向量为零返回true，否则返回false </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c7f525adfb7ab1af7df4b0b6b34d4eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算向量的长度并返回 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d591ba393fbf93a8e1989b0e50ed8f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lengthSquared </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算向量长度的平方并返回 当不是必须使用精确长度的时候建议使用本方法代替length(）（如比较不同向量的长度）。 </p>
+
+</div>
+</div>
+<a class="anchor" id="abcdb1512395327f8236a4f4a4d4ff648"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void negate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>求反向量 </p>
+
+</div>
+</div>
+<a class="anchor" id="acd0de676568888d848beb97dcc53ae47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void normalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>求向量的标准化向量 </p>
+<p>这个方法标准化一个Vec4向量为单位长度 （调用这个方法后向量长度为1.0f）。 如果向量已经是单位长度或者长度为零，这个方法不起任何作用。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af54f1a634a557e1ab9b5621e3cd8fc95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断该向量是否不等于给定向量v，如果不等则返回True，否则返回False。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4470111497a4127da213aaaad96ca10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量乘法，给定浮点数s，求向量各分量分别乘以s后的值。 注意：这个方法并不改变原向量的值，返回值单独保存。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aba3b42f12c538230e236596a528bd412"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&amp; operator*= </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量乘法，给定浮点数s，求向量各分量分别乘以s后的值，将所得结果保存在原向量中。 </p>
+
+</div>
+</div>
+<a class="anchor" id="af652f3f61a335ac7b021a1789e0907b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量加法，求向量与给定向量v的和 注意：这个加法并不改变原向量的值，返回值单独定义。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4147ef96b0b68f8e696804425f350dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&amp; operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量加法，求向量与给定向量v的和，将结果保存在该向量中，并返回。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a391c5eb0dddc26eca99f802e248a231f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量减法，求向量与给定向量v的差 注意：这个减法并不改变原向量的值，返回值单独定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a77985e37c74c1bd640bbeb729c9d1822"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> operator- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求反向量 注意：这个方法并不改变原向量的值，返回值单独定义 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ef86ba3a87a2afd1203c790a86327cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a>&amp; operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量减法，求向量与给定向量v的差，将结果保存在该向量中，并返回。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a09244a726ad67306d0bfae604162004c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向量除法，给定浮点数s，求向量各分量分别除以s后的值。 注意：这个方法并不改变原向量的值，返回值单独保存。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a51ac1b25136caa06a0a509ae15c2b051"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断该向量是否小于给定向量v，如果小于则返回true，否则返回false。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa8a6465794730e8b107eda073aea5c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断该向量是否等于给定向量v，如果等于则返回True，否则返回false。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a089a64c131eb6e65b7220929a53748f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用指定的放缩系数scalar对向量的各分量进行放缩 </p>
+
+</div>
+</div>
+<a class="anchor" id="ade95a4464036129b2f8c80311d0e6f2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ww</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前向量各分量值为指定值 xx是新的x分量值 yy是新的y分量值 zz是新的z分量值 ww是新的w分量值 </p>
+
+</div>
+</div>
+<a class="anchor" id="af4915accd52fc64c5b3baf6407e74cf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定array序列，依序设置向量x,y,z，w各分量的值。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ebea2429cc31551b14acf049f17553e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝向量v的值到本向量中 </p>
+
+</div>
+</div>
+<a class="anchor" id="a62af036a0571146585a2c3eec6616592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置向量值由给定两点求得。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4b4eb6cc8a8e86875b72937b7cf4a42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void subtract </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>求与向量v的差（this-v），并将结果保存在本向量中. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa20069126f53529c0f85b8684d6ada0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void subtract </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求v1-v2的值，将结果保存在dst中。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ac381f3cf183dfb27fa9127527c677326"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> ONE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(1,1,1,1)</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a7795c0ad0c56b6c9558bc47d656e1d72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> UNIT_W</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,0,1)</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a3bad2d03fe9055a1e9b8e10fa86b658b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> UNIT_X</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(1,0,0,0)</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="ab36a927ca86312b34d5691f92bdbaf50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> UNIT_Y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,1,0,0)</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a8db40b9aa505e83b08552e8b4722b858"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> UNIT_Z</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,1,0)</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a56eca241e2896b9f57a79589e76fd24b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float w</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>w方向分量 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0da36b2558901e21e7a30f6c227a45e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>x方向分量 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4f0d3eebc3c443f9be81bf48561a217"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>y方向分量 </p>
+
+</div>
+</div>
+<a class="anchor" id="af73583b1e980b0aa03f9884812e9fd4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>z方向分量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a841ce44c7e9a8245342e994d38abfc92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/d25/class_vec4.html">Vec4</a> ZERO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于 <a class="el" href="../../db/d25/class_vec4.html" title="定义一个四维浮点向量 ">Vec4(0,0,0,0)</a> </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/math/<a class="el" href="../../dd/d1c/_vector4_8h.html">Vector4.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/d25/class_vec4.html">Vec4</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:43 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: cocos2d::StringUtils 命名空间参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../namespaces.html"><span>命名空间列表</span></a></li>
+      <li><a href="../../namespacemembers.html"><span>命名空间成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/d8b/namespacecocos2d_1_1_string_utils.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">cocos2d::StringUtils 命名空间参考<div class="ingroups"><a class="el" href="../../df/db3/group__data__structures.html">Data Structures</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8e66e18ba57d9e5d4fdb38e7eed6cb04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a8e66e18ba57d9e5d4fdb38e7eed6cb04">UTF8ToUTF16</a> (const std::string &amp;utf8, std::u16string &amp;outUtf16)</td></tr>
+<tr class="memdesc:a8e66e18ba57d9e5d4fdb38e7eed6cb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">utf8字符串转换为utf16字符串  <a href="#a8e66e18ba57d9e5d4fdb38e7eed6cb04">更多...</a><br /></td></tr>
+<tr class="separator:a8e66e18ba57d9e5d4fdb38e7eed6cb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1902e912869359d5f4bc0257b8614e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#aa1902e912869359d5f4bc0257b8614e9">UTF16ToUTF8</a> (const std::u16string &amp;utf16, std::string &amp;outUtf8)</td></tr>
+<tr class="memdesc:aa1902e912869359d5f4bc0257b8614e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">utf16字符串转换为utf8字符串  <a href="#aa1902e912869359d5f4bc0257b8614e9">更多...</a><br /></td></tr>
+<tr class="separator:aa1902e912869359d5f4bc0257b8614e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ab2253904564208f3fec7dfb9f865c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a03ab2253904564208f3fec7dfb9f865c">trimUTF16Vector</a> (std::vector&lt; char16_t &gt; &amp;str)</td></tr>
+<tr class="memdesc:a03ab2253904564208f3fec7dfb9f865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">去掉char16_t类型容器(vector)结尾的unicode格式空格  <a href="#a03ab2253904564208f3fec7dfb9f865c">更多...</a><br /></td></tr>
+<tr class="separator:a03ab2253904564208f3fec7dfb9f865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b785fb0ff36b7c1583d7e7ec17155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a779b785fb0ff36b7c1583d7e7ec17155">isUnicodeSpace</a> (char16_t ch)</td></tr>
+<tr class="memdesc:a779b785fb0ff36b7c1583d7e7ec17155"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定字符是否是一个空白字符  <a href="#a779b785fb0ff36b7c1583d7e7ec17155">更多...</a><br /></td></tr>
+<tr class="separator:a779b785fb0ff36b7c1583d7e7ec17155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3c6284edce0507cde05d93a4a5a689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#afa3c6284edce0507cde05d93a4a5a689">isCJKUnicode</a> (char16_t ch)</td></tr>
+<tr class="memdesc:afa3c6284edce0507cde05d93a4a5a689"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定字符是否是中文/日文/韩文字符  <a href="#afa3c6284edce0507cde05d93a4a5a689">更多...</a><br /></td></tr>
+<tr class="separator:afa3c6284edce0507cde05d93a4a5a689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1481b04b8516e7c143559f7cc8ab5d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#ab1481b04b8516e7c143559f7cc8ab5d5">getCharacterCountInUTF8String</a> (const std::string &amp;utf8)</td></tr>
+<tr class="memdesc:ab1481b04b8516e7c143559f7cc8ab5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回给定字符的字符串长度 .  <a href="#ab1481b04b8516e7c143559f7cc8ab5d5">更多...</a><br /></td></tr>
+<tr class="separator:ab1481b04b8516e7c143559f7cc8ab5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82545cacaa9bcc2fa294348faa283805"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a82545cacaa9bcc2fa294348faa283805">getIndexOfLastNotChar16</a> (const std::vector&lt; char16_t &gt; &amp;str, char16_t c)</td></tr>
+<tr class="memdesc:a82545cacaa9bcc2fa294348faa283805"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得最后一个不同于给定字符的字符索引  <a href="#a82545cacaa9bcc2fa294348faa283805">更多...</a><br /></td></tr>
+<tr class="separator:a82545cacaa9bcc2fa294348faa283805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30849321fd84f333f2d48519dadea65e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> std::vector&lt; char16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a30849321fd84f333f2d48519dadea65e">getChar16VectorFromUTF16String</a> (const std::u16string &amp;utf16)</td></tr>
+<tr class="memdesc:a30849321fd84f333f2d48519dadea65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从一个给定的utf16字符串获得char16_t类型容器(vector)  <a href="#a30849321fd84f333f2d48519dadea65e">更多...</a><br /></td></tr>
+<tr class="separator:a30849321fd84f333f2d48519dadea65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b7c374e3a85eb1169a98290f64657e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a34b7c374e3a85eb1169a98290f64657e"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a34b7c374e3a85eb1169a98290f64657e">toString</a> (T arg)</td></tr>
+<tr class="separator:a34b7c374e3a85eb1169a98290f64657e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c93eac6aa161daa8b94fe20ef2f8104"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a6c93eac6aa161daa8b94fe20ef2f8104">format</a> (const char *format,...) <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a52732f66eb1b924ca19004b7d9dac437">CC_FORMAT_PRINTF</a>(1</td></tr>
+<tr class="separator:a6c93eac6aa161daa8b94fe20ef2f8104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a6c93eac6aa161daa8b94fe20ef2f8104"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cocos2d::StringUtils::format </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30849321fd84f333f2d48519dadea65e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> std::vector&lt;char16_t&gt; cocos2d::StringUtils::getChar16VectorFromUTF16String </td>
+          <td>(</td>
+          <td class="paramtype">const std::u16string &amp;&#160;</td>
+          <td class="paramname"><em>utf16</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从一个给定的utf16字符串获得char16_t类型容器(vector) </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1481b04b8516e7c143559f7cc8ab5d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> long cocos2d::StringUtils::getCharacterCountInUTF8String </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>utf8</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回给定字符的字符串长度 . </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">参数utf8是一个UTF-8编码的字符串</td><td>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回给定字符的字符串长度 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82545cacaa9bcc2fa294348faa283805"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> unsigned int cocos2d::StringUtils::getIndexOfLastNotChar16 </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; char16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char16_t&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得最后一个不同于给定字符的字符索引 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">参数str即需要进行搜索的字符串</td><td>. </td></tr>
+    <tr><td class="paramname">参数c即需要被寻找的字符</td><td>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回最后一个不同于c的字符索引 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afa3c6284edce0507cde05d93a4a5a689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool cocos2d::StringUtils::isCJKUnicode </td>
+          <td>(</td>
+          <td class="paramtype">char16_t&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定字符是否是中文/日文/韩文字符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>参数ch是unicode格式字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回给定字符是否是一个中文字符</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a href="http://www.searchtb.com/2012/04/chinese_encode.html">http://www.searchtb.com/2012/04/chinese_encode.html</a> </dd>
+<dd>
+<a href="http://tieba.baidu.com/p/748765987">http://tieba.baidu.com/p/748765987</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a779b785fb0ff36b7c1583d7e7ec17155"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool cocos2d::StringUtils::isUnicodeSpace </td>
+          <td>(</td>
+          <td class="paramtype">char16_t&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定字符是否是一个空白字符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>参数ch是unicode格式的字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回给定字符是否是一个空白字符</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a href="http://en.wikipedia.org/wiki/Whitespace_character#Unicode">http://en.wikipedia.org/wiki/Whitespace_character#Unicode</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a34b7c374e3a85eb1169a98290f64657e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cocos2d::StringUtils::toString </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03ab2253904564208f3fec7dfb9f865c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> void cocos2d::StringUtils::trimUTF16Vector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; char16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>去掉char16_t类型容器(vector)结尾的unicode格式空格 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1902e912869359d5f4bc0257b8614e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool cocos2d::StringUtils::UTF16ToUTF8 </td>
+          <td>(</td>
+          <td class="paramtype">const std::u16string &amp;&#160;</td>
+          <td class="paramname"><em>utf16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>outUtf8</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>utf16字符串转换为utf8字符串 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">参数utf16即需要进行转换的utf8字符串</td><td></td></tr>
+    <tr><td class="paramname">参数outUtf8即转换输出的结果utf16字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果转换成功返回true，否则返回false </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>在使用<code>outUtf8之前请检查返回值</code> e.g. <div class="fragment"><div class="line">std::string utf8;</div>
+<div class="line"><span class="keywordtype">bool</span> ret = <a class="code" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#aa1902e912869359d5f4bc0257b8614e9">StringUtils::UTF16ToUTF8</a>(u<span class="stringliteral">&quot;\u4f60\u597d&quot;</span>, utf16);</div>
+<div class="line"><span class="keywordflow">if</span> (ret) {</div>
+<div class="line">    do_some_thing_with_utf8(utf8);</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e66e18ba57d9e5d4fdb38e7eed6cb04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d09/winrt_2_c_c_platform_define_8h.html#af62301b55ec573e1ccc95654c6caf8fd">CC_DLL</a> bool cocos2d::StringUtils::UTF8ToUTF16 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>utf8</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::u16string &amp;&#160;</td>
+          <td class="paramname"><em>outUtf16</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>utf8字符串转换为utf16字符串 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">参数utf8即需要进行转换的utf8字符串</td><td></td></tr>
+    <tr><td class="paramname">参数outUtf16即转换输出的结果utf16字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果转换成功返回true，否则返回false </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>在使用<code>outUtf16之前请检查返回值</code> e.g. <div class="fragment"><div class="line">std::u16string utf16;</div>
+<div class="line"><span class="keywordtype">bool</span> ret = <a class="code" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html#a8e66e18ba57d9e5d4fdb38e7eed6cb04">StringUtils::UTF8ToUTF16</a>(<span class="stringliteral">&quot;你好hello&quot;</span>, utf16);</div>
+<div class="line"><span class="keywordflow">if</span> (ret) {</div>
+<div class="line">    do_some_thing_with_utf16(utf16);</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d3/d8b/namespacecocos2d_1_1_string_utils.html">StringUtils</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:55 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

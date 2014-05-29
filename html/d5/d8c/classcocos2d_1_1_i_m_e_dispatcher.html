@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: IMEDispatcher类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="../../d3/d9f/classcocos2d_1_1_i_m_e_dispatcher-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IMEDispatcher类 参考<div class="ingroups"><a class="el" href="../../dc/df1/group__input.html">Human Machine Interation</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>输入法消息分发  
+ <a href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#details">更多...</a></p>
+
+<p><code>#include &lt;CCIMEDispatcher.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab3f6548c74eb4cc9e70437671883463a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#ab3f6548c74eb4cc9e70437671883463a">~IMEDispatcher</a> ()</td></tr>
+<tr class="memdesc:ab3f6548c74eb4cc9e70437671883463a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ab3f6548c74eb4cc9e70437671883463a">更多...</a><br /></td></tr>
+<tr class="separator:ab3f6548c74eb4cc9e70437671883463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b6a82b2bda28c9c213f01112c403e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a28b6a82b2bda28c9c213f01112c403e5">dispatchInsertText</a> (const char *text, size_t len)</td></tr>
+<tr class="memdesc:a28b6a82b2bda28c9c213f01112c403e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">从共享dispatcher释放所有IMEDelegate  <a href="#a28b6a82b2bda28c9c213f01112c403e5">更多...</a><br /></td></tr>
+<tr class="separator:a28b6a82b2bda28c9c213f01112c403e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acd5dc8a188288dc2771f6763fcbfb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a5acd5dc8a188288dc2771f6763fcbfb7">dispatchDeleteBackward</a> ()</td></tr>
+<tr class="memdesc:a5acd5dc8a188288dc2771f6763fcbfb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">分派对文本的删除回退操作  NA  NA  <a href="#a5acd5dc8a188288dc2771f6763fcbfb7">更多...</a><br /></td></tr>
+<tr class="separator:a5acd5dc8a188288dc2771f6763fcbfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b917e1b55290709a172fbc01cfe5dd"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a38b917e1b55290709a172fbc01cfe5dd">getContentText</a> ()</td></tr>
+<tr class="memdesc:a38b917e1b55290709a172fbc01cfe5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">从IMEDelegate得到之前保存在IME的文本  NA  NA  <a href="#a38b917e1b55290709a172fbc01cfe5dd">更多...</a><br /></td></tr>
+<tr class="separator:a38b917e1b55290709a172fbc01cfe5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb524493e61bfb897d486dd4a383996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#affb524493e61bfb897d486dd4a383996">dispatchKeyboardWillShow</a> (<a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:affb524493e61bfb897d486dd4a383996"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#affb524493e61bfb897d486dd4a383996">更多...</a><br /></td></tr>
+<tr class="separator:affb524493e61bfb897d486dd4a383996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40f808b32c36759ae3d7110dfe9dfe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#af40f808b32c36759ae3d7110dfe9dfe3">dispatchKeyboardDidShow</a> (<a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:af40f808b32c36759ae3d7110dfe9dfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#af40f808b32c36759ae3d7110dfe9dfe3">更多...</a><br /></td></tr>
+<tr class="separator:af40f808b32c36759ae3d7110dfe9dfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf382cfc97eecb57e17cc2af456d93e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#abf382cfc97eecb57e17cc2af456d93e4">dispatchKeyboardWillHide</a> (<a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:abf382cfc97eecb57e17cc2af456d93e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#abf382cfc97eecb57e17cc2af456d93e4">更多...</a><br /></td></tr>
+<tr class="separator:abf382cfc97eecb57e17cc2af456d93e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec916156b027c417045822f96dff1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a2ec916156b027c417045822f96dff1f1">dispatchKeyboardDidHide</a> (<a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:a2ec916156b027c417045822f96dff1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2ec916156b027c417045822f96dff1f1">更多...</a><br /></td></tr>
+<tr class="separator:a2ec916156b027c417045822f96dff1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:acf4e261724da5118a44e4165745fabcc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html">IMEDispatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#acf4e261724da5118a44e4165745fabcc">sharedDispatcher</a> ()</td></tr>
+<tr class="memdesc:acf4e261724da5118a44e4165745fabcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回系统共享的IMEDispatcher对象  NA  NA  <a href="#acf4e261724da5118a44e4165745fabcc">更多...</a><br /></td></tr>
+<tr class="separator:acf4e261724da5118a44e4165745fabcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4390471c7d8e0c53091dde0b95c92acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a4390471c7d8e0c53091dde0b95c92acd">addDelegate</a> (<a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *delegate)</td></tr>
+<tr class="memdesc:a4390471c7d8e0c53091dde0b95c92acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加delegate接收IME消息  <a href="#a4390471c7d8e0c53091dde0b95c92acd">更多...</a><br /></td></tr>
+<tr class="separator:a4390471c7d8e0c53091dde0b95c92acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd5dfe293ee4f7908124fe091b9df8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a7fd5dfe293ee4f7908124fe091b9df8b">attachDelegateWithIME</a> (<a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *delegate)</td></tr>
+<tr class="memdesc:a7fd5dfe293ee4f7908124fe091b9df8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将pDelegate分配到IME  <a href="#a7fd5dfe293ee4f7908124fe091b9df8b">更多...</a><br /></td></tr>
+<tr class="separator:a7fd5dfe293ee4f7908124fe091b9df8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ad76b1bdeb6d480f366684e0635b5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#ac5ad76b1bdeb6d480f366684e0635b5f">detachDelegateWithIME</a> (<a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *delegate)</td></tr>
+<tr class="separator:ac5ad76b1bdeb6d480f366684e0635b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286bec19f7e582f840ff27f008c06433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#a286bec19f7e582f840ff27f008c06433">removeDelegate</a> (<a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *delegate)</td></tr>
+<tr class="memdesc:a286bec19f7e582f840ff27f008c06433"><td class="mdescLeft">&#160;</td><td class="mdescRight">从delegate队列里移除某一从IME消息获取的delegate  <a href="#a286bec19f7e582f840ff27f008c06433">更多...</a><br /></td></tr>
+<tr class="separator:a286bec19f7e582f840ff27f008c06433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ae6658db70103744950dd6fe9db9bebd9"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html#ae6658db70103744950dd6fe9db9bebd9">IMEDelegate</a></td></tr>
+<tr class="separator:ae6658db70103744950dd6fe9db9bebd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>输入法消息分发 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab3f6548c74eb4cc9e70437671883463a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html">IMEDispatcher</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a4390471c7d8e0c53091dde0b95c92acd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加delegate接收IME消息 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7fd5dfe293ee4f7908124fe091b9df8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool attachDelegateWithIME </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将pDelegate分配到IME </p>
+<dl class="section return"><dt>返回</dt><dd>如果成功解除旧的delegate,返回true，否则返回false 如果成功附加新的delegate，返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5ad76b1bdeb6d480f366684e0635b5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool detachDelegateWithIME </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5acd5dc8a188288dc2771f6763fcbfb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchDeleteBackward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>分派对文本的删除回退操作  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a28b6a82b2bda28c9c213f01112c403e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchInsertText </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从共享dispatcher释放所有IMEDelegate </p>
+<p>分派从IME得到的输入文本  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ec916156b027c417045822f96dff1f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchKeyboardDidHide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="af40f808b32c36759ae3d7110dfe9dfe3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchKeyboardDidShow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="abf382cfc97eecb57e17cc2af456d93e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchKeyboardWillHide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="affb524493e61bfb897d486dd4a383996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatchKeyboardWillShow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d05/structcocos2d_1_1_i_m_e_keyboard_notification_info.html">IMEKeyboardNotificationInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a38b917e1b55290709a172fbc01cfe5dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; getContentText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从IMEDelegate得到之前保存在IME的文本  NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a286bec19f7e582f840ff27f008c06433"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a> *&#160;</td>
+          <td class="paramname"><em>delegate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从delegate队列里移除某一从IME消息获取的delegate </p>
+
+</div>
+</div>
+<a class="anchor" id="acf4e261724da5118a44e4165745fabcc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html">IMEDispatcher</a>* sharedDispatcher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回系统共享的IMEDispatcher对象  NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ae6658db70103744950dd6fe9db9bebd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../dc/d19/classcocos2d_1_1_i_m_e_delegate.html">IMEDelegate</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/<a class="el" href="../../da/db9/_c_c_i_m_e_dispatcher_8h.html">CCIMEDispatcher.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d5/d8c/classcocos2d_1_1_i_m_e_dispatcher.html">IMEDispatcher</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:46 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

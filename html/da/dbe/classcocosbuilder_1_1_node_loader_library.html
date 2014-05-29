@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: NodeLoaderLibrary类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('da/dbe/classcocosbuilder_1_1_node_loader_library.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="../../dd/d16/classcocosbuilder_1_1_node_loader_library-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">NodeLoaderLibrary类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCNodeLoaderLibrary.h&gt;</code></p>
+<div class="dynheader">
+类 NodeLoaderLibrary 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../da/dbe/classcocosbuilder_1_1_node_loader_library.png" usemap="#NodeLoaderLibrary_map" alt=""/>
+  <map id="NodeLoaderLibrary_map" name="NodeLoaderLibrary_map">
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,123,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4d487f2f887f8443663cc39babea3c2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a4d487f2f887f8443663cc39babea3c2a">NodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:a4d487f2f887f8443663cc39babea3c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a4d487f2f887f8443663cc39babea3c2a">更多...</a><br /></td></tr>
+<tr class="separator:a4d487f2f887f8443663cc39babea3c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f90f1c5cbdf8df7fe1b17ed0ee34625"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a5f90f1c5cbdf8df7fe1b17ed0ee34625">~NodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:a5f90f1c5cbdf8df7fe1b17ed0ee34625"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a5f90f1c5cbdf8df7fe1b17ed0ee34625">更多...</a><br /></td></tr>
+<tr class="separator:a5f90f1c5cbdf8df7fe1b17ed0ee34625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c90e88cdc3dae376c8ba0249b71502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a48c90e88cdc3dae376c8ba0249b71502">registerDefaultNodeLoaders</a> ()</td></tr>
+<tr class="memdesc:a48c90e88cdc3dae376c8ba0249b71502"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a48c90e88cdc3dae376c8ba0249b71502">更多...</a><br /></td></tr>
+<tr class="separator:a48c90e88cdc3dae376c8ba0249b71502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cab628e974127014f4f738d40ffaf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#ad6cab628e974127014f4f738d40ffaf8">registerNodeLoader</a> (const char *pClassName, <a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *pNodeLoader)</td></tr>
+<tr class="memdesc:ad6cab628e974127014f4f738d40ffaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ad6cab628e974127014f4f738d40ffaf8">更多...</a><br /></td></tr>
+<tr class="separator:ad6cab628e974127014f4f738d40ffaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b986ba18c0c2dacb778f2929826bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#aa7b986ba18c0c2dacb778f2929826bad">unregisterNodeLoader</a> (const char *pClassName)</td></tr>
+<tr class="memdesc:aa7b986ba18c0c2dacb778f2929826bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#aa7b986ba18c0c2dacb778f2929826bad">更多...</a><br /></td></tr>
+<tr class="separator:aa7b986ba18c0c2dacb778f2929826bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3788a75a423f59e35db9a57f4433ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#aea3788a75a423f59e35db9a57f4433ae">getNodeLoader</a> (const char *pClassName)</td></tr>
+<tr class="memdesc:aea3788a75a423f59e35db9a57f4433ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#aea3788a75a423f59e35db9a57f4433ae">更多...</a><br /></td></tr>
+<tr class="separator:aea3788a75a423f59e35db9a57f4433ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1452cb2d4d37c876838e4b99990e2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#ada1452cb2d4d37c876838e4b99990e2b">purge</a> (bool pDelete)</td></tr>
+<tr class="memdesc:ada1452cb2d4d37c876838e4b99990e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ada1452cb2d4d37c876838e4b99990e2b">更多...</a><br /></td></tr>
+<tr class="separator:ada1452cb2d4d37c876838e4b99990e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32fbd26db9584886191e2081915920f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#ae32fbd26db9584886191e2081915920f">registerDefaultCCNodeLoaders</a> ()</td></tr>
+<tr class="memdesc:ae32fbd26db9584886191e2081915920f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ae32fbd26db9584886191e2081915920f">更多...</a><br /></td></tr>
+<tr class="separator:ae32fbd26db9584886191e2081915920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e4519be75a332d5547c0df439a7f42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#af9e4519be75a332d5547c0df439a7f42">registerCCNodeLoader</a> (const char *pClassName, <a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *pNodeLoader)</td></tr>
+<tr class="memdesc:af9e4519be75a332d5547c0df439a7f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#af9e4519be75a332d5547c0df439a7f42">更多...</a><br /></td></tr>
+<tr class="separator:af9e4519be75a332d5547c0df439a7f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cba53486467d3c3151081a6ac345895"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a6cba53486467d3c3151081a6ac345895">unregisterCCNodeLoader</a> (const char *pClassName)</td></tr>
+<tr class="memdesc:a6cba53486467d3c3151081a6ac345895"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a6cba53486467d3c3151081a6ac345895">更多...</a><br /></td></tr>
+<tr class="separator:a6cba53486467d3c3151081a6ac345895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034eb5af8b2519ce2553e6652493ede0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a034eb5af8b2519ce2553e6652493ede0">getCCNodeLoader</a> (const char *pClassName)</td></tr>
+<tr class="memdesc:a034eb5af8b2519ce2553e6652493ede0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a034eb5af8b2519ce2553e6652493ede0">更多...</a><br /></td></tr>
+<tr class="separator:a034eb5af8b2519ce2553e6652493ede0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aff1892efa35a55828bacbe0e72967326"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#aff1892efa35a55828bacbe0e72967326">library</a> ()</td></tr>
+<tr class="memdesc:aff1892efa35a55828bacbe0e72967326"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#aff1892efa35a55828bacbe0e72967326">更多...</a><br /></td></tr>
+<tr class="separator:aff1892efa35a55828bacbe0e72967326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441a9e076c5d28652d56b8314eb5636c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a441a9e076c5d28652d56b8314eb5636c">getInstance</a> ()</td></tr>
+<tr class="memdesc:a441a9e076c5d28652d56b8314eb5636c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a441a9e076c5d28652d56b8314eb5636c">更多...</a><br /></td></tr>
+<tr class="separator:a441a9e076c5d28652d56b8314eb5636c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05351a268226fab089bd81f68d9b4904"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a05351a268226fab089bd81f68d9b4904">destroyInstance</a> ()</td></tr>
+<tr class="memdesc:a05351a268226fab089bd81f68d9b4904"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a05351a268226fab089bd81f68d9b4904">更多...</a><br /></td></tr>
+<tr class="separator:a05351a268226fab089bd81f68d9b4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab906e70b7d52c8c7cfbb2d72601a89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a3ab906e70b7d52c8c7cfbb2d72601a89">newDefaultNodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:a3ab906e70b7d52c8c7cfbb2d72601a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a3ab906e70b7d52c8c7cfbb2d72601a89">更多...</a><br /></td></tr>
+<tr class="separator:a3ab906e70b7d52c8c7cfbb2d72601a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6701d70f4b440152a47e48f4a0d0a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a3b6701d70f4b440152a47e48f4a0d0a8">sharedNodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:a3b6701d70f4b440152a47e48f4a0d0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a3b6701d70f4b440152a47e48f4a0d0a8">更多...</a><br /></td></tr>
+<tr class="separator:a3b6701d70f4b440152a47e48f4a0d0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae677ebff85dcb44e08c6cac8e9686752"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#ae677ebff85dcb44e08c6cac8e9686752">purgeSharedNodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:ae677ebff85dcb44e08c6cac8e9686752"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#ae677ebff85dcb44e08c6cac8e9686752">更多...</a><br /></td></tr>
+<tr class="separator:ae677ebff85dcb44e08c6cac8e9686752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550c3b7c5eff2d5d8084a7b2a941f3cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <br class="typebreak" />
+<a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html#a550c3b7c5eff2d5d8084a7b2a941f3cf">newDefaultCCNodeLoaderLibrary</a> ()</td></tr>
+<tr class="memdesc:a550c3b7c5eff2d5d8084a7b2a941f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a550c3b7c5eff2d5d8084a7b2a941f3cf">更多...</a><br /></td></tr>
+<tr class="separator:a550c3b7c5eff2d5d8084a7b2a941f3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a4d487f2f887f8443663cc39babea3c2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f90f1c5cbdf8df7fe1b17ed0ee34625"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a05351a268226fab089bd81f68d9b4904"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void destroyInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a034eb5af8b2519ce2553e6652493ede0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a>* getCCNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a441a9e076c5d28652d56b8314eb5636c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a>* getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aea3788a75a423f59e35db9a57f4433ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a>* getNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aff1892efa35a55828bacbe0e72967326"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a>* library </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a550c3b7c5eff2d5d8084a7b2a941f3cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a>* newDefaultCCNodeLoaderLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ab906e70b7d52c8c7cfbb2d72601a89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a>* newDefaultNodeLoaderLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ada1452cb2d4d37c876838e4b99990e2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void purge </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pDelete</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae677ebff85dcb44e08c6cac8e9686752"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void purgeSharedNodeLoaderLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="af9e4519be75a332d5547c0df439a7f42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void registerCCNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *&#160;</td>
+          <td class="paramname"><em>pNodeLoader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ae32fbd26db9584886191e2081915920f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void registerDefaultCCNodeLoaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a48c90e88cdc3dae376c8ba0249b71502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerDefaultNodeLoaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6cab628e974127014f4f738d40ffaf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d7e/classcocosbuilder_1_1_node_loader.html">NodeLoader</a> *&#160;</td>
+          <td class="paramname"><em>pNodeLoader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b6701d70f4b440152a47e48f4a0d0a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> <a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a>* sharedNodeLoaderLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="a6cba53486467d3c3151081a6ac345895"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d41/_c_c_platform_macros_8h.html#a6714431893427b129769f0bf2e940de4">CC_DEPRECATED_ATTRIBUTE</a> void unregisterCCNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7b986ba18c0c2dacb778f2929826bad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unregisterNodeLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA  NA </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/editor-support/cocosbuilder/<a class="el" href="../../db/dab/_c_c_node_loader_library_8h.html">CCNodeLoaderLibrary.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/dac/namespacecocosbuilder.html">cocosbuilder</a></li><li class="navelem"><a class="el" href="../../da/dbe/classcocosbuilder_1_1_node_loader_library.html">NodeLoaderLibrary</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:58 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

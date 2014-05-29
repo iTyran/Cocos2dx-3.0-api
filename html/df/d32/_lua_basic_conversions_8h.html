@@ -1,0 +1,2302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/scripting/lua-bindings/manual/LuaBasicConversions.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/d32/_lua_basic_conversions_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">LuaBasicConversions.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;lua.h&quot;</code><br />
+<code>#include &quot;tolua++.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/da6/tolua__fix_8h.html">tolua_fix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dfd/cocos2d_8h.html">cocos2d.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a750ed8224c6eb1cf053f79e726f0325a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a750ed8224c6eb1cf053f79e726f0325a">LUA_PRECONDITION</a>(condition,...)</td></tr>
+<tr class="separator:a750ed8224c6eb1cf053f79e726f0325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3dcf4aedd213f5318df7bbfbd545899e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a3dcf4aedd213f5318df7bbfbd545899e">luaval_is_usertype</a> (lua_State *L, int lo, const char *type, int def)</td></tr>
+<tr class="separator:a3dcf4aedd213f5318df7bbfbd545899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d34702f9caa059ef43d91c4d56ce50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a50d34702f9caa059ef43d91c4d56ce50">luaval_to_ushort</a> (lua_State *L, int lo, unsigned short *outValue)</td></tr>
+<tr class="separator:a50d34702f9caa059ef43d91c4d56ce50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363208da1be2f3cab99cf53e238c3ae3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a363208da1be2f3cab99cf53e238c3ae3">luaval_to_int32</a> (lua_State *L, int lo, int *outValue)</td></tr>
+<tr class="separator:a363208da1be2f3cab99cf53e238c3ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303ae3b727be084193879530efa96bec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a303ae3b727be084193879530efa96bec">luaval_to_uint32</a> (lua_State *L, int lo, unsigned int *outValue)</td></tr>
+<tr class="separator:a303ae3b727be084193879530efa96bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805d00aeec56f352e912d91f2f3fb2ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a805d00aeec56f352e912d91f2f3fb2ec">luaval_to_uint16</a> (lua_State *L, int lo, <a class="el" href="../../df/dd8/stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *outValue)</td></tr>
+<tr class="separator:a805d00aeec56f352e912d91f2f3fb2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe150b89d3827bffd1e496e82d716346"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#afe150b89d3827bffd1e496e82d716346">luaval_to_boolean</a> (lua_State *L, int lo, bool *outValue)</td></tr>
+<tr class="separator:afe150b89d3827bffd1e496e82d716346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9701521444f9e032229a5918f72bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#add9701521444f9e032229a5918f72bbc">luaval_to_number</a> (lua_State *L, int lo, double *outValue)</td></tr>
+<tr class="separator:add9701521444f9e032229a5918f72bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00eb4bdf6d352b03fd4cc3d66d2446d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a00eb4bdf6d352b03fd4cc3d66d2446d9">luaval_to_long_long</a> (lua_State *L, int lo, long long *outValue)</td></tr>
+<tr class="separator:a00eb4bdf6d352b03fd4cc3d66d2446d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc2a15e806a41515b05fa4fa4ee5d2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#afbc2a15e806a41515b05fa4fa4ee5d2a">luaval_to_std_string</a> (lua_State *L, int lo, std::string *outValue)</td></tr>
+<tr class="separator:afbc2a15e806a41515b05fa4fa4ee5d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce78401f131e297c6f0f4538aa28857"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a2ce78401f131e297c6f0f4538aa28857">luaval_to_long</a> (lua_State *L, int lo, long *outValue)</td></tr>
+<tr class="separator:a2ce78401f131e297c6f0f4538aa28857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca8f610a3cc79a17e243422929683cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a0ca8f610a3cc79a17e243422929683cb">luaval_to_ssize</a> (lua_State *L, int lo, <a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *outValue)</td></tr>
+<tr class="separator:a0ca8f610a3cc79a17e243422929683cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4728854600e258245012780c38bb0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#afe4728854600e258245012780c38bb0d">luaval_to_size</a> (lua_State *L, int lo, <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> *outValue)</td></tr>
+<tr class="separator:afe4728854600e258245012780c38bb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71edae6cd98b6485cc271d65c882fc01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a71edae6cd98b6485cc271d65c882fc01">luaval_to_rect</a> (lua_State *L, int lo, <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> *outValue)</td></tr>
+<tr class="separator:a71edae6cd98b6485cc271d65c882fc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a79ac6b7009fbef584727d29b9fdef1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a6a79ac6b7009fbef584727d29b9fdef1">luaval_to_color3b</a> (lua_State *L, int lo, <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> *outValue)</td></tr>
+<tr class="separator:a6a79ac6b7009fbef584727d29b9fdef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7e9c6caa7a95c03efb4595b0ece731"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aeb7e9c6caa7a95c03efb4595b0ece731">luaval_to_color4b</a> (lua_State *L, int lo, <a class="el" href="../../d4/d11/structcocos2d_1_1_color4_b.html">Color4B</a> *outValue)</td></tr>
+<tr class="separator:aeb7e9c6caa7a95c03efb4595b0ece731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb09106063f2f8d29028607de47e48ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aeb09106063f2f8d29028607de47e48ff">luaval_to_color4f</a> (lua_State *L, int lo, <a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> *outValue)</td></tr>
+<tr class="separator:aeb09106063f2f8d29028607de47e48ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c009152da9c0c8c296dbd463ee604c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ae8c009152da9c0c8c296dbd463ee604c">luaval_to_physics_material</a> (lua_State *L, int lo, cocos2d::PhysicsMaterial *outValue)</td></tr>
+<tr class="separator:ae8c009152da9c0c8c296dbd463ee604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb8099928f9a63ae002e2b6e48fbf33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a8eb8099928f9a63ae002e2b6e48fbf33">luaval_to_affinetransform</a> (lua_State *L, int lo, <a class="el" href="../../db/dc3/structcocos2d_1_1_affine_transform.html">AffineTransform</a> *outValue)</td></tr>
+<tr class="separator:a8eb8099928f9a63ae002e2b6e48fbf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947e1c7ed6872b85aa9a1eb783bc46b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a947e1c7ed6872b85aa9a1eb783bc46b3">luaval_to_fontdefinition</a> (lua_State *L, int lo, <a class="el" href="../../d5/d45/structcocos2d_1_1_font_definition.html">FontDefinition</a> *outValue)</td></tr>
+<tr class="separator:a947e1c7ed6872b85aa9a1eb783bc46b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a0dabf39d34d90495afc6aefa88e16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a45a0dabf39d34d90495afc6aefa88e16">luaval_to_mat4</a> (lua_State *L, int lo, cocos2d::Mat4 *outValue)</td></tr>
+<tr class="separator:a45a0dabf39d34d90495afc6aefa88e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f1d586b30bd74ef23005a7c56cc685"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a86f1d586b30bd74ef23005a7c56cc685">luaval_to_array</a> (lua_State *L, int lo, <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> **outValue)</td></tr>
+<tr class="separator:a86f1d586b30bd74ef23005a7c56cc685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3b15eec7203a399a769bd10f74c784"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#adb3b15eec7203a399a769bd10f74c784">luaval_to_dictionary</a> (lua_State *L, int lo, <a class="el" href="../../d0/d1a/classcocos2d_1_1_____dictionary.html">__Dictionary</a> **outValue)</td></tr>
+<tr class="separator:adb3b15eec7203a399a769bd10f74c784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021b8fb4484dcb0858930ef67edbcacd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a021b8fb4484dcb0858930ef67edbcacd">luaval_to_array_of_vec2</a> (lua_State *L, int lo, cocos2d::Vec2 **points, int *numPoints)</td></tr>
+<tr class="separator:a021b8fb4484dcb0858930ef67edbcacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd57f87d226cf47c98f9f33eb1ad3604"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#afd57f87d226cf47c98f9f33eb1ad3604">luavals_variadic_to_array</a> (lua_State *L, int argc, <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> **ret)</td></tr>
+<tr class="separator:afd57f87d226cf47c98f9f33eb1ad3604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457e95c28d5244a9f2c6fff74f76c570"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a457e95c28d5244a9f2c6fff74f76c570">luavals_variadic_to_ccvaluevector</a> (lua_State *L, int argc, <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> *ret)</td></tr>
+<tr class="separator:a457e95c28d5244a9f2c6fff74f76c570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a58ce6602a87d5ae44bc7aae70324aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a7a58ce6602a87d5ae44bc7aae70324aa">luaval_to_vec2</a> (lua_State *L, int lo, cocos2d::Vec2 *outValue)</td></tr>
+<tr class="separator:a7a58ce6602a87d5ae44bc7aae70324aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf83e31a58d2fedf136ba7602c44ad0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#acf83e31a58d2fedf136ba7602c44ad0b">luaval_to_vec3</a> (lua_State *L, int lo, cocos2d::Vec3 *outValue)</td></tr>
+<tr class="separator:acf83e31a58d2fedf136ba7602c44ad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2de7ee83cdec21a0faf82fcc84fc51b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ae2de7ee83cdec21a0faf82fcc84fc51b">luaval_to_blendfunc</a> (lua_State *L, int lo, <a class="el" href="../../d3/d14/structcocos2d_1_1_blend_func.html">cocos2d::BlendFunc</a> *outValue)</td></tr>
+<tr class="separator:ae2de7ee83cdec21a0faf82fcc84fc51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabed484c9b25fe75c089ff3a457f125"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aaabed484c9b25fe75c089ff3a457f125">luaval_to_ttfconfig</a> (lua_State *L, int lo, cocos2d::TTFConfig *outValue)</td></tr>
+<tr class="separator:aaabed484c9b25fe75c089ff3a457f125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c0e5160e02874f65baa528729ab0ee"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a73c0e5160e02874f65baa528729ab0ee"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a73c0e5160e02874f65baa528729ab0ee">luavals_variadic_to_ccvector</a> (lua_State *L, int argc, <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; *ret)</td></tr>
+<tr class="separator:a73c0e5160e02874f65baa528729ab0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0694d81e5148342694ef35d24e71f1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5e0694d81e5148342694ef35d24e71f1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a5e0694d81e5148342694ef35d24e71f1">luaval_to_ccvector</a> (lua_State *L, int lo, <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; *ret)</td></tr>
+<tr class="separator:a5e0694d81e5148342694ef35d24e71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8249be0b8d04b4cf1b3641e6d3a50097"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a8249be0b8d04b4cf1b3641e6d3a50097">luaval_to_std_vector_string</a> (lua_State *L, int lo, std::vector&lt; std::string &gt; *ret)</td></tr>
+<tr class="separator:a8249be0b8d04b4cf1b3641e6d3a50097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d666d580e2d56836bcdbfcd0463ee08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a9d666d580e2d56836bcdbfcd0463ee08">luaval_to_std_vector_int</a> (lua_State *L, int lo, std::vector&lt; int &gt; *ret)</td></tr>
+<tr class="separator:a9d666d580e2d56836bcdbfcd0463ee08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada809ba396d32feabba99ad0cd3d8da6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ada809ba396d32feabba99ad0cd3d8da6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ada809ba396d32feabba99ad0cd3d8da6">luaval_to_ccmap_string_key</a> (lua_State *L, int lo, <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">cocos2d::Map</a>&lt; std::string, T &gt; *ret)</td></tr>
+<tr class="separator:ada809ba396d32feabba99ad0cd3d8da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859239594fe122bc97d4841933d106ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a859239594fe122bc97d4841933d106ce">luaval_to_ccvalue</a> (lua_State *L, int lo, <a class="el" href="../../dc/dd1/classcocos2d_1_1_value.html">cocos2d::Value</a> *ret)</td></tr>
+<tr class="separator:a859239594fe122bc97d4841933d106ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1076f37625f09a6f054f7199d4921861"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a1076f37625f09a6f054f7199d4921861">luaval_to_ccvaluemap</a> (lua_State *L, int lo, <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">cocos2d::ValueMap</a> *ret)</td></tr>
+<tr class="separator:a1076f37625f09a6f054f7199d4921861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ce3acb7c14cbea4e5aa7aafd9e0450"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ad8ce3acb7c14cbea4e5aa7aafd9e0450">luaval_to_ccvaluemapintkey</a> (lua_State *L, int lo, <a class="el" href="../../d2/dc0/namespacecocos2d.html#a733d2ae0a5704948dcfad9c985507cff">cocos2d::ValueMapIntKey</a> *ret)</td></tr>
+<tr class="separator:ad8ce3acb7c14cbea4e5aa7aafd9e0450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53abe68900b10ed60a8296b77756eeb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a53abe68900b10ed60a8296b77756eeb7">luaval_to_ccvaluevector</a> (lua_State *L, int lo, <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> *ret)</td></tr>
+<tr class="separator:a53abe68900b10ed60a8296b77756eeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8428b36eb9505f245f4c5e153757365b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8428b36eb9505f245f4c5e153757365b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a8428b36eb9505f245f4c5e153757365b">luaval_to_object</a> (lua_State *L, int lo, const char *type, T **ret)</td></tr>
+<tr class="separator:a8428b36eb9505f245f4c5e153757365b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1e85edda8b16ed372653dff166162c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#adf1e85edda8b16ed372653dff166162c">vec2_to_luaval</a> (lua_State *L, const cocos2d::Vec2 &amp;vec2)</td></tr>
+<tr class="separator:adf1e85edda8b16ed372653dff166162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c741f07bde8ae7387aa5cbbb76cef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a55c741f07bde8ae7387aa5cbbb76cef4">vec3_to_luaval</a> (lua_State *L, const cocos2d::Vec3 &amp;vec3)</td></tr>
+<tr class="separator:a55c741f07bde8ae7387aa5cbbb76cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fc88220d5391d82ea39e68403d586b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ae0fc88220d5391d82ea39e68403d586b">vec2_array_to_luaval</a> (lua_State *L, const cocos2d::Vec2 *points, int count)</td></tr>
+<tr class="separator:ae0fc88220d5391d82ea39e68403d586b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dc2460bb87dea72dceee0df5005180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a65dc2460bb87dea72dceee0df5005180">size_to_luaval</a> (lua_State *L, const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;sz)</td></tr>
+<tr class="separator:a65dc2460bb87dea72dceee0df5005180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13c4f00990f8b8634265a3792bcb681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ad13c4f00990f8b8634265a3792bcb681">rect_to_luaval</a> (lua_State *L, const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;rt)</td></tr>
+<tr class="separator:ad13c4f00990f8b8634265a3792bcb681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8929e608df927af14e08c79df9d94f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aa8929e608df927af14e08c79df9d94f3">color3b_to_luaval</a> (lua_State *L, const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;cc)</td></tr>
+<tr class="separator:aa8929e608df927af14e08c79df9d94f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ae293ce50c9c160a2e582e653ab2b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aa1ae293ce50c9c160a2e582e653ab2b5">color4b_to_luaval</a> (lua_State *L, const <a class="el" href="../../d4/d11/structcocos2d_1_1_color4_b.html">Color4B</a> &amp;cc)</td></tr>
+<tr class="separator:aa1ae293ce50c9c160a2e582e653ab2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5212eff03944ad7da6a7f79605eacc39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a5212eff03944ad7da6a7f79605eacc39">color4f_to_luaval</a> (lua_State *L, const <a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> &amp;cc)</td></tr>
+<tr class="separator:a5212eff03944ad7da6a7f79605eacc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56220316978a7f55a8078a957de38d9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a56220316978a7f55a8078a957de38d9f">physics_material_to_luaval</a> (lua_State *L, const PhysicsMaterial &amp;pm)</td></tr>
+<tr class="separator:a56220316978a7f55a8078a957de38d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e8895c4d7b363be063879a4f1bdb30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a77e8895c4d7b363be063879a4f1bdb30">physics_raycastinfo_to_luaval</a> (lua_State *L, const PhysicsRayCastInfo &amp;info)</td></tr>
+<tr class="separator:a77e8895c4d7b363be063879a4f1bdb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f30dc007f36d5ba881d4df754d377eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a0f30dc007f36d5ba881d4df754d377eb">physics_contactdata_to_luaval</a> (lua_State *L, const PhysicsContactData *data)</td></tr>
+<tr class="separator:a0f30dc007f36d5ba881d4df754d377eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeeda4f6b12c1425a755d221ce78884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a4eeeda4f6b12c1425a755d221ce78884">affinetransform_to_luaval</a> (lua_State *L, const <a class="el" href="../../db/dc3/structcocos2d_1_1_affine_transform.html">AffineTransform</a> &amp;inValue)</td></tr>
+<tr class="separator:a4eeeda4f6b12c1425a755d221ce78884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90ec3b20b885dff232bd954d8d2a4ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ac90ec3b20b885dff232bd954d8d2a4ef">fontdefinition_to_luaval</a> (lua_State *L, const <a class="el" href="../../d5/d45/structcocos2d_1_1_font_definition.html">FontDefinition</a> &amp;inValue)</td></tr>
+<tr class="separator:ac90ec3b20b885dff232bd954d8d2a4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae869d68adb0482996ebefc5d620bc53c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ae869d68adb0482996ebefc5d620bc53c">array_to_luaval</a> (lua_State *L, <a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *inValue)</td></tr>
+<tr class="separator:ae869d68adb0482996ebefc5d620bc53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775750c24943ff6a22eec8bb2170577d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a775750c24943ff6a22eec8bb2170577d">dictionary_to_luaval</a> (lua_State *L, <a class="el" href="../../d0/d1a/classcocos2d_1_1_____dictionary.html">__Dictionary</a> *dict)</td></tr>
+<tr class="separator:a775750c24943ff6a22eec8bb2170577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a4039be37a2e65039ec57f13a1df6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a01a4039be37a2e65039ec57f13a1df6b">mat4_to_luaval</a> (lua_State *L, const cocos2d::Mat4 &amp;mat)</td></tr>
+<tr class="separator:a01a4039be37a2e65039ec57f13a1df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4019a12c243b96e85f48bc7da03345c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ac4019a12c243b96e85f48bc7da03345c">blendfunc_to_luaval</a> (lua_State *L, const <a class="el" href="../../d3/d14/structcocos2d_1_1_blend_func.html">cocos2d::BlendFunc</a> &amp;func)</td></tr>
+<tr class="separator:ac4019a12c243b96e85f48bc7da03345c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121d71c7eb273fc1e1fe410383345f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a121d71c7eb273fc1e1fe410383345f35">ttfconfig_to_luaval</a> (lua_State *L, const cocos2d::TTFConfig &amp;config)</td></tr>
+<tr class="separator:a121d71c7eb273fc1e1fe410383345f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ab32c01992425e2878e45c55231a07"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae9ab32c01992425e2878e45c55231a07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#ae9ab32c01992425e2878e45c55231a07">ccvector_to_luaval</a> (lua_State *L, const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; &amp;inValue)</td></tr>
+<tr class="separator:ae9ab32c01992425e2878e45c55231a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51fdb178c033ac7ab2ed0348fcc602dc"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a51fdb178c033ac7ab2ed0348fcc602dc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a51fdb178c033ac7ab2ed0348fcc602dc">ccmap_string_key_to_luaval</a> (lua_State *L, const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">cocos2d::Map</a>&lt; std::string, T &gt; &amp;v)</td></tr>
+<tr class="separator:a51fdb178c033ac7ab2ed0348fcc602dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af389834739abc214a558372f1eb6eca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#af389834739abc214a558372f1eb6eca2">ccvalue_to_luaval</a> (lua_State *L, const <a class="el" href="../../dc/dd1/classcocos2d_1_1_value.html">cocos2d::Value</a> &amp;inValue)</td></tr>
+<tr class="separator:af389834739abc214a558372f1eb6eca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349467fcded785cebcd5f111a725343d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a349467fcded785cebcd5f111a725343d">ccvaluemap_to_luaval</a> (lua_State *L, const <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">cocos2d::ValueMap</a> &amp;inValue)</td></tr>
+<tr class="separator:a349467fcded785cebcd5f111a725343d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9cada642d76124ec7b06ba97392413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aec9cada642d76124ec7b06ba97392413">ccvaluemapintkey_to_luaval</a> (lua_State *L, const <a class="el" href="../../d2/dc0/namespacecocos2d.html#a733d2ae0a5704948dcfad9c985507cff">cocos2d::ValueMapIntKey</a> &amp;inValue)</td></tr>
+<tr class="separator:aec9cada642d76124ec7b06ba97392413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634cb573028feb2151d92000d6d03ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a634cb573028feb2151d92000d6d03ab0">ccvaluevector_to_luaval</a> (lua_State *L, const <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> &amp;inValue)</td></tr>
+<tr class="separator:a634cb573028feb2151d92000d6d03ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e83fe6af7668dd50a56bdc5478fe88"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa6e83fe6af7668dd50a56bdc5478fe88"><td class="memTemplItemLeft" align="right" valign="top">const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aa6e83fe6af7668dd50a56bdc5478fe88">getLuaTypeName</a> (T *ret, const char *type)</td></tr>
+<tr class="memdesc:aa6e83fe6af7668dd50a56bdc5478fe88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Because all override functions wouldn't be bound,so we must use <code>typeid</code> to get the real class name.  <a href="#aa6e83fe6af7668dd50a56bdc5478fe88">更多...</a><br /></td></tr>
+<tr class="separator:aa6e83fe6af7668dd50a56bdc5478fe88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2e2faeb9d3c2a9241bd8d18e399511"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4c2e2faeb9d3c2a9241bd8d18e399511"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#a4c2e2faeb9d3c2a9241bd8d18e399511">object_to_luaval</a> (lua_State *L, const char *type, T *ret)</td></tr>
+<tr class="separator:a4c2e2faeb9d3c2a9241bd8d18e399511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa314eeab38392ffe964455ec49ae4cc7"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aa314eeab38392ffe964455ec49ae4cc7">g_luaType</a></td></tr>
+<tr class="separator:aa314eeab38392ffe964455ec49ae4cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacba51464298f72c8fe7c96744bf6e99"><td class="memItemLeft" align="right" valign="top">std::unordered_map<br class="typebreak" />
+&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html#aacba51464298f72c8fe7c96744bf6e99">g_typeCast</a></td></tr>
+<tr class="separator:aacba51464298f72c8fe7c96744bf6e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a750ed8224c6eb1cf053f79e726f0325a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LUA_PRECONDITION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>( ! (condition) ) {                                                       <a class="code" href="../../d2/dc0/namespacecocos2d.html#a36f967ba10572f5a13833377dd0da356">\</a></div>
+<div class="line"><a class="code" href="../../d2/dc0/namespacecocos2d.html#a36f967ba10572f5a13833377dd0da356">cocos2d::log</a>(<span class="stringliteral">&quot;lua: ERROR: File %s: Line: %d, Function: %s&quot;</span>, __FILE__, __LINE__, __FUNCTION__ );                                                         <a class="code" href="../../d2/dc0/namespacecocos2d.html#a36f967ba10572f5a13833377dd0da356">\</a></div>
+<div class="line"><a class="code" href="../../d2/dc0/namespacecocos2d.html#a36f967ba10572f5a13833377dd0da356">cocos2d::log</a>(__VA_ARGS__);                                                  \</div>
+<div class="line">}                                                                           \</div>
+<div class="ttc" id="namespacecocos2d_html_a36f967ba10572f5a13833377dd0da356"><div class="ttname"><a href="../../d2/dc0/namespacecocos2d.html#a36f967ba10572f5a13833377dd0da356">cocos2d::log</a></div><div class="ttdeci">void CC_DLL log(const char *format,...) CC_FORMAT_PRINTF(1</div><div class="ttdoc">输出调试信息. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4eeeda4f6b12c1425a755d221ce78884"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affinetransform_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/dc3/structcocos2d_1_1_affine_transform.html">AffineTransform</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae869d68adb0482996ebefc5d620bc53c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void array_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> *&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4019a12c243b96e85f48bc7da03345c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void blendfunc_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d14/structcocos2d_1_1_blend_func.html">cocos2d::BlendFunc</a> &amp;&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51fdb178c033ac7ab2ed0348fcc602dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccmap_string_key_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">cocos2d::Map</a>&lt; std::string, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af389834739abc214a558372f1eb6eca2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccvalue_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/dd1/classcocos2d_1_1_value.html">cocos2d::Value</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a349467fcded785cebcd5f111a725343d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccvaluemap_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">cocos2d::ValueMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec9cada642d76124ec7b06ba97392413"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccvaluemapintkey_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc0/namespacecocos2d.html#a733d2ae0a5704948dcfad9c985507cff">cocos2d::ValueMapIntKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a634cb573028feb2151d92000d6d03ab0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccvaluevector_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9ab32c01992425e2878e45c55231a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ccvector_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8929e608df927af14e08c79df9d94f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void color3b_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> &amp;&#160;</td>
+          <td class="paramname"><em>cc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1ae293ce50c9c160a2e582e653ab2b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void color4b_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d11/structcocos2d_1_1_color4_b.html">Color4B</a> &amp;&#160;</td>
+          <td class="paramname"><em>cc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5212eff03944ad7da6a7f79605eacc39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void color4f_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> &amp;&#160;</td>
+          <td class="paramname"><em>cc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a775750c24943ff6a22eec8bb2170577d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dictionary_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d1a/classcocos2d_1_1_____dictionary.html">__Dictionary</a> *&#160;</td>
+          <td class="paramname"><em>dict</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac90ec3b20b885dff232bd954d8d2a4ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fontdefinition_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d45/structcocos2d_1_1_font_definition.html">FontDefinition</a> &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6e83fe6af7668dd50a56bdc5478fe88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* getLuaTypeName </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>ret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Because all override functions wouldn't be bound,so we must use <code>typeid</code> to get the real class name. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3dcf4aedd213f5318df7bbfbd545899e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_is_usertype </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>def</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8eb8099928f9a63ae002e2b6e48fbf33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_affinetransform </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dc3/structcocos2d_1_1_affine_transform.html">AffineTransform</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86f1d586b30bd74ef23005a7c56cc685"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_array </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> **&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a021b8fb4484dcb0858930ef67edbcacd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_array_of_vec2 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::Vec2 **&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>numPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2de7ee83cdec21a0faf82fcc84fc51b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_blendfunc </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d14/structcocos2d_1_1_blend_func.html">cocos2d::BlendFunc</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe150b89d3827bffd1e496e82d716346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_boolean </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada809ba396d32feabba99ad0cd3d8da6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccmap_string_key </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d5c/classcocos2d_1_1_map.html">cocos2d::Map</a>&lt; std::string, T &gt; *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a859239594fe122bc97d4841933d106ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccvalue </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dd1/classcocos2d_1_1_value.html">cocos2d::Value</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1076f37625f09a6f054f7199d4921861"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccvaluemap </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dc0/namespacecocos2d.html#ae44b8cec5fcb05722ab75a7ca2f03fee">cocos2d::ValueMap</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8ce3acb7c14cbea4e5aa7aafd9e0450"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccvaluemapintkey </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a733d2ae0a5704948dcfad9c985507cff">cocos2d::ValueMapIntKey</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53abe68900b10ed60a8296b77756eeb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccvaluevector </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e0694d81e5148342694ef35d24e71f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ccvector </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a79ac6b7009fbef584727d29b9fdef1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_color3b </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dc5/structcocos2d_1_1_color3_b.html">Color3B</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb7e9c6caa7a95c03efb4595b0ece731"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_color4b </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d11/structcocos2d_1_1_color4_b.html">Color4B</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb09106063f2f8d29028607de47e48ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_color4f </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d77/structcocos2d_1_1_color4_f.html">Color4F</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb3b15eec7203a399a769bd10f74c784"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_dictionary </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d1a/classcocos2d_1_1_____dictionary.html">__Dictionary</a> **&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a947e1c7ed6872b85aa9a1eb783bc46b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_fontdefinition </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d45/structcocos2d_1_1_font_definition.html">FontDefinition</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a363208da1be2f3cab99cf53e238c3ae3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_int32 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ce78401f131e297c6f0f4538aa28857"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_long </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00eb4bdf6d352b03fd4cc3d66d2446d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_long_long </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45a0dabf39d34d90495afc6aefa88e16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_mat4 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::Mat4 *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add9701521444f9e032229a5918f72bbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_number </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8428b36eb9505f245f4c5e153757365b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_object </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T **&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8c009152da9c0c8c296dbd463ee604c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_physics_material </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::PhysicsMaterial *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71edae6cd98b6485cc271d65c882fc01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_rect </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe4728854600e258245012780c38bb0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_size </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ca8f610a3cc79a17e243422929683cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ssize </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d7b/win32_2_c_c_std_c_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afbc2a15e806a41515b05fa4fa4ee5d2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_std_string </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d666d580e2d56836bcdbfcd0463ee08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_std_vector_int </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8249be0b8d04b4cf1b3641e6d3a50097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_std_vector_string </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt; *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaabed484c9b25fe75c089ff3a457f125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ttfconfig </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::TTFConfig *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a805d00aeec56f352e912d91f2f3fb2ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_uint16 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a303ae3b727be084193879530efa96bec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_uint32 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50d34702f9caa059ef43d91c4d56ce50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_ushort </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a58ce6602a87d5ae44bc7aae70324aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_vec2 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::Vec2 *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf83e31a58d2fedf136ba7602c44ad0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luaval_to_vec3 </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cocos2d::Vec3 *&#160;</td>
+          <td class="paramname"><em>outValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd57f87d226cf47c98f9f33eb1ad3604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luavals_variadic_to_array </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dae/classcocos2d_1_1_____array.html">__Array</a> **&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a457e95c28d5244a9f2c6fff74f76c570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luavals_variadic_to_ccvaluevector </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dc0/namespacecocos2d.html#a9ef3555e979a203b9619881b61866ca0">cocos2d::ValueVector</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73c0e5160e02874f65baa528729ab0ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool luavals_variadic_to_ccvector </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d38/classcocos2d_1_1_vector.html">cocos2d::Vector</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01a4039be37a2e65039ec57f13a1df6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mat4_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cocos2d::Mat4 &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c2e2faeb9d3c2a9241bd8d18e399511"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void object_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f30dc007f36d5ba881d4df754d377eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void physics_contactdata_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PhysicsContactData *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56220316978a7f55a8078a957de38d9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void physics_material_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PhysicsMaterial &amp;&#160;</td>
+          <td class="paramname"><em>pm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77e8895c4d7b363be063879a4f1bdb30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void physics_raycastinfo_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PhysicsRayCastInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad13c4f00990f8b8634265a3792bcb681"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rect_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d4/d8a/classcocos2d_1_1_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65dc2460bb87dea72dceee0df5005180"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void size_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d8c/classcocos2d_1_1_size.html">Size</a> &amp;&#160;</td>
+          <td class="paramname"><em>sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a121d71c7eb273fc1e1fe410383345f35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ttfconfig_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cocos2d::TTFConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0fc88220d5391d82ea39e68403d586b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vec2_array_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cocos2d::Vec2 *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf1e85edda8b16ed372653dff166162c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vec2_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cocos2d::Vec2 &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55c741f07bde8ae7387aa5cbbb76cef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vec3_to_luaval </td>
+          <td>(</td>
+          <td class="paramtype">lua_State *&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cocos2d::Vec3 &amp;&#160;</td>
+          <td class="paramname"><em>vec3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="aa314eeab38392ffe964455ec49ae4cc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, std::string&gt; g_luaType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacba51464298f72c8fe7c96744bf6e99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, std::string&gt; g_typeCast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_f8941e4afa809e0656a9cba271f6eba4.html">scripting</a></li><li class="navelem"><a class="el" href="../../dir_2c52004fc8789ce74a8345d393fc1d5f.html">lua-bindings</a></li><li class="navelem"><a class="el" href="../../dir_7dcb360def7e3813f11f29473edb4eab.html">manual</a></li><li class="navelem"><a class="el" href="../../df/d32/_lua_basic_conversions_8h.html">LuaBasicConversions.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:42 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

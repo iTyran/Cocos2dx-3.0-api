@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: /Users/zeroyang/Documents/github/cocos2d-x/cocos/2d/CCTransition.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/d7d/_c_c_transition_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a>  </div>
+  <div class="headertitle">
+<div class="title">CCTransition.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d77/_c_c_scene_8h.html">2d/CCScene.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/de6/cc_types_8h.html">base/ccTypes.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/def/classcocos2d_1_1_transition_ease_scene.html">TransitionEaseScene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TransitionEaseScene类可以使场景动画协议更灵活.  <a href="../../d6/def/classcocos2d_1_1_transition_ease_scene.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classcocos2d_1_1_transition_scene.html">TransitionScene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景转换的基类  <a href="../../dc/ded/classcocos2d_1_1_transition_scene.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classcocos2d_1_1_transition_scene_oriented.html">TransitionSceneOriented</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">支持方向的转换 可能的方向：LeftOver，RightOver，UpOver，DownOver  <a href="../../d3/db8/classcocos2d_1_1_transition_scene_oriented.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classcocos2d_1_1_transition_roto_zoom.html">TransitionRotoZoom</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/dde/classcocos2d_1_1_transition_roto_zoom.html" title="TransitionRotoZoom: 旋转和缩放外出的场景，同时旋转缩放进入的场景 ">TransitionRotoZoom</a>: 旋转和缩放外出的场景，同时旋转缩放进入的场景  <a href="../../db/dde/classcocos2d_1_1_transition_roto_zoom.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d98/classcocos2d_1_1_transition_jump_zoom.html">TransitionJumpZoom</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d98/classcocos2d_1_1_transition_jump_zoom.html" title="TransitionJumpZoom: 缩小跳着切出场景, 同时跳着放大传人场景 ">TransitionJumpZoom</a>: 缩小跳着切出场景, 同时跳着放大传人场景  <a href="../../d1/d98/classcocos2d_1_1_transition_jump_zoom.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d48/classcocos2d_1_1_transition_move_in_l.html">TransitionMoveInL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../de/d48/classcocos2d_1_1_transition_move_in_l.html" title="TransitionMoveInL: 从左侧传人场景. ">TransitionMoveInL</a>: 从左侧传人场景.  <a href="../../de/d48/classcocos2d_1_1_transition_move_in_l.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd2/classcocos2d_1_1_transition_move_in_r.html">TransitionMoveInR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/dd2/classcocos2d_1_1_transition_move_in_r.html" title="TransitionMoveInR: 从右侧传人场景. ">TransitionMoveInR</a>: 从右侧传人场景.  <a href="../../da/dd2/classcocos2d_1_1_transition_move_in_r.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d34/classcocos2d_1_1_transition_move_in_t.html">TransitionMoveInT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/d34/classcocos2d_1_1_transition_move_in_t.html" title="TransitionMoveInT: 从顶部传人场景. ">TransitionMoveInT</a>: 从顶部传人场景.  <a href="../../d9/d34/classcocos2d_1_1_transition_move_in_t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/classcocos2d_1_1_transition_move_in_b.html">TransitionMoveInB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../de/d86/classcocos2d_1_1_transition_move_in_b.html" title="TransitionMoveInB: 从底部传人场景. ">TransitionMoveInB</a>: 从底部传人场景.  <a href="../../de/d86/classcocos2d_1_1_transition_move_in_b.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dae/classcocos2d_1_1_transition_slide_in_l.html">TransitionSlideInL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dd/dae/classcocos2d_1_1_transition_slide_in_l.html" title="TransitionSlideInL: 从左边滑入传人场景. ">TransitionSlideInL</a>: 从左边滑入传人场景.  <a href="../../dd/dae/classcocos2d_1_1_transition_slide_in_l.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dcc/classcocos2d_1_1_transition_slide_in_r.html">TransitionSlideInR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/dcc/classcocos2d_1_1_transition_slide_in_r.html" title="TransitionSlideInR: 从右边滑入传入场景. ">TransitionSlideInR</a>: 从右边滑入传入场景.  <a href="../../da/dcc/classcocos2d_1_1_transition_slide_in_r.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/classcocos2d_1_1_transition_slide_in_b.html">TransitionSlideInB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/d8c/classcocos2d_1_1_transition_slide_in_b.html" title="TransitionSlideInB: 从底部滑入传入场景. ">TransitionSlideInB</a>: 从底部滑入传入场景.  <a href="../../d0/d8c/classcocos2d_1_1_transition_slide_in_b.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d85/classcocos2d_1_1_transition_slide_in_t.html">TransitionSlideInT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/d85/classcocos2d_1_1_transition_slide_in_t.html" title="TransitionSlideInT: 从顶部滑入传入场景. ">TransitionSlideInT</a>: 从顶部滑入传入场景.  <a href="../../d0/d85/classcocos2d_1_1_transition_slide_in_t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/classcocos2d_1_1_transition_shrink_grow.html">TransitionShrinkGrow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">当增长传入scene的时候，收缩传出的scene  <a href="../../db/d68/classcocos2d_1_1_transition_shrink_grow.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/classcocos2d_1_1_transition_flip_x.html">TransitionFlipX</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/d4f/classcocos2d_1_1_transition_flip_x.html" title="TransitionFlipX: 水平翻转屏幕。 正面是传出的场景，背面是传入的场景 ">TransitionFlipX</a>: 水平翻转屏幕。 正面是传出的场景，背面是传入的场景  <a href="../../d0/d4f/classcocos2d_1_1_transition_flip_x.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d41/classcocos2d_1_1_transition_flip_y.html">TransitionFlipY</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dd/d41/classcocos2d_1_1_transition_flip_y.html" title="TransitionFlipY: 垂直翻转屏幕。. ">TransitionFlipY</a>: 垂直翻转屏幕。.  <a href="../../dd/d41/classcocos2d_1_1_transition_flip_y.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/classcocos2d_1_1_transition_flip_angular.html">TransitionFlipAngular</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dd/df0/classcocos2d_1_1_transition_flip_angular.html" title="TransitionFlipAngular: 水平垂直翻转一半屏幕. ">TransitionFlipAngular</a>: 水平垂直翻转一半屏幕.  <a href="../../dd/df0/classcocos2d_1_1_transition_flip_angular.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/classcocos2d_1_1_transition_zoom_flip_x.html">TransitionZoomFlipX</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/dff/classcocos2d_1_1_transition_zoom_flip_x.html" title="TransitionZoomFlipX: 水平翻转屏幕，做一个 传入/穿出 缩放 正面是传出的场景，背面是传入的场景。 ...">TransitionZoomFlipX</a>: 水平翻转屏幕，做一个 传入/穿出 缩放 正面是传出的场景，背面是传入的场景。  <a href="../../db/dff/classcocos2d_1_1_transition_zoom_flip_x.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classcocos2d_1_1_transition_zoom_flip_y.html">TransitionZoomFlipY</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d16/classcocos2d_1_1_transition_zoom_flip_y.html" title="TransitionZoomFlipY: 垂直翻转屏幕，做一个 传入/穿出 缩放 正面是传出的场景，背面是传入的场景。 ...">TransitionZoomFlipY</a>: 垂直翻转屏幕，做一个 传入/穿出 缩放 正面是传出的场景，背面是传入的场景。  <a href="../../d6/d16/classcocos2d_1_1_transition_zoom_flip_y.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d46/classcocos2d_1_1_transition_zoom_flip_angular.html">TransitionZoomFlipAngular</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d46/classcocos2d_1_1_transition_zoom_flip_angular.html" title="TransitionZoomFlipAngular: 一半水平一半垂直 传入/穿出 翻转并一点点的缩放屏幕 正面是传出的场景，背面是...">TransitionZoomFlipAngular</a>: 一半水平一半垂直 传入/穿出 翻转并一点点的缩放屏幕 正面是传出的场景，背面是传入的场景。  <a href="../../d7/d46/classcocos2d_1_1_transition_zoom_flip_angular.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d60/classcocos2d_1_1_transition_fade.html">TransitionFade</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d60/classcocos2d_1_1_transition_fade.html" title="TransitionFade: 淡出传出 scene ，淡入传入 scene. ">TransitionFade</a>: 淡出传出 scene ，淡入传入 scene.  <a href="../../d8/d60/classcocos2d_1_1_transition_fade.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d66/classcocos2d_1_1_transition_cross_fade.html">TransitionCrossFade</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d66/classcocos2d_1_1_transition_cross_fade.html" title="TransitionCrossFade: 两个 scenes 使用 RenderTexture 对象交叉淡入淡出 ">TransitionCrossFade</a>: 两个 scenes 使用 <a class="el" href="../../d9/ddc/classcocos2d_1_1_render_texture.html" title="RenderTexture是通用的渲染目标。执行以下步骤，可以把相应的节点渲染到该目标上。 创建一个渲染目标，执行�...">RenderTexture</a> 对象交叉淡入淡出  <a href="../../db/d66/classcocos2d_1_1_transition_cross_fade.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d80/classcocos2d_1_1_transition_turn_off_tiles.html">TransitionTurnOffTiles</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d80/classcocos2d_1_1_transition_turn_off_tiles.html" title="TransitionTurnOffTiles: 随机顺序关闭淡出场景的 tiles. ">TransitionTurnOffTiles</a>: 随机顺序关闭淡出场景的 tiles.  <a href="../../d8/d80/classcocos2d_1_1_transition_turn_off_tiles.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2c/classcocos2d_1_1_transition_split_cols.html">TransitionSplitCols</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d2c/classcocos2d_1_1_transition_split_cols.html" title="TransitionSplitCols: 奇数列向上推移而偶数列向下推移. ">TransitionSplitCols</a>: 奇数列向上推移而偶数列向下推移.  <a href="../../d7/d2c/classcocos2d_1_1_transition_split_cols.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df8/classcocos2d_1_1_transition_split_rows.html">TransitionSplitRows</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/df8/classcocos2d_1_1_transition_split_rows.html" title="TransitionSplitRows: 奇数行行从左侧推移，偶数行从右侧推移. ">TransitionSplitRows</a>: 奇数行行从左侧推移，偶数行从右侧推移.  <a href="../../d4/df8/classcocos2d_1_1_transition_split_rows.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classcocos2d_1_1_transition_fade_t_r.html">TransitionFadeTR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d03/classcocos2d_1_1_transition_fade_t_r.html" title="TransitionFadeTR: 从从左下角到右上角淡出 scene 的所有 tiles. ">TransitionFadeTR</a>: 从从左下角到右上角淡出 scene 的所有 tiles.  <a href="../../da/d03/classcocos2d_1_1_transition_fade_t_r.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da8/classcocos2d_1_1_transition_fade_b_l.html">TransitionFadeBL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/da8/classcocos2d_1_1_transition_fade_b_l.html" title="TransitionFadeBL: 从右上角到左下角淡出 scene 的所有 tiles. ">TransitionFadeBL</a>: 从右上角到左下角淡出 scene 的所有 tiles.  <a href="../../d8/da8/classcocos2d_1_1_transition_fade_b_l.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd4/classcocos2d_1_1_transition_fade_up.html">TransitionFadeUp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../de/dd4/classcocos2d_1_1_transition_fade_up.html" title="TransitionFadeUp: 从下向上淡出 scene 的所有 tiles. ">TransitionFadeUp</a>: 从下向上淡出 scene 的所有 tiles.  <a href="../../de/dd4/classcocos2d_1_1_transition_fade_up.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9b/classcocos2d_1_1_transition_fade_down.html">TransitionFadeDown</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/d9b/classcocos2d_1_1_transition_fade_down.html" title="TransitionFadeDown: 从上向下淡出 scene 的所有 tiles. ">TransitionFadeDown</a>: 从上向下淡出 scene 的所有 tiles.  <a href="../../d2/d9b/classcocos2d_1_1_transition_fade_down.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:d2/dc0/namespacecocos2d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></td></tr>
+<tr class="memdesc:d2/dc0/namespacecocos2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add deprecated global functions and variables here. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_b6e0d2912788bd996ab47e93e46576f0.html">cocos</a></li><li class="navelem"><a class="el" href="../../dir_1e982c3755f4172b2756317f526913d2.html">2d</a></li><li class="navelem"><a class="el" href="../../d0/d7d/_c_c_transition_8h.html">CCTransition.h</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:41 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

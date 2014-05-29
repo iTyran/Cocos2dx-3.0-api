@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>cocos2d-x: EventListenerTouchAllAtOnce类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-x
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../pages.html"><span>相关页面</span></a></li>
+      <li><a href="../../modules.html"><span>模块</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>类列表</span></a></li>
+      <li><a href="../../classes.html"><span>类索引</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(13)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="../../d6/d90/classcocos2d_1_1_event_listener_touch_all_at_once-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">EventListenerTouchAllAtOnce类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CCEventListenerTouch.h&gt;</code></p>
+<div class="dynheader">
+类 EventListenerTouchAllAtOnce 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.png" usemap="#EventListenerTouchAllAtOnce_map" alt=""/>
+  <map id="EventListenerTouchAllAtOnce_map" name="EventListenerTouchAllAtOnce_map">
+<area href="../../df/d35/classcocos2d_1_1_event_listener.html" title="事件监听器( event listener)的基类. " alt="EventListener" shape="rect" coords="0,56,182,80"/>
+<area href="../../df/d28/classcocos2d_1_1_ref.html" alt="Ref" shape="rect" coords="0,0,182,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a557b18dea3e7a6cf0ae4a111c1dc7801"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#a557b18dea3e7a6cf0ae4a111c1dc7801">~EventListenerTouchAllAtOnce</a> ()</td></tr>
+<tr class="separator:a557b18dea3e7a6cf0ae4a111c1dc7801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ba5afc6821dea9a2dcf407cf078835"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak" />
+<a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#ad4ba5afc6821dea9a2dcf407cf078835">clone</a> () override</td></tr>
+<tr class="memdesc:ad4ba5afc6821dea9a2dcf407cf078835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides.  <a href="#ad4ba5afc6821dea9a2dcf407cf078835">更多...</a><br /></td></tr>
+<tr class="separator:ad4ba5afc6821dea9a2dcf407cf078835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93f0dcb45008d86dd3d2b93298f0ae4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#ab93f0dcb45008d86dd3d2b93298f0ae4">checkAvailable</a> () override</td></tr>
+<tr class="memdesc:ab93f0dcb45008d86dd3d2b93298f0ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查监听器(listener)是否可用.  <a href="#ab93f0dcb45008d86dd3d2b93298f0ae4">更多...</a><br /></td></tr>
+<tr class="separator:ab93f0dcb45008d86dd3d2b93298f0ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_event_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_event_listener')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html">EventListener</a></td></tr>
+<tr class="memitem:a2674ec2be55db846e66a381d003d3817 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a2674ec2be55db846e66a381d003d3817">~EventListener</a> ()</td></tr>
+<tr class="memdesc:a2674ec2be55db846e66a381d003d3817 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="#a2674ec2be55db846e66a381d003d3817">更多...</a><br /></td></tr>
+<tr class="separator:a2674ec2be55db846e66a381d003d3817 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b9dc15995ce2538f774b7237d96908 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a32b9dc15995ce2538f774b7237d96908">setEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:a32b9dc15995ce2538f774b7237d96908 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用或禁用监听器(listener)  <a href="#a32b9dc15995ce2538f774b7237d96908">更多...</a><br /></td></tr>
+<tr class="separator:a32b9dc15995ce2538f774b7237d96908 inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2931e09e0fd8eac15c83f0254b4e4ac inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ae2931e09e0fd8eac15c83f0254b4e4ac">isEnabled</a> () const </td></tr>
+<tr class="memdesc:ae2931e09e0fd8eac15c83f0254b4e4ac inherit pub_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查监听器是否可用  <a href="#ae2931e09e0fd8eac15c83f0254b4e4ac">更多...</a><br /></td></tr>
+<tr class="separator:ae2931e09e0fd8eac15c83f0254b4e4ac inherit pub_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">保留所有权.  <a href="#a24888ae1fe9df2d329c9b485807cb62b">更多...</a><br /></td></tr>
+<tr class="separator:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">立即释放所有权.  <a href="#a23b477d0e2d399f75d585d154c346591">更多...</a><br /></td></tr>
+<tr class="separator:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8a2345cdb9d96629de5dbaf88e36d505">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动释放所有权在不久的将来.  <a href="#a8a2345cdb9d96629de5dbaf88e36d505">更多...</a><br /></td></tr>
+<tr class="separator:a8a2345cdb9d96629de5dbaf88e36d505 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ac0fad74f624629043739b7c06c635a48">getReferenceCount</a> () const </td></tr>
+<tr class="memdesc:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Ref对象当前的引用计数.  <a href="#ac0fad74f624629043739b7c06c635a48">更多...</a><br /></td></tr>
+<tr class="separator:ac0fad74f624629043739b7c06c635a48 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a2fca001f1d40ace24096674c50e783d5">~Ref</a> ()</td></tr>
+<tr class="memdesc:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA  NA  <a href="#a2fca001f1d40ace24096674c50e783d5">更多...</a><br /></td></tr>
+<tr class="separator:a2fca001f1d40ace24096674c50e783d5 inherit pub_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a546386db4367a4e768a40ba7b0399824"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak" />
+<a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#a546386db4367a4e768a40ba7b0399824">create</a> ()</td></tr>
+<tr class="separator:a546386db4367a4e768a40ba7b0399824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a0d6bcac3a29c318759309c1df29c94df"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
+std::vector&lt; <a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a> * &gt;<br class="typebreak" />
+ &amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#a0d6bcac3a29c318759309c1df29c94df">onTouchesBegan</a></td></tr>
+<tr class="separator:a0d6bcac3a29c318759309c1df29c94df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcc20ad5e31cf5fd760dfc41a7680f5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
+std::vector&lt; <a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a> * &gt;<br class="typebreak" />
+ &amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#abdcc20ad5e31cf5fd760dfc41a7680f5">onTouchesMoved</a></td></tr>
+<tr class="separator:abdcc20ad5e31cf5fd760dfc41a7680f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae976d08b969c9fc956b77367c03b6b39"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
+std::vector&lt; <a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a> * &gt;<br class="typebreak" />
+ &amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#ae976d08b969c9fc956b77367c03b6b39">onTouchesEnded</a></td></tr>
+<tr class="separator:ae976d08b969c9fc956b77367c03b6b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e881697e59bec073904d1d672d3ea0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
+std::vector&lt; <a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a> * &gt;<br class="typebreak" />
+ &amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#a26e881697e59bec073904d1d672d3ea0">onTouchesCancelled</a></td></tr>
+<tr class="separator:a26e881697e59bec073904d1d672d3ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a723f9f42a4f715ff44dc2d2a170d37ca"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#a723f9f42a4f715ff44dc2d2a170d37ca">LISTENER_ID</a></td></tr>
+<tr class="separator:a723f9f42a4f715ff44dc2d2a170d37ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aad5f38ccd490ea17008460423f52325a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html#aad5f38ccd490ea17008460423f52325a">EventDispatcher</a></td></tr>
+<tr class="separator:aad5f38ccd490ea17008460423f52325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classcocos2d_1_1_event_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcocos2d_1_1_event_listener')"><img src="../../closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html">EventListener</a></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <br />
+&#160;&#160;<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7a34b25cbc5e6ed57b82a0a49d387daecc">TOUCH_ONE_BY_ONE</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7a17c822d045784bd72a1de8af8036f2e7">TOUCH_ALL_AT_ONCE</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7aedda266cdb6345b9f6914cc2e7577475">KEYBOARD</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7a2ec2be318cc86a1224c0e9dcc71321e4">MOUSE</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7aee49d439f92c07271c132560998b73e1">ACCELERATION</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7ad417d2f9c3743990750dbf0334bb8408">FOCUS</a>, 
+<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7a72baef04098f035e8a320b03ad197818">CUSTOM</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff82c719303ac75c059d91c4c96d0e50 inherit pub_types_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#aff82c719303ac75c059d91c4c96d0e50">ListenerID</a></td></tr>
+<tr class="separator:aff82c719303ac75c059d91c4c96d0e50 inherit pub_types_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_event_listener"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_event_listener')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html">EventListener</a></td></tr>
+<tr class="memitem:a7146e3a987f964ef9fa7b8009ed10fe3 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a7146e3a987f964ef9fa7b8009ed10fe3">EventListener</a> ()</td></tr>
+<tr class="memdesc:a7146e3a987f964ef9fa7b8009ed10fe3 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a7146e3a987f964ef9fa7b8009ed10fe3">更多...</a><br /></td></tr>
+<tr class="separator:a7146e3a987f964ef9fa7b8009ed10fe3 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6972b74b48b2b30049cadd075c06e2c5 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a6972b74b48b2b30049cadd075c06e2c5">init</a> (<a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> t, const <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#aff82c719303ac75c059d91c4c96d0e50">ListenerID</a> &amp;listenerID, const std::function&lt; void(<a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt; &amp;callback)</td></tr>
+<tr class="memdesc:a6972b74b48b2b30049cadd075c06e2c5 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 事件类型和回调函数 初始化事件  <a href="#a6972b74b48b2b30049cadd075c06e2c5">更多...</a><br /></td></tr>
+<tr class="separator:a6972b74b48b2b30049cadd075c06e2c5 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085d8c64bc0f15aa23e14d785d73bcf6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a085d8c64bc0f15aa23e14d785d73bcf6">setPaused</a> (bool paused)</td></tr>
+<tr class="memdesc:a085d8c64bc0f15aa23e14d785d73bcf6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置监听器的暂停状态 暂停状态仅被用于场景图像优先级监听器.  <a href="#a085d8c64bc0f15aa23e14d785d73bcf6">更多...</a><br /></td></tr>
+<tr class="separator:a085d8c64bc0f15aa23e14d785d73bcf6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaf52e4ed386823bd1051f44d511fe6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a0eaf52e4ed386823bd1051f44d511fe6">isPaused</a> () const </td></tr>
+<tr class="memdesc:a0eaf52e4ed386823bd1051f44d511fe6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查监听器是否被暂停  <a href="#a0eaf52e4ed386823bd1051f44d511fe6">更多...</a><br /></td></tr>
+<tr class="separator:a0eaf52e4ed386823bd1051f44d511fe6 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215419d22c35be7dec54fc538c1050fd inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a215419d22c35be7dec54fc538c1050fd">setRegistered</a> (bool registered)</td></tr>
+<tr class="memdesc:a215419d22c35be7dec54fc538c1050fd inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">标记监听器已经被加入到事件派发器(EventDispatcher)  <a href="#a215419d22c35be7dec54fc538c1050fd">更多...</a><br /></td></tr>
+<tr class="separator:a215419d22c35be7dec54fc538c1050fd inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7255426e5b1209c411f66488593af1 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ada7255426e5b1209c411f66488593af1">isRegistered</a> () const </td></tr>
+<tr class="memdesc:ada7255426e5b1209c411f66488593af1 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查监听器是否被注册到事件派发器(EventDispatcher)  <a href="#ada7255426e5b1209c411f66488593af1">更多...</a><br /></td></tr>
+<tr class="separator:ada7255426e5b1209c411f66488593af1 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc641171fb699c1116758176cd3bf4ab inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#afc641171fb699c1116758176cd3bf4ab">getType</a> () const </td></tr>
+<tr class="memdesc:afc641171fb699c1116758176cd3bf4ab inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取监听器(listener)的类型  <a href="#afc641171fb699c1116758176cd3bf4ab">更多...</a><br /></td></tr>
+<tr class="separator:afc641171fb699c1116758176cd3bf4ab inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada978c3be5d5bc7e4f4bae2f9094e08c inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#aff82c719303ac75c059d91c4c96d0e50">ListenerID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ada978c3be5d5bc7e4f4bae2f9094e08c">getListenerID</a> () const </td></tr>
+<tr class="memdesc:ada978c3be5d5bc7e4f4bae2f9094e08c inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取监听器的ID 当事件派发,监听器ID是用于查找符合事件类型的监听器的关键字.  <a href="#ada978c3be5d5bc7e4f4bae2f9094e08c">更多...</a><br /></td></tr>
+<tr class="separator:ada978c3be5d5bc7e4f4bae2f9094e08c inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833e8558986ff229796ee86ce6335569 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a833e8558986ff229796ee86ce6335569">setFixedPriority</a> (int fixedPriority)</td></tr>
+<tr class="memdesc:a833e8558986ff229796ee86ce6335569 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">为监听器设置固定优先级  <a href="#a833e8558986ff229796ee86ce6335569">更多...</a><br /></td></tr>
+<tr class="separator:a833e8558986ff229796ee86ce6335569 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8e860985a9707c482c8287473d6bd7 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#adb8e860985a9707c482c8287473d6bd7">getFixedPriority</a> () const </td></tr>
+<tr class="memdesc:adb8e860985a9707c482c8287473d6bd7 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取监听器的优先级  <a href="#adb8e860985a9707c482c8287473d6bd7">更多...</a><br /></td></tr>
+<tr class="separator:adb8e860985a9707c482c8287473d6bd7 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7446062453b14fc615c3f023cef69a61 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a7446062453b14fc615c3f023cef69a61">setAssociatedNode</a> (<a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="memdesc:a7446062453b14fc615c3f023cef69a61 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置和监听器关联的节点  <a href="#a7446062453b14fc615c3f023cef69a61">更多...</a><br /></td></tr>
+<tr class="separator:a7446062453b14fc615c3f023cef69a61 inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b739f4064564577e5c0794be8856fb inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ae1b739f4064564577e5c0794be8856fb">getAssociatedNode</a> () const </td></tr>
+<tr class="memdesc:ae1b739f4064564577e5c0794be8856fb inherit pro_methods_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取和监听器关联的节点  <a href="#ae1b739f4064564577e5c0794be8856fb">更多...</a><br /></td></tr>
+<tr class="separator:ae1b739f4064564577e5c0794be8856fb inherit pro_methods_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#a8cb1ae7f0793df666b8a09f606e6ac44">Ref</a> ()</td></tr>
+<tr class="memdesc:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a8cb1ae7f0793df666b8a09f606e6ac44">更多...</a><br /></td></tr>
+<tr class="separator:a8cb1ae7f0793df666b8a09f606e6ac44 inherit pro_methods_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_event_listener"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_event_listener')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html">EventListener</a></td></tr>
+<tr class="memitem:a3f7c3d6891a6a38bdd28c7db270b22bb inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a3f7c3d6891a6a38bdd28c7db270b22bb">_onEvent</a></td></tr>
+<tr class="separator:a3f7c3d6891a6a38bdd28c7db270b22bb inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027b7e1139df2abd570507995210ce33 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a027b7e1139df2abd570507995210ce33">_type</a></td></tr>
+<tr class="memdesc:a027b7e1139df2abd570507995210ce33 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件回调函数  <a href="#a027b7e1139df2abd570507995210ce33">更多...</a><br /></td></tr>
+<tr class="separator:a027b7e1139df2abd570507995210ce33 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3768a183231304ddd82414215cfcbf23 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#aff82c719303ac75c059d91c4c96d0e50">ListenerID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a3768a183231304ddd82414215cfcbf23">_listenerID</a></td></tr>
+<tr class="memdesc:a3768a183231304ddd82414215cfcbf23 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html" title="Base class of all kinds of events. ">Event</a> listener 事件监听器的类型  <a href="#a3768a183231304ddd82414215cfcbf23">更多...</a><br /></td></tr>
+<tr class="separator:a3768a183231304ddd82414215cfcbf23 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e62af8d739c4da0e8b6e1f840a9358 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a67e62af8d739c4da0e8b6e1f840a9358">_isRegistered</a></td></tr>
+<tr class="memdesc:a67e62af8d739c4da0e8b6e1f840a9358 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html" title="Base class of all kinds of events. ">Event</a> listener 事件监听器的ID.  <a href="#a67e62af8d739c4da0e8b6e1f840a9358">更多...</a><br /></td></tr>
+<tr class="separator:a67e62af8d739c4da0e8b6e1f840a9358 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bd48b6a56f2a4ebbe2195fb690bdcf inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ab8bd48b6a56f2a4ebbe2195fb690bdcf">_fixedPriority</a></td></tr>
+<tr class="memdesc:ab8bd48b6a56f2a4ebbe2195fb690bdcf inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">监听器(listener)是否被加入到派发器(dispatcher) .  <a href="#ab8bd48b6a56f2a4ebbe2195fb690bdcf">更多...</a><br /></td></tr>
+<tr class="separator:ab8bd48b6a56f2a4ebbe2195fb690bdcf inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e545270712ab49eaae15bdaa9bbf23 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d82/classcocos2d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a96e545270712ab49eaae15bdaa9bbf23">_node</a></td></tr>
+<tr class="separator:a96e545270712ab49eaae15bdaa9bbf23 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b15c586c0fe526b6271921298dc87e8 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a4b15c586c0fe526b6271921298dc87e8">_paused</a></td></tr>
+<tr class="separator:a4b15c586c0fe526b6271921298dc87e8 inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12c79a922b3333cd624006ffed10cfc inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#ad12c79a922b3333cd624006ffed10cfc">_isEnabled</a></td></tr>
+<tr class="separator:ad12c79a922b3333cd624006ffed10cfc inherit pro_attribs_classcocos2d_1_1_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcocos2d_1_1_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcocos2d_1_1_ref')"><img src="../../closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="../../df/d28/classcocos2d_1_1_ref.html">Ref</a></td></tr>
+<tr class="memitem:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d28/classcocos2d_1_1_ref.html#ae77069c8f0e0d99201a75c4e0cda1404">_referenceCount</a></td></tr>
+<tr class="memdesc:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数  <a href="#ae77069c8f0e0d99201a75c4e0cda1404">更多...</a><br /></td></tr>
+<tr class="separator:ae77069c8f0e0d99201a75c4e0cda1404 inherit pro_attribs_classcocos2d_1_1_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a557b18dea3e7a6cf0ae4a111c1dc7801"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ab93f0dcb45008d86dd3d2b93298f0ae4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool checkAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查监听器(listener)是否可用. </p>
+
+<p>实现了 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a6ea6d827a5c796c20a47eeee3e8db507">EventListener</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4ba5afc6821dea9a2dcf407cf078835"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a>* clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overrides. </p>
+
+<p>实现了 <a class="el" href="../../df/d35/classcocos2d_1_1_event_listener.html#a2511d2520e1893751b971f2e426e9e6d">EventListener</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a546386db4367a4e768a40ba7b0399824"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a>* create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="aad5f38ccd490ea17008460423f52325a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d2/d1b/classcocos2d_1_1_event_dispatcher.html">EventDispatcher</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a723f9f42a4f715ff44dc2d2a170d37ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string LISTENER_ID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d6bcac3a29c318759309c1df29c94df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const std::vector&lt;<a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a>*&gt;&amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a>*)&gt; onTouchesBegan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26e881697e59bec073904d1d672d3ea0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const std::vector&lt;<a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a>*&gt;&amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a>*)&gt; onTouchesCancelled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae976d08b969c9fc956b77367c03b6b39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const std::vector&lt;<a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a>*&gt;&amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a>*)&gt; onTouchesEnded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdcc20ad5e31cf5fd760dfc41a7680f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const std::vector&lt;<a class="el" href="../../d8/d2a/classcocos2d_1_1_touch.html">Touch</a>*&gt;&amp;, <a class="el" href="../../d4/d7a/classcocos2d_1_1_event.html">Event</a>*)&gt; onTouchesMoved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/zeroyang/Documents/github/cocos2d-x/cocos/base/<a class="el" href="../../de/d45/_c_c_event_listener_touch_8h.html">CCEventListenerTouch.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacecocos2d.html">cocos2d</a></li><li class="navelem"><a class="el" href="../../d0/d07/classcocos2d_1_1_event_listener_touch_all_at_once.html">EventListenerTouchAllAtOnce</a></li>
+    <li class="footer">生成于 2014年 五月 29日 星期四 09:41:45 , 为 cocos2d-x使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>
